@@ -1,0 +1,34 @@
+[ol8_baseos_latest]
+name=Oracle Linux 8 BaseOS Latest ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=1
+
+[ol8_appstream]
+name=Oracle Linux 8 Application Stream ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL8/appstream/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=1
+
+[ol8_codeready_builder]
+name=Oracle Linux 8 CodeReady Builder ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL8/codeready/builder/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+[ol8_uek]
+name=Oracle Linux 8 UEK ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL8/UEKR6/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+[ol8_addons]
+name=Oracle Linux 8 Addons ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL8/addons/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0

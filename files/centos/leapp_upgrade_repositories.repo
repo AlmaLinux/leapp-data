@@ -1,0 +1,39 @@
+[centos8-baseos]
+name=CentOS-8-stream - Base
+mirrorlist=http://mirrorlist.centos.org/?release=8-stream&arch=$basearch&repo=BaseOS
+#baseurl=http://mirror.centos.org/$contentdir/8-stream/BaseOS/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+
+[centos8-appstream]
+name=CentOS-8-stream - AppStream
+mirrorlist=http://mirrorlist.centos.org/?release=8-stream&arch=$basearch&repo=AppStream
+#baseurl=http://mirror.centos.org/$contentdir/8-stream/AppStream/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+
+[centos8-powertools]
+name=CentOS-8-stream - PowerTools
+mirrorlist=http://mirrorlist.centos.org/?release=8-stream&arch=$basearch&repo=PowerTools
+#baseurl=http://mirror.centos.org/$contentdir/8-stream/PowerTools/$basearch/os/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+
+[centos8-ha]
+name=CentOS-8-stream - HA
+mirrorlist=http://mirrorlist.centos.org/?release=8-stream&arch=$basearch&repo=HighAvailability
+#baseurl=http://mirror.centos.org/$contentdir/8-stream/HighAvailability/$basearch/os/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+
+[centos8-extras]
+name=CentOS-8-stream - Extras
+mirrorlist=http://mirrorlist.centos.org/?release=8-stream&arch=$basearch&repo=extras
+#baseurl=http://mirror.centos.org/$contentdir/8-stream/extras/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial

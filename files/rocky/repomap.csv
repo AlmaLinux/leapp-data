@@ -1,0 +1,17 @@
+CentOS 7 repoid,Rocky 8 repoid in custom repo file,Rocky 8 repo name in PES,CentOS 7 minor versions,Rocky 8 minor versions,architecture,type(rpm/srpm/debuginfo),source product type (ga/beta,htb),target product type (ga/beta/htb)
+
+# Version: 1
+# Date: 20210726
+
+# x86_64
+base,rocky8-baseos,rocky8-baseos,all,all,x86_64,rpm,ga,ga
+base,rocky8-appstream,rocky8-appstream,all,all,x86_64,rpm,ga,ga
+base,rocky8-powertools,rocky8-powertools,all,all,x86_64,rpm,ga,ga
+base,rocky8-ha,rocky8-ha,all,all,x86_64,rpm,ga,ga
+
+updates,rocky8-baseos,rocky8-baseos,all,all,x86_64,rpm,ga,ga
+updates,rocky8-appstream,rocky8-appstream,all,all,x86_64,rpm,ga,ga
+updates,rocky8-powertools,rocky8-powertools,all,all,x86_64,rpm,ga,ga
+updates,rocky8-ha,rocky8-ha,all,all,x86_64,rpm,ga,ga
+
+extras,rocky8-extras,rocky8-extras,all,all,x86_64,rpm,ga,ga

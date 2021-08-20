@@ -1,0 +1,17 @@
+CentOS 7 repoid,CentOS 8 repoid in custom repo file,CentOS 8 repo name in PES,CentOS 7 minor versions,CentOS 8 minor versions,architecture,type(rpm/srpm/debuginfo),source product type (ga/beta,htb),target product type (ga/beta/htb)
+
+# Version: 1
+# Date: 20210726
+
+# x86_64
+base,centos8-baseos,centos8-baseos,all,all,x86_64,rpm,ga,ga
+base,centos8-appstream,centos8-appstream,all,all,x86_64,rpm,ga,ga
+base,centos8-powertools,centos8-powertools,all,all,x86_64,rpm,ga,ga
+base,centos8-ha,centos8-ha,all,all,x86_64,rpm,ga,ga
+
+updates,centos8-baseos,centos8-baseos,all,all,x86_64,rpm,ga,ga
+updates,centos8-appstream,centos8-appstream,all,all,x86_64,rpm,ga,ga
+updates,centos8-powertools,centos8-powertools,all,all,x86_64,rpm,ga,ga
+updates,centos8-ha,centos8-ha,all,all,x86_64,rpm,ga,ga
+
+extras,centos8-extras,centos8-extras,all,all,x86_64,rpm,ga,ga

@@ -1,0 +1,19 @@
+CentOS 7 repoid,Oracle 8 repoid in custom repo file,Oracle 8 repo name in PES,CentOS 7 minor versions,Oracle 8 minor versions,architecture,type(rpm/srpm/debuginfo),source product type (ga/beta,htb),target product type (ga/beta/htb)
+
+# Version: 1
+# Date: 20210726
+
+# x86_64
+base,ol8_baseos_latest,ol8-baseos,all,all,x86_64,rpm,ga,ga
+base,ol8_appstream,ol8-appstream,all,all,x86_64,rpm,ga,ga
+base,ol8_codeready_builder,ol8-crb,all,all,x86_64,rpm,ga,ga
+base,ol8_addons,ol8-addons,all,all,x86_64,rpm,ga,ga
+base,ol8_uek,ol8-uek,all,all,x86_64,rpm,ga,ga
+
+updates,ol8_baseos_latest,ol8-baseos,all,all,x86_64,rpm,ga,ga
+updates,ol8_appstream,ol8-appstream,all,all,x86_64,rpm,ga,ga
+updates,ol8_codeready_builder,ol8-crb,all,all,x86_64,rpm,ga,ga
+updates,ol8_addons,ol8-addons,all,all,x86_64,rpm,ga,ga
+updates,ol8_uek,ol8-uek,all,all,x86_64,rpm,ga,ga
+
+extras,ol8_baseos_latest,ol8-baseos,all,all,x86_64,rpm,ga,ga

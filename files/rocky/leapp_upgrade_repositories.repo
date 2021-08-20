@@ -1,0 +1,39 @@
+[rocky8-baseos]
+name=Rocky Linux 8 - BaseOS
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=BaseOS-8
+#baseurl=http://dl.rockylinux.org/$contentdir/8/BaseOS/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
+
+[rocky8-appstream]
+name=Rocky Linux 8 - AppStream
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=AppStream-8
+#baseurl=http://dl.rockylinux.org/$contentdir/8/AppStream/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
+
+[rocky8-powertools]
+name=Rocky Linux 8 - PowerTools
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=PowerTools-8
+#baseurl=http://dl.rockylinux.org/$contentdir/8/PowerTools/$basearch/os/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
+
+[rocky8-ha]
+name=Rocky Linux 8 - HighAvailability
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=HighAvailability-8
+#baseurl=http://dl.rockylinux.org/$contentdir/8/HighAvailability/$basearch/os/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
+
+[rocky8-extras]
+name=Rocky Linux 8 - Extras
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=extras-8
+#baseurl=http://dl.rockylinux.org/$contentdir/8/extras/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
