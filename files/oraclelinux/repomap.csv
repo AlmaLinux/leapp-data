@@ -8,13 +8,13 @@ base,ol8_baseos_latest,ol8-baseos,all,all,x86_64,rpm,ga,ga
 base,ol8_appstream,ol8-appstream,all,all,x86_64,rpm,ga,ga
 base,ol8_codeready_builder,ol8-crb,all,all,x86_64,rpm,ga,ga
 base,ol8_addons,ol8-addons,all,all,x86_64,rpm,ga,ga
-base,ol8_UEKR6,ol8-UEKR6,all,all,x86_64,rpm,ga,ga
+base,ol8_UEKR6,ol8-uek,all,all,x86_64,rpm,ga,ga
 
 updates,ol8_baseos_latest,ol8-baseos,all,all,x86_64,rpm,ga,ga
 updates,ol8_appstream,ol8-appstream,all,all,x86_64,rpm,ga,ga
 updates,ol8_codeready_builder,ol8-crb,all,all,x86_64,rpm,ga,ga
 updates,ol8_addons,ol8-addons,all,all,x86_64,rpm,ga,ga
-updates,ol8_UEKR6,ol8-UEKR6,all,all,x86_64,rpm,ga,ga
+updates,ol8_UEKR6,ol8-uek,all,all,x86_64,rpm,ga,ga
 
 extras,ol8_baseos_latest,ol8-baseos,all,all,x86_64,rpm,ga,ga
 
