@@ -1,9 +1,9 @@
-%define dist_list almalinux centos ol rocky
-%define conflict_dists() %(for i in almalinux centos ol rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
+%define dist_list almalinux centos oraclelinux rocky
+%define conflict_dists() %(for i in almalinux centos oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 Name:		leapp-data
 Version:	0.1
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -40,5 +40,10 @@ install -t %{buildroot}%{_sysconfdir}/leapp/files files/%{dist_name}/*
 
 
 %changelog
+* Thu Aug 26 2021 Avi Miller <avi.miller@oracle.com> - 0.1-2
+- switched to using the full oraclelinux name
+- switched the Oracle Linux repos to use https
+- added Apache-2.0 NOTICE attribution file
+
 * Wed Aug 25 2021 Sergey Fokin <sfokin@almalinux.org> - 0.1-1
 - initial project
