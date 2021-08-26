@@ -2,7 +2,7 @@
 
 **!!! NOT FOR PRODUCTION !!!**
 
-This guide contains steps on how to upgrade CentOS 7 to RHEL8 derivatives such as AlmaLinux, CentOS, Rocky, Oracle.
+This guide contains steps on how to upgrade CentOS 7 to RHEL8 derivatives such as AlmaLinux, CentOS, Oracle, Rocky.
 
 To use this guide you need to install Vagrant and VirtualBox using the following
 documentation:
@@ -35,7 +35,7 @@ documentation:
     sudo yum install leapp -y
  ```
 
-* Copy leapp config files for the OS you want to migrate. Possible options are almalinux, centos, rocky, ol.
+* Copy leapp config files for the OS you want to migrate. Possible options are almalinux, centos, oraclelinux, rocky.
  ```
     sudo cp /vagrant/files/almalinux/* /etc/leapp/files/
  ```
