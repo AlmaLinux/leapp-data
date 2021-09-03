@@ -1,29 +1,24 @@
 %define dist_list almalinux centos oraclelinux rocky
 %define conflict_dists() %(for i in almalinux centos oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
-Name:		leapp-data
+Name:		leapp-data-%{dist_name}
 Version:	0.1
 Release:	2%{?dist}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
 URL:		https://github.com/AlmaLinux/leapp-data
-Source0:	%{name}-%{version}.tar.gz
+Source0:	leapp-data-%{version}.tar.gz
 BuildArch:  noarch
 
-%package %{dist_name}
-Summary: %{summary}
 Conflicts: %{conflict_dists}
-
-%description %{dist_name}
-%{summary}
-
 
 %description
 %{dist_name} %{summary}
 
+
 %prep
-%setup -q
+%setup -qn leapp-data-%{version}
 
 
 %build
@@ -34,8 +29,8 @@ mkdir -p %{buildroot}%{_sysconfdir}/leapp/files
 install -t %{buildroot}%{_sysconfdir}/leapp/files files/%{dist_name}/*
 
 
-%files %{dist_name}
-%doc
+%files
+%doc LICENSE NOTICE README.md
 %{_sysconfdir}/leapp/files/*
 
 
