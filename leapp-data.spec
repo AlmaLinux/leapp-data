@@ -18,7 +18,7 @@ Conflicts: %{conflict_dists}
 
 
 %prep
-%setup -qn leapp-data-%{version}
+%setup -q
 
 
 %build
