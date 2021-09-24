@@ -82728,7 +82728,56 @@
         "minor_version": 1,
         "os_name": "OL"
       }
+    },
+    {
+      "action": 4,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 2218,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "centos-logos",
+            "repository": "base"
+          }
+        ],
+        "set_id": 3975
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "oracle-logos",
+            "repository": "ol8-baseos"
+          },
+          {
+            "module_stream": null,
+            "name": "oracle-logos-httpd",
+            "repository": "ol8-baseos"
+          },
+          {
+            "module_stream": null,
+            "name": "oracle-backgrounds",
+            "repository": "ol8-baseos"
+          }
+        ],
+        "set_id": 11931
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "OL"
+      }
     }
   ],
-  "timestamp": "202108240936Z"
+  "timestamp": "202109240840Z"
 }
