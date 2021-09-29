@@ -47,12 +47,12 @@ documentation:
 
    This summary report will help you get the picture of whether it is possible to continue the upgrade.
 
-   In certain configurations, Leapp generates */var/log/leapp/answerfile* with true/fase questions. Leapp utility requires answers to all these questions in order to proceed with the upgrade.
+   In certain configurations, Leapp generates */var/log/leapp/answerfile* with true/false questions. Leapp utility requires answers to all these questions in order to proceed with the upgrade.
 
-* Mentioned fixes from *the /var/log/leapp/leapp-report.txt* file are mandatory, but you can also review the rest of them if needed.
+* Mentioned fixes from the */var/log/leapp/leapp-report.txt* file are mandatory, but you can also review the rest of them if needed.
 ```
    sudo rmmod pata_acpi
-   echo PermitRootLogin yes | sudo tee /etc/ssh/sshd_config
+   echo PermitRootLogin yes | sudo tee -a /etc/ssh/sshd_config
    sudo leapp answer --section remove_pam_pkcs11_module_check.confirm=True
 ```
 
@@ -62,7 +62,7 @@ documentation:
     sudo reboot
 ```
 
-* A new entry in GRUB called EL-Upgrade-Initramfs will appear. The system will be automatically booted into it.
+* A new entry in GRUB called ELevate-Upgrade-Initramfs will appear. The system will be automatically booted into it.
    See how the update process goes in the VirtualBox console.
 
 * After reboot, login to the system and check how the migration went. Verify that the current OS is the one you need.
