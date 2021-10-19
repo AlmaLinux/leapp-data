@@ -1,6 +1,6 @@
 # Migration guide
 
-**NOTE: As this project is newly announced we HIGHLY reccomend that you follow system administration best practices and make sure you have backups and/or snapshots of your system before you proceed. It is recommende It is recommended to do a trial run in a sandbox to verify that migration worked as expected before you attempt to migrate any production system.**
+**NOTE: As this project is newly announced we HIGHLY recommend that you follow system administration best practices and make sure you have backups and/or snapshots of your system before you proceed. It is recommended to do a trial run in a sandbox to verify that migration worked as expected before you attempt to migrate any production system.**
 
 This guide contains steps on how to upgrade CentOS 7 to RHEL8 derivatives such as AlmaLinux, CentOS, Oracle, Rocky.
 
