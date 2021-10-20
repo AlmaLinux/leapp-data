@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.1
-Release:	2%{?dist}
+Release:	3%{?dist}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -35,6 +35,9 @@ install -t %{buildroot}%{_sysconfdir}/leapp/files files/%{dist_name}/*
 
 
 %changelog
+* Thu Oct 21 2021 Andrew Lukoshko <alukoshko@almalinux.org> - 0.1-3
+- updated PES data for Oracle and Rocky
+
 * Thu Aug 26 2021 Avi Miller <avi.miller@oracle.com> - 0.1-2
 - switched to using the full oraclelinux name
 - switched the Oracle Linux repos to use https
