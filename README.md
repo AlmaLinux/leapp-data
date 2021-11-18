@@ -71,5 +71,5 @@ documentation:
    cat /etc/redhat-release
    cat /etc/os-release
    rpm -qa | grep centos
-   rpm -qf | grep el7
+   rpm -qa | grep el7
 ```
