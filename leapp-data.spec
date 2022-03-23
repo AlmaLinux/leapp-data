@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.1
-Release:	3%{?dist}
+Release:	4%{?dist}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -35,6 +35,9 @@ install -t %{buildroot}%{_sysconfdir}/leapp/files files/%{dist_name}/*
 
 
 %changelog
+* Wed Mar 23 2022 Andrew Lukoshko <alukoshko@almalinux.org> - 0.1-4
+- added ResilientStorage and updated repo URLs for AlmaLinux and Rocky
+
 * Thu Oct 21 2021 Andrew Lukoshko <alukoshko@almalinux.org> - 0.1-3
 - updated PES data for Oracle and Rocky
 

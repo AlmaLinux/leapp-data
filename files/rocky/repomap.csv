@@ -8,10 +8,12 @@ base,rocky8-baseos,rocky8-baseos,all,all,x86_64,rpm,ga,ga
 base,rocky8-appstream,rocky8-appstream,all,all,x86_64,rpm,ga,ga
 base,rocky8-powertools,rocky8-powertools,all,all,x86_64,rpm,ga,ga
 base,rocky8-ha,rocky8-ha,all,all,x86_64,rpm,ga,ga
+base,rocky8-resilient-storage,rocky8-resilient-storage,all,all,x86_64,rpm,ga,ga
 
 updates,rocky8-baseos,rocky8-baseos,all,all,x86_64,rpm,ga,ga
 updates,rocky8-appstream,rocky8-appstream,all,all,x86_64,rpm,ga,ga
 updates,rocky8-powertools,rocky8-powertools,all,all,x86_64,rpm,ga,ga
 updates,rocky8-ha,rocky8-ha,all,all,x86_64,rpm,ga,ga
+updates,rocky8-resilient-storage,rocky8-resilient-storage,all,all,x86_64,rpm,ga,ga
 
 extras,rocky8-extras,rocky8-extras,all,all,x86_64,rpm,ga,ga
