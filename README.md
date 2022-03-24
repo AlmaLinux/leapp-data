@@ -35,7 +35,7 @@ documentation:
     sudo yum install leapp -y
  ```
 
-* Copy leapp config files for the OS you want to migrate. Possible options are almalinux, centos, oraclelinux, rocky.
+* Copy leapp config files for the OS you want to migrate. Possible options are almalinux, centos, eurolinux, oraclelinux, rocky.
  ```
     sudo cp /vagrant/files/almalinux/* /etc/leapp/files/
  ```

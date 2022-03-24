@@ -1,0 +1,19 @@
+CentOS 7 repoid,EuroLinux 8 repoid in custom repo file,EuroLinux 8 repo name in PES,CentOS 7 minor versions,EuroLinux 8 minor versions,architecture,type(rpm/srpm/debuginfo),source product type (ga/beta,htb),target product type (ga/beta/htb)
+
+# Version: 1
+# Date: 20210726
+
+# x86_64
+base,certify-baseos,certify-baseos,all,all,x86_64,rpm,ga,ga
+base,certify-appstream,certify-appstream,all,all,x86_64,rpm,ga,ga
+base,certify-powertools,certify-powertools,all,all,x86_64,rpm,ga,ga
+base,high-availability,high-availability,all,all,x86_64,rpm,ga,ga
+base,resilient-storage,resilient-storage,all,all,x86_64,rpm,ga,ga
+
+updates,certify-baseos,certify-baseos,all,all,x86_64,rpm,ga,ga
+updates,certify-appstream,certify-appstream,all,all,x86_64,rpm,ga,ga
+updates,certify-powertools,certify-powertools,all,all,x86_64,rpm,ga,ga
+updates,high-availability,high-availability,all,all,x86_64,rpm,ga,ga
+updates,resilient-storage,resilient-storage,all,all,x86_64,rpm,ga,ga
+
+extras,certify-baseos,certify-baseos,all,all,x86_64,rpm,ga,ga
