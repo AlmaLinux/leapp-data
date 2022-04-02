@@ -1,0 +1,148 @@
+{
+    "datetime": "202204020934Z",
+    "version_format": "1.0.0",
+    "mapping": [
+        {
+            "source_major_version": "7",
+            "target_major_version": "8",
+            "entries": [
+                {
+                    "source": "base",
+                    "target": [
+                        "almalinux8-baseos",
+                        "almalinux8-appstream",
+                        "almalinux8-powertools",
+                        "almalinux8-ha",
+                        "almalinux8-resilientstorage"
+                    ]
+                },
+                {
+                    "source": "updates",
+                    "target": [
+                        "almalinux8-baseos",
+                        "almalinux8-appstream",
+                        "almalinux8-powertools",
+                        "almalinux8-ha",
+                        "almalinux8-resilientstorage"
+                    ]
+                },
+                {
+                    "source": "extras",
+                    "target": [
+                        "almalinux8-extras"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "base",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "base",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux8-baseos",
+            "entries": [
+                {
+                    "repoid": "almalinux8-baseos",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux8-appstream",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux8-appstream",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux8-powertools",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "almalinux8-powertools",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux8-ha",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux8-ha",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux8-resilientstorage",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux8-resilientstorage",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "updates",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "updates",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "extras",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "extras",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux8-extras",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux8-extras",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        }
+    ]
+}
