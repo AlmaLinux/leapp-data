@@ -1,0 +1,148 @@
+{
+    "datetime": "202204020934Z",
+    "version_format": "1.0.0",
+    "mapping": [
+        {
+            "source_major_version": "7",
+            "target_major_version": "8",
+            "entries": [
+                {
+                    "source": "base",
+                    "target": [
+                        "rocky8-baseos",
+                        "rocky8-appstream",
+                        "rocky8-powertools",
+                        "rocky8-ha",
+                        "rocky8-resilient-storage"
+                    ]
+                },
+                {
+                    "source": "updates",
+                    "target": [
+                        "rocky8-baseos",
+                        "rocky8-appstream",
+                        "rocky8-powertools",
+                        "rocky8-ha",
+                        "rocky8-resilient-storage"
+                    ]
+                },
+                {
+                    "source": "extras",
+                    "target": [
+                        "rocky8-extras"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "base",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "repoid": "base",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "pesid": "rocky8-baseos",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "repoid": "rocky8-baseos",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "pesid": "rocky8-appstream",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "rocky8-appstream",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "pesid": "rocky8-powertools",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "rocky8-powertools",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "pesid": "rocky8-ha",
+            "entries": [
+                {
+                    "repoid": "rocky8-ha",
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "pesid": "rocky8-resilient-storage",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "rocky8-resilient-storage",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "pesid": "updates",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "updates",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "pesid": "extras",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "repoid": "extras",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "pesid": "rocky8-extras",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "repoid": "rocky8-extras"
+                }
+            ]
+        }
+    ]
+}

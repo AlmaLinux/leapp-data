@@ -1,0 +1,134 @@
+{
+    "datetime": "202204020934Z",
+    "version_format": "1.0.0",
+    "mapping": [
+        {
+            "source_major_version": "7",
+            "target_major_version": "8",
+            "entries": [
+                {
+                    "source": "base",
+                    "target": [
+                        "centos8-baseos",
+                        "centos8-appstream",
+                        "centos8-powertools",
+                        "centos8-ha"
+                    ]
+                },
+                {
+                    "source": "updates",
+                    "target": [
+                        "centos8-baseos",
+                        "centos8-appstream",
+                        "centos8-powertools",
+                        "centos8-ha"
+                    ]
+                },
+                {
+                    "source": "extras",
+                    "target": [
+                        "centos8-extras"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "base",
+            "entries": [
+                {
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "major_version": "7",
+                    "repoid": "base",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos8-baseos",
+            "entries": [
+                {
+                    "repo_type": "rpm",
+                    "repoid": "centos8-baseos",
+                    "major_version": "8",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos8-appstream",
+            "entries": [
+                {
+                    "repo_type": "rpm",
+                    "major_version": "8",
+                    "arch": "x86_64",
+                    "repoid": "centos8-appstream",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos8-powertools",
+            "entries": [
+                {
+                    "repoid": "centos8-powertools",
+                    "repo_type": "rpm",
+                    "major_version": "8",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos8-ha",
+            "entries": [
+                {
+                    "repo_type": "rpm",
+                    "major_version": "8",
+                    "arch": "x86_64",
+                    "repoid": "centos8-ha",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "updates",
+            "entries": [
+                {
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "major_version": "7",
+                    "repoid": "updates",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "extras",
+            "entries": [
+                {
+                    "repo_type": "rpm",
+                    "repoid": "extras",
+                    "arch": "x86_64",
+                    "major_version": "7",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos8-extras",
+            "entries": [
+                {
+                    "repo_type": "rpm",
+                    "repoid": "centos8-extras",
+                    "major_version": "8",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        }
+    ]
+}

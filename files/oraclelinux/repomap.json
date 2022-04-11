@@ -1,0 +1,192 @@
+{
+    "datetime": "202204020934Z",
+    "version_format": "1.0.0",
+    "mapping": [
+        {
+            "source_major_version": "7",
+            "target_major_version": "8",
+            "entries": [
+                {
+                    "source": "base",
+                    "target": [
+                        "ol8-baseos",
+                        "ol8-appstream",
+                        "ol8-crb",
+                        "ol8-addons",
+                        "ol8-uek"
+                    ]
+                },
+                {
+                    "source": "updates",
+                    "target": [
+                        "ol8-baseos",
+                        "ol8-appstream",
+                        "ol8-crb",
+                        "ol8-addons",
+                        "ol8-uek"
+                    ]
+                },
+                {
+                    "source": "extras",
+                    "target": [
+                        "ol8-baseos"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "base",
+            "entries": [
+                {
+                    "repoid": "base",
+                    "major_version": "7",
+                    "channel": "ga",
+                    "arch": "x86_64",
+                    "repo_type": "rpm"
+                },
+                {
+                    "arch": "aarch64",
+                    "repoid": "base",
+                    "major_version": "7",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "ol8-baseos",
+            "entries": [
+                {
+                    "arch": "aarch64",
+                    "repoid": "ol8_baseos_latest",
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm"
+                },
+                {
+                    "repoid": "ol8_baseos_latest",
+                    "channel": "ga",
+                    "arch": "x86_64",
+                    "major_version": "8",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "ol8-appstream",
+            "entries": [
+                {
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repoid": "ol8_appstream",
+                    "major_version": "8",
+                    "repo_type": "rpm"
+                },
+                {
+                    "channel": "ga",
+                    "repoid": "ol8_appstream",
+                    "arch": "x86_64",
+                    "major_version": "8",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "ol8-crb",
+            "entries": [
+                {
+                    "arch": "aarch64",
+                    "repoid": "ol8_codeready_builder",
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm"
+                },
+                {
+                    "repoid": "ol8_codeready_builder",
+                    "channel": "ga",
+                    "arch": "x86_64",
+                    "major_version": "8",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "ol8-addons",
+            "entries": [
+                {
+                    "repoid": "ol8_addons",
+                    "channel": "ga",
+                    "arch": "x86_64",
+                    "major_version": "8",
+                    "repo_type": "rpm"
+                },
+                {
+                    "arch": "aarch64",
+                    "repoid": "ol8_addons",
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "ol8-uek",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "repoid": "ol8_UEKR6",
+                    "arch": "x86_64",
+                    "major_version": "8",
+                    "repo_type": "rpm"
+                },
+                {
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repoid": "ol8_baseos",
+                    "major_version": "8",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "updates",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "channel": "ga",
+                    "repoid": "updates",
+                    "arch": "x86_64",
+                    "repo_type": "rpm"
+                },
+                {
+                    "arch": "aarch64",
+                    "major_version": "7",
+                    "channel": "ga",
+                    "repoid": "updates",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "extras",
+            "entries": [
+                {
+                    "arch": "aarch64",
+                    "major_version": "7",
+                    "repoid": "extras",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "extras",
+                    "channel": "ga",
+                    "arch": "x86_64",
+                    "repo_type": "rpm"
+                }
+            ]
+        }
+    ]
+}
