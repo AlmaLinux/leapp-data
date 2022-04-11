@@ -1,9 +1,9 @@
-%define dist_list almalinux centos oraclelinux rocky
-%define conflict_dists() %(for i in almalinux centos oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
+%define dist_list almalinux centos eurolinux oraclelinux rocky
+%define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 Name:		leapp-data-%{dist_name}
 Version:	0.1
-Release:	4%{?dist}
+Release:	5%{?dist}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -35,6 +35,9 @@ install -t %{buildroot}%{_sysconfdir}/leapp/files files/%{dist_name}/*
 
 
 %changelog
+* Thu Mar 24 2022 Tomasz Podsiadły <tp@euro-linux.com> - 0.1-5
+- Add EuroLinux to supported distributions
+
 * Wed Mar 23 2022 Andrew Lukoshko <alukoshko@almalinux.org> - 0.1-4
 - added ResilientStorage and updated repo URLs for AlmaLinux and Rocky
 
