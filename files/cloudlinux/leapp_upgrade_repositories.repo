@@ -1,0 +1,81 @@
+[almalinux8-baseos]
+name=AlmaLinux 8 - BaseOS
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/baseos
+# baseurl=https://repo.almalinux.org/almalinux/8/BaseOS/$basearch/os/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+
+[almalinux8-appstream]
+name=AlmaLinux 8 - AppStream
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/appstream
+# baseurl=https://repo.almalinux.org/almalinux/8/AppStream/$basearch/os/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+
+[almalinux8-powertools]
+name=AlmaLinux 8 - PowerTools
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/powertools
+# baseurl=https://repo.almalinux.org/almalinux/8/PowerTools/$basearch/os/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+
+[almalinux8-highavailability]
+name=AlmaLinux 8 - HighAvailability
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/ha
+# baseurl=https://repo.almalinux.org/almalinux/8/HighAvailability/$basearch/os/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+
+[almalinux8-resilientstorage]
+name=AlmaLinux 8 - ResilientStorage
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/resilientstorage
+# baseurl=https://repo.almalinux.org/almalinux/8/ResilientStorage/$basearch/os/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+
+[almalinux8-extras]
+name=AlmaLinux 8 - Extras
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/extras
+# baseurl=https://repo.almalinux.org/almalinux/8/extras/$basearch/os/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+
+[cl]
+async = 1
+baseurl = https://koji.cloudlinux.com/cloudlinux/8.6/cloudlinux-x86_64-server-8/$basearch/os/
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+name = CloudLinux 8.6
+
+# cloudlinux-PowerTools repo was added in 8.5 for compatibility reasons.
+# Third-party install scripts may pass --enablerepo=cloudlinux-PowerTools
+# to dnf and without this repo a error will occur
+
+[cloudlinux-PowerTools]
+name=AlmaLinux 8.6 - PowerTools
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/8.6/powertools
+# baseurl=https://repo.almalinux.org/almalinux/8.6/PowerTools/$basearch/os/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+
+[cloudlinux-x86_64-server-8-source]
+name = CloudLinux 8.6 - Source
+baseurl = https://koji.cloudlinux.com/cloudlinux/8.6/cloudlinux-x86_64-server-8/Source/
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+
+[cloudlinux-x86_64-server-8-debuginfo]
+name = CloudLinux 8.6 - debuginfo
+baseurl = https://koji.cloudlinux.com/cloudlinux/8.6/cloudlinux-x86_64-server-8/debug/$basearch/
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
