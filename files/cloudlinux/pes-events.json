@@ -80534,39 +80534,6 @@
         "x86_64",
         "aarch64"
       ],
-      "id": 2134,
-      "in_packageset": {
-        "package": [
-          {
-            "module_stream": null,
-            "name": "GeoIP",
-            "repository": "base"
-          }
-        ],
-        "set_id": 3875
-      },
-      "initial_release": {
-        "major_version": 7,
-        "minor_version": 6,
-        "os_name": "CentOS"
-      },
-      "is_approved": true,
-      "out_packageset": {
-        "package": [],
-        "set_id": 0
-      },
-      "release": {
-        "major_version": 8,
-        "minor_version": 0,
-        "os_name": "AlmaLinux"
-      }
-    },
-    {
-      "action": 1,
-      "arches": [
-        "x86_64",
-        "aarch64"
-      ],
       "id": 2135,
       "in_packageset": {
         "package": [
