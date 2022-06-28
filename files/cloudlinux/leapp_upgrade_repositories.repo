@@ -1,3 +1,5 @@
+# AlmaLinux repositories.
+
 [almalinux8-baseos]
 name=AlmaLinux 8 - BaseOS
 mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/baseos
@@ -46,6 +48,8 @@ enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
 
+# Main CL repository used during migration.
+
 [cl]
 async = 1
 baseurl = https://koji.cloudlinux.com/cloudlinux/8.6/cloudlinux-x86_64-server-8/$basearch/os/
@@ -53,6 +57,31 @@ enabled = 1
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
 name = CloudLinux 8.6
+
+# Imunify360-related repositories. Some don't have a related package present.
+
+[cloudlinux-imunify360]
+name=CloudLinux-$releasever - Imunify360 Testing
+baseurl=https://repo.imunify360.cloudlinux.com/defense360/el/$releasever/updates/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+
+[cloudlinux-imunify360-testing]
+name=CloudLinux-$releasever - Imunify360
+baseurl=https://repo.imunify360.cloudlinux.com/defense360/el/$releasever/updates-testing/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+
+# KernelCare repository.
+
+[kernelcare]
+name=kernelcare
+baseurl=https://repo.cloudlinux.com/kernelcare/$releasever/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://repo.cloudlinux.com/kernelcare/RPM-GPG-KEY-KernelCare
 
 # cloudlinux-PowerTools repo was added in 8.5 for compatibility reasons.
 # Third-party install scripts may pass --enablerepo=cloudlinux-PowerTools
@@ -65,6 +94,8 @@ mirrorlist=https://mirrors.almalinux.org/mirrorlist/8.6/powertools
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+
+# CL8 auxillary server repositories.
 
 [cloudlinux-x86_64-server-8-source]
 name = CloudLinux 8.6 - Source

@@ -82172,39 +82172,6 @@
       }
     },
     {
-      "action": 1,
-      "arches": [
-        "x86_64",
-        "aarch64"
-      ],
-      "id": 2189,
-      "in_packageset": {
-        "package": [
-          {
-            "module_stream": null,
-            "name": "libssh2",
-            "repository": "almalinux8-appstream"
-          }
-        ],
-        "set_id": 3932
-      },
-      "initial_release": {
-        "major_version": 8,
-        "minor_version": 0,
-        "os_name": "CentOS"
-      },
-      "is_approved": true,
-      "out_packageset": {
-        "package": [],
-        "set_id": 0
-      },
-      "release": {
-        "major_version": 8,
-        "minor_version": 1,
-        "os_name": "AlmaLinux"
-      }
-    },
-    {
       "action": 0,
       "arches": [
         "x86_64",
