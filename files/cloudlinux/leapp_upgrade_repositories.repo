@@ -62,14 +62,14 @@ name = CloudLinux 8.6
 
 [cloudlinux-imunify360-8]
 name=CloudLinux-$releasever - Imunify360 Testing
-baseurl=https://repo.imunify360.cloudlinux.com/defense360/el/$releasever/updates/$basearch/
+baseurl=https://repo.imunify360.cloudlinux.com/defense360/el/8/updates/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
 
 [cloudlinux-imunify360-8-testing]
 name=CloudLinux-$releasever - Imunify360
-baseurl=https://repo.imunify360.cloudlinux.com/defense360/el/$releasever/updates-testing/$basearch/
+baseurl=https://repo.imunify360.cloudlinux.com/defense360/el/8/updates-testing/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
