@@ -1,4 +1,4 @@
-CentOS 7 repoid,AlmaLinux 8 repoid in custom repo file,AlmaLinux 8 repo name in PES,CentOS 7 minor versions,AlmaLinux 8 minor versions,architecture,type(rpm/srpm/debuginfo),source product type (ga/beta,htb),target product type (ga/beta/htb)
+CentOS 7 repoid,CloudLinux 8 repoid in custom repo file,CloudLinux 8 repo name in PES,CentOS 7 minor versions,CloudLinux 8 minor versions,architecture,type(rpm/srpm/debuginfo),source product type (ga/beta,htb),target product type (ga/beta/htb)
 
 # Version: 1
 # Date: 20210726
@@ -6,6 +6,10 @@ CentOS 7 repoid,AlmaLinux 8 repoid in custom repo file,AlmaLinux 8 repo name in 
 # x86_64
 cloudlinux-x86_64-server-7-source,cloudlinux-x86_64-server-8-source,cloudlinux-x86_64-server-7-source,all,all,x86_64,rpm,ga,ga
 cloudlinux-x86_64-server-7-debuginfo,cloudlinux-x86_64-server-8-debuginfo,cloudlinux-x86_64-server-8-debuginfo,all,all,x86_64,rpm,ga,ga
+
+cloudlinux-imunify360,cloudlinux-imunify360-8,cloudlinux-imunify360-8,all,all,x86_64,rpm,ga,ga
+cloudlinux-imunify360-testing,cloudlinux-imunify360-8-testing,cloudlinux-imunify360-8-testing,all,all,x86_64,rpm,ga,ga
+kernelcare,kernelcare-8,kernelcare-8,all,all,x86_64,rpm,ga,ga
 
 base,almalinux8-baseos,almalinux8-baseos,all,all,x86_64,rpm,ga,ga
 base,almalinux8-appstream,almalinux8-appstream,all,all,x86_64,rpm,ga,ga

@@ -60,14 +60,14 @@ name = CloudLinux 8.6
 
 # Imunify360-related repositories. Some don't have a related package present.
 
-[cloudlinux-imunify360]
+[cloudlinux-imunify360-8]
 name=CloudLinux-$releasever - Imunify360 Testing
 baseurl=https://repo.imunify360.cloudlinux.com/defense360/el/$releasever/updates/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
 
-[cloudlinux-imunify360-testing]
+[cloudlinux-imunify360-8-testing]
 name=CloudLinux-$releasever - Imunify360
 baseurl=https://repo.imunify360.cloudlinux.com/defense360/el/$releasever/updates-testing/$basearch/
 enabled=1
@@ -76,9 +76,9 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
 
 # KernelCare repository.
 
-[kernelcare]
+[kernelcare-8]
 name=kernelcare
-baseurl=https://repo.cloudlinux.com/kernelcare/$releasever/$basearch
+baseurl=https://repo.cloudlinux.com/kernelcare/8/$basearch
 enabled=1
 gpgcheck=1
 gpgkey=https://repo.cloudlinux.com/kernelcare/RPM-GPG-KEY-KernelCare
