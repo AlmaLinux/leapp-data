@@ -58,18 +58,18 @@ gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
 name = CloudLinux 8.6
 
-[cloudlinux-updates-testing]
-name=CloudLinux $releasever - Updates Testing
-baseurl=https://repo.cloudlinux.com/cloudlinux/$releasever/updates-testing/$basearch/
+[cloudlinux-updates-8-testing]
+name=CloudLinux 8 - Updates Testing
+baseurl=https://repo.cloudlinux.com/cloudlinux/8/updates-testing/$basearch/
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
 
 # CL rollout repositories.
 
-[cloudlinux-rollout-1]
-name=CloudLinux-$releasever - Gradual Rollout Slot 1
-baseurl=https://rollout.cloudlinux.com/slot-1/$releasever/$basearch/
+[cloudlinux-8-rollout-1]
+name=CloudLinux-8 - Gradual Rollout Slot 1
+baseurl=https://rollout.cloudlinux.com/slot-1/8/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
@@ -79,9 +79,9 @@ sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
 sslverify=0
 skip_if_unavailable=True
 
-[cloudlinux-rollout-2]
-name=CloudLinux-$releasever - Gradual Rollout Slot 2
-baseurl=https://rollout.cloudlinux.com/slot-2/$releasever/$basearch/
+[cloudlinux-8-rollout-2]
+name=CloudLinux-8 - Gradual Rollout Slot 2
+baseurl=https://rollout.cloudlinux.com/slot-2/8/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
@@ -91,9 +91,9 @@ sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
 sslverify=0
 skip_if_unavailable=True
 
-[cloudlinux-rollout-3]
-name=CloudLinux-$releasever - Gradual Rollout Slot 3
-baseurl=https://rollout.cloudlinux.com/slot-3/$releasever/$basearch/
+[cloudlinux-8-rollout-3]
+name=CloudLinux-8 - Gradual Rollout Slot 3
+baseurl=https://rollout.cloudlinux.com/slot-3/8/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
@@ -103,21 +103,9 @@ sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
 sslverify=0
 skip_if_unavailable=True
 
-[cloudlinux-rollout-3-source]
-name=CloudLinux-$releasever - Gradual Rollout Slot 3 Source
-baseurl=https://rollout.cloudlinux.com/slot-3/$releasever/Sources/
-enabled=0
-gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
-sslcacert=/etc/sysconfig/rhn/cl-rollout-ca.pem
-sslclientcert=/etc/sysconfig/rhn/cl-rollout.pem
-sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
-sslverify=0
-skip_if_unavailable=True
-
-[cloudlinux-rollout-4]
-name=CloudLinux-$releasever - Gradual Rollout Slot 4
-baseurl=https://rollout.cloudlinux.com/slot-4/$releasever/$basearch/
+[cloudlinux-8-rollout-4]
+name=CloudLinux-8 - Gradual Rollout Slot 4
+baseurl=https://rollout.cloudlinux.com/slot-4/8/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
@@ -127,9 +115,9 @@ sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
 sslverify=0
 skip_if_unavailable=True
 
-[cloudlinux-rollout-5]
-name=CloudLinux-$releasever - Gradual Rollout Slot 5
-baseurl=https://rollout.cloudlinux.com/slot-5/$releasever/$basearch/
+[cloudlinux-8-rollout-5]
+name=CloudLinux-8 - Gradual Rollout Slot 5
+baseurl=https://rollout.cloudlinux.com/slot-5/8/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
@@ -139,9 +127,9 @@ sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
 sslverify=0
 skip_if_unavailable=True
 
-[cloudlinux-rollout-6]
-name=CloudLinux-$releasever - Gradual Rollout Slot 6
-baseurl=https://rollout.cloudlinux.com/slot-6/$releasever/$basearch/
+[cloudlinux-8-rollout-6]
+name=CloudLinux-8 - Gradual Rollout Slot 6
+baseurl=https://rollout.cloudlinux.com/slot-6/8/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
@@ -151,9 +139,9 @@ sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
 sslverify=0
 skip_if_unavailable=True
 
-[cloudlinux-rollout-7]
-name=CloudLinux-$releasever - Gradual Rollout Slot 7
-baseurl=https://rollout.cloudlinux.com/slot-7/$releasever/$basearch/
+[cloudlinux-8-rollout-7]
+name=CloudLinux-8 - Gradual Rollout Slot 7
+baseurl=https://rollout.cloudlinux.com/slot-7/8/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
@@ -163,9 +151,9 @@ sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
 sslverify=0
 skip_if_unavailable=True
 
-[cloudlinux-rollout-8]
-name=CloudLinux-$releasever - Gradual Rollout Slot 8
-baseurl=https://rollout.cloudlinux.com/slot-8/$releasever/$basearch/
+[cloudlinux-8-rollout-8]
+name=CloudLinux-8 - Gradual Rollout Slot 8
+baseurl=https://rollout.cloudlinux.com/slot-8/8/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
@@ -175,9 +163,9 @@ sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
 sslverify=0
 skip_if_unavailable=True
 
-[cloudlinux-rollout-9]
-name=CloudLinux-$releasever - Gradual Rollout Slot 9
-baseurl=https://rollout.cloudlinux.com/slot-9/$releasever/$basearch/
+[cloudlinux-8-rollout-9]
+name=CloudLinux-8 - Gradual Rollout Slot 9
+baseurl=https://rollout.cloudlinux.com/slot-9/8/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
@@ -187,9 +175,9 @@ sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
 sslverify=0
 skip_if_unavailable=True
 
-[cloudlinux-rollout-10]
-name=CloudLinux-$releasever - Gradual Rollout Slot 10
-baseurl=https://rollout.cloudlinux.com/slot-10/$releasever/$basearch/
+[cloudlinux-8-rollout-10]
+name=CloudLinux-8 - Gradual Rollout Slot 10
+baseurl=https://rollout.cloudlinux.com/slot-10/8/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
