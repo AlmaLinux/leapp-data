@@ -48,7 +48,7 @@ enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
 
-# Main CL repository used during migration.
+# CL repositories used during migration.
 
 [cl]
 async = 1
@@ -58,19 +58,160 @@ gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
 name = CloudLinux 8.6
 
-# Imunify360-related repositories. Some don't have a related package present.
+[cloudlinux-updates-testing]
+name=CloudLinux $releasever - Updates Testing
+baseurl=https://repo.cloudlinux.com/cloudlinux/$releasever/updates-testing/$basearch/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+
+# CL rollout repositories.
+
+[cloudlinux-rollout-1]
+name=CloudLinux-$releasever - Gradual Rollout Slot 1
+baseurl=https://rollout.cloudlinux.com/slot-1/$releasever/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+sslcacert=/etc/sysconfig/rhn/cl-rollout-ca.pem
+sslclientcert=/etc/sysconfig/rhn/cl-rollout.pem
+sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
+sslverify=0
+skip_if_unavailable=True
+
+[cloudlinux-rollout-2]
+name=CloudLinux-$releasever - Gradual Rollout Slot 2
+baseurl=https://rollout.cloudlinux.com/slot-2/$releasever/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+sslcacert=/etc/sysconfig/rhn/cl-rollout-ca.pem
+sslclientcert=/etc/sysconfig/rhn/cl-rollout.pem
+sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
+sslverify=0
+skip_if_unavailable=True
+
+[cloudlinux-rollout-3]
+name=CloudLinux-$releasever - Gradual Rollout Slot 3
+baseurl=https://rollout.cloudlinux.com/slot-3/$releasever/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+sslcacert=/etc/sysconfig/rhn/cl-rollout-ca.pem
+sslclientcert=/etc/sysconfig/rhn/cl-rollout.pem
+sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
+sslverify=0
+skip_if_unavailable=True
+
+[cloudlinux-rollout-3-source]
+name=CloudLinux-$releasever - Gradual Rollout Slot 3 Source
+baseurl=https://rollout.cloudlinux.com/slot-3/$releasever/Sources/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+sslcacert=/etc/sysconfig/rhn/cl-rollout-ca.pem
+sslclientcert=/etc/sysconfig/rhn/cl-rollout.pem
+sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
+sslverify=0
+skip_if_unavailable=True
+
+[cloudlinux-rollout-4]
+name=CloudLinux-$releasever - Gradual Rollout Slot 4
+baseurl=https://rollout.cloudlinux.com/slot-4/$releasever/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+sslcacert=/etc/sysconfig/rhn/cl-rollout-ca.pem
+sslclientcert=/etc/sysconfig/rhn/cl-rollout.pem
+sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
+sslverify=0
+skip_if_unavailable=True
+
+[cloudlinux-rollout-5]
+name=CloudLinux-$releasever - Gradual Rollout Slot 5
+baseurl=https://rollout.cloudlinux.com/slot-5/$releasever/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+sslcacert=/etc/sysconfig/rhn/cl-rollout-ca.pem
+sslclientcert=/etc/sysconfig/rhn/cl-rollout.pem
+sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
+sslverify=0
+skip_if_unavailable=True
+
+[cloudlinux-rollout-6]
+name=CloudLinux-$releasever - Gradual Rollout Slot 6
+baseurl=https://rollout.cloudlinux.com/slot-6/$releasever/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+sslcacert=/etc/sysconfig/rhn/cl-rollout-ca.pem
+sslclientcert=/etc/sysconfig/rhn/cl-rollout.pem
+sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
+sslverify=0
+skip_if_unavailable=True
+
+[cloudlinux-rollout-7]
+name=CloudLinux-$releasever - Gradual Rollout Slot 7
+baseurl=https://rollout.cloudlinux.com/slot-7/$releasever/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+sslcacert=/etc/sysconfig/rhn/cl-rollout-ca.pem
+sslclientcert=/etc/sysconfig/rhn/cl-rollout.pem
+sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
+sslverify=0
+skip_if_unavailable=True
+
+[cloudlinux-rollout-8]
+name=CloudLinux-$releasever - Gradual Rollout Slot 8
+baseurl=https://rollout.cloudlinux.com/slot-8/$releasever/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+sslcacert=/etc/sysconfig/rhn/cl-rollout-ca.pem
+sslclientcert=/etc/sysconfig/rhn/cl-rollout.pem
+sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
+sslverify=0
+skip_if_unavailable=True
+
+[cloudlinux-rollout-9]
+name=CloudLinux-$releasever - Gradual Rollout Slot 9
+baseurl=https://rollout.cloudlinux.com/slot-9/$releasever/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+sslcacert=/etc/sysconfig/rhn/cl-rollout-ca.pem
+sslclientcert=/etc/sysconfig/rhn/cl-rollout.pem
+sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
+sslverify=0
+skip_if_unavailable=True
+
+[cloudlinux-rollout-10]
+name=CloudLinux-$releasever - Gradual Rollout Slot 10
+baseurl=https://rollout.cloudlinux.com/slot-10/$releasever/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+sslcacert=/etc/sysconfig/rhn/cl-rollout-ca.pem
+sslclientcert=/etc/sysconfig/rhn/cl-rollout.pem
+sslclientkey=/etc/sysconfig/rhn/cl-rollout-key.pem
+sslverify=0
+skip_if_unavailable=True
+
+# Imunify360-related repositories.
 
 [cloudlinux-imunify360-8]
-name=CloudLinux-$releasever - Imunify360 Testing
+name=CloudLinux-$releasever - Imunify360
 baseurl=https://repo.imunify360.cloudlinux.com/defense360/el/8/updates/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
 
 [cloudlinux-imunify360-8-testing]
-name=CloudLinux-$releasever - Imunify360
+name=CloudLinux-$releasever - Imunify360 Testing
 baseurl=https://repo.imunify360.cloudlinux.com/defense360/el/8/updates-testing/$basearch/
-enabled=1
+enabled=0
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
 
@@ -94,19 +235,3 @@ mirrorlist=https://mirrors.almalinux.org/mirrorlist/8.6/powertools
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
-
-# CL8 auxillary server repositories.
-
-[cloudlinux-x86_64-server-8-source]
-name = CloudLinux 8.6 - Source
-baseurl = https://koji.cloudlinux.com/cloudlinux/8.6/cloudlinux-x86_64-server-8/Source/
-enabled = 1
-gpgcheck = 1
-gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
-
-[cloudlinux-x86_64-server-8-debuginfo]
-name = CloudLinux 8.6 - debuginfo
-baseurl = https://koji.cloudlinux.com/cloudlinux/8.6/cloudlinux-x86_64-server-8/debug/$basearch/
-enabled = 1
-gpgcheck = 1
-gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
