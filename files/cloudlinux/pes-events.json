@@ -82569,35 +82569,6 @@
       }
     },
     {
-      "action": 0,
-      "arches": [
-        "x86_64",
-        "aarch64"
-      ],
-      "id": 2208,
-      "in_packageset": {
-        "package": [
-          {
-            "module_stream": null,
-            "name": "NetworkManager-libnm",
-            "repository": "almalinux8-baseos"
-          }
-        ],
-        "set_id": 3958
-      },
-      "initial_release": null,
-      "is_approved": true,
-      "out_packageset": {
-        "package": [],
-        "set_id": 0
-      },
-      "release": {
-        "major_version": 8,
-        "minor_version": 0,
-        "os_name": "AlmaLinux"
-      }
-    },
-    {
       "action": 1,
       "arches": [
         "x86_64",
