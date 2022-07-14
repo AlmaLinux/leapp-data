@@ -82681,8 +82681,8 @@
         "set_id": 3975
       },
       "initial_release": {
-        "major_version": 8,
-        "minor_version": 0,
+        "major_version": 7,
+        "minor_version": 7,
         "os_name": "CentOS"
       },
       "is_approved": true,
