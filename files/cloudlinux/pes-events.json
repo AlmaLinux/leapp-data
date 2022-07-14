@@ -82633,6 +82633,39 @@
         "minor_version": 1,
         "os_name": "AlmaLinux"
       }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 2218,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "yum-plugin-fastestmirror",
+            "repository": "base"
+          }
+        ],
+        "set_id": 3975
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {
+        "package": [],
+        "set_id": 0
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 1,
+        "os_name": "AlmaLinux"
+      }
     }
   ],
   "timestamp": "202108240941Z"
