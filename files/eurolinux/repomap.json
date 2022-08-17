@@ -1,0 +1,136 @@
+{
+    "datetime": "202204020934Z",
+    "version_format": "1.0.0",
+    "mapping": [
+        {
+            "source_major_version": "7",
+            "target_major_version": "8",
+            "entries": [
+                {
+                    "source": "base",
+                    "target": [
+                        "certify-baseos",
+                        "certify-appstream",
+                        "certify-powertools",
+                        "high-availability",
+                        "resilient-storage"
+                    ]
+                },
+                {
+                    "source": "updates",
+                    "target": [
+                        "certify-baseos",
+                        "certify-appstream",
+                        "certify-powertools",
+                        "high-availability",
+                        "resilient-storage"
+                    ]
+                },
+                {
+                    "source": "extras",
+                    "target": [
+                        "certify-baseos"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "base",
+            "entries": [
+                {
+                    "arch": "x86_64",
+                    "repo_type": "rpm",
+                    "repoid": "base",
+                    "major_version": "7",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "certify-baseos",
+            "entries": [
+                {
+                    "arch": "x86_64",
+                    "repo_type": "rpm",
+                    "repoid": "certify-baseos",
+                    "channel": "ga",
+                    "major_version": "8"
+                }
+            ]
+        },
+        {
+            "pesid": "certify-appstream",
+            "entries": [
+                {
+                    "arch": "x86_64",
+                    "repo_type": "rpm",
+                    "repoid": "certify-appstream",
+                    "channel": "ga",
+                    "major_version": "8"
+                }
+            ]
+        },
+        {
+            "pesid": "certify-powertools",
+            "entries": [
+                {
+                    "arch": "x86_64",
+                    "repo_type": "rpm",
+                    "repoid": "certify-powertools",
+                    "channel": "ga",
+                    "major_version": "8"
+                }
+            ]
+        },
+        {
+            "pesid": "high-availability",
+            "entries": [
+                {
+                    "arch": "x86_64",
+                    "repo_type": "rpm",
+                    "repoid": "high-availability",
+                    "channel": "ga",
+                    "major_version": "8"
+                }
+            ]
+        },
+        {
+            "pesid": "resilient-storage",
+            "entries": [
+                {
+                    "arch": "x86_64",
+                    "repoid": "resilient-storage",
+                    "repo_type": "rpm",
+                    "channel": "ga",
+                    "major_version": "8"
+                }
+            ]
+        },
+        {
+            "pesid": "updates",
+            "entries": [
+                {
+                    "arch": "x86_64",
+                    "repoid": "updates",
+                    "repo_type": "rpm",
+                    "major_version": "7",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "extras",
+            "entries": [
+                {
+                    "arch": "x86_64",
+                    "repo_type": "rpm",
+                    "major_version": "7",
+                    "repoid": "extras",
+                    "channel": "ga"
+                }
+            ]
+        }
+    ]
+}
