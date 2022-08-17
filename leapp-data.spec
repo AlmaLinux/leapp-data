@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.1
-Release:	5%{?dist}
+Release:	6%{?dist}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -35,6 +35,9 @@ install -t %{buildroot}%{_sysconfdir}/leapp/files files/%{dist_name}/*
 
 
 %changelog
+* Wed Aug 17 2022 Andrew Lukoshko <alukoshko@almalinux.org> - 0.1-6
+- added repomap.json file for all distributions
+
 * Thu Mar 24 2022 Tomasz Podsiadły <tp@euro-linux.com> - 0.1-5
 - Add EuroLinux to supported distributions
 
