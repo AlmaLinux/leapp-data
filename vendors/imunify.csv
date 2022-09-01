@@ -1,0 +1,5 @@
+Source system repoid,Target system repoid in custom repo file,Target system repo name in PES,Source system minor versions,Target system minor versions,architecture,type (rpm/srpm/debuginfo),source product type (ga/beta,htb),target product type (ga/beta/htb)
+
+imunify360,cloudlinux8-imunify360,cloudlinux8-imunify360,all,all,x86_64,rpm,ga,ga
+cloudlinux-imunify360,cloudlinux8-imunify360,cloudlinux8-imunify360,all,all,x86_64,rpm,ga,ga
+cloudlinux-imunify360-testing,cloudlinux8-imunify360-testing,cloudlinux8-imunify360-testing,all,all,x86_64,rpm,beta,beta

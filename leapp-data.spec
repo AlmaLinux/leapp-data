@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.1
-Release:	6%{?dist}
+Release:	7%{?dist}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -25,8 +25,9 @@ Conflicts: %{conflict_dists}
 
 
 %install
-mkdir -p %{buildroot}%{_sysconfdir}/leapp/files
+mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 install -t %{buildroot}%{_sysconfdir}/leapp/files files/%{dist_name}/*
+install -t %{buildroot}%{_sysconfdir}/leapp/files/vendors.d vendors/*
 
 
 %files
@@ -35,6 +36,9 @@ install -t %{buildroot}%{_sysconfdir}/leapp/files files/%{dist_name}/*
 
 
 %changelog
+* Thu Sep 1 2022 Roman Prilipskii <rprilpskii@cloudlinux.com> - 0.1-7
+- made third-party files accessible for all supported distributions
+
 * Wed Aug 17 2022 Andrew Lukoshko <alukoshko@almalinux.org> - 0.1-6
 - added repomap.json file for all distributions
 
