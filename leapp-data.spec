@@ -27,7 +27,7 @@ Conflicts: %{conflict_dists}
 %install
 mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 install -t %{buildroot}%{_sysconfdir}/leapp/files files/%{dist_name}/*
-install -t %{buildroot}%{_sysconfdir}/leapp/files/vendors.d vendors/*
+install -t %{buildroot}%{_sysconfdir}/leapp/files/vendors.d vendors.d/*
 
 
 %files
