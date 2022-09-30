@@ -2,8 +2,8 @@
 %define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 Name:		leapp-data-%{dist_name}
-Version:	0.1
-Release:	7%{?dist}
+Version:	0.2
+Release:	1%{?dist}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -29,6 +29,17 @@ mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 install -t %{buildroot}%{_sysconfdir}/leapp/files files/%{dist_name}/*
 install -t %{buildroot}%{_sysconfdir}/leapp/files/vendors.d vendors.d/*
 
+%if 0%{?rhel} == 7
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
+      %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
+rm -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9
+%endif
+%if 0%{?rhel} == 8
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9 \
+      %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
+rm -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8
+%endif
+
 
 %files
 %doc LICENSE NOTICE README.md
@@ -36,6 +47,9 @@ install -t %{buildroot}%{_sysconfdir}/leapp/files/vendors.d vendors.d/*
 
 
 %changelog
+* Fri Sep 30 2022 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-1
+- Add 8 to 9 migration support for AlmaLinux
+
 * Thu Sep 1 2022 Roman Prilipskii <rprilpskii@cloudlinux.com> - 0.1-7
 - made third-party files accessible for all supported distributions
 
