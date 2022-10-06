@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -32,12 +32,16 @@ install -t %{buildroot}%{_sysconfdir}/leapp/files/vendors.d vendors.d/*
 %if 0%{?rhel} == 7
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
       %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
-rm -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el8 \
+      %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
+rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el9
 %endif
 %if 0%{?rhel} == 8
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9 \
       %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
-rm -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el9 \
+      %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
+rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 %endif
 
 
@@ -47,6 +51,9 @@ rm -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8
 
 
 %changelog
+* Fri Sep 30 2022 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-2
+- Split repomap.json
+
 * Fri Sep 30 2022 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-1
 - Add 8 to 9 migration support for AlmaLinux
 
