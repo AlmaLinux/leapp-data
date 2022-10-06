@@ -46,22 +46,6 @@ mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el9 \
 rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 %endif
 
-%if 0%{?rhel} == 7
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
-      %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el8 \
-      %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
-rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el9
-%endif
-%if 0%{?rhel} == 8
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9 \
-      %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el9 \
-      %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
-rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
-%endif
-
-
 %files
 %doc LICENSE NOTICE README.md
 %{_sysconfdir}/leapp/files/*
