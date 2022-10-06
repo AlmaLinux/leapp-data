@@ -27,7 +27,24 @@ Conflicts: %{conflict_dists}
 %install
 mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 install -t %{buildroot}%{_sysconfdir}/leapp/files files/%{dist_name}/*
+%if 0%{?rhel} < 8
 install -t %{buildroot}%{_sysconfdir}/leapp/files/vendors.d vendors.d/*
+%endif
+
+%if 0%{?rhel} == 7
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
+      %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el8 \
+      %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
+rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el9
+%endif
+%if 0%{?rhel} == 8
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9 \
+      %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el9 \
+      %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
+rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
+%endif
 
 %if 0%{?rhel} == 7
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
