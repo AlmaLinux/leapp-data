@@ -4,16 +4,16 @@ CentOS 7 repoid,AlmaLinux 8 repoid in custom repo file,AlmaLinux 8 repo name in 
 # Date: 20210726
 
 # x86_64
-base,almalinux8-baseos,almalinux8-baseos,all,all,x86_64,rpm,ga,ga
-base,almalinux8-appstream,almalinux8-appstream,all,all,x86_64,rpm,ga,ga
-base,almalinux8-powertools,almalinux8-powertools,all,all,x86_64,rpm,ga,ga
-base,almalinux8-ha,almalinux8-ha,all,all,x86_64,rpm,ga,ga
-base,almalinux8-resilientstorage,almalinux8-resilientstorage,all,all,x86_64,rpm,ga,ga
+base,baseos,almalinux8-baseos,all,all,x86_64,rpm,ga,ga
+base,appstream,almalinux8-appstream,all,all,x86_64,rpm,ga,ga
+base,powertools,almalinux8-powertools,all,all,x86_64,rpm,ga,ga
+base,ha,almalinux8-ha,all,all,x86_64,rpm,ga,ga
+base,resilientstorage,almalinux8-resilientstorage,all,all,x86_64,rpm,ga,ga
 
-updates,almalinux8-baseos,almalinux8-baseos,all,all,x86_64,rpm,ga,ga
-updates,almalinux8-appstream,almalinux8-appstream,all,all,x86_64,rpm,ga,ga
-updates,almalinux8-powertools,almalinux8-powertools,all,all,x86_64,rpm,ga,ga
-updates,almalinux8-ha,almalinux8-ha,all,all,x86_64,rpm,ga,ga
-updates,almalinux8-resilientstorage,almalinux8-resilientstorage,all,all,x86_64,rpm,ga,ga
+updates,baseos,almalinux8-baseos,all,all,x86_64,rpm,ga,ga
+updates,appstream,almalinux8-appstream,all,all,x86_64,rpm,ga,ga
+updates,powertools,almalinux8-powertools,all,all,x86_64,rpm,ga,ga
+updates,ha,almalinux8-ha,all,all,x86_64,rpm,ga,ga
+updates,resilientstorage,almalinux8-resilientstorage,all,all,x86_64,rpm,ga,ga
 
-extras,almalinux8-extras,almalinux8-extras,all,all,x86_64,rpm,ga,ga
+extras,extras,almalinux8-extras,all,all,x86_64,rpm,ga,ga

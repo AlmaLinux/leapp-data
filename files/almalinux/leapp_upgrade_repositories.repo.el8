@@ -22,7 +22,7 @@ enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
 
-[almalinux8-highavailability]
+[almalinux8-ha]
 name=AlmaLinux 8 - HighAvailability
 mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/ha
 # baseurl=https://repo.almalinux.org/almalinux/8/HighAvailability/$basearch/os/
