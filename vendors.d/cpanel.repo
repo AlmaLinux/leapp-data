@@ -13,11 +13,3 @@ gpgcheck=1
 gpgkey=https://securedownloads.cpanel.net/cPanelPublicPkgKey.asc
 enabled=1
 cost=50
-
-[EA4-8]
-name=EA4 (EasyApache 4)
-mirrorlist=http://httpupdate.cpanel.net/ea4-c8-x86_64-mirrorlist
-gpgcheck=1
-gpgkey=https://securedownloads.cpanel.net/cPanelPublicPkgKey.asc
-enabled=1
-cost=50

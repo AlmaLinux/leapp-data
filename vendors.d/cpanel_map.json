@@ -13,10 +13,6 @@
                 {
                     "source": "cpanel-addons-production-feed",
                     "target": ["cpanel-addons-8"]
-                },
-                {
-                    "source": "EA4",
-                    "target": ["EA4-8"]
                 }
             ]
         }
@@ -47,18 +43,6 @@
             ]
         },
         {
-            "pesid": "EA4",
-            "entries": [
-                {
-                    "repoid": "EA4",
-                    "major_version": "7",
-                    "repo_type": "rpm",
-                    "arch": "x86_64",
-                    "channel": "ga"
-                }
-            ]
-        },
-        {
             "pesid": "cpanel-plugins-8",
             "entries": [
                 {
@@ -75,18 +59,6 @@
             "entries": [
                 {
                     "repoid": "cpanel-addons-8",
-                    "major_version": "8",
-                    "repo_type": "rpm",
-                    "arch": "x86_64",
-                    "channel": "ga"
-                }
-            ]
-        },
-        {
-            "pesid": "EA4-8",
-            "entries": [
-                {
-                    "repoid": "EA4-8",
                     "major_version": "8",
                     "repo_type": "rpm",
                     "arch": "x86_64",
