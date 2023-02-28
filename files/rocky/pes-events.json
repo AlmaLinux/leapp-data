@@ -70901,11 +70901,6 @@
           },
           {
             "module_stream": null,
-            "name": "kernel-uek",
-            "repository": "ol8-uek"
-          },
-          {
-            "module_stream": null,
             "name": "kernel-core",
             "repository": "rocky8-baseos"
           },

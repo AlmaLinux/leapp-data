@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.1
-Release:	6%{?dist}
+Release:	7%{?dist}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -35,6 +35,10 @@ install -t %{buildroot}%{_sysconfdir}/leapp/files files/%{dist_name}/*
 
 
 %changelog
+* Tue Feb 28 2023 Andrew Lukoshko <alukoshko@almalinux.org> - 0.1-7
+- fix typo in oraclelinux PES data
+- remove kernel-uek from all PES data except oraclelinux
+
 * Wed Aug 17 2022 Andrew Lukoshko <alukoshko@almalinux.org> - 0.1-6
 - added repomap.json file for all distributions
 

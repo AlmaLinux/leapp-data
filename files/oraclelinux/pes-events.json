@@ -81024,7 +81024,7 @@
           {
             "module_stream": null,
             "name": "oraclelinux-release-el8",
-            "repository": "ol8-BaseOS"
+            "repository": "ol8-baseos"
           }
         ],
         "set_id": 3891
