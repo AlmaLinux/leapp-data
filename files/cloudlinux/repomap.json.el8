@@ -154,7 +154,7 @@
                     "major_version": "7",
                     "repo_type": "rpm",
                     "arch": "x86_64",
-                    "channel": "ga"
+                    "channel": "beta"
                 }
             ]
         },
