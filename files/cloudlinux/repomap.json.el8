@@ -47,19 +47,18 @@
                     "target": ["almalinux8-extras"]
                 },
                 {
-                    "source": "cl-ea4",
+                    "source": "cloudlinux-extras",
                     "target": [
-                        "cl8-ea4"
+                        "cloudlinux8-baseos",
+                        "cloudlinux8-appstream",
+                        "cloudlinux8-powertools",
+                        "almalinux8-extras"
                     ]
                 },
                 {
-                    "source": "cloudlinux-updates-testing",
-                    "target": ["cloudlinux8-updates-testing"]
-                },
-                {
-                    "source": "cl-ea4-testing",
+                    "source": "cl-ea4",
                     "target": [
-                        "cl8-ea4-testing"
+                        "cl8-ea4"
                     ]
                 }
             ]
@@ -127,30 +126,6 @@
             ]
         },
         {
-            "pesid": "cloudlinux-updates-testing",
-            "entries": [
-                {
-                    "repoid": "cloudlinux-updates-testing",
-                    "major_version": "7",
-                    "repo_type": "rpm",
-                    "arch": "x86_64",
-                    "channel": "beta"
-                }
-            ]
-        },
-        {
-            "pesid": "cloudlinux8-updates-testing",
-            "entries": [
-                {
-                    "repoid": "cloudlinux8-updates-testing",
-                    "major_version": "8",
-                    "repo_type": "rpm",
-                    "arch": "x86_64",
-                    "channel": "beta"
-                }
-            ]
-        },
-        {
             "pesid": "cl-ea4",
             "entries": [
                 {
@@ -171,30 +146,6 @@
                     "repo_type": "rpm",
                     "arch": "x86_64",
                     "channel": "ga"
-                }
-            ]
-        },
-        {
-            "pesid": "cl-ea4-testing",
-            "entries": [
-                {
-                    "repoid": "cl-ea4-testing",
-                    "major_version": "7",
-                    "repo_type": "rpm",
-                    "arch": "x86_64",
-                    "channel": "beta"
-                }
-            ]
-        },
-        {
-            "pesid": "cl8-ea4-testing",
-            "entries": [
-                {
-                    "repoid": "cl8-ea4-testing",
-                    "major_version": "8",
-                    "repo_type": "rpm",
-                    "arch": "x86_64",
-                    "channel": "beta"
                 }
             ]
         },
