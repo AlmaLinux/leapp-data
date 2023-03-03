@@ -45,6 +45,21 @@
                 {
                     "source": "extras",
                     "target": ["almalinux8-extras"]
+                },
+                {
+                    "source": "cloudlinux-extras",
+                    "target": [
+                        "cloudlinux8-baseos",
+                        "cloudlinux8-appstream",
+                        "cloudlinux8-powertools",
+                        "almalinux8-extras"
+                    ]
+                },
+                {
+                    "source": "cl-ea4",
+                    "target": [
+                        "cl8-ea4"
+                    ]
                 }
             ]
         }
@@ -103,6 +118,30 @@
             "entries": [
                 {
                     "repoid": "cloudlinux8-powertools",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "cl-ea4",
+            "entries": [
+                {
+                    "repoid": "cl-ea4",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "cl8-ea4",
+            "entries": [
+                {
+                    "repoid": "cl8-ea4",
                     "major_version": "8",
                     "repo_type": "rpm",
                     "arch": "x86_64",

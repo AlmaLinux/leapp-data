@@ -71,6 +71,13 @@ enabled=1
 gpgcheck=1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
 
+[cl8-ea4]
+name=CloudLinux 8 EasyApache4
+baseurl=https://repo.cloudlinux.com/cloudlinux/EA4/8/updates/$basearch/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+
 # cloudlinux-PowerTools repo was added in 8.5 for compatibility reasons.
 # Third-party install scripts may pass --enablerepo=cloudlinux-PowerTools
 # to dnf and without this repo a error will occur
