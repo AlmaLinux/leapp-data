@@ -6,7 +6,7 @@ enabled = 1
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
 
-[cl-ea4-testing]
+[cl8-ea4-testing]
 name=CloudLinux 8 EasyApache4 - testing
 baseurl=https://repo.cloudlinux.com/cloudlinux/EA4/8/updates-testing/$basearch/
 gpgcheck=1
