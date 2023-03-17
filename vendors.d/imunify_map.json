@@ -13,6 +13,14 @@
                 {
                     "source": "cloudlinux-imunify360",
                     "target": ["cloudlinux8-imunify360"]
+                },
+                {
+                    "source": "imunify360-testing",
+                    "target": ["cloudlinux8-imunify360-testing"]
+                },
+                {
+                    "source": "cloudlinux-imunify360-testing",
+                    "target": ["cloudlinux8-imunify360-testing"]
                 }
             ]
         }
@@ -51,6 +59,42 @@
                     "repo_type": "rpm",
                     "arch": "x86_64",
                     "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "imunify360-testing",
+            "entries": [
+                {
+                    "repoid": "imunify360-testing",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "beta"
+                }
+            ]
+        },
+        {
+            "pesid": "cloudlinux-imunify360-testing",
+            "entries": [
+                {
+                    "repoid": "cloudlinux-imunify360-testing",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "beta"
+                }
+            ]
+        },
+        {
+            "pesid": "cloudlinux8-imunify360-testing",
+            "entries": [
+                {
+                    "repoid": "cloudlinux8-imunify360-testing",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "beta"
                 }
             ]
         }

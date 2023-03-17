@@ -90,6 +90,18 @@
             ]
         },
         {
+            "pesid": "cloudlinux-extras",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "cloudlinux-extras",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
             "pesid": "cloudlinux8-baseos",
             "entries": [
                 {
