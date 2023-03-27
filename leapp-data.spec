@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	2%{?dist}
+Release:	3%{?dist}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -27,9 +27,9 @@ Conflicts: %{conflict_dists}
 %install
 mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 %if 0%{?rhel} < 8
-install -t %{buildroot}%{_sysconfdir}/leapp/files/vendors.d vendors.d/*
+cp -f vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
 %endif
-install -t %{buildroot}%{_sysconfdir}/leapp/files files/%{dist_name}/*
+cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
 
 %if 0%{?rhel} == 7
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
@@ -52,6 +52,9 @@ rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 
 
 %changelog
+* Mon Mar 27 2023 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-3
+- Add 8 to 9 migration support for Rocky Linux, EuroLinux, CentOS Stream
+
 * Fri Sep 30 2022 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-2
 - Split repomap.json
 
