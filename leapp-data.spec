@@ -46,12 +46,18 @@ cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
 	rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 %endif
 
-cp -f files/%{dist_name}/leapp.conf %{buildroot}%{_sysconfdir}/leapp/leapp.conf
+%global dist_leapp_conf %( if [ -f files/%{dist_name}/leapp.conf ]; then echo "1" ; else echo "0"; fi )
+if %dist_leapp_conf
+	cp -f files/%{dist_name}/leapp.conf %{buildroot}%{_sysconfdir}/leapp/leapp.conf
+%endif
 
 
 %files
 %doc LICENSE NOTICE README.md
 %{_sysconfdir}/leapp/files/*
+if %dist_leapp_conf
+	%{_sysconfdir}/leapp/leapp.conf
+%endif
 
 
 %changelog
