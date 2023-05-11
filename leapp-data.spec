@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	3%{?dist}
+Release:	4%{?dist}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -47,7 +47,7 @@ cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
 %endif
 
 %global dist_leapp_conf %( if [ -f files/%{dist_name}/leapp.conf ]; then echo "1" ; else echo "0"; fi )
-if %dist_leapp_conf
+%if %dist_leapp_conf
 	cp -f files/%{dist_name}/leapp.conf %{buildroot}%{_sysconfdir}/leapp/leapp.conf
 %endif
 
@@ -55,12 +55,15 @@ if %dist_leapp_conf
 %files
 %doc LICENSE NOTICE README.md
 %{_sysconfdir}/leapp/files/*
-if %dist_leapp_conf
+%if %dist_leapp_conf
 	%{_sysconfdir}/leapp/leapp.conf
 %endif
 
 
 %changelog
+* Thu May 11 2023 Roman Prilipskii <rprilpskii@cloudlinux.com> - 0.2-4
+- Add the option to provide separate leapp.conf files for different distributions
+
 * Mon Mar 27 2023 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-3
 - Add 8 to 9 migration support for Rocky Linux, EuroLinux, CentOS Stream
 
