@@ -27,28 +27,28 @@ Conflicts: %{conflict_dists}
 %install
 mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 %if 0%{?rhel} < 8
-	cp -f vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
+    cp -f vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
 %endif
 cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
 
 %if 0%{?rhel} == 7
-	mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
-		%{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
-	mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el8 \
-		%{buildroot}%{_sysconfdir}/leapp/files/repomap.json
-	rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el9
+    mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
+        %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
+    mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el8 \
+        %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
+    rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el9
 %endif
 %if 0%{?rhel} == 8
-	mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9 \
-		%{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
-	mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el9 \
-		%{buildroot}%{_sysconfdir}/leapp/files/repomap.json
-	rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
+    mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9 \
+        %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
+    mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el9 \
+        %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
+    rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 %endif
 
 %global dist_leapp_conf %( if [ -f files/%{dist_name}/leapp.conf ]; then echo "1" ; else echo "0"; fi )
 %if %dist_leapp_conf
-	cp -f files/%{dist_name}/leapp.conf %{buildroot}%{_sysconfdir}/leapp/leapp.conf
+    cp -f files/%{dist_name}/leapp.conf %{buildroot}%{_sysconfdir}/leapp/leapp.conf
 %endif
 
 
@@ -56,7 +56,7 @@ cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
 %doc LICENSE NOTICE README.md
 %{_sysconfdir}/leapp/files/*
 %if %dist_leapp_conf
-	%{_sysconfdir}/leapp/leapp.conf
+    %{_sysconfdir}/leapp/leapp.conf
 %endif
 
 
