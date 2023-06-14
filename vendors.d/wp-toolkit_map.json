@@ -1,0 +1,69 @@
+{
+	"version_format" : "1.0.0",
+	"mapping" : [
+		{
+			"source_major_version" : "7",
+			"target_major_version" : "8",
+			"entries" : [
+				{
+					"source" : "wp-toolkit-cpanel-el7",
+					"target" : [ "wp-toolkit-cpanel-el8" ]
+				},
+				{
+					"source" : "wp-toolkit-thirdparties-el7",
+					"target" : [ "wp-toolkit-thirdparties-el8" ]
+				}
+			]
+		}
+	],
+	"repositories" : [
+		{
+			"pesid" : "wp-toolkit-cpanel-el7",
+			"entries" : [
+				{
+					"major_version" : "7",
+					"repo_type" : "rpm",
+					"repoid" : "wp-toolkit-cpanel",
+					"arch" : "x86_64",
+					"channel" : "ga"
+				}
+			]
+		},
+		{
+			"pesid" : "wp-toolkit-cpanel-el8",
+			"entries" : [
+				{
+					"major_version" : "8",
+					"repo_type" : "rpm",
+					"repoid" : "wp-toolkit-cpanel-el8",
+					"arch" : "x86_64",
+					"channel" : "ga"
+				}
+			]
+		},
+		{
+			"pesid" : "wp-toolkit-thirdparties-el7",
+			"entries" : [
+				{
+					"major_version" : "7",
+					"repo_type" : "rpm",
+					"repoid" : "wp-toolkit-thirdparties",
+					"arch" : "x86_64",
+					"channel" : "ga"
+				}
+			]
+		},
+		{
+			"pesid" : "wp-toolkit-thirdparties-el8",
+			"entries" : [
+				{
+					"major_version" : "8",
+					"repo_type" : "rpm",
+					"repoid" : "wp-toolkit-thirdparties-el8",
+					"arch" : "x86_64",
+					"channel" : "ga"
+				}
+			]
+		}
+	]
+}
