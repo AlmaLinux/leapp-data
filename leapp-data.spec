@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	3%{?dist}
+Release:	4%{?dist}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -27,31 +27,43 @@ Conflicts: %{conflict_dists}
 %install
 mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 %if 0%{?rhel} < 8
-cp -f vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
+    cp -f vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
 %endif
 cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
 
 %if 0%{?rhel} == 7
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
-      %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el8 \
-      %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
-rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el9
+    mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
+        %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
+    mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el8 \
+        %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
+    rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el9
 %endif
 %if 0%{?rhel} == 8
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9 \
-      %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el9 \
-      %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
-rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
+    mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9 \
+        %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
+    mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el9 \
+        %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
+    rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 %endif
+
+%global dist_leapp_conf %( if [ -f files/%{dist_name}/leapp.conf ]; then echo "1" ; else echo "0"; fi )
+%if %dist_leapp_conf
+    cp -f files/%{dist_name}/leapp.conf %{buildroot}%{_sysconfdir}/leapp/leapp.conf
+%endif
+
 
 %files
 %doc LICENSE NOTICE README.md
 %{_sysconfdir}/leapp/files/*
+%if %dist_leapp_conf
+    %{_sysconfdir}/leapp/leapp.conf
+%endif
 
 
 %changelog
+* Thu May 11 2023 Roman Prilipskii <rprilpskii@cloudlinux.com> - 0.2-4
+- Add the option to provide separate leapp.conf files for different distributions
+
 * Mon Mar 27 2023 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-3
 - Add 8 to 9 migration support for Rocky Linux, EuroLinux, CentOS Stream
 
