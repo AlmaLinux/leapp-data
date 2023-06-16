@@ -46,13 +46,10 @@ cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
     rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 %endif
 
-cp -f files/%{dist_name}/leapp.conf %{buildroot}%{_sysconfdir}/leapp/leapp.conf
-
 
 %files
 %doc LICENSE NOTICE README.md
 %{_sysconfdir}/leapp/files/*
-%{_sysconfdir}/leapp/leapp.conf
 %endif
 
 
