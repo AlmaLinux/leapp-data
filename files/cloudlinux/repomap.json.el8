@@ -23,6 +23,14 @@
                     ]
                 },
                 {
+                    "source": "cloudlinux-hybrid-updates",
+                    "target": [
+                        "cloudlinux8-baseos",
+                        "cloudlinux8-appstream",
+                        "cloudlinux8-powertools"
+                    ]
+                },
+                {
                     "source": "base",
                     "target": [
                         "almalinux8-baseos",
@@ -264,6 +272,18 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "repoid": "almalinux8-extras",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "cloudlinux-hybrid-updates",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "cloudlinux-hybrid-updates",
                     "arch": "x86_64",
                     "channel": "ga"
                 }
