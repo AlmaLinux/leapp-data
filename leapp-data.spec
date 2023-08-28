@@ -1,5 +1,5 @@
-%define dist_list almalinux centos eurolinux oraclelinux rocky cloudlinux
-%define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky cloudlinux; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
+%define dist_list almalinux centos eurolinux oraclelinux rocky
+%define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
