@@ -1,0 +1,48 @@
+{
+    "datetime": "202306191741Z",
+    "version_format": "1.0.0",
+    "mapping": [
+        {
+            "source_major_version": "7",
+            "target_major_version": "8",
+            "entries": [
+                {
+                    "source": "nginx-stable",
+                    "target": [
+                        "el8-nginx-stable"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "nginx-stable",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repoid": "nginx-stable",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-nginx-stable",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-nginx-stable",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        }
+    ],
+    "provided_data_streams": [
+        "1.1",
+        "2.0"
+    ]
+}
