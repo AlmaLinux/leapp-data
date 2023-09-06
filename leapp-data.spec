@@ -1,6 +1,9 @@
 %define dist_list almalinux centos eurolinux oraclelinux rocky
 %define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
+%define dist_repo_prefix() %{lua: dist_name = rpm.expand("%{dist_name}"); prefixes = {["almalinux"] = "almalinux8", ["centos"] = "centos8", ["eurolinux"] = "certify", ["oraclelinux"] = "ol8", ["rocky"] = "rocky8" }; print(prefixes[dist_name]); }
+%define dist_pretty_name() %{lua: dist_name = rpm.expand("%{dist_name}"); names = {["almalinux"] = "AlmaLinux", ["centos"] = "CentOS", ["eurolinux"] = "EuroLinux", ["oraclelinux"] = "OL", ["rocky"] = "Rocky" }; print(names[dist_name]); }
+
 Name:		leapp-data-%{dist_name}
 Version:	0.2
 Release:	3%{?dist}
@@ -28,6 +31,7 @@ Conflicts: %{conflict_dists}
 mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 %if 0%{?rhel} < 8
 cp -f vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
+sed -i -e 's/DIST_REPO_PREFIX/%{dist_repo_prefix}/' -e 's/DIST_PRETTY_NAME/%{dist_pretty_name}/' %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/microsoft_pes.json
 %endif
 cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
 

@@ -1,0 +1,1450 @@
+{
+    "timestamp" : "202308301951Z",
+
+    "packageinfo" : [
+        {
+            "id" : 10039,
+            "action" : 0,
+            "arches" : [ "x86_64" ],
+
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "packages-microsoft-prod",
+                        "repository" : "packages-microsoft-com-prod-8"
+                    }
+                ],
+                "set_id" : 10039
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10040,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-runtime-3.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10040
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-runtime-3.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10041
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10042,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-runtime-3.1",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10042
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-runtime-3.1",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10043
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10044,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-runtime-5.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10044
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-runtime-5.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10045
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10046,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-runtime-6.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10046
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-runtime-6.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10047
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10048,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-runtime-7.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10048
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-runtime-7.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10049
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10050,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-targeting-pack-3.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10050
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-targeting-pack-3.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10051
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10052,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-targeting-pack-3.1",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10052
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-targeting-pack-3.1",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10053
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10054,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-targeting-pack-5.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10054
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-targeting-pack-5.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10055
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10056,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-targeting-pack-6.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10056
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-targeting-pack-6.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10057
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10058,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-targeting-pack-7.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10058
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "aspnetcore-targeting-pack-7.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10059
+            },
+
+            "is_approved" : true
+        },
+
+        {
+            "id" : 10060,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-apphost-pack-3.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10060
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-apphost-pack-3.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10061
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10062,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-apphost-pack-3.1",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10062
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-apphost-pack-3.1",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10063
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10064,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-apphost-pack-5.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10064
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-apphost-pack-5.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10065
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10066,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-apphost-pack-6.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10066
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-apphost-pack-6.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10067
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10068,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-apphost-pack-7.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10068
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-apphost-pack-7.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10069
+            },
+
+            "is_approved" : true
+        },
+
+        {
+            "id" : 10070,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-hostfxr-3.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10070
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-hostfxr-3.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10071
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10072,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-hostfxr-3.1",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10072
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-hostfxr-3.1",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10073
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10074,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-hostfxr-5.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10074
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-hostfxr-5.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10075
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10076,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-hostfxr-6.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10076
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-hostfxr-6.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10077
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10078,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-hostfxr-7.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10078
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-hostfxr-7.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10079
+            },
+
+            "is_approved" : true
+        },
+
+        {
+            "id" : 10080,
+            "action" : 5,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-runtime-3.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    },
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-runtime-deps-3.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10080
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-runtime-3.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10081
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10082,
+            "action" : 5,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-runtime-3.1",
+                        "repository" : "packages-microsoft-com-prod"
+                    },
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-runtime-deps-3.1",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10082
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-runtime-3.1",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10083
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10084,
+            "action" : 5,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-runtime-5.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    },
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-runtime-deps-5.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10084
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-runtime-5.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10085
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10086,
+            "action" : 5,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-runtime-6.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    },
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-runtime-deps-6.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10086
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-runtime-6.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10087
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10088,
+            "action" : 5,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-runtime-7.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    },
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-runtime-deps-7.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10088
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-runtime-7.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10089
+            },
+
+            "is_approved" : true
+        },
+
+        {
+            "id" : 10090,
+            "action" : 4,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-sdk-3.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10090
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-sdk-3.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    },
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-templates-3.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10091
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10092,
+            "action" : 4,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-sdk-3.1",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10092
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-sdk-3.1",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    },
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-templates-3.1",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10093
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10094,
+            "action" : 4,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-sdk-5.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10094
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-sdk-5.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    },
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-templates-5.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10095
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10096,
+            "action" : 4,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-sdk-6.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10096
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-sdk-6.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    },
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-templates-6.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10097
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10098,
+            "action" : 4,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-sdk-7.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10098
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-sdk-7.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    },
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-templates-7.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10099
+            },
+
+            "is_approved" : true
+        },
+
+        {
+            "id" : 10100,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-targeting-pack-3.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10100
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-targeting-pack-3.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10101
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10102,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-targeting-pack-3.1",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10102
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-targeting-pack-3.1",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10103
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10104,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-targeting-pack-5.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10104
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-targeting-pack-5.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10105
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10106,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-targeting-pack-6.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10106
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-targeting-pack-6.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10107
+            },
+
+            "is_approved" : true
+        },
+        {
+            "id" : 10108,
+            "action" : 6,
+            "arches" : [ "x86_64" ],
+
+            "initial_release" : {
+                "major_version" : 7,
+                "minor_version" : 7,
+                "os_name" : "CentOS"
+            },
+            "release" : {
+                "major_version" : 8,
+                "minor_version" : 0,
+                "os_name" : "DIST_PRETTY_NAME"
+            },
+
+            "in_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-targeting-pack-7.0",
+                        "repository" : "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id" : 10108
+            },
+            "out_packageset" : {
+                "package" : [
+                    {
+                        "module_stream" : null,
+                        "name" : "dotnet-targeting-pack-7.0",
+                        "repository" : "DIST_REPO_PREFIX-appstream"
+                    }
+                ],
+                "set_id" : 10109
+            },
+
+            "is_approved" : true
+        }
+    ]
+}
