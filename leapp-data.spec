@@ -4,7 +4,7 @@
 %define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 %if 0%{?rhel} == 7
-%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce
+%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce microsoft
 %define target_version 8
 %if %{dist_name} == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-8
@@ -23,7 +23,7 @@
 %endif
 %endif
 %if 0%{?rhel} == 8
-%define supported_vendors epel mariadb nginx-stable nginx-mainline postgresql docker-ce
+%define supported_vendors epel mariadb nginx-stable nginx-mainline postgresql docker-ce microsoft
 %define target_version 9
 %if %{dist_name} == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-9
@@ -44,10 +44,9 @@
 
 %bcond_without check
 
-
 Name:		leapp-data-%{dist_name}
 Version:	0.4
-Release:	4%{?dist}.%{pes_events_build_date}
+Release:	5%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -77,7 +76,7 @@ BuildRequires: python3-jsonschema
 
 
 %build
-sh tools/generate_epel_files.sh "%{dist_name}" "%{?rhel}"
+sh tools/generate_map_pes_files.sh "%{dist_name}" "%{?rhel}"
 
 
 %install
@@ -154,6 +153,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Tue Sep 03 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-5.20240827
+- Add new vendor, microsoft - Microsoft prod repository ELevation
+
 * Tue Sep 03 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-4.20240827
 - Revert "Temporary force 9.3 version due to RHEL-36249"
 
