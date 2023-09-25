@@ -82628,6 +82628,45 @@
         "minor_version": 1,
         "os_name": "AlmaLinux"
       }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 2218,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "libbrotli",
+            "repository": "cloudlinux-updates"
+          }
+        ],
+        "set_id": 3975
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "brotli",
+            "repository": "almalinux8-baseos"
+          }
+        ],
+        "set_id": 3976
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
     }
   ],
   "timestamp": "202108240941Z"
