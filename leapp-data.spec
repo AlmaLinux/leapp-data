@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	5%{?dist}
+Release:	5%{?dist}.cloudlinux
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
