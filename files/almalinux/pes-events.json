@@ -37885,7 +37885,7 @@
             "repository": "base"
           }
         ],
-        "set_id": 3587
+        "set_id": 12981
       },
       "initial_release": {
         "major_version": 7,
@@ -38414,7 +38414,7 @@
             "repository": "base"
           }
         ],
-        "set_id": 3671
+        "set_id": 12988
       },
       "initial_release": {
         "major_version": 7,
@@ -62912,7 +62912,7 @@
       }
     },
     {
-      "action": 6,
+      "action": 3,
       "arches": [
         "x86_64",
         "aarch64"
@@ -62921,7 +62921,9 @@
       "in_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "module_stream": [
+              null
+            ],
             "name": "antlr-tool",
             "repository": "base"
           }
@@ -62934,10 +62936,24 @@
         "os_name": "CentOS"
       },
       "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
       "out_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
             "name": "antlr-tool",
             "repository": "almalinux8-powertools"
           }
@@ -63029,7 +63045,7 @@
       }
     },
     {
-      "action": 6,
+      "action": 3,
       "arches": [
         "x86_64",
         "aarch64"
@@ -63038,7 +63054,9 @@
       "in_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "module_stream": [
+              null
+            ],
             "name": "apache-commons-collections",
             "repository": "base"
           }
@@ -63051,12 +63069,26 @@
         "os_name": "CentOS"
       },
       "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
       "out_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
             "name": "apache-commons-collections",
-            "repository": "almalinux8-appstream"
+            "repository": "almalinux8-powertools"
           }
         ],
         "set_id": 3080
@@ -63173,7 +63205,7 @@
       }
     },
     {
-      "action": 6,
+      "action": 3,
       "arches": [
         "x86_64",
         "aarch64"
@@ -63182,7 +63214,9 @@
       "in_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "module_stream": [
+              null
+            ],
             "name": "apache-commons-lang",
             "repository": "base"
           }
@@ -63195,12 +63229,26 @@
         "os_name": "CentOS"
       },
       "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
       "out_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
             "name": "apache-commons-lang",
-            "repository": "almalinux8-appstream"
+            "repository": "almalinux8-powertools"
           }
         ],
         "set_id": 3086
@@ -63350,7 +63398,7 @@
       }
     },
     {
-      "action": 6,
+      "action": 3,
       "arches": [
         "x86_64",
         "aarch64"
@@ -63359,7 +63407,9 @@
       "in_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "module_stream": [
+              null
+            ],
             "name": "bcel",
             "repository": "base"
           }
@@ -63372,10 +63422,24 @@
         "os_name": "CentOS"
       },
       "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
       "out_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
             "name": "bcel",
             "repository": "almalinux8-powertools"
           }
@@ -63389,46 +63453,7 @@
       }
     },
     {
-      "action": 6,
-      "arches": [
-        "x86_64",
-        "aarch64"
-      ],
-      "id": 1671,
-      "in_packageset": {
-        "package": [
-          {
-            "module_stream": null,
-            "name": "bea-stax",
-            "repository": "base"
-          }
-        ],
-        "set_id": 3094
-      },
-      "initial_release": {
-        "major_version": 7,
-        "minor_version": 7,
-        "os_name": "CentOS"
-      },
-      "is_approved": true,
-      "out_packageset": {
-        "package": [
-          {
-            "module_stream": null,
-            "name": "bea-stax",
-            "repository": "almalinux8-appstream"
-          }
-        ],
-        "set_id": 3095
-      },
-      "release": {
-        "major_version": 8,
-        "minor_version": 0,
-        "os_name": "AlmaLinux"
-      }
-    },
-    {
-      "action": 6,
+      "action": 3,
       "arches": [
         "x86_64",
         "aarch64"
@@ -63437,13 +63462,24 @@
       "in_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "modulestreams": [
+              null
+            ],
             "name": "bea-stax-api",
             "repository": "base"
           }
         ],
         "set_id": 3096
       },
+      "modulestream_maps": [
+        {
+            "in_modulestream": null,
+            "out_modulestream": {
+                "name": "pki-deps",
+                "stream": "10.6"
+            }
+        }
+    ],
       "initial_release": {
         "major_version": 7,
         "minor_version": 7,
@@ -63453,7 +63489,12 @@
       "out_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "modulestreams": [
+              {
+                  "name": "pki-deps",
+                  "stream": "10.6"
+              }
+          ],
             "name": "bea-stax-api",
             "repository": "almalinux8-appstream"
           }
@@ -63467,7 +63508,37 @@
       }
     },
     {
-      "action": 6,
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9942,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "bea-stax",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12866
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
       "arches": [
         "x86_64",
         "aarch64"
@@ -63476,7 +63547,9 @@
       "in_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "module_stream": [
+              null
+            ],
             "name": "cal10n",
             "repository": "base"
           }
@@ -63489,10 +63562,24 @@
         "os_name": "CentOS"
       },
       "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
       "out_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
             "name": "cal10n",
             "repository": "almalinux8-powertools"
           }
@@ -63656,7 +63743,7 @@
       }
     },
     {
-      "action": 6,
+      "action": 3,
       "arches": [
         "x86_64",
         "aarch64"
@@ -63665,7 +63752,9 @@
       "in_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "module_stream": [
+              null
+            ],
             "name": "geronimo-jms",
             "repository": "base"
           }
@@ -63678,10 +63767,24 @@
         "os_name": "CentOS"
       },
       "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
       "out_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
             "name": "geronimo-jms",
             "repository": "almalinux8-powertools"
           }
@@ -63917,7 +64020,7 @@
       }
     },
     {
-      "action": 6,
+      "action": 3,
       "arches": [
         "x86_64",
         "aarch64"
@@ -63926,7 +64029,9 @@
       "in_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "module_stream": [
+              null
+            ],
             "name": "isorelax",
             "repository": "base"
           }
@@ -63939,10 +64044,24 @@
         "os_name": "CentOS"
       },
       "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
       "out_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
             "name": "isorelax",
             "repository": "almalinux8-powertools"
           }
@@ -63956,7 +64075,7 @@
       }
     },
     {
-      "action": 6,
+      "action": 3,
       "arches": [
         "x86_64",
         "aarch64"
@@ -63965,7 +64084,9 @@
       "in_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "module_stream": [
+              null
+            ],
             "name": "jakarta-commons-httpclient",
             "repository": "base"
           }
@@ -63978,12 +64099,26 @@
         "os_name": "CentOS"
       },
       "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
       "out_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
             "name": "jakarta-commons-httpclient",
-            "repository": "almalinux8-appstream"
+            "repository": "almalinux8-powertools"
           }
         ],
         "set_id": 3122
@@ -63995,7 +64130,7 @@
       }
     },
     {
-      "action": 6,
+      "action": 3,
       "arches": [
         "x86_64",
         "aarch64"
@@ -64004,7 +64139,9 @@
       "in_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "module_stream": [
+              null
+            ],
             "name": "jakarta-oro",
             "repository": "base"
           }
@@ -64017,10 +64154,24 @@
         "os_name": "CentOS"
       },
       "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
       "out_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
             "name": "jakarta-oro",
             "repository": "almalinux8-powertools"
           }
@@ -64067,7 +64218,7 @@
       }
     },
     {
-      "action": 6,
+      "action": 3,
       "arches": [
         "x86_64",
         "aarch64"
@@ -64076,7 +64227,9 @@
       "in_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "module_stream": [
+              null
+            ],
             "name": "javamail",
             "repository": "base"
           }
@@ -64089,10 +64242,24 @@
         "os_name": "CentOS"
       },
       "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
       "out_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
             "name": "javamail",
             "repository": "almalinux8-powertools"
           }
@@ -64533,7 +64700,7 @@
       }
     },
     {
-      "action": 6,
+      "action": 3,
       "arches": [
         "x86_64",
         "aarch64"
@@ -64542,7 +64709,9 @@
       "in_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "module_stream": [
+              null
+            ],
             "name": "jvnet-parent",
             "repository": "base"
           }
@@ -64555,10 +64724,24 @@
         "os_name": "CentOS"
       },
       "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
       "out_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
             "name": "jvnet-parent",
             "repository": "almalinux8-powertools"
           }
@@ -64800,46 +64983,62 @@
       }
     },
     {
-      "action": 6,
+      "action": 3,
       "arches": [
-        "x86_64",
-        "aarch64"
+          "x86_64",
+          "aarch64"
       ],
-      "id": 1708,
+      "id": 9899,
       "in_packageset": {
-        "package": [
-          {
-            "module_stream": null,
-            "name": "regexp",
-            "repository": "base"
-          }
-        ],
-        "set_id": 3163
+          "package": [
+              {
+                  "module_stream": [
+                      null
+                  ],
+                  "name": "regexp",
+                  "repository": "base"
+              }
+          ],
+          "set_id": 3163
       },
       "initial_release": {
-        "major_version": 7,
-        "minor_version": 7,
-        "os_name": "CentOS"
+          "major_version": 7,
+          "minor_version": 7,
+          "os_name": "CentOS"
       },
       "is_approved": true,
-      "out_packageset": {
-        "package": [
+      "modulestream_maps": [
           {
-            "module_stream": null,
-            "name": "regexp",
-            "repository": "almalinux8-powertools"
+              "in_modulestream": null,
+              "out_modulestream": {
+                  "name": "javapackages-tools",
+                  "stream": "201801"
+              }
           }
-        ],
-        "set_id": 3164
+      ],
+      "out_packageset": {
+          "package": [
+              {
+                  "modulestreams": [
+                      {
+                          "name": "javapackages-tools",
+                          "stream": "201801"
+                      }
+                  ],
+                  "name": "regexp",
+                  "repository": "almalinux8-powertools"
+              }
+          ],
+          "set_id": 3164
       },
       "release": {
-        "major_version": 8,
-        "minor_version": 0,
-        "os_name": "AlmaLinux"
+          "major_version": 8,
+          "minor_version": 0,
+          "os_name": "AlmaLinux"
       }
     },
     {
-      "action": 6,
+      "action": 3,
       "arches": [
         "x86_64",
         "aarch64"
@@ -64848,13 +65047,24 @@
       "in_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "module_stream": [
+              null
+            ],
             "name": "relaxngDatatype",
             "repository": "base"
           }
         ],
         "set_id": 3165
       },
+      "modulestream_maps": [
+        {
+            "in_modulestream": null,
+            "out_modulestream": {
+                "name": "pki-deps",
+                "stream": "10.6"
+            }
+        }
+    ],
       "initial_release": {
         "major_version": 7,
         "minor_version": 7,
@@ -64864,7 +65074,12 @@
       "out_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "modulestreams": [
+              {
+                  "name": "pki-deps",
+                  "stream": "10.6"
+              }
+          ],
             "name": "relaxngDatatype",
             "repository": "almalinux8-appstream"
           }
@@ -75838,7 +76053,7 @@
             "repository": "base"
           }
         ],
-        "set_id": 3665
+        "set_id": 12985
       },
       "initial_release": {
         "major_version": 7,
@@ -77136,7 +77351,7 @@
             "repository": "base"
           }
         ],
-        "set_id": 3711
+        "set_id": 12996
       },
       "initial_release": {
         "major_version": 7,
@@ -77501,21 +77716,23 @@
       }
     },
     {
-      "action": 4,
+      "action": 3,
       "arches": [
         "x86_64",
         "aarch64"
       ],
-      "id": 2054,
+      "id": 9880,
       "in_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "module_stream": [
+              null
+            ],
             "name": "glassfish-fastinfoset",
             "repository": "base"
           }
         ],
-        "set_id": 3730
+        "set_id": 12927
       },
       "initial_release": {
         "major_version": 7,
@@ -77523,20 +77740,29 @@
         "os_name": "CentOS"
       },
       "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "pki-deps",
+            "stream": "10.6"
+          }
+        }
+      ],
       "out_packageset": {
         "package": [
           {
-            "module_stream": null,
+            "modulestreams": [
+              {
+                "name": "pki-deps",
+                "stream": "10.6"
+              }
+            ],
             "name": "glassfish-fastinfoset",
-            "repository": "almalinux8-appstream"
-          },
-          {
-            "module_stream": null,
-            "name": "glassfish-fastinfoset-javadoc",
             "repository": "almalinux8-appstream"
           }
         ],
-        "set_id": 7463
+        "set_id": 12928
       },
       "release": {
         "major_version": 8,
@@ -77544,6 +77770,36 @@
         "os_name": "AlmaLinux"
       }
     },
+    {
+      "action": 1,
+      "arches": [
+          "x86_64",
+          "aarch64"
+      ],
+      "id": 9901,
+      "in_packageset": {
+          "package": [
+              {
+                  "module_stream": null,
+                  "name": "glassfish-fastinfoset-javadoc",
+                  "repository": "base"
+              }
+          ],
+          "set_id": 12971
+      },
+      "initial_release": {
+          "major_version": 7,
+          "minor_version": 7,
+          "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+          "major_version": 8,
+          "minor_version": 0,
+          "os_name": "AlmaLinux"
+      }
+  },
     {
       "action": 6,
       "arches": [
@@ -78917,11 +79173,6 @@
             "module_stream": null,
             "name": "xsom",
             "repository": "almalinux8-appstream"
-          },
-          {
-            "module_stream": null,
-            "name": "xsom-javadoc",
-            "repository": "almalinux8-appstream"
           }
         ],
         "set_id": 7585
@@ -78933,44 +79184,60 @@
       }
     },
     {
-      "action": 6,
+      "action": 3,
       "arches": [
-        "x86_64",
-        "aarch64"
+          "x86_64",
+          "aarch64"
       ],
-      "id": 2093,
+      "id": 9920,
       "in_packageset": {
-        "package": [
-          {
-            "module_stream": null,
-            "name": "jss",
-            "repository": "base"
-          }
-        ],
-        "set_id": 3794
+          "package": [
+              {
+                  "module_stream": [
+                      null
+                  ],
+                  "name": "jss",
+                  "repository": "base"
+              }
+          ],
+          "set_id": 13012
       },
       "initial_release": {
-        "major_version": 7,
-        "minor_version": 7,
-        "os_name": "CentOS"
+          "major_version": 7,
+          "minor_version": 7,
+          "os_name": "CentOS"
       },
       "is_approved": true,
-      "out_packageset": {
-        "package": [
+      "modulestream_maps": [
           {
-            "module_stream": null,
-            "name": "jss",
-            "repository": "almalinux8-appstream"
+              "in_modulestream": null,
+              "out_modulestream": {
+                  "name": "pki-core",
+                  "stream": "10.6"
+              }
           }
-        ],
-        "set_id": 3795
+      ],
+      "out_packageset": {
+          "package": [
+              {
+                  "modulestreams": [
+                      {
+                          "name": "pki-core",
+                          "stream": "10.6"
+                      }
+                  ],
+                  "name": "jss",
+                  "repository": "almalinux8-appstream"
+              }
+          ],
+          "set_id": 13013
       },
       "release": {
-        "major_version": 8,
-        "minor_version": 0,
-        "os_name": "AlmaLinux"
+          "major_version": 8,
+          "minor_version": 0,
+          "os_name": "AlmaLinux"
       }
-    },
+  },
     {
       "action": 6,
       "arches": [
@@ -79050,42 +79317,58 @@
       }
     },
     {
-      "action": 6,
+      "action": 3,
       "arches": [
-        "x86_64",
-        "aarch64"
+          "x86_64",
+          "aarch64"
       ],
-      "id": 2096,
+      "id": 9927,
       "in_packageset": {
-        "package": [
-          {
-            "module_stream": null,
-            "name": "ldapjdk",
-            "repository": "base"
-          }
-        ],
-        "set_id": 3800
+          "package": [
+              {
+                  "module_stream": [
+                      null
+                  ],
+                  "name": "ldapjdk",
+                  "repository": "base"
+              }
+          ],
+          "set_id": 13022
       },
       "initial_release": {
-        "major_version": 7,
-        "minor_version": 7,
-        "os_name": "CentOS"
+          "major_version": 7,
+          "minor_version": 7,
+          "os_name": "CentOS"
       },
       "is_approved": true,
-      "out_packageset": {
-        "package": [
+      "modulestream_maps": [
           {
-            "module_stream": null,
-            "name": "ldapjdk",
-            "repository": "almalinux8-appstream"
+              "in_modulestream": null,
+              "out_modulestream": {
+                  "name": "pki-core",
+                  "stream": "10.6"
+              }
           }
-        ],
-        "set_id": 3801
+      ],
+      "out_packageset": {
+          "package": [
+              {
+                  "modulestreams": [
+                      {
+                          "name": "pki-core",
+                          "stream": "10.6"
+                      }
+                  ],
+                  "name": "ldapjdk",
+                  "repository": "almalinux8-appstream"
+              }
+          ],
+          "set_id": 13023
       },
       "release": {
-        "major_version": 8,
-        "minor_version": 0,
-        "os_name": "AlmaLinux"
+          "major_version": 8,
+          "minor_version": 0,
+          "os_name": "AlmaLinux"
       }
     },
     {
@@ -82232,7 +82515,7 @@
         "set_id": 0
       },
       "release": {
-        "major_version": 8,
+        "major_version": 9,
         "minor_version": 1,
         "os_name": "AlmaLinux"
       }
@@ -82450,7 +82733,7 @@
         "os_name": "AlmaLinux"
       }
     },
-    {
+    { 
       "action": 3,
       "arches": [
         "x86_64",
@@ -85752,7 +86035,3091 @@
         "tag": null,
         "z_stream": null
       }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9826,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "icc-profiles-openicc",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12856
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9827,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "protobuf-python",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12857
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "python3-protobuf",
+            "repository": "almalinux8-appstream"
+          }
+        ],
+        "set_id": 12857
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9828,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "infinipath-psm",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12858
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9829,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "agg",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12859
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9830,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "python-blinker",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12860
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9831,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "felix-shell",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12861
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9832,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "felix-osgi-obr",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12862
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9833,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "python-fpconst",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12863
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9834,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "redhat-upgrade-dracut-plymouth",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12864
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9835,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "unique3",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12865
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9837,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "jai-imageio-core",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12867
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9838,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "objectweb-asm4",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12868
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9839,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "gnu-getopt",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12869
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9840,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "jetty-jmx",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12870
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9841,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "apache-commons-jexl",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12871
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9842,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "btrfs-progs",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12872
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9843,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "python-workerpool",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12873
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9844,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "kdesdk-common",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12874
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9845,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "urw-base35-fonts-legacy",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12875
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9846,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "oci-umount",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12876
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9847,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "yum-plugin-fastestmirror",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12877
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9849,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "python-werkzeug",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12879
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "python3-werkzeug",
+            "repository": "almalinux8-appstream"
+          }
+        ],
+        "set_id": 12880
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9850,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "python-itsdangerous",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12881
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9851,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "python-gevent",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12882
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "python3-gevent",
+            "repository": "almalinux8-appstream"
+          }
+        ],
+        "set_id": 12883
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9852,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "python-greenlet",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12884
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "python3-greenlet",
+            "repository": "almalinux8-appstream"
+          }
+        ],
+        "set_id": 12885
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9853,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "antlr-python",
+            "repository": "epel"
+          }
+        ],
+        "set_id": 12885
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9854,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "apache-commons-validator",
+            "repository": "epel"
+          }
+        ],
+        "set_id": 12886
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9856,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "felix-framework",
+            "repository": "epel"
+          }
+        ],
+        "set_id": 12888
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9857,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "libGLEWmx",
+            "repository": "epel"
+          }
+        ],
+        "set_id": 12889
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9858,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "python-isodate",
+            "repository": "epel"
+          }
+        ],
+        "set_id": 12890
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9860,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "apache-commons-beanutils",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12892
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "apache-commons-beanutils",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12893
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9862,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "apache-commons-compress",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12896
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "apache-commons-compress",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12897
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9863,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "apache-commons-net",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12898
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "apache-commons-net",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12899
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9864,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "apache-resource-bundles",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12900
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "apache-resource-bundles",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12901
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9865,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "aqute-bndlib",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12902
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "aqute-bndlib",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12903
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9866,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "beust-jcommander",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12904
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "beust-jcommander",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12905
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9867,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "bsf",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12906
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "bsf",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12907
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9868,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "bsh",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12908
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "bsh",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12909
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9869,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "cglib",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12910
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "cglib",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12911
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9870,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "jing",
+            "repository": "epel"
+          }
+        ],
+        "set_id": 12912
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9871,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "mgetty",
+            "repository": "epel"
+          }
+        ],
+        "set_id": 12913
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9872,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "mgetty-sendfax",
+            "repository": "epel"
+          }
+        ],
+        "set_id": 12914
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9873,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "mgetty-viewfax",
+            "repository": "epel"
+          }
+        ],
+        "set_id": 12915
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 1,
+      "arches": [
+        "x86_64",
+        "aarch64",
+        "ppc64le"
+      ],
+      "description": "",
+      "id": 9874,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "mgetty-voice",
+            "repository": "epel"
+          }
+        ],
+        "set_id": 12916
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 6,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "out_packageset": {},
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9875,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "felix-osgi-compendium",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12917
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "felix-osgi-compendium",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12918
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9876,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "felix-osgi-core",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12919
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "felix-osgi-core",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12920
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9877,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "felix-osgi-foundation",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12921
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "felix-osgi-foundation",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12922
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9878,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "felix-utils",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12923
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "felix-utils",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12924
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9885,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "jdepend",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12937
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "jdepend",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12938
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9887,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "maven-artifact",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12941
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "maven-artifact",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12942
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9888,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "maven-artifact-resolver",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12943
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "maven-artifact-resolver",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12944
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9889,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "maven-invoker",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12945
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "maven-invoker",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12946
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9890,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "maven-model",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12947
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "maven-model",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12948
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9891,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "maven-monitor",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12949
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "maven-monitor",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12950
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9892,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "plexus-build-api",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12951
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "plexus-build-api",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12952
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9893,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "plexus-compiler",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12953
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "plexus-compiler",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12954
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9894,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "plexus-component-api",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12955
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "plexus-component-api",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12956
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9896,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "plexus-io",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12959
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "plexus-io",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12960
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9897,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "sonatype-oss-parent",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12961
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "sonatype-oss-parent",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12962
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9898,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "plexus-components-pom",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12963
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "plexus-components-pom",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12964
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9919,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "plexus-pom",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12965
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "plexus-pom",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12966
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9900,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "plexus-interactivity",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12967
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "plexus-interactivity",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12968
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+    {
+      "action": 3,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 9902,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": [
+              null
+            ],
+            "name": "maven-enforcer-plugin",
+            "repository": "base"
+          }
+        ],
+        "set_id": 12969
+      },
+      "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+      },
+      "is_approved": true,
+      "modulestream_maps": [
+        {
+          "in_modulestream": null,
+          "out_modulestream": {
+            "name": "javapackages-tools",
+            "stream": "201801"
+          }
+        }
+      ],
+      "out_packageset": {
+        "package": [
+          {
+            "modulestreams": [
+              {
+                "name": "javapackages-tools",
+                "stream": "201801"
+              }
+            ],
+            "name": "maven-enforcer-plugin",
+            "repository": "almalinux8-powertools"
+          }
+        ],
+        "set_id": 12970
+      },
+      "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+      }
+    },
+  {
+    "action": 3,
+    "arches": [
+        "x86_64"
+    ],
+    "id": 9917,
+    "in_packageset": {
+        "package": [
+            {
+                "module_stream": [
+                    null
+                ],
+                "name": "xmlgraphics-commons",
+                "repository": "base"
+            }
+        ],
+        "set_id": 13007
+    },
+    "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+    },
+    "is_approved": true,
+    "modulestream_maps": [
+        {
+            "in_modulestream": null,
+            "out_modulestream": {
+                "name": "eclipse",
+                "stream": "rhel8"
+            }
+        }
+    ],
+    "out_packageset": {
+        "package": [
+            {
+                "modulestreams": [
+                    {
+                        "name": "eclipse",
+                        "stream": "rhel8"
+                    }
+                ],
+                "name": "xmlgraphics-commons",
+                "repository": "almalinux8-appstream"
+            }
+        ],
+        "set_id": 13008
+    },
+    "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
     }
+},
+{
+    "action": 3,
+    "arches": [
+        "x86_64"
+    ],
+    "id": 9918,
+    "in_packageset": {
+        "package": [
+            {
+                "module_stream": [
+                    null
+                ],
+                "name": "jetty-io",
+                "repository": "base"
+            }
+        ],
+        "set_id": 13009
+    },
+    "initial_release": {
+        "major_version": 7,
+        "minor_version": 7,
+        "os_name": "CentOS"
+    },
+    "is_approved": true,
+    "modulestream_maps": [
+        {
+            "in_modulestream": null,
+            "out_modulestream": {
+                "name": "eclipse",
+                "stream": "rhel8"
+            }
+        }
+    ],
+    "out_packageset": {
+        "package": [
+            {
+                "modulestreams": [
+                    {
+                        "name": "eclipse",
+                        "stream": "rhel8"
+                    }
+                ],
+                "name": "jetty-io",
+                "repository": "almalinux8-appstream"
+            }
+        ],
+        "set_id": 13010
+    },
+    "release": {
+        "major_version": 8,
+        "minor_version": 0,
+        "os_name": "AlmaLinux"
+    }
+},
+{
+  "action": 3,
+  "arches": [
+      "x86_64"
+  ],
+  "id": 9921,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": [
+                  null
+              ],
+              "name": "jetty-http",
+              "repository": "base"
+          }
+      ],
+      "set_id": 13014
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "CentOS"
+  },
+  "is_approved": true,
+  "modulestream_maps": [
+      {
+          "in_modulestream": null,
+          "out_modulestream": {
+              "name": "eclipse",
+              "stream": "rhel8"
+          }
+      }
+  ],
+  "out_packageset": {
+      "package": [
+          {
+              "modulestreams": [
+                  {
+                      "name": "eclipse",
+                      "stream": "rhel8"
+                  }
+              ],
+              "name": "jetty-http",
+              "repository": "almalinux8-appstream"
+          }
+      ],
+      "set_id": 13015
+  },
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "arches": [
+      "x86_64"
+  ],
+  "id": 9922,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "maven-scm",
+              "repository": "base"
+          }
+      ],
+      "set_id": 13016
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "CentOS"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "arches": [
+      "x86_64"
+  ],
+  "id": 9923,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "maven-scm-javadoc",
+              "repository": "base"
+          }
+      ],
+      "set_id": 13017
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "CentOS"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "arches": [
+      "x86_64"
+  ],
+  "id": 9924,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "maven-scm-test",
+              "repository": "base"
+          }
+      ],
+      "set_id": 13018
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "CentOS"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 3,
+  "arches": [
+      "x86_64"
+  ],
+  "id": 9925,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": [
+                  null
+              ],
+              "name": "jetty-util",
+              "repository": "base"
+          }
+      ],
+      "set_id": 13019
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "CentOS"
+  },
+  "is_approved": true,
+  "modulestream_maps": [
+      {
+          "in_modulestream": null,
+          "out_modulestream": {
+              "name": "eclipse",
+              "stream": "rhel8"
+          }
+      }
+  ],
+  "out_packageset": {
+      "package": [
+          {
+              "modulestreams": [
+                  {
+                      "name": "eclipse",
+                      "stream": "rhel8"
+                  }
+              ],
+              "name": "jetty-util",
+              "repository": "almalinux8-appstream"
+          }
+      ],
+      "set_id": 13020
+  },
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "arches": [
+      "x86_64"
+  ],
+  "id": 9926,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "oci-systemd-hook",
+              "repository": "extras"
+          }
+      ],
+      "set_id": 13021
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "CentOS"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 3,
+  "arches": [
+      "x86_64",
+      "aarch64"
+  ],
+  "id": 9928,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": [
+                  null
+              ],
+              "name": "ldapjdk-javadoc",
+              "repository": "base"
+          }
+      ],
+      "set_id": 13024
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "CentOS"
+  },
+  "is_approved": true,
+  "modulestream_maps": [
+      {
+          "in_modulestream": null,
+          "out_modulestream": {
+              "name": "pki-core",
+              "stream": "10.6"
+          }
+      }
+  ],
+  "out_packageset": {
+      "package": [
+          {
+              "modulestreams": [
+                  {
+                      "name": "pki-core",
+                      "stream": "10.6"
+                  }
+              ],
+              "name": "ldapjdk-javadoc",
+              "repository": "almalinux8-appstream"
+          }
+      ],
+      "set_id": 13025
+  },
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+}
   ],
   "timestamp": "202108240941Z"
 }

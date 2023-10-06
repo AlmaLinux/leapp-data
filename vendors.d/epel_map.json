@@ -1,5 +1,5 @@
 {
-    "datetime": "202204020934Z",
+    "datetime": "202306191741Z",
     "version_format": "1.0.0",
     "mapping": [
         {
@@ -8,7 +8,27 @@
             "entries": [
                 {
                     "source": "epel",
-                    "target": ["epel-8"]
+                    "target": [
+                        "el8-epel"
+                    ]
+                },
+                {
+                    "source": "base",
+                    "target": [
+                        "el8-epel"
+                    ]
+                },
+                {
+                    "source": "epel",
+                    "target": [
+                        "almalinux8-appstream"
+                    ]
+                },
+                {
+                    "source": "epel",
+                    "target": [
+                        "almalinux8-powertools"
+                    ]
                 }
             ]
         }
@@ -18,25 +38,65 @@
             "pesid": "epel",
             "entries": [
                 {
-                    "repoid": "epel",
                     "major_version": "7",
-                    "repo_type": "rpm",
+                    "repoid": "epel",
                     "arch": "x86_64",
-                    "channel": "ga"
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
         {
-            "pesid": "epel-8",
+            "pesid": "el8-epel",
             "entries": [
                 {
-                    "repoid": "epel-8",
                     "major_version": "8",
-                    "repo_type": "rpm",
+                    "repoid": "el8-epel",
                     "arch": "x86_64",
-                    "channel": "ga"
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "base",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repoid": "base",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux8-appstream",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "almalinux8-appstream",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux8-powertools",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "almalinux8-powertools",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         }
+    ],
+    "provided_data_streams": [
+        "1.1",
+        "2.0"
     ]
 }
