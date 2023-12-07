@@ -68,6 +68,12 @@
                     "target": [
                         "cl8-ea4"
                     ]
+                },
+                {
+                    "source": "cloudlinux-elevate",
+                    "target": [
+                        "cloudlinux8-elevate"
+                    ]
                 }
             ]
         }

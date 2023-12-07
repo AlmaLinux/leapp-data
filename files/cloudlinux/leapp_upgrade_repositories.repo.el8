@@ -78,6 +78,13 @@ gpgcheck=1
 enabled=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
 
+[cloudlinux8-elevate]
+name=CloudLinux 8 ELevate
+baseurl=https://repo.cloudlinux.com/elevate/8/$basearch/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+
 # cloudlinux-PowerTools repo was added in 8.5 for compatibility reasons.
 # Third-party install scripts may pass --enablerepo=cloudlinux-PowerTools
 # to dnf and without this repo a error will occur
