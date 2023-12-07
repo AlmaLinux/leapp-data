@@ -1,0 +1,108 @@
+{
+    "datetime": "202306191741Z",
+    "version_format": "1.0.0",
+    "mapping": [
+        {
+            "source_major_version": "7",
+            "target_major_version": "8",
+            "entries": [
+                {
+                    "source": "mariadb-main",
+                    "target": [
+                        "el8-mariadb-main"
+                    ]
+                },
+                {
+                    "source": "mariadb-maxscale",
+                    "target": [
+                        "el8-mariadb-maxscale"
+                    ]
+                },
+                {
+                    "source": "mariadb-tools",
+                    "target": [
+                        "el8-mariadb-tools"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "mariadb-main",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repoid": "mariadb-main",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "mariadb-maxscale",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repoid": "mariadb-maxscale",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "mariadb-tools",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repoid": "mariadb-tools",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-mariadb-main",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-mariadb-main",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-mariadb-maxscale",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-mariadb-maxscale",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-mariadb-tools",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-mariadb-tools",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        }
+    ],
+    "provided_data_streams": [
+        "1.1",
+        "2.0"
+    ]
+}
