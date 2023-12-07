@@ -55,6 +55,7 @@ rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 * Thu Dec 07 2023 Roman Prilipskii <rprilpskii@cloudlinux.com> - 0.2-6.cloudlinux
 - Add CL Elevate package repository to the leapp repository map
 - Add support for NGINX/MariaDB/PostgreSQL from upstream
+- Add vendors.d files with EPEL support from upstream
 
 * Mon Sep 25 2023 Roman Prilipskii <rprilpskii@cloudlinux.com> - 0.2-5.cloudlinux
 - Add brotli to the PES mapping file
@@ -62,9 +63,6 @@ rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 * Thu Jul 27 2023 Sloane Bernstein <sloane@cpanel.net>, Roman Prilipskii <rprilpskii@cloudlinux.com> - 0.2-4.cloudlinux
 - Provide vendor data for WP Toolkit software
 - Modify repo mapping for CL Hybrid installations
-
-* Thu Oct 12 2023 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-4
-- Update vendors.d files to include EPEL support
 
 * Mon Mar 27 2023 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-3
 - Add 8 to 9 migration support for Rocky Linux, EuroLinux, CentOS Stream
