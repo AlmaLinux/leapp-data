@@ -176,6 +176,30 @@
             ]
         },
         {
+            "pesid": "cloudlinux-elevate",
+            "entries": [
+                {
+                    "repoid": "cloudlinux-elevate",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "cloudlinux8-elevate",
+            "entries": [
+                {
+                    "repoid": "cloudlinux8-elevate",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
             "pesid": "base",
             "entries": [
                 {
