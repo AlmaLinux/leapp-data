@@ -90192,6 +90192,63 @@
         "os_name": "CentOS"
       },
       "version": 2
+    },
+    {
+      "action": 5,
+      "arches": [
+        "x86_64",
+        "aarch64"
+      ],
+      "id": 2211,
+      "in_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "iptables",
+            "repository": "centos8-baseos"
+          },
+          {
+            "module_stream": null,
+            "name": "iptables-arptables",
+            "repository": "centos8-baseos"
+          },
+          {
+            "module_stream": null,
+            "name": "iptables-ebtables",
+            "repository": "centos8-baseos"
+          }
+        ],
+        "set_id": 3975
+      },
+      "is_approved": true,
+      "out_packageset": {
+        "package": [
+          {
+            "module_stream": null,
+            "name": "iptables-nft",
+            "repository": "centos9-baseos"
+          }
+        ],
+        "set_id": 3976
+      },
+      "initial_release": {
+        "checked": true,
+        "major_version": 8,
+        "minor_version": 5,
+        "modified": "2020-04-01T09:00:00.0Z",
+        "os_name": "CentOS",
+        "tag": null,
+        "z_stream": null
+      },
+      "release": {
+        "checked": true,
+        "major_version": 9,
+        "minor_version": 0,
+        "modified": "2022-04-01T09:00:00.0Z",
+        "os_name": "CentOS",
+        "tag": null,
+        "z_stream": null
+      }
     }
   ],
   "timestamp": "202303161849Z"
