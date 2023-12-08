@@ -1,0 +1,164 @@
+{
+    "datetime": "202204020934Z",
+    "version_format": "1.0.0",
+    "mapping": [
+        {
+            "source_major_version": "8",
+            "target_major_version": "9",
+            "entries": [
+                {
+                    "source": "certify-baseos",
+                    "target": [
+                        "certify-baseos-9"
+                    ]
+                },
+                {
+                    "source": "certify-appstream",
+                    "target": [
+                        "certify-appstream-9"
+                    ]
+                },
+                {
+                    "source": "certify-powertools",
+                    "target": [
+                        "certify-powertools-9"
+                    ]
+                },
+                {
+                    "source": "high-availability",
+                    "target": [
+                        "high-availability-9"
+                    ]
+                },
+                {
+                    "source": "resilient-storage",
+                    "target": [
+                        "resilient-storage-9"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "certify-baseos",
+            "entries": [
+                {
+                    "repoid": "baseos",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "certify-appstream",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "appstream",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "certify-powertools",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "powertools",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "high-availability",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "high-availability",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "resilient-storage",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "resilient-storage",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "certify-baseos-9",
+            "entries": [
+                {
+                    "repoid": "certify-baseos-9",
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "certify-appstream-9",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "certify-appstream-9",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "certify-powertools-9",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "certify-powertools-9",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "high-availability-9",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "high-availability-9",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "resilient-storage-9",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "resilient-storage-9",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "datetime": "202204020934Z",
+    "version_format": "1.0.0",
+    "mapping": [
+        {
+            "source_major_version": "7",
+            "target_major_version": "8",
+            "entries": [
+                {
+                    "source": "epel",
+                    "target": ["epel-8"]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "epel",
+            "entries": [
+                {
+                    "repoid": "epel",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "epel-8",
+            "entries": [
+                {
+                    "repoid": "epel-8",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        }
+    ]
+}
