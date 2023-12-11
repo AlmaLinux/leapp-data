@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	3%{?dist}
+Release:	4%{?dist}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -52,6 +52,9 @@ rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 
 
 %changelog
+* Mon Dec 11 2023 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-4
+- Fix EL8 to EL9 migration
+
 * Mon Mar 27 2023 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-3
 - Add 8 to 9 migration support for Rocky Linux, EuroLinux, CentOS Stream
 
