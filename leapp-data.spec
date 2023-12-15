@@ -34,6 +34,10 @@ cp -f vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
 %endif
 cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
 
+if [ "%{dist_name}" != "almalinux" ]; then
+    rm -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel*
+fi
+
 %if 0%{?rhel} == 7
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
       %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
@@ -57,6 +61,7 @@ rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 %changelog
 * Tue Dec 05 2023 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-5
 - Add generate_epel_files script to create epel files for EL7
+- Add data to support migration from EL7 to EL8 with epel for AlmaLinux-8
 
 * Thu Oct 12 2023 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-4
 - Update vendors.d files to include EPEL support
