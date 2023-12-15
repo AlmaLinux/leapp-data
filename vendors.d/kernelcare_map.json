@@ -1,0 +1,44 @@
+{
+    "datetime": "202204020934Z",
+    "version_format": "1.0.0",
+    "mapping": [
+        {
+            "source_major_version": "7",
+            "target_major_version": "8",
+            "entries": [
+                {
+                    "source": "kernelcare",
+                    "target": [
+                        "kernelcare-8"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "kernelcare",
+            "entries": [
+                {
+                    "repoid": "kernelcare",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "kernelcare-8",
+            "entries": [
+                {
+                    "repoid": "kernelcare-8",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        }
+    ]
+}

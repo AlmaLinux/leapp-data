@@ -1,0 +1,232 @@
+{
+    "datetime": "202306191746Z",
+    "version_format": "1.0.0",
+    "mapping": [
+        {
+            "source_major_version": "7",
+            "target_major_version": "8",
+            "entries": [
+                {
+                    "source": "pgdg-common",
+                    "target": [
+                        "el8-pgdg-common"
+                    ]
+                },
+                {
+                    "source": "pgdg15",
+                    "target": [
+                        "el8-pgdg15",
+                        "el8-pgdg-centos8-sysupdates",
+                        "el8-pgdg-rhel8-extras"
+                    ]
+                },
+                {
+                    "source": "pgdg14",
+                    "target": [
+                        "el8-pgdg14",
+                        "el8-pgdg-centos8-sysupdates",
+                        "el8-pgdg-rhel8-extras"
+                    ]
+                },
+                {
+                    "source": "pgdg13",
+                    "target": [
+                        "el8-pgdg13",
+                        "el8-pgdg-centos8-sysupdates",
+                        "el8-pgdg-rhel8-extras"
+                    ]
+                },
+                {
+                    "source": "pgdg12",
+                    "target": [
+                        "el8-pgdg12",
+                        "el8-pgdg-centos8-sysupdates",
+                        "el8-pgdg-rhel8-extras"
+                    ]
+                },
+                {
+                    "source": "pgdg11",
+                    "target": [
+                        "el8-pgdg11",
+                        "el8-pgdg-centos8-sysupdates",
+                        "el8-pgdg-rhel8-extras"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "pgdg-common",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg-common",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "pgdg15",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg15",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "pgdg14",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg14",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "pgdg13",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg13",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "pgdg12",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg12",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "pgdg11",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg11",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-pgdg-common",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg-common",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-pgdg15",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg15",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-pgdg14",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg14",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-pgdg13",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg13",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-pgdg12",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg12",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-pgdg11",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg11",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-pgdg-centos8-sysupdates",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg-centos8-sysupdates",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-pgdg-rhel8-extras",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg-rhel8-extras",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        }
+    ],
+    "provided_data_streams": [
+        "1.1",
+        "2.0"
+    ]
+}

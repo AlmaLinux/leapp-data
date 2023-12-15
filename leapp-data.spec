@@ -2,8 +2,8 @@
 %define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 Name:		leapp-data-%{dist_name}
-Version:	0.1
-Release:	7%{?dist}
+Version:	0.2
+Release:	3%{?dist}.1
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -25,9 +25,26 @@ Conflicts: %{conflict_dists}
 
 
 %install
-mkdir -p %{buildroot}%{_sysconfdir}/leapp/files
-install -t %{buildroot}%{_sysconfdir}/leapp/files files/%{dist_name}/*
+mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
+%if 0%{?rhel} < 8
+cp -f vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
+%endif
+cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
 
+%if 0%{?rhel} == 7
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
+      %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el8 \
+      %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
+rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el9
+%endif
+%if 0%{?rhel} == 8
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9 \
+      %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el9 \
+      %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
+rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
+%endif
 
 %files
 %doc LICENSE NOTICE README.md
@@ -35,9 +52,20 @@ install -t %{buildroot}%{_sysconfdir}/leapp/files files/%{dist_name}/*
 
 
 %changelog
-* Tue Feb 28 2023 Andrew Lukoshko <alukoshko@almalinux.org> - 0.1-7
-- fix typo in oraclelinux PES data
-- remove kernel-uek from all PES data except oraclelinux
+* Mon Dec 11 2023 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-3.1
+- Fix EL8 to EL9 migration
+
+* Mon Mar 27 2023 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-3
+- Add 8 to 9 migration support for Rocky Linux, EuroLinux, CentOS Stream
+
+* Fri Sep 30 2022 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-2
+- Split repomap.json
+
+* Fri Sep 30 2022 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-1
+- Add 8 to 9 migration support for AlmaLinux
+
+* Thu Sep 1 2022 Roman Prilipskii <rprilpskii@cloudlinux.com> - 0.1-7
+- made third-party files accessible for all supported distributions
 
 * Wed Aug 17 2022 Andrew Lukoshko <alukoshko@almalinux.org> - 0.1-6
 - added repomap.json file for all distributions

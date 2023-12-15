@@ -1,0 +1,47 @@
+[rocky9-baseos]
+name=Rocky Linux 9 - BaseOS
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=BaseOS-9
+#baseurl=http://dl.rockylinux.org/pub/rocky/9/BaseOS/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
+
+[rocky9-appstream]
+name=Rocky Linux 9 - AppStream
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=AppStream-9
+#baseurl=http://dl.rockylinux.org/pub/rocky/9/AppStream/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
+
+[rocky9-crb]
+name=Rocky Linux 9 - CRB
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=CRB-9
+#baseurl=http://dl.rockylinux.org/pub/rocky/9/CRB/$basearch/os/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
+
+[rocky9-ha]
+name=Rocky Linux 9 - HighAvailability
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=HighAvailability-9
+#baseurl=http://dl.rockylinux.org/pub/rocky/9/HighAvailability/$basearch/os/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
+
+[rocky9-resilient-storage]
+name=Rocky Linux 9 - ResilientStorage
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=ResilientStorage-9
+#baseurl=http://dl.rockylinux.org/pub/rocky/9/ResilientStorage/$basearch/os/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
+
+[rocky9-extras]
+name=Rocky Linux 9 - Extras
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=extras-9
+#baseurl=http://dl.rockylinux.org/pub/rocky/9/extras/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
