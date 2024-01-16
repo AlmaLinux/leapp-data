@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	3%{?dist}.1
+Release:	3%{?dist}.2
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -52,6 +52,9 @@ rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 
 
 %changelog
+* Tue Jan 16 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-3.2
+- Use YUM archive repo of PostgreSQL 11 for RHEL / Rocky 8 (x86_64)
+
 * Mon Dec 11 2023 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-3.1
 - Fix EL8 to EL9 migration
 
