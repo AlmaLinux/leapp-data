@@ -3,7 +3,7 @@ name = EuroLinux certify BaseOS
 baseurl=https://fbi.cdn.euro-linux.com/dist/eurolinux/server/8/$basearch/certify-BaseOS/os
 enabled=1
 gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-eurolinux8
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-eurolinux8
 skip_if_unavailable=1
 
 [certify-appstream]
@@ -11,7 +11,7 @@ name = EuroLinux certify AppStream
 baseurl=https://fbi.cdn.euro-linux.com/dist/eurolinux/server/8/$basearch/certify-AppStream/os
 enabled=1
 gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-eurolinux8
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-eurolinux8
 skip_if_unavailable=1
 
 [certify-powertools]
@@ -19,7 +19,7 @@ name = EuroLinux certify PowerTools
 baseurl=https://fbi.cdn.euro-linux.com/dist/eurolinux/server/8/$basearch/certify-PowerTools/os
 enabled=1
 gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-eurolinux8
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-eurolinux8
 skip_if_unavailable=1
 
 [high-availability]
@@ -27,12 +27,12 @@ name = EuroLinux High Availability
 baseurl=https://fbi.cdn.euro-linux.com/dist/eurolinux/server/8/$basearch/certify-HighAvailability/os
 enabled=0
 gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-eurolinux8
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-eurolinux8
 
 [resilient-storage]
 name = EuroLinux Resilient Storage
 baseurl=https://fbi.cdn.euro-linux.com/dist/eurolinux/server/8/$basearch/certify-ResilientStorage/os
 enabled=0
 gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-eurolinux8
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-eurolinux8
 
