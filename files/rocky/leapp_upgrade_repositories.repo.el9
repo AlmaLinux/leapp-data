@@ -4,7 +4,7 @@ mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=BaseOS-
 #baseurl=http://dl.rockylinux.org/pub/rocky/9/BaseOS/$basearch/os/
 gpgcheck=1
 enabled=1
-gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-Rocky-9
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
 
 [rocky9-appstream]
 name=Rocky Linux 9 - AppStream
@@ -12,7 +12,7 @@ mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=AppStre
 #baseurl=http://dl.rockylinux.org/pub/rocky/9/AppStream/$basearch/os/
 gpgcheck=1
 enabled=1
-gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-Rocky-9
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
 
 [rocky9-crb]
 name=Rocky Linux 9 - CRB
@@ -20,7 +20,7 @@ mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=CRB-9
 #baseurl=http://dl.rockylinux.org/pub/rocky/9/CRB/$basearch/os/
 gpgcheck=1
 enabled=0
-gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-Rocky-9
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
 
 [rocky9-ha]
 name=Rocky Linux 9 - HighAvailability
@@ -28,7 +28,7 @@ mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=HighAva
 #baseurl=http://dl.rockylinux.org/pub/rocky/9/HighAvailability/$basearch/os/
 gpgcheck=1
 enabled=0
-gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-Rocky-9
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
 
 [rocky9-resilient-storage]
 name=Rocky Linux 9 - ResilientStorage
@@ -36,7 +36,7 @@ mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=Resilie
 #baseurl=http://dl.rockylinux.org/pub/rocky/9/ResilientStorage/$basearch/os/
 gpgcheck=1
 enabled=0
-gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-Rocky-9
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
 
 [rocky9-extras]
 name=Rocky Linux 9 - Extras
@@ -44,4 +44,4 @@ mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=extras-
 #baseurl=http://dl.rockylinux.org/pub/rocky/9/extras/$basearch/os/
 gpgcheck=1
 enabled=1
-gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-Rocky-9
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
