@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	6%{?dist}.cloudlinux
+Release:	7%{?dist}.cloudlinux
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -52,6 +52,9 @@ rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 
 
 %changelog
+* Fri Jan 19 2024 Roman Prilipskii <rprilpskii@cloudlinux.com> - 0.2-7.cloudlinux
+- Remove cPanel-related data from the vendor files
+
 * Thu Dec 07 2023 Roman Prilipskii <rprilpskii@cloudlinux.com> - 0.2-6.cloudlinux
 - Add CL Elevate package repository to the leapp repository map
 - Add support for NGINX/MariaDB/PostgreSQL from upstream
