@@ -4,7 +4,7 @@ mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=BaseOS-
 #baseurl=http://dl.rockylinux.org/pub/rocky/8/BaseOS/$basearch/os/
 gpgcheck=1
 enabled=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-Rocky-8
 
 [rocky8-appstream]
 name=Rocky Linux 8 - AppStream
@@ -12,7 +12,7 @@ mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=AppStre
 #baseurl=http://dl.rockylinux.org/pub/rocky/8/AppStream/$basearch/os/
 gpgcheck=1
 enabled=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-Rocky-8
 
 [rocky8-powertools]
 name=Rocky Linux 8 - PowerTools
@@ -20,7 +20,7 @@ mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=PowerTo
 #baseurl=http://dl.rockylinux.org/pub/rocky/8/PowerTools/$basearch/os/
 gpgcheck=1
 enabled=0
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-Rocky-8
 
 [rocky8-ha]
 name=Rocky Linux 8 - HighAvailability
@@ -28,7 +28,7 @@ mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=HighAva
 #baseurl=http://dl.rockylinux.org/pub/rocky/8/HighAvailability/$basearch/os/
 gpgcheck=1
 enabled=0
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-Rocky-8
 
 [rocky8-resilient-storage]
 name=Rocky Linux 8 - ResilientStorage
@@ -36,7 +36,7 @@ mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=Resilie
 #baseurl=http://dl.rockylinux.org/pub/rocky/8/ResilientStorage/$basearch/os/
 gpgcheck=1
 enabled=0
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-Rocky-8
 
 [rocky8-extras]
 name=Rocky Linux 8 - Extras
@@ -44,4 +44,4 @@ mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=extras-
 #baseurl=http://dl.rockylinux.org/pub/rocky/8/extras/$basearch/os/
 gpgcheck=1
 enabled=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-Rocky-8

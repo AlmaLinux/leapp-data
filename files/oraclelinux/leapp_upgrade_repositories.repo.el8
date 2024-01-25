@@ -1,34 +1,34 @@
 [ol8_baseos_latest]
 name=Oracle Linux 8 BaseOS Latest ($basearch)
 baseurl=https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/$basearch/
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-oracle-ol8
 gpgcheck=1
 enabled=1
 
 [ol8_appstream]
 name=Oracle Linux 8 Application Stream ($basearch)
 baseurl=https://yum.oracle.com/repo/OracleLinux/OL8/appstream/$basearch/
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-oracle-ol8
 gpgcheck=1
 enabled=1
 
 [ol8_codeready_builder]
 name=Oracle Linux 8 CodeReady Builder ($basearch)
 baseurl=https://yum.oracle.com/repo/OracleLinux/OL8/codeready/builder/$basearch/
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-oracle-ol8
 gpgcheck=1
 enabled=0
 
 [ol8_addons]
 name=Oracle Linux 8 Addons ($basearch)
 baseurl=https://yum.oracle.com/repo/OracleLinux/OL8/addons/$basearch/
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-oracle-ol8
 gpgcheck=1
 enabled=0
 
 [ol8_UEKR6]
 name=Latest Unbreakable Enterprise Kernel Release 6 for Oracle Linux $releasever ($basearch)
 baseurl=https://yum.oracle.com/repo/OracleLinux/OL8/UEKR6/$basearch/
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-oracle-ol8
 gpgcheck=1
 enabled=0
