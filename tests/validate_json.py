@@ -13,26 +13,31 @@ def is_valid_json(json_data, schema):
 def main():
     parser = argparse.ArgumentParser(description="JSON Schema Validator")
     parser.add_argument("schema_path", help="Path to the JSON schema file")
-    parser.add_argument("json_path", help="Path to the JSON file to validate")
+    parser.add_argument("json_path", nargs='+', help="Path to the JSON file to validate")
 
     args = parser.parse_args()
 
     with open(args.schema_path, 'r') as schema_file:
         schema = json.load(schema_file)
 
-    print(f"Validating {args.json_path} against {args.schema_path}")
-    with open(args.json_path, 'r') as json_file:
-        try:
-            json_data = json.load(json_file)
-            valid, error = is_valid_json(json_data, schema)
-            if valid:
-                print("JSON is valid according to the schema.")
-            else:
-                print(f"JSON is invalid. Error: {error}")
-                exit(1)
-        except json.JSONDecodeError as err:
-            print(f"Invalid JSON: {err}")
-            exit(1)
+    failed = False
+
+    for file in args.json_path:
+        print(f"Validating {file} against {args.schema_path}")
+        with open(file, 'r') as json_file:
+            try:
+                json_data = json.load(json_file)
+                valid, error = is_valid_json(json_data, schema)
+                if valid:
+                    print("JSON is valid according to the schema.")
+                else:
+                    print(f"JSON is invalid. Error: {error}")
+                    failed = True
+            except json.JSONDecodeError as err:
+                print(f"Invalid JSON: {err}")
+                failed = True
+    if failed:
+        exit(1)
 
 if __name__ == "__main__":
     main()

@@ -101,9 +101,9 @@ mv -f files/rpm-gpg/%{gpg_key} %{buildroot}%{_sysconfdir}/leapp/repos.d/system_u
 
 %check
 %if %{with check}
-find %{buildroot}%{_sysconfdir}/leapp/ -path "./tests" -prune -o -name "*pes*.json" -exec python3 tests/validate_json.py tests/pes-events-schema.json {} \;
-
 JSON_FILES=$(find %{buildroot}%{_sysconfdir}/leapp/ -path "./tests" -prune -o -name "*pes*.json" -print0 | xargs -0 echo)
+
+python3 tests/validate_json.py tests/pes-events-schema.json $JSON_FILES
 python3 tests/validate_ids.py $JSON_FILES
 %endif
 
