@@ -43,6 +43,9 @@
       }, 
       "version": 1
     }
-  ], 
+  ],
+  "provided_data_streams": [
+    "2.0"
+  ],
   "timestamp": "202308241055Z"
 }

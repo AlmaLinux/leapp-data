@@ -20,6 +20,7 @@ def main():
     with open(args.schema_path, 'r') as schema_file:
         schema = json.load(schema_file)
 
+    print(f"Validating {args.json_path} against {args.schema_path}")
     with open(args.json_path, 'r') as json_file:
         try:
             json_data = json.load(json_file)
