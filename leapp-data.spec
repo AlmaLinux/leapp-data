@@ -1,7 +1,6 @@
 %define dist_list almalinux centos eurolinux oraclelinux rocky
 %define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
-
 %if 0%{?rhel} == 7
 %if %{dist_name} == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-8
@@ -37,6 +36,8 @@
 %endif
 %endif
 
+%bcond_without check
+
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
@@ -49,6 +50,17 @@ Source0:	leapp-data-%{version}.tar.gz
 BuildArch:  noarch
 
 Conflicts: %{conflict_dists}
+
+%if %{with check}
+%if 0%{?rhel} == 7
+BuildRequires: python36
+BuildRequires: python36-jsonschema
+%endif
+%if 0%{?rhel} == 8
+BuildRequires: python3
+BuildRequires: python3-jsonschema
+%endif
+%endif
 
 %description
 %{dist_name} %{summary}
@@ -86,6 +98,15 @@ rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 mkdir -p %{buildroot}%{_sysconfdir}/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/
 mv -f files/rpm-gpg/%{gpg_key} %{buildroot}%{_sysconfdir}/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/
 %endif
+
+%check
+%if %{with check}
+find . -name "*pes-events*.json" -exec python3 tests/validate_json.py tests/pes-events-schema.json {} \;
+
+JSON_FILES=$(find . -name "*.json" -print0 | xargs -0 echo)
+python3 tests/validate_ids.py $JSON_FILES
+%endif
+
 
 %files
 %doc LICENSE NOTICE README.md
