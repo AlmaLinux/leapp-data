@@ -3,12 +3,14 @@ import argparse
 from jsonschema import validate
 from jsonschema.exceptions import ValidationError
 
+
 def is_valid_json(json_data, schema):
     try:
         validate(instance=json_data, schema=schema)
     except ValidationError as err:
         return False, err
     return True, None
+
 
 def main():
     parser = argparse.ArgumentParser(description="JSON Schema Validator")
@@ -38,6 +40,7 @@ def main():
                 failed = True
     if failed:
         exit(1)
+
 
 if __name__ == "__main__":
     main()

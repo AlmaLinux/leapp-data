@@ -2,6 +2,7 @@ import json
 import argparse
 from collections import defaultdict
 
+
 def find_duplicates_in_files(files):
     id_counts = defaultdict(int)
     set_id_counts = defaultdict(int)
@@ -38,6 +39,7 @@ def find_duplicates_in_files(files):
 
     return duplicate_ids, filtered_duplicate_set_ids
 
+
 def main():
     parser = argparse.ArgumentParser(description="Find Duplicate IDs and Set_IDs in Multiple JSON Files")
     parser.add_argument('files', nargs='+', help='Paths to JSON files')
@@ -61,6 +63,7 @@ def main():
 
     if failed:
         exit(1)
+
 
 if __name__ == "__main__":
     main()

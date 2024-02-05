@@ -71,6 +71,9 @@ BuildRequires: python3-jsonschema
 
 
 %build
+%if 0%{?rhel} < 8
+sh tools/generate_epel_files.sh "%{dist_name}"
+%endif
 
 
 %install
@@ -79,6 +82,7 @@ mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 cp -f vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
 %endif
 cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
+
 
 %if 0%{?rhel} == 7
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
@@ -121,6 +125,11 @@ python3 tests/validate_ids.py $JSON_FILES
 
 
 %changelog
+* Mon Feb 05 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-7
+- Add generate_epel_files script to create epel files for EL7
+- Add data to support migration from EL7 to EL8 with 
+ enabled epel repositories for AlmaLinux-8
+
 * Tue Jan 16 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-6
 - Add gpg keys
 
