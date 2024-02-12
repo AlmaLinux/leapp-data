@@ -78,7 +78,7 @@ module_hotfixes=true
 
 [el8-pgdg11]
 name=PostgreSQL 11 for RHEL / Rocky 8 - $basearch
-baseurl=https://download.postgresql.org/pub/repos/yum/11/redhat/rhel-8-$basearch
+baseurl=https://yum-archive.postgresql.org/11/redhat/rhel-8-$basearch
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-PGDG
