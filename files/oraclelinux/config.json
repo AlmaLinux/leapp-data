@@ -1,0 +1,300 @@
+{
+    "dist_name": "ol",
+    "os_names": [
+        {
+            "major_version": 7,
+            "os_name": "CentOS"
+        },
+        {
+            "major_version": 8,
+            "os_name": "OL"
+        },
+        {
+            "major_version": 9,
+            "os_name": "OL"
+        }
+    ],
+
+    "repository_replacing": {
+        "rhel7-base": {
+            "out_packageset": "base",
+            "in_packageset": "base"
+        },
+        "rhel7-optional": {
+            "out_packageset": "base",
+            "in_packageset": "base"
+        },
+        "rhel7-extras": {
+            "out_packageset": "base",
+            "in_packageset": "base"
+        },
+        "rhel7-highavailability": {
+            "out_packageset": "base",
+            "in_packageset": "base"
+        },
+        "rhel7-resilientstorage": {
+            "out_packageset": "base",
+            "in_packageset": "base"
+        },
+
+        "rhel8-AppStream": {
+            "in_packageset": "appstream",
+            "out_packageset": "ol8-appstream"
+        },
+        "rhel8-BaseOS": {
+            "in_packageset": "baseos",
+            "out_packageset": "ol8-baseos"
+        },
+        "rhel8-HighAvailability": {
+            "in_packageset": "ha",
+            "out_packageset": "ol8-crb"
+        },
+        "rhel8-CRB": {
+            "in_packageset": "crb",
+            "out_packageset":  "ol8-crb"
+        },
+        "rhel8-RT": {
+            "in_packageset": "rt",
+            "out_packageset": "ol8-rt"
+        },
+        "rhel8-ResilientStorage": {
+            "in_packageset": "resilientstorage",
+            "out_packageset": "ol8-crb"
+        },
+        "rhel8-NFV": {
+            "in_packageset": "nfv",
+            "out_packageset": "ol8-nfv"
+        },
+        "rhel8-SAP-NetWeaver": {
+            "in_packageset": "sap",
+            "out_packageset": "ol8-sap"
+        },
+        "rhel8-SAP-Solutions": {
+            "in_packageset": "saphana",
+            "out_packageset": "ol8-saphana"
+        },
+
+        "rhel9-BaseOS": {
+            "in_packageset": "baseos",
+            "out_packageset": "ol9-baseos"
+        },
+        "rhel9-HighAvailability": {
+            "in_packageset": "ha",
+            "out_packageset": "ol9-crb"
+        },
+        "rhel9-CRB": {
+            "in_packageset": "crb",
+            "out_packageset": "ol9-crb"
+        },
+        "rhel9-RT": {
+            "in_packageset": "rt",
+            "out_packageset": "ol9-rt"
+        },
+        "rhel9-ResilientStorage": {
+            "in_packageset": "resilientstorage",
+            "out_packageset": "ol9-crb"
+        },
+        "rhel9-NFV": {
+            "in_packageset": "nfv",
+            "out_packageset": "ol9-nfv"
+        },
+        "rhel9-SAP-NetWeaver": {
+            "in_packageset": "sap",
+            "out_packageset": "ol9-sap"
+        },
+        "rhel9-SAP-Solutions": {
+            "in_packageset": "saphana",
+            "out_packageset": "ol9-saphana"
+        },
+
+        "rhel10-AppStream": {
+            "in_packageset": "appstream",
+            "out_packageset": "ol10-appstream"
+        }
+    },
+    "removable_repositories":[
+        "rhel7-ansible-2",
+        "rhel7-rt",
+        "rhel7-rhevh",
+        "rhel7-rhceph-tools-3",
+        "rhel7-rhgs-server-3.1",
+        "rhel7-resilientstorage",
+        "rhel7-dotnet-1",
+        "rhel7-sap",
+        "rhel7-rhscl-1",
+        "rhel7-openstack-13",
+        "rhel7-ose-3.9",
+        "rhel7-rhn-tools",
+        "rhel7-nfv",
+        "rhel7-sap-hana",
+        "rhel7-ose-3.7",
+        "rhel7-dotnet-1",
+        "rhel8-Supplementary",
+        "rhel9-AppStream",
+        "rhel9-BaseOS",
+        "rhel9-HighAvailability",
+        "rhel9-CRB",
+        "rhel9-RT",
+        "rhel9-ResilientStorage",
+        "rhel9-NFV",
+        "rhel9-SAP-NetWeaver",
+        "rhel9-SAP-Solutions",
+        "rhel10-AppStream"
+    ],
+
+    "package_replacing": [
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-release",
+            "to": "oraclelinux-release-el8"
+        },
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-logos",
+            "to": {
+                "in_packageset": "centos-logos",
+                "out_packageset": "oracle-logos"
+            }
+        },
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-backgrounds",
+            "to": "oracle-backgrounds"
+        },
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-logos-httpd",
+            "to": "oracle-logos-httpd"
+        },
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-logos-ipa",
+            "to": "oracle-logos-ipa"
+        },
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-bookmarks",
+            "to": "oracle-bookmarks"
+        },
+        {
+            "initial_release": 8,
+            "target_release": 9,
+            "name": "redhat-bookmarks",
+            "to": "oracle-bookmarks"
+        },
+        {
+            "initial_release": null,
+            "target_release": 8,
+            "name": "redhat-logos-ipa",
+            "to": "oracle-logos-ipa"
+        },
+        {
+            "initial_release": 8,
+            "target_release": 9,
+            "name": "redhat-logos",
+            "to": "oracle-logos"
+        },
+        {
+            "initial_release": 8,
+            "target_release": 9,
+            "name": "redhat-logos-httpd",
+            "to": "oracle-logos-httpd"
+        }
+    ],
+    "removable_packages":[
+        {
+            "name": "redhat-release-server",
+            "initial_release": 7,
+            "target_release": 8
+        },
+        {
+            "name": "libreport-rhel",
+            "initial_release": 8,
+            "target_release": 8
+        },
+        {
+            "name": "libreport-rhel-bugzilla",
+            "initial_release": 8,
+            "target_release": 8
+        },
+        {
+            "name": "redhat-release-computenode",
+            "initial_release": 7,
+            "target_release": 8
+        },
+        {
+            "name": "redhat-release-workstation",
+            "initial_release": 7,
+            "target_release": 8
+        },
+        {
+            "name": "redhat-release-client",
+            "initial_release": 7,
+            "target_release": 8
+        }
+    ],
+
+    "additional_actions":[
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "centos-release",
+                        "repository": "base"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "oraclelinux-release-el8",
+                        "repository": "ol8-baseos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            }
+        }
+
+    ]
+}
