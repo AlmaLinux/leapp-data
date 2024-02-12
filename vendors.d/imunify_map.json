@@ -11,6 +11,10 @@
                     "target": ["cloudlinux8-imunify360"]
                 },
                 {
+                    "source": "imunify360-current",
+                    "target": ["cloudlinux8-imunify360"]
+                },
+                {
                     "source": "cloudlinux-imunify360",
                     "target": ["cloudlinux8-imunify360"]
                 },
