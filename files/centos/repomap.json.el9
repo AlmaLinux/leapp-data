@@ -38,6 +38,18 @@
                     "target": [
                         "centos9-extras"
                     ]
+                },
+                {
+                    "source": "rt",
+                    "target": [
+                        "centos9-rt"
+                    ]
+                },
+                {
+                    "source": "nfv",
+                    "target": [
+                        "centos9-extras"
+                    ]
                 }
             ]
         }
@@ -158,6 +170,30 @@
                     "major_version": "9",
                     "repo_type": "rpm",
                     "repoid": "centos9-extras",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos9-rt",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "centos9-rt",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos9-nfv",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "centos9-nfv",
                     "arch": "x86_64",
                     "channel": "ga"
                 }

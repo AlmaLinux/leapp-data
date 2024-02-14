@@ -16,7 +16,9 @@
                         "rocky8-appstream",
                         "rocky8-powertools",
                         "rocky8-ha",
-                        "rocky8-resilient-storage"
+                        "rocky8-resilient-storage",
+                        "almalinux8-resilientstorage",
+                        "almalinux8-nfv"
                     ]
                 },
                 {
@@ -26,7 +28,9 @@
                         "rocky8-appstream",
                         "rocky8-powertools",
                         "rocky8-ha",
-                        "rocky8-resilient-storage"
+                        "rocky8-resilient-storage",
+                        "almalinux8-resilientstorage",
+                        "almalinux8-nfv"
                     ]
                 },
                 {
@@ -144,6 +148,30 @@
                     "repo_type": "rpm",
                     "arch": "x86_64",
                     "repoid": "rocky8-extras"
+                }
+            ]
+        },
+        {
+            "pesid": "rocky8-rt",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "repoid": "rocky8-rt"
+                }
+            ]
+        },
+        {
+            "pesid": "rocky8-nfv",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "repoid": "rocky8-nfv"
                 }
             ]
         }

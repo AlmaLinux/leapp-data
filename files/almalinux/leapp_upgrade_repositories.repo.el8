@@ -45,3 +45,27 @@ mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/extras
 enabled=1
 gpgcheck=0
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-8
+
+[almalinux8-sap]
+name=AlmaLinux 8 - SAP
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/sap
+# baseurl=https://repo.almalinux.org/almalinux/8/SAP/$basearch/os/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-8
+
+[almalinux8-saphana]
+name=AlmaLinux 8 - SAPHANA
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/saphana
+# baseurl=https://repo.almalinux.org/almalinux/8/SAPHANA/$basearch/os/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-8
+
+[almalinux8-nfv]
+name=AlmaLinux 8 - NFV
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/nfv
+# baseurl=https://repo.almalinux.org/almalinux/8/NFV/$basearch/os/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-8

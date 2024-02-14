@@ -52,64 +52,6 @@
         "rhel8-CRB": {
             "in_packageset": "crb",
             "out_packageset":  "ol8-crb"
-        },
-        "rhel8-RT": {
-            "in_packageset": "rt",
-            "out_packageset": "ol8-rt"
-        },
-        "rhel8-ResilientStorage": {
-            "in_packageset": "resilientstorage",
-            "out_packageset": "ol8-crb"
-        },
-        "rhel8-NFV": {
-            "in_packageset": "nfv",
-            "out_packageset": "ol8-nfv"
-        },
-        "rhel8-SAP-NetWeaver": {
-            "in_packageset": "sap",
-            "out_packageset": "ol8-sap"
-        },
-        "rhel8-SAP-Solutions": {
-            "in_packageset": "saphana",
-            "out_packageset": "ol8-saphana"
-        },
-
-        "rhel9-BaseOS": {
-            "in_packageset": "baseos",
-            "out_packageset": "ol9-baseos"
-        },
-        "rhel9-HighAvailability": {
-            "in_packageset": "ha",
-            "out_packageset": "ol9-crb"
-        },
-        "rhel9-CRB": {
-            "in_packageset": "crb",
-            "out_packageset": "ol9-crb"
-        },
-        "rhel9-RT": {
-            "in_packageset": "rt",
-            "out_packageset": "ol9-rt"
-        },
-        "rhel9-ResilientStorage": {
-            "in_packageset": "resilientstorage",
-            "out_packageset": "ol9-crb"
-        },
-        "rhel9-NFV": {
-            "in_packageset": "nfv",
-            "out_packageset": "ol9-nfv"
-        },
-        "rhel9-SAP-NetWeaver": {
-            "in_packageset": "sap",
-            "out_packageset": "ol9-sap"
-        },
-        "rhel9-SAP-Solutions": {
-            "in_packageset": "saphana",
-            "out_packageset": "ol9-saphana"
-        },
-
-        "rhel10-AppStream": {
-            "in_packageset": "appstream",
-            "out_packageset": "ol10-appstream"
         }
     },
     "removable_repositories":[
@@ -129,7 +71,14 @@
         "rhel7-sap-hana",
         "rhel7-ose-3.7",
         "rhel7-dotnet-1",
+
         "rhel8-Supplementary",
+        "rhel8-ResilientStorage",
+        "rhel8-RT",
+        "rhel8-NFV",
+        "rhel8-SAP-NetWeaver",
+        "rhel8-SAP-Solutions",
+
         "rhel9-AppStream",
         "rhel9-BaseOS",
         "rhel9-HighAvailability",
@@ -180,31 +129,13 @@
             "initial_release": 7,
             "target_release": 8,
             "name": "redhat-bookmarks",
-            "to": "oracle-bookmarks"
-        },
-        {
-            "initial_release": 8,
-            "target_release": 9,
-            "name": "redhat-bookmarks",
-            "to": "oracle-bookmarks"
+            "to": "oracle-centos"
         },
         {
             "initial_release": null,
             "target_release": 8,
             "name": "redhat-logos-ipa",
             "to": "oracle-logos-ipa"
-        },
-        {
-            "initial_release": 8,
-            "target_release": 9,
-            "name": "redhat-logos",
-            "to": "oracle-logos"
-        },
-        {
-            "initial_release": 8,
-            "target_release": 9,
-            "name": "redhat-logos-httpd",
-            "to": "oracle-logos-httpd"
         }
     ],
     "removable_packages":[

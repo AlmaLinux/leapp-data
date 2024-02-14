@@ -15,7 +15,9 @@
                         "centos8-baseos",
                         "centos8-appstream",
                         "centos8-powertools",
-                        "centos8-ha"
+                        "centos8-ha",
+                        "centos8-rt",
+                        "centos8-nfv"
                     ]
                 },
                 {
@@ -24,7 +26,9 @@
                         "centos8-baseos",
                         "centos8-appstream",
                         "centos8-powertools",
-                        "centos8-ha"
+                        "centos8-ha",
+                        "centos8-rt",
+                        "centos8-nfv"
                     ]
                 },
                 {
@@ -127,6 +131,30 @@
                 {
                     "repo_type": "rpm",
                     "repoid": "centos8-extras",
+                    "major_version": "8",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos8-rt",
+            "entries": [
+                {
+                    "repo_type": "rpm",
+                    "repoid": "centos8-rt",
+                    "major_version": "8",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos8-nfv",
+            "entries": [
+                {
+                    "repo_type": "rpm",
+                    "repoid": "centos8-nfv",
                     "major_version": "8",
                     "arch": "x86_64",
                     "channel": "ga"

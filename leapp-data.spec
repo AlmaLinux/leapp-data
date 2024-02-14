@@ -84,6 +84,8 @@ cp -f vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
 cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
 
 
+rm -f %{buildroot}%{_sysconfdir}/leapp/files/config.json
+
 %if 0%{?rhel} == 7
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
       %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
@@ -125,6 +127,10 @@ python3 tests/validate_ids.py $JSON_FILES
 
 
 %changelog
+* Wed Feb 14 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-8
+- Update pes-event file for Rocky, EuroLinux, CentOS Stream, AlmaLinux, Oracle Linux
+- Add additional repos for AlmaLinux, CentOS and Rocky
+
 * Mon Feb 05 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-7
 - Add generate_epel_files script to create epel files for EL7
 - Add data to support migration from EL7 to EL8 with 

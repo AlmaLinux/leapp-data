@@ -45,3 +45,35 @@ mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=extras-
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
+
+[rocky9-rt]
+name=Rocky Linux 9 - RT
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=RT-9
+#baseurl=http://dl.rockylinux.org/pub/rocky/9/RT/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
+
+[rocky9-nfv]
+name=Rocky Linux 9 - NFV
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=NFV-9
+#baseurl=http://dl.rockylinux.org/pub/rocky/9/NFV/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
+
+[rocky9-sap]
+name=Rocky Linux 9 - SAP
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=SAP-9
+#baseurl=http://dl.rockylinux.org/pub/rocky/9/SAP/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
+
+[rocky9-saphana]
+name=Rocky Linux 9 - SAPHANA
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=SAPHANA-9
+#baseurl=http://dl.rockylinux.org/pub/rocky/9/SAPHANA/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9

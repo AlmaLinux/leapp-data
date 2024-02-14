@@ -44,6 +44,30 @@
                     "target": [
                         "rocky9-extras"
                     ]
+                },
+                {
+                    "source": "rt",
+                    "target": [
+                        "rocky9-rt"
+                    ]
+                },
+                {
+                    "source": "nfv",
+                    "target": [
+                        "rocky9-nfv"
+                    ]
+                },
+                {
+                    "source": "sap",
+                    "target": [
+                        "rocky9-sap"
+                    ]
+                },
+                {
+                    "source": "saphana",
+                    "target": [
+                        "rocky9-saphana"
+                    ]
                 }
             ]
         }
@@ -188,6 +212,54 @@
                     "major_version": "9",
                     "repo_type": "rpm",
                     "repoid": "rocky9-extras",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "rocky9-rt",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "rocky9-rt",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "rocky9-nfv",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "rocky9-nfv",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "rocky9-sap",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "rocky9-sap",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "rocky9-saphana",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "rocky9-saphana",
                     "arch": "x86_64",
                     "channel": "ga"
                 }

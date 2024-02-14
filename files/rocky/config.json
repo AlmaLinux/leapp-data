@@ -65,14 +65,6 @@
             "in_packageset": "nfv",
             "out_packageset": "rocky8-nfv"
         },
-        "rhel8-SAP-NetWeaver": {
-            "in_packageset": "sap",
-            "out_packageset": "rocky8-sap"
-        },
-        "rhel8-SAP-Solutions": {
-            "in_packageset": "saphana",
-            "out_packageset": "rocky8-saphana"
-        },
 
         "rhel9-AppStream": {
             "in_packageset": "appstream",
@@ -133,7 +125,11 @@
         "rhel7-sap-hana",
         "rhel7-ose-3.7",
         "rhel7-dotnet-1",
-        "rhel8-Supplementary"
+
+        "rhel8-Supplementary",
+        "rhel8-SAP-NetWeaver",
+        "rhel8-SAP-Solutions"
+
     ],
 
     "package_replacing": [

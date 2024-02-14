@@ -133,6 +133,7 @@
         "rhel7-sap-hana",
         "rhel7-ose-3.7",
         "rhel7-dotnet-1",
+
         "rhel8-Supplementary"
     ],
 
