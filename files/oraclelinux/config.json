@@ -129,7 +129,7 @@
             "initial_release": 7,
             "target_release": 8,
             "name": "redhat-bookmarks",
-            "to": "oracle-centos"
+            "to": "centos-bookmarks"
         },
         {
             "initial_release": null,

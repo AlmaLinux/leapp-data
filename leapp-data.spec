@@ -1,3 +1,5 @@
+%global pes_events_build_date 20240123
+
 %define dist_list almalinux centos eurolinux oraclelinux rocky
 %define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
@@ -41,7 +43,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	6%{?dist}
+Release:	7%{?dist}.%{pes-events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -127,14 +129,11 @@ python3 tests/validate_ids.py $JSON_FILES
 
 
 %changelog
-* Wed Feb 14 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-8
-- Update pes-event file for Rocky, EuroLinux, CentOS Stream, AlmaLinux, Oracle Linux
-- Add additional repos for AlmaLinux, CentOS and Rocky
-
-* Mon Feb 05 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-7
+* Mon Feb 05 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-7.20240123
 - Add generate_epel_files script to create epel files for EL7
 - Add data to support migration from EL7 to EL8 with 
  enabled epel repositories for AlmaLinux-8
+- Add pes_events_build_date to spec file to track the pes-events update date
 
 * Tue Jan 16 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-6
 - Add gpg keys
