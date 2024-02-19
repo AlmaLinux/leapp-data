@@ -113,6 +113,7 @@ JSON_FILES=$(find %{buildroot}%{_sysconfdir}/leapp/ -path "./tests" -prune -o -n
 
 python3 tests/validate_json.py tests/pes-events-schema.json $JSON_FILES
 python3 tests/validate_ids.py $JSON_FILES
+python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-events.json
 %endif
 
 
