@@ -284,6 +284,55 @@
                 "tag": null,
                 "z_stream": null
             }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "rocky-logos",
+                        "repository": "baseos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "rocky-logos",
+                        "repository": "rocky9-baseos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "Rocky",
+                "tag": null,
+                "z_stream": null
+            }
         }
 
     ]

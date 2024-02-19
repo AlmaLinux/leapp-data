@@ -107,7 +107,7 @@ def add_new_packages(additional_actions, pes_events_data):
     for action in additional_actions:
         action['id'] = generate_new_id(existing_ids)
         for packageset in ['out_packageset', 'in_packageset']:
-            if packageset in action and package[packageset] is not None:
+            if packageset in action and action[packageset] is not None:
                 action[packageset]['set_id'] = generate_new_id(existing_set_ids)
         pes_events_data['packageinfo'].append(action)
 
