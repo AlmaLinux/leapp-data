@@ -37,3 +37,19 @@ mirrorlist=http://mirrorlist.centos.org/?release=8-stream&arch=$basearch&repo=ex
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-CentOS-Official
+
+[centos8-nfv]
+name=CentOS-8-stream - NFV
+mirrorlist=http://mirrorlist.centos.org/?release=8-stream&arch=$basearch&repo=NFV
+#baseurl=http://mirror.centos.org/$contentdir/8-stream/NFV/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-CentOS-Official
+
+[centos8-rt]
+name=CentOS-8-stream - RT
+mirrorlist=http://mirrorlist.centos.org/?release=8-stream&arch=$basearch&repo=RT
+#baseurl=http://mirror.centos.org/$contentdir/8-stream/RT/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-CentOS-Official

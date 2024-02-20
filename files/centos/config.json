@@ -1,0 +1,263 @@
+{
+    "dist_name": "centos",
+    "os_names": [
+        {
+            "major_version": 7,
+            "os_name": "CentOS"
+        },
+        {
+            "major_version": 8,
+            "os_name": "CentOS"
+        },
+        {
+            "major_version": 9,
+            "os_name": "CentOS"
+        }
+    ],
+
+    "repository_replacing": {
+        "rhel7-base": {
+            "out_packageset": "base",
+            "in_packageset": "base"
+        },
+        "rhel7-optional": {
+            "out_packageset": "base",
+            "in_packageset": "base"
+        },
+        "rhel7-extras": {
+            "out_packageset": "base",
+            "in_packageset": "base"
+        },
+        "rhel7-highavailability": {
+            "out_packageset": "base",
+            "in_packageset": "base"
+        },
+        "rhel7-resilientstorage": {
+            "out_packageset": "base",
+            "in_packageset": "base"
+        },
+
+        "rhel8-AppStream": {
+            "in_packageset": "appstream",
+            "out_packageset": "centos8-appstream"
+        },
+        "rhel8-BaseOS": {
+            "in_packageset": "baseos",
+            "out_packageset": "centos8-baseos"
+        },
+        "rhel8-HighAvailability": {
+            "in_packageset": "ha",
+            "out_packageset": "centos8-ha"
+        },
+        "rhel8-CRB": {
+            "in_packageset": "powertools",
+            "out_packageset":  "centos8-powertools"
+        },
+        "rhel8-RT": {
+            "in_packageset": "rt",
+            "out_packageset": "centos8-rt"
+        },
+        "rhel8-ResilientStorage": {
+            "in_packageset": "resilientstorage",
+            "out_packageset": "centos8-resilientstorage"
+        },
+        "rhel8-NFV": {
+            "in_packageset": "nfv",
+            "out_packageset": "centos8-nfv"
+        },
+
+        "rhel9-AppStream": {
+            "in_packageset": "appstream",
+            "out_packageset": "centos9-appstream"
+        },
+        "rhel9-BaseOS": {
+            "in_packageset": "baseos",
+            "out_packageset": "centos9-baseos"
+        },
+        "rhel9-HighAvailability": {
+            "in_packageset": "ha",
+            "out_packageset": "centos9-ha"
+        },
+        "rhel9-CRB": {
+            "in_packageset": "crb",
+            "out_packageset": "centos9-crb"
+        },
+        "rhel9-RT": {
+            "in_packageset": "rt",
+            "out_packageset": "centos9-rt"
+        },
+        "rhel9-ResilientStorage": {
+            "in_packageset": "resilientstorage",
+            "out_packageset": "centos9-resilientstorage"
+        },
+        "rhel9-NFV": {
+            "in_packageset": "nfv",
+            "out_packageset": "centos9-nfv"
+        },
+
+        "rhel10-AppStream": {
+            "in_packageset": "appstream",
+            "out_packageset": "centos10-appstream"
+        }
+    },
+    "removable_repositories":[
+        "rhel7-ansible-2",
+        "rhel7-rt",
+        "rhel7-rhevh",
+        "rhel7-rhceph-tools-3",
+        "rhel7-rhgs-server-3.1",
+        "rhel7-resilientstorage",
+        "rhel7-dotnet-1",
+        "rhel7-sap",
+        "rhel7-rhscl-1",
+        "rhel7-openstack-13",
+        "rhel7-ose-3.9",
+        "rhel7-rhn-tools",
+        "rhel7-nfv",
+        "rhel7-sap-hana",
+        "rhel7-ose-3.7",
+        "rhel7-dotnet-1",
+
+        "rhel8-Supplementary",
+        "rhel8-SAP-NetWeaver",
+        "rhel8-SAP-Solutions",
+
+        "rhel9-SAP-NetWeaver",
+        "rhel9-SAP-Solutions"
+    ],
+
+    "package_replacing": [
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-release",
+            "to": "centos-release"
+        },
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-logos",
+            "to": {
+                "in_packageset": "centos-logos",
+                "out_packageset": "centos-logos"
+            }
+        },
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-backgrounds",
+            "to": "centos-backgrounds"
+        },
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-logos-httpd",
+            "to": "centos-logos-httpd"
+        },
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-logos-ipa",
+            "to": "centos-logos-ipa"
+        },
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-bookmarks",
+            "to": "centos-bookmarks"
+        },
+        {
+            "initial_release": 8,
+            "target_release": 9,
+            "name": "redhat-bookmarks",
+            "to": "centos-bookmarks"
+        },
+        {
+            "initial_release": null,
+            "target_release": 8,
+            "name": "redhat-logos-ipa",
+            "to": "centos-logos-ipa"
+        },
+        {
+            "initial_release": 8,
+            "target_release": 9,
+            "name": "redhat-logos",
+            "to": "centos-logos"
+        },
+        {
+            "initial_release": 8,
+            "target_release": 9,
+            "name": "redhat-logos-httpd",
+            "to": "centos-logos-httpd"
+        }
+    ],
+    "removable_packages":[
+        {
+            "name": "redhat-release-server",
+            "initial_release": 7,
+            "target_release": 8
+        },
+        {
+            "name": "libreport-rhel",
+            "initial_release": 8,
+            "target_release": 8
+        },
+        {
+            "name": "libreport-rhel-bugzilla",
+            "initial_release": 8,
+            "target_release": 8
+        },
+        {
+            "name": "redhat-release-computenode",
+            "initial_release": 7,
+            "target_release": 8
+        },
+        {
+            "name": "redhat-release-workstation",
+            "initial_release": 7,
+            "target_release": 8
+        },
+        {
+            "name": "redhat-release-client",
+            "initial_release": 7,
+            "target_release": 8
+        }
+    ],
+
+    "additional_actions":[
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libreport-rhel-bugzilla",
+                        "repository": "base"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 6,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 3,
+                "os_name": "CentOS"
+            }
+        }
+    ]
+}

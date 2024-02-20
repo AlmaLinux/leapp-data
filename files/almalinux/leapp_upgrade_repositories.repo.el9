@@ -45,3 +45,35 @@ mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/extras
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-9
+
+[almalinux9-sap]
+name=AlmaLinux 9 - SAP
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/sap
+# baseurl=https://repo.almalinux.org/almalinux/9/SAP/$basearch/os/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-9
+
+[almalinux9-saphana]
+name=AlmaLinux 9 - SAPHANA
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/saphana
+# baseurl=https://repo.almalinux.org/almalinux/9/SAPHANA/$basearch/os/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-9
+
+[almalinux9-rt]
+name=AlmaLinux 9 - RT
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/rt
+# baseurl=https://repo.almalinux.org/almalinux/9/RT/$basearch/os/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-9
+
+[almalinux9-nfv]
+name=AlmaLinux 9 - NFV
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/nfv
+# baseurl=https://repo.almalinux.org/almalinux/9/NFV/$basearch/os/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-9

@@ -16,7 +16,10 @@
                         "almalinux8-appstream",
                         "almalinux8-powertools",
                         "almalinux8-ha",
-                        "almalinux8-resilientstorage"
+                        "almalinux8-resilientstorage",
+                        "almalinux8-nfv",
+                        "almalinux8-sap",
+                        "almalinux8-saphana"
                     ]
                 },
                 {
@@ -26,7 +29,10 @@
                         "almalinux8-appstream",
                         "almalinux8-powertools",
                         "almalinux8-ha",
-                        "almalinux8-resilientstorage"
+                        "almalinux8-resilientstorage",
+                        "almalinux8-nfv",
+                        "almalinux8-sap",
+                        "almalinux8-saphana"
                     ]
                 },
                 {
@@ -146,6 +152,42 @@
                     "channel": "ga"
                 }
             ]
-        }
+        },
+        {
+            "pesid": "almalinux8-nfv",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux8-nfv",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux8-sap",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux8-sap",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux8-saphana",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux8-saphana",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        }        
     ]
 }

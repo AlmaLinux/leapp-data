@@ -1,48 +1,51 @@
 {
-  "legal_notice": "Copyright (c) 2023 Oracle, AlmaLinux OS Foundation", 
-  "packageinfo": [
-    {
-      "action": 3, 
-      "arches": [
-        "x86_64", 
-        "aarch64", 
-        "ppc64le"
-      ], 
-      "description": "", 
-      "id": 2327, 
-      "in_packageset": {
-        "package": [
-          {
-            "module_stream": null, 
-            "name": "percona-xtrabackup", 
-            "repository": "mariadb-tools"
-          }
-        ], 
-        "set_id": 4122
-      }, 
-      "initial_release": {
-        "major_version": 7, 
-        "minor_version": 9, 
-        "os_name": "CentOS"
-      }, 
-      "is_approved": true,
-      "out_packageset": {
-        "package": [
-          {
-            "module_stream": null,
-            "name": "percona-xtrabackup-24",
-            "repository": "el8-mariadb-tools"
-          }
-        ], 
-        "set_id": 4123
-      }, 
-      "release": {
-        "major_version": 8, 
-        "minor_version": 0, 
-        "os_name": "AlmaLinux"
-      }, 
-      "version": 1
-    }
-  ], 
-  "timestamp": "202308241055Z"
+    "legal_notice": "Copyright (c) 2023 Oracle, AlmaLinux OS Foundation",
+    "packageinfo": [
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le"
+            ],
+            "description": "",
+            "id": 12691,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "percona-xtrabackup",
+                        "repository": "mariadb-tools"
+                    }
+                ],
+                "set_id": 17598
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 9,
+                "os_name": "CentOS"
+            },
+            "is_approved": true,
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "percona-xtrabackup-24",
+                        "repository": "el8-mariadb-tools"
+                    }
+                ],
+                "set_id": 17599
+            },
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            },
+            "version": 1
+        }
+    ],
+    "provided_data_streams": [
+        "2.0"
+    ],
+    "timestamp": "202308241055Z"
 }

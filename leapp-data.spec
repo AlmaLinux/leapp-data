@@ -1,6 +1,7 @@
+%global pes_events_build_date 20240123
+
 %define dist_list almalinux centos eurolinux oraclelinux rocky
 %define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
-
 
 %if 0%{?rhel} == 7
 %if %{dist_name} == "almalinux"
@@ -37,10 +38,12 @@
 %endif
 %endif
 
+%bcond_without check
+
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	6%{?dist}
+Release:	7%{?dist}.%{pes-events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -49,6 +52,17 @@ Source0:	leapp-data-%{version}.tar.gz
 BuildArch:  noarch
 
 Conflicts: %{conflict_dists}
+
+%if %{with check}
+%if 0%{?rhel} == 7
+BuildRequires: python36
+BuildRequires: python36-jsonschema
+%endif
+%if 0%{?rhel} == 8
+BuildRequires: python3
+BuildRequires: python3-jsonschema
+%endif
+%endif
 
 %description
 %{dist_name} %{summary}
@@ -59,6 +73,9 @@ Conflicts: %{conflict_dists}
 
 
 %build
+%if 0%{?rhel} < 8
+sh tools/generate_epel_files.sh "%{dist_name}"
+%endif
 
 
 %install
@@ -67,6 +84,9 @@ mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 cp -f vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
 %endif
 cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
+
+
+rm -f %{buildroot}%{_sysconfdir}/leapp/files/config.json
 
 %if 0%{?rhel} == 7
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
@@ -87,6 +107,16 @@ mkdir -p %{buildroot}%{_sysconfdir}/leapp/repos.d/system_upgrade/common/files/rp
 mv -f files/rpm-gpg/%{gpg_key} %{buildroot}%{_sysconfdir}/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/
 %endif
 
+%check
+%if %{with check}
+JSON_FILES=$(find %{buildroot}%{_sysconfdir}/leapp/ -path "./tests" -prune -o -name "*pes*.json" -print0 | xargs -0 echo)
+
+python3 tests/validate_json.py tests/pes-events-schema.json $JSON_FILES
+python3 tests/validate_ids.py $JSON_FILES
+python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-events.json
+%endif
+
+
 %files
 %doc LICENSE NOTICE README.md
 %if 0%{?rhel} == 8
@@ -100,6 +130,12 @@ mv -f files/rpm-gpg/%{gpg_key} %{buildroot}%{_sysconfdir}/leapp/repos.d/system_u
 
 
 %changelog
+* Mon Feb 05 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-7.20240123
+- Add generate_epel_files script to create epel files for EL7
+- Add data to support migration from EL7 to EL8 with 
+ enabled epel repositories for AlmaLinux-8
+- Add pes_events_build_date to spec file to track the pes-events update date
+
 * Tue Jan 16 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-6
 - Add gpg keys
 

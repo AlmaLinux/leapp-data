@@ -1,0 +1,112 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "packageinfo": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "action": {"type": "integer"},
+            "architectures": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "id": {"type": "integer"},
+            "in_packageset": {
+              "type": ["object", "null"],
+              "properties": {
+                "package": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "modulestreams": {
+                        "type": "array",
+                        "items": {
+                          "type": ["object", "null"],
+                          "properties": {
+                            "name": {"type": "string"},
+                            "stream": {"type": "string"}
+                          }
+                        }
+                      },
+                      "name": {"type": "string"},
+                      "repository": {"type": "string"}
+                    },
+                    "required": ["name", "repository"]
+                  }
+                },
+                "set_id": {"type": "integer"}
+              }
+            },
+            "initial_release": {
+              "type": ["object", "null"],
+              "properties": {
+                "major_version": {"type": "integer"},
+                "minor_version": {"type": "integer"},
+                "os_name": {"type": "string"},
+                "tag": {"type": ["string", "null"]},
+                "z_stream": {"type": ["string", "null"]}
+              }
+            },
+            "modulestream_maps": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "in_modulestream": {
+                    "type": ["object", "null"],
+                    "properties": {
+                      "name": {"type": "string"},
+                      "stream": {"type": "string"}
+                    }
+                  },
+                  "out_modulestream": {"type": ["object", "null"]}
+                }
+              }
+            },
+            "out_packageset": {
+              "type": ["object", "null"],
+              "properties": {
+                "package": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "modulestreams": {
+                        "type": "array",
+                        "items": {"type": ["object", "null"]}
+                      },
+                      "name": {"type": "string"},
+                      "repository": {"type": "string"}
+                    },
+                    "required": ["name", "repository"]
+                  }
+                },
+                "set_id": {"type": "integer"}
+              }
+            },
+            "release": {
+              "type": ["object", "null"],
+              "properties": {
+                "major_version": {"type": "integer"},
+                "minor_version": {"type": "integer"},
+                "os_name": {"type": "string"},
+                "tag": {"type": ["string", "null"]},
+                "z_stream": {"type": ["string", "null"]}
+              }
+            }
+          },
+          "required": ["action", "architectures", "id", "initial_release", "release"]
+        }
+      },
+      "provided_data_streams": {
+        "type": "array",
+        "items": {"type": "string"}
+      },
+      "timestamp": {"type": "string"}
+    },
+    "required": ["packageinfo", "provided_data_streams", "timestamp"]
+  }
+  
