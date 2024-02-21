@@ -68,7 +68,7 @@
                     "target": [
                         "almalinux9-saphana"
                     ]
-                },
+                }
             ]
         }
     ],
@@ -312,6 +312,6 @@
                     "channel": "ga"
                 }
             ]
-        },
+        }
     ]
 }

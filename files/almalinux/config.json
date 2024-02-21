@@ -134,7 +134,8 @@
         "rhel7-ose-3.7",
         "rhel7-dotnet-1",
 
-        "rhel8-Supplementary"
+        "rhel8-Supplementary",
+        "rhel8-Advanced-Virt"
     ],
 
     "package_replacing": [
@@ -232,6 +233,36 @@
             "name": "redhat-release-client",
             "initial_release": 7,
             "target_release": 8
+        },
+        {
+            "name": "libssh2",
+            "initial_release": 7,
+            "target_release": 8
+        },
+        {
+            "name": "libssh2-devel",
+            "initial_release": 7,
+            "target_release": 8
+        },
+        {
+            "name": "libssh2-docs",
+            "initial_release": 7,
+            "target_release": 8
+        },
+        {
+            "name": "libssh2",
+            "initial_release": 8,
+            "target_release": 8
+        },
+        {
+            "name": "libssh2-devel",
+            "initial_release": 8,
+            "target_release": 8
+        },
+        {
+            "name": "libssh2-docs",
+            "initial_release": 8,
+            "target_release": 8
         }
     ],
 
@@ -323,7 +354,168 @@
                 "minor_version": 3,
                 "os_name": "AlmaLinux"
             }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libssh2",
+                        "repository": "base"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libssh",
+                        "repository": "almalinux8-baseos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libssh2-devel",
+                        "repository": "base"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libssh-devel",
+                        "repository": "almalinux8-baseos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libssh2-docs",
+                        "repository": "base"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libssh-docs",
+                        "repository": "almalinux8-baseos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
         }
-
     ]
 }

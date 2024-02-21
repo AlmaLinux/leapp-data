@@ -4,7 +4,7 @@ mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/baseos
 # baseurl=https://repo.almalinux.org/almalinux/8/BaseOS/$basearch/os/
 enabled=1
 gpgcheck=0
-gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-8
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-AlmaLinux-8
 
 [almalinux8-appstream]
 name=AlmaLinux 8 - AppStream
@@ -12,7 +12,7 @@ mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/appstream
 # baseurl=https://repo.almalinux.org/almalinux/8/AppStream/$basearch/os/
 enabled=1
 gpgcheck=0
-gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-8
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-AlmaLinux-8
 
 [almalinux8-powertools]
 name=AlmaLinux 8 - PowerTools
@@ -20,7 +20,7 @@ mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/powertools
 # baseurl=https://repo.almalinux.org/almalinux/8/PowerTools/$basearch/os/
 enabled=1
 gpgcheck=0
-gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-8
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-AlmaLinux-8
 
 [almalinux8-ha]
 name=AlmaLinux 8 - HighAvailability
@@ -28,7 +28,7 @@ mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/ha
 # baseurl=https://repo.almalinux.org/almalinux/8/HighAvailability/$basearch/os/
 enabled=1
 gpgcheck=0
-gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-8
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-AlmaLinux-8
 
 [almalinux8-resilientstorage]
 name=AlmaLinux 8 - ResilientStorage
@@ -36,7 +36,7 @@ mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/resilientstorage
 # baseurl=https://repo.almalinux.org/almalinux/8/ResilientStorage/$basearch/os/
 enabled=1
 gpgcheck=0
-gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-8
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-AlmaLinux-8
 
 [almalinux8-extras]
 name=AlmaLinux 8 - Extras
@@ -44,7 +44,7 @@ mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/extras
 # baseurl=https://repo.almalinux.org/almalinux/8/extras/$basearch/os/
 enabled=1
 gpgcheck=0
-gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-8
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-AlmaLinux-8
 
 [almalinux8-sap]
 name=AlmaLinux 8 - SAP
@@ -52,7 +52,7 @@ mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/sap
 # baseurl=https://repo.almalinux.org/almalinux/8/SAP/$basearch/os/
 enabled=1
 gpgcheck=1
-gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-8
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-AlmaLinux-8
 
 [almalinux8-saphana]
 name=AlmaLinux 8 - SAPHANA
@@ -60,7 +60,7 @@ mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/saphana
 # baseurl=https://repo.almalinux.org/almalinux/8/SAPHANA/$basearch/os/
 enabled=1
 gpgcheck=1
-gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-8
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-AlmaLinux-8
 
 [almalinux8-nfv]
 name=AlmaLinux 8 - NFV
@@ -68,4 +68,4 @@ mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/nfv
 # baseurl=https://repo.almalinux.org/almalinux/8/NFV/$basearch/os/
 enabled=1
 gpgcheck=1
-gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-8
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-KEY-AlmaLinux-8

@@ -1,6 +1,8 @@
 import json
 import requests
 
+specific_commit = ''
+
 
 def download_pes_events(session, url):
     response = session.get(url)
@@ -123,7 +125,10 @@ def update_pes_events(dist_name, pes_events_data):
 
 def main():
     with requests.Session() as session:
-        pes_events_url = 'https://raw.githubusercontent.com/oamg/leapp-repository/master/etc/leapp/files/pes-events.json'
+        if specific_commit:
+            pes_events_url = f'https://raw.githubusercontent.com/oamg/leapp-repository/{specific_commit}/etc/leapp/files/pes-events.json'
+        else:
+            pes_events_url = 'https://raw.githubusercontent.com/oamg/leapp-repository/master/etc/leapp/files/pes-events.json'
 
         for dist_name in ['almalinux', 'oraclelinux', 'centos', 'rocky', 'eurolinux']:
             print(f'Updating {dist_name}')
