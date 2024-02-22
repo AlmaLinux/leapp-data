@@ -510,7 +510,7 @@
                             null
                         ],
                         "name": "ustr",
-                        "repository": "powertools"
+                        "repository": "certify-powertools"
                     }
                 ],
                 "set_id": 0
@@ -532,7 +532,7 @@
             "release": {
                 "major_version": 9,
                 "minor_version": 0,
-                "os_name": "AlmaLinux",
+                "os_name": "EuroLinux",
                 "tag": null,
                 "z_stream": null
             }

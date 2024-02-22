@@ -490,7 +490,7 @@
             "release": {
                 "major_version": 9,
                 "minor_version": 0,
-                "os_name": "AlmaLinux",
+                "os_name": "CentOS",
                 "tag": null,
                 "z_stream": null
             }
