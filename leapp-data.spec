@@ -1,4 +1,4 @@
-%global pes_events_build_date 20240123
+%global pes_events_build_date 20230823
 
 %define dist_list almalinux centos eurolinux oraclelinux rocky
 %define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
@@ -43,7 +43,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	7%{?dist}.%{pes_events_build_date}
+Release:	8%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -130,6 +130,10 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Thu Feb 22 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-8.20230823
+- Downgrade pes-event files into 57515f42a5831e8ebe9dd3c95a7b58f8c76824ab (as of 20230823)
+- Remove ustr package during EL8 to EL9 migration for the all distros
+
 * Mon Feb 05 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-7.20240123
 - Add generate_epel_files script to create epel files for EL7
 - Add data to support migration from EL7 to EL8 with 
