@@ -5,7 +5,7 @@ name=AlmaLinux 8 - BaseOS
 mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/baseos
 # baseurl=https://repo.almalinux.org/almalinux/8/BaseOS/$basearch/os/
 enabled=1
-gpgcheck=1
+gpgcheck=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
 
 [almalinux8-appstream]
@@ -13,7 +13,7 @@ name=AlmaLinux 8 - AppStream
 mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/appstream
 # baseurl=https://repo.almalinux.org/almalinux/8/AppStream/$basearch/os/
 enabled=1
-gpgcheck=1
+gpgcheck=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
 
 [almalinux8-powertools]
@@ -21,7 +21,7 @@ name=AlmaLinux 8 - PowerTools
 mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/powertools
 # baseurl=https://repo.almalinux.org/almalinux/8/PowerTools/$basearch/os/
 enabled=1
-gpgcheck=1
+gpgcheck=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
 
 [almalinux8-highavailability]
@@ -29,7 +29,7 @@ name=AlmaLinux 8 - HighAvailability
 mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/ha
 # baseurl=https://repo.almalinux.org/almalinux/8/HighAvailability/$basearch/os/
 enabled=1
-gpgcheck=1
+gpgcheck=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
 
 [almalinux8-resilientstorage]
@@ -37,7 +37,7 @@ name=AlmaLinux 8 - ResilientStorage
 mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/resilientstorage
 # baseurl=https://repo.almalinux.org/almalinux/8/ResilientStorage/$basearch/os/
 enabled=1
-gpgcheck=1
+gpgcheck=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
 
 [almalinux8-extras]
@@ -45,7 +45,7 @@ name=AlmaLinux 8 - Extras
 mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/extras
 # baseurl=https://repo.almalinux.org/almalinux/8/extras/$basearch/os/
 enabled=1
-gpgcheck=1
+gpgcheck=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
 
 # CL repositories used during migration.
@@ -94,5 +94,5 @@ name=AlmaLinux 8 - PowerTools
 mirrorlist=https://mirrors.almalinux.org/mirrorlist/8/powertools
 # baseurl=https://repo.almalinux.org/almalinux/8/PowerTools/$basearch/os/
 enabled=1
-gpgcheck=1
+gpgcheck=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
