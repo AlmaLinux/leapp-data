@@ -22,8 +22,7 @@ os_name["rocky"]="Rocky"
 
 if [ -n "${os_repos[$dist_name]}" ]; then
     IFS=' ' read -ra REPO <<< "${os_repos[$dist_name]}"
-    sed -i "s/{appstream}/${REPO[0]}/g" vendors.d/epel_map.json_template
-    sed -i "s/{powertools}/${REPO[1]}/g" vendors.d/epel_map.json_template
+    sed -i -e "s/{appstream}/${REPO[0]}/g" -e "s/{powertools}/${REPO[1]}/g" vendors.d/epel_map.json_template
     sed -i "s/{os_name}/${os_name[$dist_name]}/g" vendors.d/epel_pes.json_template
 
     mv vendors.d/epel_pes.json_template vendors.d/epel_pes.json
