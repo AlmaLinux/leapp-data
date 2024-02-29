@@ -3,7 +3,7 @@
   "packageinfo": [
     {
       "action": 3, 
-      "arches": [
+      "architectures": [
         "x86_64", 
         "aarch64", 
         "ppc64le"

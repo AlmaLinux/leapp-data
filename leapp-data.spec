@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	4%{?dist}.1
+Release:	4%{?dist}.2
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -52,6 +52,9 @@ rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 
 
 %changelog
+* Thu Feb 29 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-4.2
+- Rename arches field to architectures in pes-events
+
 * Mon Feb 05 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-4.1
 - Fix OL8 migration
 
