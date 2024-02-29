@@ -3,9 +3,9 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	4%{?dist}.2
+Release:	5%{?dist}
 Summary:	data for migrating tool
-Group:		Applications/Databases
+Group:	Applications/Databases
 License:	ASL 2.0
 URL:		https://github.com/AlmaLinux/leapp-data
 Source0:	leapp-data-%{version}.tar.gz
@@ -22,6 +22,9 @@ Conflicts: %{conflict_dists}
 
 
 %build
+%if 0%{?rhel} < 8
+sh generate_epel_files.sh "%{dist_name}"
+%endif
 
 
 %install
@@ -30,6 +33,10 @@ mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 cp -f vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
 %endif
 cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
+
+if [ "%{dist_name}" != "almalinux" ]; then
+    rm -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel*
+fi
 
 %if 0%{?rhel} == 7
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
@@ -52,6 +59,10 @@ rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 
 
 %changelog
+* Thu Feb 29 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-5
+- Add generate_epel_files script to create epel files for EL7
+- Add data to support migration from EL7 to EL8 with epel for AlmaLinux-8
+
 * Thu Feb 29 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-4.2
 - Rename arches field to architectures in pes-events
 

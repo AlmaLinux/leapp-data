@@ -86886,7 +86886,7 @@
           {
             "module_stream": null,
             "name": "antlr-python",
-            "repository": "epel"
+            "repository": "base"
           }
         ],
         "set_id": 12885
@@ -86918,7 +86918,7 @@
           {
             "module_stream": null,
             "name": "apache-commons-validator",
-            "repository": "epel"
+            "repository": "base"
           }
         ],
         "set_id": 12886
@@ -86950,7 +86950,7 @@
           {
             "module_stream": null,
             "name": "felix-framework",
-            "repository": "epel"
+            "repository": "base"
           }
         ],
         "set_id": 12888
@@ -86982,7 +86982,7 @@
           {
             "module_stream": null,
             "name": "libGLEWmx",
-            "repository": "epel"
+            "repository": "base"
           }
         ],
         "set_id": 12889
@@ -87014,7 +87014,7 @@
           {
             "module_stream": null,
             "name": "python-isodate",
-            "repository": "epel"
+            "repository": "base"
           }
         ],
         "set_id": 12890
@@ -87541,7 +87541,7 @@
           {
             "module_stream": null,
             "name": "jing",
-            "repository": "epel"
+            "repository": "base"
           }
         ],
         "set_id": 12912
@@ -87573,7 +87573,7 @@
           {
             "module_stream": null,
             "name": "mgetty",
-            "repository": "epel"
+            "repository": "base"
           }
         ],
         "set_id": 12913
@@ -87605,7 +87605,7 @@
           {
             "module_stream": null,
             "name": "mgetty-sendfax",
-            "repository": "epel"
+            "repository": "base"
           }
         ],
         "set_id": 12914
@@ -87637,7 +87637,7 @@
           {
             "module_stream": null,
             "name": "mgetty-viewfax",
-            "repository": "epel"
+            "repository": "base"
           }
         ],
         "set_id": 12915
@@ -87669,7 +87669,7 @@
           {
             "module_stream": null,
             "name": "mgetty-voice",
-            "repository": "epel"
+            "repository": "base"
           }
         ],
         "set_id": 12916
