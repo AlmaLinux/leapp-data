@@ -43,6 +43,18 @@
             ]
         },
         {
+            "pesid": "imunify360-current",
+            "entries": [
+                {
+                    "repoid": "imunify360-current",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
             "pesid": "cloudlinux-imunify360",
             "entries": [
                 {
