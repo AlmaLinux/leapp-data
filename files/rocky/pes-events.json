@@ -90167,7 +90167,8 @@
     {
       "action": 7,
       "architectures": [
-        "noarch"
+        "x86_64",
+        "aarch64"
       ],
       "description": "Python package from EPEL was renamed in Alma8 System repos. ",
       "id": 2224,
@@ -90207,7 +90208,8 @@
     {
       "action": 7,
       "architectures": [
-        "noarch"
+        "x86_64",
+        "aarch64"
       ],
       "description": "EPEL Package is renamed in Alma8 Repo",
       "id": 2225,

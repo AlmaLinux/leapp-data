@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	5%{?dist}
+Release:	5%{?dist}.1
 Summary:	data for migrating tool
 Group:	Applications/Databases
 License:	ASL 2.0
@@ -59,6 +59,9 @@ rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 
 
 %changelog
+* Tue Mar 05 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-5.1
+- Fix Rocky pes-events
+
 * Thu Feb 29 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-5
 - Add generate_epel_files script to create epel files for EL7
 - Add data to support migration from EL7 to EL8 with epel for AlmaLinux-8
