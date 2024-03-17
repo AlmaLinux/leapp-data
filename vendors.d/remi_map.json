@@ -1,0 +1,78 @@
+{
+    "datetime": "202403171050Z",
+    "version_format": "1.0.0",
+    "mapping": [
+        {
+            "source_major_version": "7",
+            "target_major_version": "8",
+            "entries": [
+                {
+                    "source": "remi-php74",
+                    "target": [
+                        "el8-remi-php74"
+                    ]
+                },
+                {
+                    "source": "remi-php74-debuginfo",
+                    "target": [
+                        "el8-remi-php74-debuginfo"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "remi-php74",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repoid": "remi-php74",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-remi-php74",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-remi-php74",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "remi-php74-debuginfo",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repoid": "remi-php74-debuginfo",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-remi-php74-debuginfo",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-remi-php74-debuginfo",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        }
+    ],
+    "provided_data_streams": [
+        "1.1",
+        "2.0"
+    ]
+}

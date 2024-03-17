@@ -1,0 +1,15 @@
+[el8-remi-php74]
+name=Remi's PHP 7.4 RPM repository for Enterprise Linux 8 - $basearch
+#baseurl=http://rpms.remirepo.net/enterprise/8/php74/$basearch/
+#mirrorlist=https://rpms.remirepo.net/enterprise/8/php74/httpsmirror
+mirrorlist=http://cdn.remirepo.net/enterprise/8/php74/mirror
+enabled=1
+gpgcheck=1
+gpgkey=http://rpms.remirepo.net/enterprise/8/RPM-GPG-KEY-remi
+
+[el8-remi-php74-debuginfo]
+name=Remi's PHP 7.4 RPM repository for Enterprise Linux 8 - $basearch - debuginfo
+baseurl=http://rpms.remirepo.net/enterprise/8/debug-php74/$basearch/
+enabled=0
+gpgcheck=1
+gpgkey=http://rpms.remirepo.net/enterprise/8/RPM-GPG-KEY-remi
