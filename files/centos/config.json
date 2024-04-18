@@ -494,6 +494,694 @@
                 "tag": null,
                 "z_stream": null
             }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "nautilus-sendto",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libdmapsharing",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "iptstate",
+                        "repository": "baseos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "gupnp",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libplist",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "jimtcl",
+                        "repository": "baseos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libmodman",
+                        "repository": "baseos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libimobiledevice",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "man-pages-overrides",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "khmeros-fonts-common",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "gupnp-dlna",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "gupnp-av",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "lua-socket",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "usbmuxd",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "gssdp",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libusbmuxd",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
         }
     ]
 }

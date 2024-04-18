@@ -116,6 +116,30 @@
             ]
         },
         {
+            "pesid": "rt",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "rt",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "nfv",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "nfv",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+	{
             "pesid": "centos9-baseos",
             "entries": [
                 {

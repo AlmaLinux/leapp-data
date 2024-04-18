@@ -495,6 +495,651 @@
                 "tag": null,
                 "z_stream": null
             }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "nautilus-sendto",
+                        "repository": "ol8_appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libdmapsharing",
+                        "repository": "ol8_appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "iptstate",
+                        "repository": "ol8_baseos_latest"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "gupnp",
+                        "repository": "ol8_appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libplist",
+                        "repository": "ol8_appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "jimtcl",
+                        "repository": "ol8_baseos_latest"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libmodman",
+                        "repository": "ol8_baseos_latest"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libimobiledevice",
+                        "repository": "ol8_appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "khmeros-fonts-common",
+                        "repository": "ol8_appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "gupnp-dlna",
+                        "repository": "ol8_appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "gupnp-av",
+                        "repository": "ol8_appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "lua-socket",
+                        "repository": "ol8_appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "usbmuxd",
+                        "repository": "ol8_appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "gssdp",
+                        "repository": "ol8_appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libusbmuxd",
+                        "repository": "ol8_appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "OL",
+                "tag": null,
+                "z_stream": null
+            }
         }
     ]
 }
