@@ -1,0 +1,102 @@
+{
+    "datetime": "202306191741Z",
+    "version_format": "1.0.0",
+    "mapping": [
+        {
+            "source_major_version": "8",
+            "target_major_version": "9",
+            "entries": [
+                {
+                    "source": "epel",
+                    "target": [
+                        "el9-epel"
+                    ]
+                },
+                {
+                    "source": "epel",
+                    "target": [
+                        "el9-baseos"
+                    ]
+                },
+                {
+                    "source": "epel",
+                    "target": [
+                        "el9-appstream"
+                    ]
+                },
+                {
+                    "source": "epel",
+                    "target": [
+                        "el9-powertools"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "epel",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "epel",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el9-epel",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "el9-epel",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el9-baseos",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "{baseos}",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el9-appstream",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "{appstream}",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el9-powertools",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "{powertools}",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        }
+    ],
+    "provided_data_streams": [
+        "1.1",
+        "2.0"
+    ]
+}

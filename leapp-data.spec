@@ -43,7 +43,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	8%{?dist}.%{pes_events_build_date}
+Release:	9%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -73,18 +73,28 @@ BuildRequires: python3-jsonschema
 
 
 %build
-%if 0%{?rhel} < 8
-sh tools/generate_epel_files.sh "%{dist_name}"
-%endif
+sh tools/generate_epel_files.sh "%{dist_name}" "%{?rhel}"
 
 
 %install
+# Third-party repositories part
 mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
-%if 0%{?rhel} < 8
+%if 0%{?rhel} == 7
+rm -f vendors.d/*.el9
 cp -f vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo.el8 \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo
 %endif
-cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
+%if 0%{?rhel} == 8
+rm -f vendors.d/*.el8
+cp -f vendors.d/epel* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo.el9 \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo
+%endif
 
+
+# Main part
+cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
 
 rm -f %{buildroot}%{_sysconfdir}/leapp/files/config.json
 
@@ -130,6 +140,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Mon Feb 26 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-9.20230823
+- Add support for migration from EL8 to EL9 for all distros with enabled epel repositories
+
 * Thu Feb 22 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-8.20230823
 - Downgrade pes-event files into 57515f42a5831e8ebe9dd3c95a7b58f8c76824ab (as of 20230823)
 - Remove ustr package during EL8 to EL9 migration for the all distros
