@@ -92,6 +92,8 @@ mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo.el9 \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo
 %endif
 
+# Main part
+cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
 
 # Main part
 cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
