@@ -25,7 +25,7 @@
 %define gpg_key RPM-GPG-KEY-AlmaLinux-9
 %endif
 %if %{dist_name} == "centos"
-%define gpg_key RPM-GPG-KEY-CentOS-Official
+%define gpg_key RPM-GPG-KEY-CentOS-Official RPM-GPG-KEY-CentOS-SIG-Extras
 %endif
 %if %{dist_name} == "eurolinux"
 %define gpg_key RPM-GPG-KEY-eurolinux9
@@ -92,8 +92,6 @@ mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo.el9 \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo
 %endif
 
-# Main part
-cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
 
 # Main part
 cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
@@ -107,7 +105,9 @@ mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el8 \
       %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
 rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el9
 mkdir -p %{buildroot}%{_sysconfdir}/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/
-mv -f files/rpm-gpg/%{gpg_key} %{buildroot}%{_sysconfdir}/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/
+for key in %{gpg_key}; do
+    mv -f files/rpm-gpg/${key} %{buildroot}%{_sysconfdir}/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/
+done
 %endif
 %if 0%{?rhel} == 8
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9 \
@@ -116,7 +116,9 @@ mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el9 \
       %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
 rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 mkdir -p %{buildroot}%{_sysconfdir}/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/
-mv -f files/rpm-gpg/%{gpg_key} %{buildroot}%{_sysconfdir}/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/
+for key in %{gpg_key}; do
+    mv -f files/rpm-gpg/${key} %{buildroot}%{_sysconfdir}/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/
+done
 %endif
 
 %check
@@ -142,13 +144,19 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
-* Thu Apr 18 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-10.20230823
-- ELevate from CentOS Stream release 8 to 9:
+* Mon Apr 22 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-10.20230823
+- CentOS Stream elevation:
  - add pesid for 'rt' and 'nfv' repositories (into repomap.json.el9) 
- - remove 'centos9-extras' repository as it is moved to SIGs (from leapp_upgrade_repositories.repo.el9)
+ - switch 'centos9-extras' repository into the SIG (leapp_upgrade_repositories.repo.el9)
+ - add RPM-GPG-KEY-CentOS-SIG-Extras key for the 'centos9-extras' repository
+
+- ELevate EL release 8 to 9 (all distros)
  - remove the folloving packages during CS8 to CS9 migration (via pes-events.json): nautilus-sendto libdmapsharing iptstate gupnp libplist jimtcl libmodman libimobiledevice man-pages-overrides khmeros-fonts-common gupnp-dlna gupnp-av lua-socket usbmuxd gssdp libusbmuxd
-- fix duplicate set_ids [17598] in vendors.d/mariadb_pes.json
-- bump release number in .spec
+ - fix duplicate set_ids (17598, 17599) in vendors.d/mariadb_pes.json
+
+- The package .spec:
+ - add support of multiple GPG keys
+ - bump release number
 
 * Mon Feb 26 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-9.20230823
 - Add support for migration from EL8 to EL9 for all distros with enabled epel repositories

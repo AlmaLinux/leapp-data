@@ -30,6 +30,14 @@ gpgcheck=1
 enabled=0
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-CentOS-Official
 
+[centos9-extras]
+name=CentOS-9-stream - Extras
+#metalink=https://mirrors.centos.org/metalink?repo=centos-extras-sig-extras-common-9-stream&arch=$basearch&protocol=https,http
+baseurl=https://mirror.stream.centos.org/SIGs/9-stream/extras/$basearch/extras-common/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-CentOS-SIG-Extras
+
 [centos9-nfv]
 name=CentOS-9-stream - NFV
 mirrorlist=https://mirrors.centos.org/mirrorlist?path=/9-stream/NFV/$basearch/os/
