@@ -18,7 +18,7 @@
                         "repository": "mariadb-tools"
                     }
                 ],
-                "set_id": 17598
+                "set_id": 17602
             },
             "initial_release": {
                 "major_version": 7,
@@ -34,7 +34,7 @@
                         "repository": "el8-mariadb-tools"
                     }
                 ],
-                "set_id": 17599
+                "set_id": 17601
             },
             "release": {
                 "major_version": 8,
