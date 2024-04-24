@@ -17,8 +17,7 @@
                         "rocky8-powertools",
                         "rocky8-ha",
                         "rocky8-resilient-storage",
-                        "almalinux8-resilientstorage",
-                        "almalinux8-nfv"
+                        "rocky8-nfv"
                     ]
                 },
                 {
@@ -29,8 +28,7 @@
                         "rocky8-powertools",
                         "rocky8-ha",
                         "rocky8-resilient-storage",
-                        "almalinux8-resilientstorage",
-                        "almalinux8-nfv"
+                        "rocky8-nfv"
                     ]
                 },
                 {
