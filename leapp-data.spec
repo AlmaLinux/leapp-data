@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	5%{?dist}.1
+Release:	5%{?dist}.2
 Summary:	data for migrating tool
 Group:	Applications/Databases
 License:	ASL 2.0
@@ -59,6 +59,9 @@ rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 
 
 %changelog
+* Mon Apr 29 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-5.2
+- Fix pes-events.json for CentOS and Eurolinux: set correct 'architectures' for python36-ply and python36-six packages.
+
 * Tue Mar 05 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-5.1
 - Fix Rocky pes-events
 
