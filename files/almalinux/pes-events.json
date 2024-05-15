@@ -89121,6 +89121,694 @@
   }
 },
 {
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9929,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "sl-release-notes",
+              "repository": "sl"
+          }
+      ],
+      "set_id": 13026
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9930,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "sl7-upgrade",
+              "repository": "sl"
+          }
+      ],
+      "set_id": 13027
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9931,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "yum-conf-extras",
+              "repository": "repos"
+          }
+      ],
+      "set_id": 13028
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9932,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "yum-conf-repos",
+              "repository": "repos"
+          }
+      ],
+      "set_id": 13029
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9933,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "yum-conf-sl7x",
+              "repository": "sl"
+          }
+      ],
+      "set_id": 13030
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9934,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "sl-bookmarks",
+              "repository": "sl"
+          }
+      ],
+      "set_id": 13032
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 3,
+  "architectures": [
+    "x86_64",
+    "aarch64"
+  ],
+  "id": 9935,
+  "in_packageset": {
+    "package": [
+      {
+        "module_stream": null,
+        "name": "sl-indexhtml",
+        "repository": "sl"
+      }
+    ],
+    "set_id": 13033
+  },
+  "initial_release": {
+    "major_version": 7,
+    "minor_version": 7,
+    "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {
+    "package": [
+      {
+        "module_stream": null,
+        "name": "almalinux-indexhtml",
+        "repository": "almalinux8-baseos"
+      }
+    ],
+    "set_id": 13034
+  },
+  "release": {
+    "major_version": 8,
+    "minor_version": 0,
+    "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 3,
+  "architectures": [
+    "x86_64",
+    "aarch64"
+  ],
+  "id": 9936,
+  "in_packageset": {
+    "package": [
+      {
+        "module_stream": null,
+        "name": "sl-logos",
+        "repository": "sl"
+      }
+    ],
+    "set_id": 13035
+  },
+  "initial_release": {
+    "major_version": 7,
+    "minor_version": 7,
+    "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {
+    "package": [
+      {
+        "module_stream": null,
+        "name": "almalinux-logos",
+        "repository": "almalinux8-appstream"
+      }
+    ],
+    "set_id": 13036
+  },
+  "release": {
+    "major_version": 8,
+    "minor_version": 0,
+    "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 3,
+  "architectures": [
+    "x86_64",
+    "aarch64"
+  ],
+  "id": 9937,
+  "in_packageset": {
+    "package": [
+      {
+        "module_stream": null,
+        "name": "sl-release",
+        "repository": "sl"
+      }
+    ],
+    "set_id": 13037
+  },
+  "initial_release": {
+    "major_version": 7,
+    "minor_version": 7,
+    "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {
+    "package": [
+      {
+        "module_stream": null,
+        "name": "almalinux-release",
+        "repository": "almalinux8-baseos"
+      }
+    ],
+    "set_id": 13038
+  },
+  "release": {
+    "major_version": 8,
+    "minor_version": 0,
+    "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 3,
+  "architectures": [
+    "x86_64",
+    "aarch64"
+  ],
+  "id": 9938,
+  "in_packageset": {
+    "package": [
+      {
+        "module_stream": null,
+        "name": "libssh2",
+        "repository": "sl"
+      }
+    ],
+    "set_id": 13039
+  },
+  "initial_release": {
+    "major_version": 7,
+    "minor_version": 7,
+    "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {
+    "package": [
+      {
+        "module_stream": null,
+        "name": "libssh",
+        "repository": "almalinux8-baseos"
+      }
+    ],
+    "set_id": 13040
+  },
+  "release": {
+    "major_version": 8,
+    "minor_version": 0,
+    "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9939,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "kmod-openafs-1.6-sl",
+              "repository": "sl"
+          }
+      ],
+      "set_id": 13041
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 3,
+  "architectures": [
+    "x86_64",
+    "aarch64"
+  ],
+  "id": 9940,
+  "in_packageset": {
+    "package": [
+      {
+        "module_stream": null,
+        "name": "yum-plugin-upgrade-helper",
+        "repository": "sl"
+      }
+    ],
+    "set_id": 13042
+  },
+  "initial_release": {
+    "major_version": 7,
+    "minor_version": 7,
+    "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {
+    "package": [
+      {
+        "module_stream": null,
+        "name": "yum-utils",
+        "repository": "almalinux8-baseos"
+      }
+    ],
+    "set_id": 13043
+  },
+  "release": {
+    "major_version": 8,
+    "minor_version": 0,
+    "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9941,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "openafs-1.6-sl-devel",
+              "repository": "sl"
+          }
+      ],
+      "set_id": 13044
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9942,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "openafs-1.6-sl-authlibs",
+              "repository": "sl"
+          }
+      ],
+      "set_id": 13045
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9943,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "openafs-1.6-sl-krb5",
+              "repository": "sl"
+          }
+      ],
+      "set_id": 13046
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9944,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "openafs-1.6-sl-server",
+              "repository": "sl"
+          }
+      ],
+      "set_id": 13047
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9945,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "openafs-1.6-sl-kpasswd",
+              "repository": "sl"
+          }
+      ],
+      "set_id": 13048
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9946,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "openafs-1.6-sl-compat",
+              "repository": "sl"
+          }
+      ],
+      "set_id": 13049
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9947,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "openafs-1.6-sl-kernel-source",
+              "repository": "sl"
+          }
+      ],
+      "set_id": 13050
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9948,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "openafs-1.6-sl-module-tools",
+              "repository": "sl"
+          }
+      ],
+      "set_id": 13051
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9949,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "openafs-1.6-sl",
+              "repository": "sl"
+          }
+      ],
+      "set_id": 13052
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
+  "action": 1,
+  "architectures": [
+      "x86_64"
+  ],
+  "id": 9950,
+  "in_packageset": {
+      "package": [
+          {
+              "module_stream": null,
+              "name": "openafs-1.6-sl-plumbing-tools",
+              "repository": "sl"
+          }
+      ],
+      "set_id": 13053
+  },
+  "initial_release": {
+      "major_version": 7,
+      "minor_version": 7,
+      "os_name": "scientific"
+  },
+  "is_approved": true,
+  "out_packageset": {},
+  "release": {
+      "major_version": 8,
+      "minor_version": 0,
+      "os_name": "AlmaLinux"
+  }
+},
+{
   "action": 5,
   "architectures": [
     "x86_64",
