@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	5%{?dist}.2
+Release:	6%{?dist}
 Summary:	data for migrating tool
 Group:	Applications/Databases
 License:	ASL 2.0
@@ -59,6 +59,9 @@ rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 
 
 %changelog
+* Wed May 15 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-6
+- Data to support upgrade of Scientific Linux 7 to AlmaLinux 8
+
 * Mon Apr 29 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-5.2
 - Fix pes-events.json for CentOS and Eurolinux: set correct 'architectures' for python36-ply and python36-six packages.
 
