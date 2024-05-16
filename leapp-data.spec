@@ -43,7 +43,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	10%{?dist}.%{pes_events_build_date}
+Release:	11%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -144,6 +144,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Thu May 16 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-11.20230823
+- Data to support upgrade of Scientific Linux 7 to AlmaLinux 8.
+
 * Mon Apr 22 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-10.20230823
 - CentOS Stream elevation:
  - add pesid for 'rt' and 'nfv' repositories (into repomap.json.el9) 
