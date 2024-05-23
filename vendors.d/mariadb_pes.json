@@ -31,8 +31,8 @@
         "package": [
           {
             "module_stream": null,
-            "name": "percona-xtrabackup-24",
-            "repository": "el8-mariadb-tools"
+            "name": "MariaDB-backup",
+            "repository": "all-mariadb-main"
           }
         ], 
         "set_id": 4123
