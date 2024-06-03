@@ -1,0 +1,6 @@
+[cl8-ea4]
+name=CloudLinux 8 EasyApache4
+baseurl=https://repo.cloudlinux.com/cloudlinux/EA4/8/updates/$basearch/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux

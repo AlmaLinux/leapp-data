@@ -1,0 +1,32 @@
+{
+    "datetime": "202406030934Z",
+    "version_format": "1.0.0",
+    "mapping": [
+        {
+            "source_major_version": "7",
+            "target_major_version": "8",
+            "entries": [
+                {
+                    "source": "cl-ea4",
+                    "target": [
+                        "cl8-ea4"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "cl8-ea4",
+            "entries": [
+                {
+                    "repoid": "cl8-ea4",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        }
+    ]
+}

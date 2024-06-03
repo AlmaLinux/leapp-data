@@ -7,18 +7,18 @@
             "target_major_version": "8",
             "entries": [
                 {
-                    "source": "cloudlinux-updates-testing",
-                    "target": ["cloudlinux8-updates-testing"]
+                    "source": "cl-ea4-testing",
+                    "target": ["cl8-ea4-testing"]
                 }
             ]
         }
     ],
     "repositories": [
         {
-            "pesid": "cloudlinux-updates-testing",
+            "pesid": "cl-ea4-testing",
             "entries": [
                 {
-                    "repoid": "cloudlinux-updates-testing",
+                    "repoid": "cl-ea4-testing",
                     "major_version": "7",
                     "repo_type": "rpm",
                     "arch": "x86_64",
@@ -27,10 +27,10 @@
             ]
         },
         {
-            "pesid": "cloudlinux8-updates-testing",
+            "pesid": "cl8-ea4-testing",
             "entries": [
                 {
-                    "repoid": "cloudlinux8-updates-testing",
+                    "repoid": "cl8-ea4-testing",
                     "major_version": "8",
                     "repo_type": "rpm",
                     "arch": "x86_64",

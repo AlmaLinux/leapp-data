@@ -64,12 +64,6 @@
                     ]
                 },
                 {
-                    "source": "cl-ea4",
-                    "target": [
-                        "cl8-ea4"
-                    ]
-                },
-                {
                     "source": "cloudlinux-elevate",
                     "target": [
                         "cloudlinux8-elevate"
@@ -157,18 +151,6 @@
                 {
                     "repoid": "cl-ea4",
                     "major_version": "7",
-                    "repo_type": "rpm",
-                    "arch": "x86_64",
-                    "channel": "ga"
-                }
-            ]
-        },
-        {
-            "pesid": "cl8-ea4",
-            "entries": [
-                {
-                    "repoid": "cl8-ea4",
-                    "major_version": "8",
                     "repo_type": "rpm",
                     "arch": "x86_64",
                     "channel": "ga"
