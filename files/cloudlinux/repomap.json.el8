@@ -146,18 +146,6 @@
             ]
         },
         {
-            "pesid": "cl-ea4",
-            "entries": [
-                {
-                    "repoid": "cl-ea4",
-                    "major_version": "7",
-                    "repo_type": "rpm",
-                    "arch": "x86_64",
-                    "channel": "ga"
-                }
-            ]
-        },
-        {
             "pesid": "cloudlinux-elevate",
             "entries": [
                 {
