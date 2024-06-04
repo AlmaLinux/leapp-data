@@ -1,5 +1,5 @@
 {
-    "datetime": "202204020934Z",
+    "datetime": "202406030934Z",
     "version_format": "1.0.0",
     "mapping": [
         {
@@ -7,34 +7,36 @@
             "target_major_version": "8",
             "entries": [
                 {
-                    "source": "cloudlinux-updates-testing",
-                    "target": ["cloudlinux8-updates-testing"]
+                    "source": "cl-ea4",
+                    "target": [
+                        "cl8-ea4"
+                    ]
                 }
             ]
         }
     ],
     "repositories": [
         {
-            "pesid": "cloudlinux-updates-testing",
+            "pesid": "cl-ea4",
             "entries": [
                 {
-                    "repoid": "cloudlinux-updates-testing",
+                    "repoid": "cl-ea4",
                     "major_version": "7",
                     "repo_type": "rpm",
                     "arch": "x86_64",
-                    "channel": "beta"
+                    "channel": "ga"
                 }
             ]
         },
         {
-            "pesid": "cloudlinux8-updates-testing",
+            "pesid": "cl8-ea4",
             "entries": [
                 {
-                    "repoid": "cloudlinux8-updates-testing",
+                    "repoid": "cl8-ea4",
                     "major_version": "8",
                     "repo_type": "rpm",
                     "arch": "x86_64",
-                    "channel": "beta"
+                    "channel": "ga"
                 }
             ]
         }
