@@ -5,11 +5,11 @@ name=CloudLinux-$releasever - Imunify360
 baseurl=https://repo.imunify360.cloudlinux.com/defense360/el/8/updates/$basearch/
 enabled=1
 gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+gpgkey=file:///etc/leapp/files/vendors.d/imunify.gpg
 
 [cloudlinux8-imunify360-testing]
 name=CloudLinux-$releasever - Imunify360 Testing
 baseurl=https://repo.imunify360.cloudlinux.com/defense360/el/8/updates-testing/$basearch/
 enabled=1
 gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CloudLinux
+gpgkey=file:///etc/leapp/files/vendors.d/imunify.gpg
