@@ -84,12 +84,16 @@ rm -f vendors.d/*.el9
 cp -f vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo.el8 \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.gpg.el8 \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.gpg
 %endif
 %if 0%{?rhel} == 8
 rm -f vendors.d/*.el8
 cp -f vendors.d/epel* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo.el9 \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.gpg.el9 \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.gpg
 %endif
 
 

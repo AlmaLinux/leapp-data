@@ -8,3 +8,4 @@ enabled=1
 gpgcheck=1
 countme=1
 gpgkey=file:///etc/leapp/files/vendors.d/epel.gpg
+
