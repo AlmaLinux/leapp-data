@@ -7,4 +7,4 @@ metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-8&arch=$basearch&i
 enabled=1
 gpgcheck=1
 countme=1
-gpgkey=file:///etc/leapp/files/vendors.d/epel.gpg
+gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/epel.gpg
