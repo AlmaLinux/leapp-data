@@ -86,7 +86,7 @@ cp -rf vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo.el8 \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/epel.gpg.el8 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.gpg
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/epel.gpg
 %endif
 %if 0%{?rhel} == 8
 rm -f vendors.d/*.el8
@@ -96,7 +96,7 @@ cp -rf vendors.d/rpm-gpg/ %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-g
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo.el9 \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/epel.gpg.el9 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.gpg
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/epel.gpg
 %endif
 
 
