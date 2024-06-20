@@ -81,15 +81,22 @@ sh tools/generate_epel_files.sh "%{dist_name}" "%{?rhel}"
 mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 %if 0%{?rhel} == 7
 rm -f vendors.d/*.el9
-cp -f vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
+rm -f vendors.d/rpm-gpg/*.el9
+cp -rf vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo.el8 \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/epel.gpg.el8 \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/epel.gpg
 %endif
 %if 0%{?rhel} == 8
 rm -f vendors.d/*.el8
+rm -f vendors.d/rpm-gpg/*.el8
 cp -f vendors.d/epel* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
+cp -rf vendors.d/rpm-gpg/ %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo.el9 \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/epel.gpg.el9 \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/epel.gpg
 %endif
 
 
