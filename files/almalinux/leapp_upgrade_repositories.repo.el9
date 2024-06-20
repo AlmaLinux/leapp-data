@@ -1,47 +1,47 @@
 [almalinux9-baseos]
 name=AlmaLinux 9 - BaseOS
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/baseos
-# baseurl=https://repo.almalinux.org/almalinux/9/BaseOS/$basearch/os/
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/9.3/baseos
+# baseurl=https://vault.almalinux.org/9.3/BaseOS/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
 
 [almalinux9-appstream]
 name=AlmaLinux 9 - AppStream
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/appstream
-# baseurl=https://repo.almalinux.org/almalinux/9/AppStream/$basearch/os/
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/9.3/appstream
+# baseurl=https://vault.almalinux.org/9.3/AppStream/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
 
 [almalinux9-crb]
 name=AlmaLinux 9 - CRB
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/crb
-# baseurl=https://repo.almalinux.org/almalinux/9/CRB/$basearch/os/
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/9.3/crb
+# baseurl=https://vault.almalinux.org/9.3/CRB/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
 
 [almalinux9-highavailability]
 name=AlmaLinux 9 - HighAvailability
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/ha
-# baseurl=https://repo.almalinux.org/almalinux/9/HighAvailability/$basearch/os/
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/9.3/ha
+# baseurl=https://vault.almalinux.org/9.3/HighAvailability/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
 
 [almalinux9-resilientstorage]
 name=AlmaLinux 9 - ResilientStorage
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/resilientstorage
-# baseurl=https://repo.almalinux.org/almalinux/9/ResilientStorage/$basearch/os/
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/9.3/resilientstorage
+# baseurl=https://vault.almalinux.org/9.3/ResilientStorage/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
 
 [almalinux9-extras]
 name=AlmaLinux 9 - Extras
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/extras
-# baseurl=https://repo.almalinux.org/almalinux/9/extras/$basearch/os/
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/9.3/extras
+# baseurl=https://vault.almalinux.org/9.3/extras/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
