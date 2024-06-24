@@ -43,7 +43,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	12%{?dist}.%{pes_events_build_date}
+Release:	12.1%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -151,6 +151,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Mon Jun 24 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-12.1.20230823
+- Configure MariaDB repository to use version 11
+
 * Thu Jun 20 2024 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-12.20230823
 - Temporary force 9.3 version due to RHEL-36249
 

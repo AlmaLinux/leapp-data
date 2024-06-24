@@ -1,6 +1,6 @@
 [el8-mariadb-main]
 name = MariaDB Server
-baseurl = https://dlm.mariadb.com/repo/mariadb-server/11.1/yum/rhel/8/x86_64
+baseurl = https://dlm.mariadb.com/repo/mariadb-server/11/yum/rhel/8/x86_64
 gpgkey = file:///etc/leapp/files/vendors.d/rpm-gpg/mariadb-Server-GPG-KEY
 gpgcheck = 1
 enabled = 1
