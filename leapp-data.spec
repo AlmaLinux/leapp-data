@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	7%{?dist}
+Release:	7.1%{?dist}
 Summary:	data for migrating tool
 Group:	Applications/Databases
 License:	ASL 2.0
@@ -59,7 +59,7 @@ rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 
 
 %changelog
-* Thu Jun 20 2024 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-7
+* Thu Jun 20 2024 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-7.1
 - Temporary force 9.3 version due to RHEL-36249
 
 * Wed May 15 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-6
