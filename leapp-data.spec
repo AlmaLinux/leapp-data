@@ -91,11 +91,15 @@ mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/mariadb.repo.el8 \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/mariadb.repo
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/mariadb_map.json.el8 \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/mariadb_map.json
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/nginx-stable.repo.el8 \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/nginx-stable.repo
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/nginx-stable_map.json.el8 \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/nginx-stable_map.json
 %endif
 %if 0%{?rhel} == 8
 rm -f vendors.d/*.el8
 rm -f vendors.d/rpm-gpg/*.el8
-cp -f vendors.d/epel* vendors.d/mariadb* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
+cp -f vendors.d/epel* vendors.d/mariadb* vendors.d/nginx-stable* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
 cp -rf vendors.d/rpm-gpg/ %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo.el9 \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo
@@ -105,6 +109,10 @@ mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/mariadb.repo.el9 \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/mariadb.repo
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/mariadb_map.json.el9 \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/mariadb_map.json
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/nginx-stable.repo.el9 \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/nginx-stable.repo
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/nginx-stable_map.json.el9 \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/nginx-stable_map.json
 %endif
 
 
@@ -161,6 +169,7 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 %changelog
 * Wed Jun 26 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-13.20230823
 - Support of MariaDB verndors data for both EL8 and EL9
+- Support of Nginx (stable) verndors data for both EL8 and EL9
 
 * Wed Jun 26 2024 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-12.2.20230823
 - Do not use mirrorlist for Rocky 9.3
@@ -176,7 +185,7 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 * Mon Apr 22 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-10.20230823
 - CentOS Stream elevation:
- - add pesid for 'rt' and 'nfv' repositories (into repomap.json.el9) 
+ - add pesid for 'rt' and 'nfv' repositories (into repomap.json.el9)
  - switch 'centos9-extras' repository into the SIG (leapp_upgrade_repositories.repo.el9)
  - add RPM-GPG-KEY-CentOS-SIG-Extras key for the 'centos9-extras' repository
 
@@ -197,7 +206,7 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 * Mon Feb 05 2024 Eduard Abdullin <eabdullin@almalinux.org> - 0.2-7.20240123
 - Add generate_epel_files script to create epel files for EL7
-- Add data to support migration from EL7 to EL8 with 
+- Add data to support migration from EL7 to EL8 with
  enabled epel repositories for AlmaLinux-8
 - Add pes_events_build_date to spec file to track the pes-events update date
 
