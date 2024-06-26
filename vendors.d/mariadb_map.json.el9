@@ -1,0 +1,108 @@
+{
+    "datetime": "202306191741Z",
+    "version_format": "1.2.0",
+    "mapping": [
+        {
+            "source_major_version": "8",
+            "target_major_version": "9",
+            "entries": [
+                {
+                    "source": "mariadb-main",
+                    "target": [
+                        "all-mariadb-main"
+                    ]
+                },
+                {
+                    "source": "mariadb-maxscale",
+                    "target": [
+                        "all-mariadb-maxscale"
+                    ]
+                },
+                {
+                    "source": "mariadb-tools",
+                    "target": [
+                        "all-mariadb-tools"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "mariadb-main",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "mariadb-main",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "mariadb-maxscale",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "mariadb-maxscale",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "mariadb-tools",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "mariadb-tools",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "all-mariadb-main",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "all-mariadb-main",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "all-mariadb-maxscale",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "all-mariadb-maxscale",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "all-mariadb-tools",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "all-mariadb-tools",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        }
+    ],
+    "provided_data_streams": [
+        "1.1",
+        "2.0"
+    ]
+}
