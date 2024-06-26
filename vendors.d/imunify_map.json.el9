@@ -1,0 +1,102 @@
+{
+    "datetime": "202204020934Z",
+    "version_format": "1.2.0",
+    "mapping": [
+        {
+            "source_major_version": "8",
+            "target_major_version": "9",
+            "entries": [
+                {
+                    "source": "imunify360",
+                    "target": ["cloudlinux9-imunify360"]
+                },
+                {
+                    "source": "cloudlinux-imunify360",
+                    "target": ["cloudlinux9-imunify360"]
+                },
+                {
+                    "source": "imunify360-testing",
+                    "target": ["cloudlinux9-imunify360-testing"]
+                },
+                {
+                    "source": "cloudlinux-imunify360-testing",
+                    "target": ["cloudlinux9-imunify360-testing"]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "imunify360",
+            "entries": [
+                {
+                    "repoid": "imunify360",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "cloudlinux-imunify360",
+            "entries": [
+                {
+                    "repoid": "cloudlinux-imunify360",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "cloudlinux9-imunify360",
+            "entries": [
+                {
+                    "repoid": "cloudlinux9-imunify360",
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "imunify360-testing",
+            "entries": [
+                {
+                    "repoid": "imunify360-testing",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "beta"
+                }
+            ]
+        },
+        {
+            "pesid": "cloudlinux-imunify360-testing",
+            "entries": [
+                {
+                    "repoid": "cloudlinux-imunify360-testing",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "beta"
+                }
+            ]
+        },
+        {
+            "pesid": "cloudlinux9-imunify360-testing",
+            "entries": [
+                {
+                    "repoid": "cloudlinux9-imunify360-testing",
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "beta"
+                }
+            ]
+        }
+    ]
+}
