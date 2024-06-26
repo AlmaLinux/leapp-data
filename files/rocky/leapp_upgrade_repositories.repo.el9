@@ -1,79 +1,79 @@
 [rocky9-baseos]
 name=Rocky Linux 9 - BaseOS
-mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=BaseOS-9.3
-#baseurl=http://dl.rockylinux.org/vault/rocky/9.3/BaseOS/$basearch/os/
+#mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=BaseOS-9.3
+baseurl=http://dl.rockylinux.org/vault/rocky/9.3/BaseOS/$basearch/os/
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
 
 [rocky9-appstream]
 name=Rocky Linux 9 - AppStream
-mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=AppStream-9.3
-#baseurl=http://dl.rockylinux.org/vault/rocky/9.3/AppStream/$basearch/os/
+#mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=AppStream-9.3
+baseurl=http://dl.rockylinux.org/vault/rocky/9.3/AppStream/$basearch/os/
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
 
 [rocky9-crb]
 name=Rocky Linux 9 - CRB
-mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=CRB-9.3
-#baseurl=http://dl.rockylinux.org/vault/rocky/9.3/CRB/$basearch/os/
+#mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=CRB-9.3
+baseurl=http://dl.rockylinux.org/vault/rocky/9.3/CRB/$basearch/os/
 gpgcheck=1
 enabled=0
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
 
 [rocky9-ha]
 name=Rocky Linux 9 - HighAvailability
-mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=HighAvailability-9.3
-#baseurl=http://dl.rockylinux.org/vault/rocky/9.3/HighAvailability/$basearch/os/
+#mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=HighAvailability-9.3
+baseurl=http://dl.rockylinux.org/vault/rocky/9.3/HighAvailability/$basearch/os/
 gpgcheck=1
 enabled=0
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
 
 [rocky9-resilient-storage]
 name=Rocky Linux 9 - ResilientStorage
-mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=ResilientStorage-9.3
-#baseurl=http://dl.rockylinux.org/vault/rocky/9.3/ResilientStorage/$basearch/os/
+#mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=ResilientStorage-9.3
+baseurl=http://dl.rockylinux.org/vault/rocky/9.3/ResilientStorage/$basearch/os/
 gpgcheck=1
 enabled=0
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
 
 [rocky9-extras]
 name=Rocky Linux 9 - Extras
-mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=extras-9.3
-#baseurl=http://dl.rockylinux.org/vault/rocky/9.3/extras/$basearch/os/
+#mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=extras-9.3
+baseurl=http://dl.rockylinux.org/vault/rocky/9.3/extras/$basearch/os/
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
 
 [rocky9-rt]
 name=Rocky Linux 9 - RT
-mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=RT-9
-#baseurl=http://dl.rockylinux.org/pub/rocky/9/RT/$basearch/os/
+#mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=RT-9
+baseurl=http://dl.rockylinux.org/pub/rocky/9/RT/$basearch/os/
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
 
 [rocky9-nfv]
 name=Rocky Linux 9 - NFV
-mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=NFV-9
-#baseurl=http://dl.rockylinux.org/pub/rocky/9/NFV/$basearch/os/
+#mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=NFV-9
+baseurl=http://dl.rockylinux.org/pub/rocky/9/NFV/$basearch/os/
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
 
 [rocky9-sap]
 name=Rocky Linux 9 - SAP
-mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=SAP-9
-#baseurl=http://dl.rockylinux.org/pub/rocky/9/SAP/$basearch/os/
+#mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=SAP-9
+baseurl=http://dl.rockylinux.org/pub/rocky/9/SAP/$basearch/os/
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
 
 [rocky9-saphana]
 name=Rocky Linux 9 - SAPHANA
-mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=SAPHANA-9
-#baseurl=http://dl.rockylinux.org/pub/rocky/9/SAPHANA/$basearch/os/
+#mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=SAPHANA-9
+baseurl=http://dl.rockylinux.org/pub/rocky/9/SAPHANA/$basearch/os/
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-Rocky-9
