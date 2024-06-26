@@ -83,36 +83,38 @@ mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 rm -f vendors.d/*.el9
 rm -f vendors.d/rpm-gpg/*.el9
 cp -rf vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo.el8 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/epel.gpg.el8 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/epel.gpg
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/mariadb.repo.el8 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/mariadb.repo
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/mariadb_map.json.el8 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/mariadb_map.json
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/nginx-stable.repo.el8 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/nginx-stable.repo
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/nginx-stable_map.json.el8 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/nginx-stable_map.json
+for vendor in epel mariadb nginx-stable nginx-mainline; do
+      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el8 ] && \
+      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el8 \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo
+
+      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el8 ] && \
+      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el8 \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg
+
+      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el8 ] && \
+      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el8 \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json
+done
 %endif
 %if 0%{?rhel} == 8
 rm -f vendors.d/*.el8
 rm -f vendors.d/rpm-gpg/*.el8
-cp -f vendors.d/epel* vendors.d/mariadb* vendors.d/nginx-stable* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
+cp -f vendors.d/epel* vendors.d/mariadb* vendors.d/nginx-stable* vendors.d/nginx-mainline* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
 cp -rf vendors.d/rpm-gpg/ %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo.el9 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel.repo
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/epel.gpg.el9 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/epel.gpg
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/mariadb.repo.el9 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/mariadb.repo
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/mariadb_map.json.el9 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/mariadb_map.json
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/nginx-stable.repo.el9 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/nginx-stable.repo
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/nginx-stable_map.json.el9 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/nginx-stable_map.json
+for vendor in epel mariadb nginx-stable nginx-mainline; do
+      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el9 ] && \
+      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el9 \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo
+
+      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el9 ] && \
+      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el9 \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg
+
+      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el9 ] && \
+      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el9 \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json
+done
 %endif
 
 
@@ -170,6 +172,7 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 * Wed Jun 26 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-13.20230823
 - Support of MariaDB verndors data for both EL8 and EL9
 - Support of Nginx (stable) verndors data for both EL8 and EL9
+- Support of Nginx (mainline) verndors data for both EL8 and EL9
 
 * Wed Jun 26 2024 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-12.2.20230823
 - Do not use mirrorlist for Rocky 9.3
