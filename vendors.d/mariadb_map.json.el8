@@ -9,19 +9,19 @@
                 {
                     "source": "mariadb-main",
                     "target": [
-                        "all-mariadb-main"
+                        "el8-mariadb-main"
                     ]
                 },
                 {
                     "source": "mariadb-maxscale",
                     "target": [
-                        "all-mariadb-maxscale"
+                        "el8-mariadb-maxscale"
                     ]
                 },
                 {
                     "source": "mariadb-tools",
                     "target": [
-                        "all-mariadb-tools"
+                        "el8-mariadb-tools"
                     ]
                 }
             ]
@@ -65,11 +65,11 @@
             ]
         },
         {
-            "pesid": "all-mariadb-main",
+            "pesid": "el8-mariadb-main",
             "entries": [
                 {
                     "major_version": "8",
-                    "repoid": "all-mariadb-main",
+                    "repoid": "el8-mariadb-main",
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
@@ -77,11 +77,11 @@
             ]
         },
         {
-            "pesid": "all-mariadb-maxscale",
+            "pesid": "el8-mariadb-maxscale",
             "entries": [
                 {
                     "major_version": "8",
-                    "repoid": "all-mariadb-maxscale",
+                    "repoid": "el8-mariadb-maxscale",
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
@@ -89,11 +89,11 @@
             ]
         },
         {
-            "pesid": "all-mariadb-tools",
+            "pesid": "el8-mariadb-tools",
             "entries": [
                 {
                     "major_version": "8",
-                    "repoid": "all-mariadb-tools",
+                    "repoid": "el8-mariadb-tools",
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
