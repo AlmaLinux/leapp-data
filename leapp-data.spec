@@ -83,7 +83,7 @@ mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 rm -f vendors.d/*.el9
 rm -f vendors.d/rpm-gpg/*.el9
 cp -rf vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
-for vendor in epel mariadb nginx-stable nginx-mainline; do
+for vendor in epel mariadb nginx-stable nginx-mainline postgresql; do
       [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el8 ] && \
       mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el8 \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo
@@ -100,9 +100,9 @@ done
 %if 0%{?rhel} == 8
 rm -f vendors.d/*.el8
 rm -f vendors.d/rpm-gpg/*.el8
-cp -f vendors.d/epel* vendors.d/mariadb* vendors.d/nginx-stable* vendors.d/nginx-mainline* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
+cp -f vendors.d/epel* vendors.d/mariadb* vendors.d/nginx-stable* vendors.d/nginx-mainline* vendors.d/postgresql* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
 cp -rf vendors.d/rpm-gpg/ %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/
-for vendor in epel mariadb nginx-stable nginx-mainline; do
+for vendor in epel mariadb nginx-stable nginx-mainline postgresql; do
       [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el9 ] && \
       mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el9 \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo
@@ -169,10 +169,11 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
-* Wed Jun 26 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-13.20230823
+* Thu Jun 27 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-13.20230823
 - Support of MariaDB verndors data for both EL8 and EL9
 - Support of Nginx (stable) verndors data for both EL8 and EL9
 - Support of Nginx (mainline) verndors data for both EL8 and EL9
+- Support of PostgreSQL verndors data for both EL8 and EL9
 
 * Wed Jun 26 2024 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-12.2.20230823
 - Do not use mirrorlist for Rocky 9.3

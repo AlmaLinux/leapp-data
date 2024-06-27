@@ -1,0 +1,264 @@
+{
+    "datetime": "202306191746Z",
+    "version_format": "1.2.0",
+    "mapping": [
+        {
+            "source_major_version": "8",
+            "target_major_version": "9",
+            "entries": [
+                {
+                    "source": "pgdg-common",
+                    "target": [
+                        "el9-pgdg-common"
+                    ]
+                },
+                {
+                    "source": "pgdg16",
+                    "target": [
+                        "el9-pgdg16",
+                        "el9-pgdg-rocky9-sysupdates",
+                        "el9-pgdg-rhel9-extras"
+                    ]
+                },
+                {
+                    "source": "pgdg15",
+                    "target": [
+                        "el9-pgdg15",
+                        "el9-pgdg-rocky9-sysupdates",
+                        "el9-pgdg-rhel9-extras"
+                    ]
+                },
+                {
+                    "source": "pgdg14",
+                    "target": [
+                        "el9-pgdg14",
+                        "el9-pgdg-rocky9-sysupdates",
+                        "el9-pgdg-rhel9-extras"
+                    ]
+                },
+                {
+                    "source": "pgdg13",
+                    "target": [
+                        "el9-pgdg13",
+                        "el9-pgdg-rocky9-sysupdates",
+                        "el9-pgdg-rhel9-extras"
+                    ]
+                },
+                {
+                    "source": "pgdg12",
+                    "target": [
+                        "el9-pgdg12",
+                        "el9-pgdg-rocky9-sysupdates",
+                        "el9-pgdg-rhel9-extras"
+                    ]
+                },
+                {
+                    "source": "pgdg11",
+                    "target": [
+                        "el9-pgdg11",
+                        "el9-pgdg-rocky9-sysupdates",
+                        "el9-pgdg-rhel9-extras"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "pgdg-common",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "pgdg-common",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "pgdg16",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "pgdg16",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "pgdg15",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "pgdg15",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "pgdg14",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "pgdg14",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "pgdg13",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "pgdg13",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "pgdg12",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "pgdg12",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "pgdg11",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "pgdg11",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el9-pgdg-common",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "el9-pgdg-common",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el9-pgdg16",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "el9-pgdg16",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el9-pgdg15",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "el9-pgdg15",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el9-pgdg14",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "el9-pgdg14",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el9-pgdg13",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "el9-pgdg13",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el9-pgdg12",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "el9-pgdg12",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el9-pgdg11",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "el9-pgdg11",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el9-pgdg-rocky9-sysupdates",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "el9-pgdg-rocky9-sysupdates",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el9-pgdg-rhel9-extras",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "el9-pgdg-rhel9-extras",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        }
+    ],
+    "provided_data_streams": [
+        "1.1",
+        "2.0"
+    ]
+}
