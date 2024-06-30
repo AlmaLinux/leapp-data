@@ -9,7 +9,7 @@
                 "ppc64le"
             ],
             "description": "",
-            "id": 9521,
+            "id": 9522,
             "in_packageset": {
                 "package": [
                     {
@@ -18,7 +18,7 @@
                         "repository": "mariadb-tools"
                     }
                 ],
-                "set_id": 12033
+                "set_id": 12035
             },
             "initial_release": {
                 "major_version": 7,
@@ -34,7 +34,7 @@
                         "repository": "el8-mariadb-tools"
                     }
                 ],
-                "set_id": 12034
+                "set_id": 12036
             },
             "release": {
                 "major_version": 8,
