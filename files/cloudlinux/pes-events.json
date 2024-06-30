@@ -1,5 +1,5 @@
 {
-  "legal_notice": "Copyright (c) 2021 Oracle, AlmaLinux OS Foundation",
+  "legal_notice": "Copyright (c) 2024 Oracle, AlmaLinux OS Foundation, CloudLinux Inc.",
   "packageinfo": [
     {
       "action": 1,
@@ -82669,5 +82669,5 @@
       }
     }
   ],
-  "timestamp": "202108240941Z"
+  "timestamp": "202406302056Z"
 }
