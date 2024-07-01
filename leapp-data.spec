@@ -84,6 +84,9 @@ sh tools/generate_epel_files.sh "%{dist_name}" "%{?rhel}"
 # Third-party repositories part
 mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 cp -rf vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
+if [ "%{dist_name}" != "almalinux" ]; then
+    rm -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel*
+fi
 for vendor in %{supported_vendors}; do
       [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el%{target_version} ] && \
       mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el%{target_version} \
