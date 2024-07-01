@@ -4,6 +4,8 @@
 %define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 %if 0%{?rhel} == 7
+%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql
+%define target_version 8
 %if %{dist_name} == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-8
 %endif
@@ -21,6 +23,8 @@
 %endif
 %endif
 %if 0%{?rhel} == 8
+%define supported_vendors epel mariadb nginx-stable nginx-mainline postgresql
+%define target_version 9
 %if %{dist_name} == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-9
 %endif
@@ -79,43 +83,21 @@ sh tools/generate_epel_files.sh "%{dist_name}" "%{?rhel}"
 %install
 # Third-party repositories part
 mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
-%if 0%{?rhel} == 7
-rm -f vendors.d/*.el9
-rm -f vendors.d/rpm-gpg/*.el9
 cp -rf vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
-for vendor in epel mariadb nginx-stable nginx-mainline postgresql; do
-      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el8 ] && \
-      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el8 \
+for vendor in %{supported_vendors}; do
+      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el%{target_version} ] && \
+      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el%{target_version} \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo
 
-      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el8 ] && \
-      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el8 \
+      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el%{target_version} ] && \
+      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el%{target_version} \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg
 
-      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el8 ] && \
-      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el8 \
+      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el%{target_version} ] && \
+      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el%{target_version} \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json
 done
-%endif
-%if 0%{?rhel} == 8
-rm -f vendors.d/*.el8
-rm -f vendors.d/rpm-gpg/*.el8
-cp -f vendors.d/epel* vendors.d/mariadb* vendors.d/nginx-stable* vendors.d/nginx-mainline* vendors.d/postgresql* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
-cp -rf vendors.d/rpm-gpg/ %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/
-for vendor in epel mariadb nginx-stable nginx-mainline postgresql; do
-      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el9 ] && \
-      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el9 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo
-
-      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el9 ] && \
-      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el9 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg
-
-      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el9 ] && \
-      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el9 \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json
-done
-%endif
+find %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/ -name \*.el\? -a ! -name \*.el%{target_version} -delete
 
 
 # Main part
@@ -169,7 +151,8 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
-* Thu Jun 27 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-13.20230823
+* Mon Jul 1 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-13.20230823
+- Define 'supported_vendors' and 'target_version' to simplify data management for specific version
 - Support of MariaDB verndors data for both EL8 and EL9
 - Support of Nginx (stable) verndors data for both EL8 and EL9
 - Support of Nginx (mainline) verndors data for both EL8 and EL9
