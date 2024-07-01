@@ -157,6 +157,7 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 - Support of Nginx (stable) verndors data for both EL8 and EL9
 - Support of Nginx (mainline) verndors data for both EL8 and EL9
 - Support of PostgreSQL verndors data for both EL8 and EL9
+- Support of CloudLinux Imunify360 verndors data for both EL8 and EL9
 
 * Wed Jun 26 2024 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-12.2.20230823
 - Do not use mirrorlist for Rocky 9.3
