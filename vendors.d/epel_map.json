@@ -21,6 +21,12 @@
                 {
                     "source": "epel",
                     "target": [
+                        "almalinux8-baseos"
+                    ]
+                },
+                {
+                    "source": "epel",
+                    "target": [
                         "almalinux8-appstream"
                     ]
                 },
@@ -64,6 +70,18 @@
                 {
                     "major_version": "7",
                     "repoid": "base",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux8-baseos",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "almalinux8-baseos",
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
