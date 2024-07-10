@@ -1,3 +1,23 @@
+"""
+This script is used to rebuild the IDs in PES JSON files. It loads JSON files from specified directories,
+reassigns the IDs starting from 1, and saves the modified JSON files back to disk.
+
+The script defines a `JSONFile` dataclass to represent a JSON file with its path and data.
+It also defines a `PesIdRebuilder` class that handles the loading, rebuilding, and saving of JSON files.
+
+Why do we need to rebuild the IDs?
+- The IDs in the JSON files are used to identify the PES events and packages.
+- When Leapp encounters an error with a specific PES event, it logs the event ID.
+- To make sure that the event IDs are consistent and identifiable,
+we need to rebuild them across all JSON files that will be used by Leapp.
+
+Usage:
+- Modify the `directory_list` variable in the `main` function to specify the directories containing the JSON files.
+- Run the script to rebuild the IDs and save the modified JSON files.
+
+Note: This script assumes that the PES front file is the first JSON file in the directory list.
+"""
+
 import json
 import os
 from dataclasses import dataclass
@@ -78,6 +98,7 @@ class PesIdRebuilder():
 def main():
     rebuilder = PesIdRebuilder()
 
+    # By default, process the CloudLinux-related PES files.
     os_directory_path = os.path.join(os.path.dirname(__file__), "files/cloudlinux")
     os_vendors_directory_path = os.path.join(os.path.dirname(__file__), "files/cloudlinux/vendors.d")
     common_vendors_directory_path = os.path.join(os.path.dirname(__file__), "vendors.d")
