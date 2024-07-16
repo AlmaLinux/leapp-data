@@ -1,0 +1,6 @@
+[acronis-cpanel-stable]
+name=Acronis Repository for cPanel plugin - stable
+baseurl=https://dl.acronis.com/u/ci/cpanel/stable/rpm
+enabled=1
+gpgcheck=1
+gpgkey=https://dl.acronis.com/u/ci/cpanel/acronis-backup-pubkey.gpg

@@ -1,0 +1,45 @@
+{
+    "datetime": "202407160033Z",
+    "version_format": "1.0.0",
+    "mapping": [
+        {
+            "source_major_version": "7",
+            "target_major_version": "8",
+            "entries": [
+                {
+                    "source": "acronis-cpanel-stable",
+                    "target": [
+                        "acronis-cpanel-stable"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "acronis-cpanel-stable",
+            "entries": [
+                {
+                    "repoid": "acronis-cpanel-stable",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "acronis-cpanel-stable",
+            "entries": [
+                {
+                    "repoid": "acronis-cpanel-stable",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        }
+    ]
+}
+
