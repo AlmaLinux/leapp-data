@@ -1,5 +1,5 @@
 {
-    "datetime": "202204020934Z",
+    "datetime": "202407161513Z",
     "version_format": "1.2.0",
     "provided_data_streams": [
         "2.0"
@@ -39,6 +39,146 @@
                     "source": "extras",
                     "target": [
                         "almalinux8-extras"
+                    ]
+                },
+                {
+                    "source": "centos7-els",
+                    "target": [
+                        "almalinux8-baseos",
+                        "almalinux8-appstream",
+                        "almalinux8-powertools",
+                        "almalinux8-ha",
+                        "almalinux8-resilientstorage"
+                    ]
+                },
+                {
+                    "source": "centos7-els-testing",
+                    "target": [
+                        "almalinux8-baseos",
+                        "almalinux8-appstream",
+                        "almalinux8-powertools",
+                        "almalinux8-ha",
+                        "almalinux8-resilientstorage"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-1",
+                    "target": [
+                        "almalinux8-baseos",
+                        "almalinux8-appstream",
+                        "almalinux8-powertools",
+                        "almalinux8-ha",
+                        "almalinux8-resilientstorage"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-1-bypass",
+                    "target": [
+                        "almalinux8-baseos",
+                        "almalinux8-appstream",
+                        "almalinux8-powertools",
+                        "almalinux8-ha",
+                        "almalinux8-resilientstorage"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-2",
+                    "target": [
+                        "almalinux8-baseos",
+                        "almalinux8-appstream",
+                        "almalinux8-powertools",
+                        "almalinux8-ha",
+                        "almalinux8-resilientstorage"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-2-bypass",
+                    "target": [
+                        "almalinux8-baseos",
+                        "almalinux8-appstream",
+                        "almalinux8-powertools",
+                        "almalinux8-ha",
+                        "almalinux8-resilientstorage"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-3",
+                    "target": [
+                        "almalinux8-baseos",
+                        "almalinux8-appstream",
+                        "almalinux8-powertools",
+                        "almalinux8-ha",
+                        "almalinux8-resilientstorage"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-3-bypass",
+                    "target": [
+                        "almalinux8-baseos",
+                        "almalinux8-appstream",
+                        "almalinux8-powertools",
+                        "almalinux8-ha",
+                        "almalinux8-resilientstorage"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-4",
+                    "target": [
+                        "almalinux8-baseos",
+                        "almalinux8-appstream",
+                        "almalinux8-powertools",
+                        "almalinux8-ha",
+                        "almalinux8-resilientstorage"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-4-bypass",
+                    "target": [
+                        "almalinux8-baseos",
+                        "almalinux8-appstream",
+                        "almalinux8-powertools",
+                        "almalinux8-ha",
+                        "almalinux8-resilientstorage"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-5",
+                    "target": [
+                        "almalinux8-baseos",
+                        "almalinux8-appstream",
+                        "almalinux8-powertools",
+                        "almalinux8-ha",
+                        "almalinux8-resilientstorage"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-5-bypass",
+                    "target": [
+                        "almalinux8-baseos",
+                        "almalinux8-appstream",
+                        "almalinux8-powertools",
+                        "almalinux8-ha",
+                        "almalinux8-resilientstorage"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-6",
+                    "target": [
+                        "almalinux8-baseos",
+                        "almalinux8-appstream",
+                        "almalinux8-powertools",
+                        "almalinux8-ha",
+                        "almalinux8-resilientstorage"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-6-bypass",
+                    "target": [
+                        "almalinux8-baseos",
+                        "almalinux8-appstream",
+                        "almalinux8-powertools",
+                        "almalinux8-ha",
+                        "almalinux8-resilientstorage"
                     ]
                 }
             ]
@@ -184,6 +324,174 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "repoid": "almalinux8-saphana",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7-els",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7-els",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7-els-testing",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7-els-testing",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-1",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-1",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-1-bypass",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-1-bypass",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-2",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-2",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-2-bypass",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-2-bypass",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-3",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-3",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-3-bypass",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-3-bypass",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-4",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-4",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-4-bypass",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-4-bypass",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-5",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-5",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-5-bypass",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-5-bypass",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-6",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-6",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-6-bypass",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-6-bypass",
                     "arch": "x86_64",
                     "channel": "ga"
                 }
