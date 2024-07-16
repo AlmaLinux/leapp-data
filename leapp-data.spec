@@ -3,7 +3,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	7.1%{?dist}
+Release:	8%{?dist}
 Summary:	data for migrating tool
 Group:	Applications/Databases
 License:	ASL 2.0
@@ -59,6 +59,9 @@ rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 
 
 %changelog
+* Tue Jul 16 2024 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-8
+- Add CentOS 7 ELS repos support for upgrades to AlmaLinux
+
 * Thu Jun 20 2024 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-7.1
 - Temporary force 9.3 version due to RHEL-36249
 
