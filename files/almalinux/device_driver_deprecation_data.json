@@ -1,6 +1,7 @@
 {
   "provided_data_streams": [
-    "3.0"
+    "3.0",
+    "2.0"
   ],
   "data": [
     {
@@ -1589,7 +1590,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1011:0x0046:0x103c:0x10c2",
@@ -1602,7 +1605,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1011:0x0046:0x9005:0x0364",
@@ -1615,7 +1620,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1011:0x0046:0x9005:0x0365",
@@ -1628,7 +1635,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1011:0x0046:0x9005:0x1364",
@@ -1641,7 +1650,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1028:0x0001:0x1028:0x0001",
@@ -1654,7 +1665,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1028:0x0002:0x1028:0x0002",
@@ -1667,7 +1680,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1028:0x0002:0x1028:0x00d1",
@@ -1680,7 +1695,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1028:0x0002:0x1028:0x00d9",
@@ -1693,7 +1710,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1028:0x0003:0x1028:0x0003",
@@ -1706,7 +1725,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1028:0x0004:0x1028:0x00d0",
@@ -1719,7 +1740,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1028:0x000a:0x1028:0x0106",
@@ -1732,7 +1755,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1028:0x000a:0x1028:0x011b",
@@ -1745,7 +1770,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1028:0x000a:0x1028:0x0121",
@@ -1758,7 +1785,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0200:0x9005:0x0200",
@@ -1771,7 +1800,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0283:0x9005:0x0283",
@@ -1784,7 +1815,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0284:0x9005:0x0284",
@@ -1797,7 +1830,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285",
@@ -1810,7 +1845,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x1014:0x02F2",
@@ -1823,7 +1860,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x1014:0x0312",
@@ -1836,7 +1875,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x1028",
@@ -1849,7 +1890,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x1028:0x0287",
@@ -1862,7 +1905,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x103C:0x3227",
@@ -1875,7 +1920,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x17aa",
@@ -1888,7 +1935,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x17aa:0x0286",
@@ -1901,7 +1950,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x17aa:0x0287",
@@ -1914,7 +1965,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x0285",
@@ -1927,7 +1980,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x0286",
@@ -1940,7 +1995,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x0287",
@@ -1953,7 +2010,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x0288",
@@ -1966,7 +2025,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x0289",
@@ -1979,7 +2040,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x028a",
@@ -1992,7 +2055,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x028b",
@@ -2005,7 +2070,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x028e",
@@ -2018,7 +2085,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x028f",
@@ -2031,7 +2100,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x0290",
@@ -2057,7 +2128,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x0292",
@@ -2070,7 +2143,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x0293",
@@ -2083,7 +2158,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x0294",
@@ -2096,7 +2173,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x0296",
@@ -2109,7 +2188,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x0297",
@@ -2122,7 +2203,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x0298",
@@ -2135,7 +2218,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x0299",
@@ -2148,7 +2233,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x029a",
@@ -2161,7 +2248,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x02a4",
@@ -2174,7 +2263,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x9005:0x02a5",
@@ -2187,7 +2278,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0286",
@@ -2200,7 +2293,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0286:0x1014:0x9540",
@@ -2213,7 +2308,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0286:0x1014:0x9580",
@@ -2226,7 +2323,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0286:0x9005:0x028c",
@@ -2239,7 +2338,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0286:0x9005:0x028d",
@@ -2252,7 +2353,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0286:0x9005:0x029b",
@@ -2265,7 +2368,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0286:0x9005:0x029c",
@@ -2278,7 +2383,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0286:0x9005:0x029d",
@@ -2291,7 +2398,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0286:0x9005:0x029e",
@@ -2304,7 +2413,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0286:0x9005:0x029f",
@@ -2317,7 +2428,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0286:0x9005:0x02a0",
@@ -2330,7 +2443,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0286:0x9005:0x02a1",
@@ -2343,7 +2458,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0286:0x9005:0x02a2",
@@ -2356,7 +2473,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0286:0x9005:0x02a3",
@@ -2369,7 +2488,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0286:0x9005:0x02a6",
@@ -2382,7 +2503,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0286:0x9005:0x0800",
@@ -2395,7 +2518,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0287:0x9005:0x0800",
@@ -2408,7 +2533,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0288",
@@ -2500,7 +2627,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x19a2:0x0222",
@@ -2513,7 +2642,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x19a2:0x0712",
@@ -2565,7 +2696,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x19a2:0x0700",
@@ -2578,7 +2711,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x19a2:0x0211",
@@ -2591,7 +2726,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x19a2:0x0710",
@@ -2604,7 +2741,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x19a2:0x0221",
@@ -3085,7 +3224,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0x1ae5",
@@ -3098,7 +3239,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xe100",
@@ -3111,7 +3254,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xe131",
@@ -3124,7 +3269,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xe180",
@@ -3137,7 +3284,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xe260",
@@ -3150,7 +3299,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xf095",
@@ -3163,7 +3314,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xf098",
@@ -3176,7 +3329,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xf0a1",
@@ -3189,7 +3344,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xf0a5",
@@ -3202,7 +3359,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xf0d1",
@@ -3254,7 +3413,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xf0f5",
@@ -3267,7 +3428,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xf0f6",
@@ -3280,7 +3443,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xf0f7",
@@ -3306,7 +3471,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xf700",
@@ -3319,7 +3486,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xf800",
@@ -3332,7 +3501,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xf900",
@@ -3345,7 +3516,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xf980",
@@ -3358,7 +3531,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xfa00",
@@ -3371,7 +3546,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xfb00",
@@ -3384,7 +3561,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xfc00",
@@ -3397,7 +3576,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xfc10",
@@ -3410,7 +3591,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xfc20",
@@ -3423,7 +3606,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xfc50",
@@ -3436,7 +3621,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xfd00",
@@ -3449,7 +3636,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xfd11",
@@ -3462,7 +3651,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xfd12",
@@ -3488,7 +3679,8 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8
       ],
       "deprecation_announced": "",
       "device_id": "0x10df:0xfe05",
@@ -3527,7 +3719,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x19a2:0x0704",
@@ -3540,7 +3734,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x19a2:0x0714",
@@ -3672,7 +3868,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1000:0x0060",
@@ -3717,7 +3915,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1000:0x0078",
@@ -3746,7 +3946,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1000:0x007C",
@@ -3759,7 +3961,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1000:0x0411",
@@ -3772,7 +3976,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1000:0x0413",
@@ -3785,7 +3991,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1028:0x0015",
@@ -3798,7 +4006,8 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8
       ],
       "deprecation_announced": "",
       "device_id": "0x15B3:0x1002",
@@ -3811,7 +4020,8 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8
       ],
       "deprecation_announced": "",
       "device_id": "0x15B3:0x6340",
@@ -3824,7 +4034,8 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8
       ],
       "deprecation_announced": "",
       "device_id": "0x15B3:0x634A",
@@ -3837,7 +4048,8 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8
       ],
       "deprecation_announced": "",
       "device_id": "0x15B3:0x6354",
@@ -3850,7 +4062,8 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8
       ],
       "deprecation_announced": "",
       "device_id": "0x15B3:0x6368",
@@ -3863,7 +4076,8 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8
       ],
       "deprecation_announced": "",
       "device_id": "0x15B3:0x6372",
@@ -3876,7 +4090,8 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8
       ],
       "deprecation_announced": "",
       "device_id": "0x15B3:0x6732",
@@ -3889,7 +4104,8 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8
       ],
       "deprecation_announced": "",
       "device_id": "0x15B3:0x673C",
@@ -3902,7 +4118,8 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8
       ],
       "deprecation_announced": "",
       "device_id": "0x15B3:0x6746",
@@ -3915,7 +4132,8 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8
       ],
       "deprecation_announced": "",
       "device_id": "0x15B3:0x6750",
@@ -3928,7 +4146,8 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8
       ],
       "deprecation_announced": "",
       "device_id": "0x15B3:0x675A",
@@ -3941,7 +4160,8 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8
       ],
       "deprecation_announced": "",
       "device_id": "0x15B3:0x6764",
@@ -3954,7 +4174,8 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8
       ],
       "deprecation_announced": "",
       "device_id": "0x15B3:0x676E",
@@ -3981,7 +4202,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1000:0x0064",
@@ -3994,7 +4217,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1000:0x0065",
@@ -4007,7 +4232,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1000:0x0070",
@@ -4020,7 +4247,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1000:0x0072",
@@ -4033,7 +4262,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1000:0x0074",
@@ -4046,7 +4277,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1000:0x0076",
@@ -4059,7 +4292,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1000:0x0077",
@@ -4072,7 +4307,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1000:0x007E",
@@ -4917,7 +5154,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1077:0x2422",
@@ -4930,7 +5169,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1077:0x2432",
@@ -4960,7 +5201,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1077:0x5422",
@@ -4973,7 +5216,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1077:0x5432",
@@ -4986,7 +5231,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1077:0x8001",
@@ -4999,7 +5246,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1077:0x8021",
@@ -5029,7 +5278,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1077:0x8044",
@@ -5042,7 +5293,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1077:0x8432",
@@ -5099,7 +5352,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1077:0x8022",
@@ -5112,7 +5367,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1077:0x8032",
@@ -5125,7 +5382,9 @@
     },
     {
       "available_in_rhel": [
-        7
+        7,
+        8,
+        9
       ],
       "deprecation_announced": "",
       "device_id": "0x1077:0x8042",
@@ -5489,5 +5748,6 @@
       "driver_name": "wil6210",
       "maintained_in_rhel": []
     }
-  ]
+  ],
+  "created_at": "20240724090818"
 }
