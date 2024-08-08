@@ -1,0 +1,110 @@
+{
+    "datetime": "202408081321Z",
+    "version_format": "1.2.1",
+    "mapping": [
+        {
+            "source_major_version": "7",
+            "target_major_version": "8",
+            "entries": [
+                {
+                    "source": "docker-ce-stable",
+                    "target": [
+                        "el8-docker-ce-stable"
+                    ]
+                },
+                {
+                    "source": "docker-ce-test",
+                    "target": [
+                        "el8-docker-ce-test"
+                    ]
+                },
+                {
+                    "source": "docker-ce-nightly",
+                    "target": [
+                        "el8-docker-ce-nightly"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "docker-ce-stable",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repoid": "docker-ce-stable",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "docker-ce-test",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repoid": "docker-ce-test",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "docker-ce-nightly",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repoid": "docker-ce-nightly",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-docker-ce-stable",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-docker-ce-stable",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-docker-ce-test",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-docker-ce-test",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-docker-ce-nightly",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "el8-docker-ce-nightly",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        }
+    ],
+    "provided_data_streams": [
+        "1.1",
+        "2.0",
+        "3.0",
+        "3.1"
+    ]
+}
