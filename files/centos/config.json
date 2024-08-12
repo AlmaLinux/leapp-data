@@ -12,6 +12,10 @@
         {
             "major_version": 9,
             "os_name": "CentOS"
+        },
+        {
+            "major_version": 10,
+            "os_name": "CentOS"
         }
     ],
 
@@ -98,6 +102,14 @@
         "rhel10-AppStream": {
             "in_packageset": "appstream",
             "out_packageset": "centos10-appstream"
+        },
+        "rhel10-BaseOS": {
+            "in_packageset": "baseos",
+            "out_packageset": "centos10-baseos"
+        },
+        "rhel10-CRB": {
+            "in_packageset": "crb",
+            "out_packageset": "centos10-crb"
         }
     },
     "removable_repositories":[
@@ -122,9 +134,11 @@
         "rhel8-SAP-NetWeaver",
         "rhel8-SAP-Solutions",
         "rhel8-Advanced-Virt",
+        "rhel8-ceph5",
 
         "rhel9-SAP-NetWeaver",
-        "rhel9-SAP-Solutions"
+        "rhel9-SAP-Solutions",
+        "rhel9-ceph5"
     ],
 
     "package_replacing": [

@@ -12,6 +12,10 @@
         {
             "major_version": 9,
             "os_name": "Rocky"
+        },
+        {
+            "major_version": 10,
+            "os_name": "Rocky"
         }
     ],
 
@@ -106,6 +110,14 @@
         "rhel10-AppStream": {
             "in_packageset": "appstream",
             "out_packageset": "rocky10-appstream"
+        },
+        "rhel10-BaseOS": {
+            "in_packageset": "baseos",
+            "out_packageset": "rocky10-baseos"
+        },
+        "rhel10-CRB": {
+            "in_packageset": "crb",
+            "out_packageset": "rocky10-crb"
         }
     },
     "removable_repositories":[
@@ -129,8 +141,10 @@
         "rhel8-Supplementary",
         "rhel8-SAP-NetWeaver",
         "rhel8-SAP-Solutions",
-        "rhel8-Advanced-Virt"
+        "rhel8-Advanced-Virt",
+        "rhel8-ceph5",
 
+        "rhel9-ceph5"
     ],
 
     "package_replacing": [

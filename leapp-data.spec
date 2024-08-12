@@ -1,4 +1,4 @@
-%global pes_events_build_date 20230823
+%global pes_events_build_date 20240812
 
 %define dist_list almalinux centos eurolinux oraclelinux rocky
 %define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
@@ -46,8 +46,8 @@
 
 
 Name:		leapp-data-%{dist_name}
-Version:	0.2
-Release:	15%{?dist}.%{pes_events_build_date}
+Version:	0.3
+Release:	1%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -154,6 +154,19 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Mon Aug 12 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.3-1.20240812
+- Update pes-events.json to the state as of f871cb8634ac238360adb12894aa0b7421779f38
+- Fix duplicate ids, set_ids across pes files
+- Bump the package pes_events_build_date, version and release: 0.3-1.20240812
+
+- files/*/config.json
+ - add "major_version": 10
+ - add "rhel10-BaseOS" and "rhel10-CRB" to the "repository_replacing" (except oraclelinux)
+ - add "rhel8-ceph5" and "rhel9-ceph5" to the "removable_repositories". In case of araclelinux add as well "rhel10-AppStream", "rhel10-BaseOS", "rhel10-CRB"
+
+- tests/check_debranding.py
+ - add "rhel-net-naming-sysattrs", "redhat-text-vf-fonts" and "redhat-mono-vf-fonts" to the excludes
+
 * Wed Jul 24 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-15.20230823
 - Add device driver deprecation data for all distros
 - Update the data for AlmaLinux with devices which support were added in its specific release (as of 20240724090818)
