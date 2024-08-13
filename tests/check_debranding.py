@@ -36,7 +36,10 @@ excludes = [
     '"name": "rhel-system-roles"',
     '"name": "docker-rhel-push-plugin"',
     '"name": "rhel-system-roles-sap"',
-    '"name": "libreport-rhel-bugzilla"'
+    '"name": "libreport-rhel-bugzilla"',
+    '"name": "rhel-net-naming-sysattrs"',
+    '"name": "redhat-text-vf-fonts"',
+    '"name": "redhat-mono-vf-fonts"'
 ]
 
 

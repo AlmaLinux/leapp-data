@@ -12,6 +12,10 @@
         {
             "major_version": 9,
             "os_name": "OL"
+        },
+        {
+            "major_version": 10,
+            "os_name": "OL"
         }
     ],
 
@@ -79,6 +83,7 @@
         "rhel8-SAP-NetWeaver",
         "rhel8-SAP-Solutions",
         "rhel8-Advanced-Virt",
+        "rhel8-ceph5",
 
         "rhel9-AppStream",
         "rhel9-BaseOS",
@@ -89,7 +94,11 @@
         "rhel9-NFV",
         "rhel9-SAP-NetWeaver",
         "rhel9-SAP-Solutions",
-        "rhel10-AppStream"
+        "rhel9-ceph5",
+
+        "rhel10-AppStream",
+        "rhel10-BaseOS",
+        "rhel10-CRB"
     ],
 
     "package_replacing": [

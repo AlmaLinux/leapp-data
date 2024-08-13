@@ -12,6 +12,10 @@
         {
             "major_version": 9,
             "os_name": "EuroLinux"
+        },
+        {
+            "major_version": 10,
+            "os_name": "EuroLinux"
         }
     ],
 
@@ -82,6 +86,14 @@
         "rhel10-AppStream": {
             "in_packageset": "appstream",
             "out_packageset": "almalinux10-appstream"
+        },
+        "rhel10-BaseOS": {
+            "in_packageset": "baseos",
+            "out_packageset": "almalinux10-baseos"
+        },
+        "rhel10-CRB": {
+            "in_packageset": "crb",
+            "out_packageset": "almalinux10-crb"
         }
     },
     "removable_repositories":[
@@ -108,11 +120,13 @@
         "rhel8-SAP-NetWeaver",
         "rhel8-SAP-Solutions",
         "rhel8-Advanced-Virt",
+        "rhel8-ceph5",
 
         "rhel9-RT",
         "rhel9-NFV",
         "rhel9-SAP-NetWeaver",
-        "rhel9-SAP-Solutions"
+        "rhel9-SAP-Solutions",
+        "rhel9-ceph5"
     ],
 
     "package_replacing": [

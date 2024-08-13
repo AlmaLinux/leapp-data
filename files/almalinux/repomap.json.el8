@@ -2,7 +2,7 @@
     "datetime": "202407161513Z",
     "version_format": "1.2.0",
     "provided_data_streams": [
-        "2.0"
+        "3.0"
     ],
     "mapping": [
         {
