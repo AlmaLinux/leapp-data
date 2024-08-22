@@ -46,7 +46,7 @@
 
 
 Name:		leapp-data-%{dist_name}
-Version:	0.3
+Version:	0.4
 Release:	1%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
@@ -154,6 +154,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Thu Aug 22 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-1.20240812
+- switch repository mapping into version_format 1.2.1
+
 * Mon Aug 12 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.3-1.20240812
 - Update pes-events.json to the state as of f871cb8634ac238360adb12894aa0b7421779f38
 - Fix duplicate ids, set_ids across pes files
