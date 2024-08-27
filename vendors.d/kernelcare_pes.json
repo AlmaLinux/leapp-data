@@ -3,7 +3,8 @@
     "packageinfo": [],
     "provided_data_streams": [
         "2.0",
-        "3.0"
+        "3.0",
+        "3.1"
     ],
     "timestamp": "202207130941Z"
 }

@@ -1,6 +1,6 @@
 {
     "datetime": "202306191741Z",
-    "version_format": "1.2.0",
+    "version_format": "1.2.1",
     "mapping": [
         {
             "source_major_version": "7",
@@ -28,6 +28,12 @@
                     "source": "epel",
                     "target": [
                         "el8-powertools"
+                    ]
+                },
+                {
+                    "source": "epel",
+                    "target": [
+                        "el8-baseos"
                     ]
                 }
             ]
@@ -93,11 +99,24 @@
                     "repo_type": "rpm"
                 }
             ]
+        },
+        {
+            "pesid": "el8-baseos",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "{baseos}",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
         }
     ],
     "provided_data_streams": [
         "1.1",
         "2.0",
-        "3.0"
+        "3.0",
+        "3.1"
     ]
 }
