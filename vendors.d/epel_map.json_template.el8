@@ -29,6 +29,12 @@
                     "target": [
                         "el8-powertools"
                     ]
+                },
+                {
+                    "source": "epel",
+                    "target": [
+                        "el8-baseos"
+                    ]
                 }
             ]
         }
@@ -88,6 +94,18 @@
                 {
                     "major_version": "8",
                     "repoid": "{powertools}",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-baseos",
+            "entries": [
+                {
+                    "major_version": "8",
+                    "repoid": "{baseos}",
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
