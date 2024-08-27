@@ -39,7 +39,9 @@ excludes = [
     '"name": "libreport-rhel-bugzilla"',
     '"name": "rhel-net-naming-sysattrs"',
     '"name": "redhat-text-vf-fonts"',
-    '"name": "redhat-mono-vf-fonts"'
+    '"name": "redhat-mono-vf-fonts"',
+    '"name": "redhat-indexhtml"',
+    '"name": "redhat-display-vf-fonts"'
 ]
 
 
