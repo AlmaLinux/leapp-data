@@ -1,4 +1,4 @@
-%global pes_events_build_date 20240812
+%global pes_events_build_date 20240827
 
 %define dist_list almalinux centos eurolinux oraclelinux rocky
 %define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.4
-Release:	1%{?dist}.%{pes_events_build_date}
+Release:	2%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -154,6 +154,18 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Tue Aug 27 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-2.20240827
+- Update data to the upstream most recent state
+ - Update pes-events.json to the state as of a757c6d0c269008ba7688c4273899dd53ca31756
+
+- tests/check_debranding.py
+ - add "redhat-indexhtml" and "redhat-display-vf-fonts" to the excludes
+
+- Fix duplicate ids, set_ids across pes files
+
+- tools/generate_epel_files.sh
+ - Avoid risk factor (high): Packages from unknown repositories may not be installed
+
 * Thu Aug 22 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-1.20240812
 - switch repository mapping into version_format 1.2.1
 
