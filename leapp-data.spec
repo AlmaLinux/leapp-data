@@ -4,7 +4,7 @@
 %define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 %if 0%{?rhel} == 7
-%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql
+%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce
 %define target_version 8
 %if %{dist_name} == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-8
@@ -23,7 +23,7 @@
 %endif
 %endif
 %if 0%{?rhel} == 8
-%define supported_vendors epel mariadb nginx-stable nginx-mainline postgresql
+%define supported_vendors epel mariadb nginx-stable nginx-mainline postgresql docker-ce
 %define target_version 9
 %if %{dist_name} == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-9
@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.4
-Release:	2%{?dist}.%{pes_events_build_date}
+Release:	3%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -154,6 +154,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Mon Sep 02 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-3.20240827
+- Add new vendor, docker-ce - the open-source application container engine
+
 * Tue Aug 27 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-2.20240827
 - Update data to the upstream most recent state
  - Update pes-events.json to the state as of a757c6d0c269008ba7688c4273899dd53ca31756
