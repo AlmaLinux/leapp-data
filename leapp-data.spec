@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	15%{?dist}.%{pes_events_build_date}
+Release:	16%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -154,6 +154,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Tue Sep 03 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-16.20230823
+- Revert "Temporary force 9.3 version due to RHEL-36249"
+
 * Wed Jul 24 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-15.20230823
 - Add device driver deprecation data for all distros
 - Update the data for AlmaLinux with devices which support were added in its specific release (as of 20240724090818)
