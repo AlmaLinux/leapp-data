@@ -1,6 +1,6 @@
 [certify-baseos-9]
 name = EuroLinux certify BaseOS
-baseurl=https://vault.cdn.euro-linux.com/legacy/eurolinux/9/9.3/BaseOS/$basearch/os/
+baseurl=https://fbi.cdn.euro-linux.com/dist/eurolinux/server/9/$basearch/certify-BaseOS/os
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-eurolinux9
@@ -8,7 +8,7 @@ skip_if_unavailable=1
 
 [certify-appstream-9]
 name = EuroLinux certify AppStream
-baseurl=https://vault.cdn.euro-linux.com/legacy/eurolinux/9/9.3/AppStream/$basearch/os/
+baseurl=https://fbi.cdn.euro-linux.com/dist/eurolinux/server/9/$basearch/certify-AppStream/os
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-eurolinux9
@@ -16,7 +16,7 @@ skip_if_unavailable=1
 
 [certify-powertools-9]
 name = EuroLinux certify PowerTools
-baseurl=https://vault.cdn.euro-linux.com/legacy/eurolinux/9/9.3/PowerTools/$basearch/os/
+baseurl=https://fbi.cdn.euro-linux.com/dist/eurolinux/server/9/$basearch/certify-PowerTools/os
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-eurolinux9
@@ -24,14 +24,14 @@ skip_if_unavailable=1
 
 [high-availability-9]
 name = EuroLinux High Availability
-baseurl=https://vault.cdn.euro-linux.com/legacy/eurolinux/9/9.3/HighAvailability/$basearch/os/
+baseurl=https://fbi.cdn.euro-linux.com/dist/eurolinux/server/9/$basearch/certify-HighAvailability/os
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-eurolinux9
 
 [resilient-storage-9]
 name = EuroLinux Resilient Storage
-baseurl=https://vault.cdn.euro-linux.com/legacy/eurolinux/9/9.3/ResilientStorage/$basearch/os/
+baseurl=https://fbi.cdn.euro-linux.com/dist/eurolinux/server/9/$basearch/certify-ResilientStorage/os
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-eurolinux9
