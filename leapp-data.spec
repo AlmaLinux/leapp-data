@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.4
-Release:	3%{?dist}.%{pes_events_build_date}
+Release:	4%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -154,6 +154,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Tue Sep 03 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-4.20240827
+- Revert "Temporary force 9.3 version due to RHEL-36249"
+
 * Mon Sep 02 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-3.20240827
 - Add new vendor, docker-ce - the open-source application container engine
 
