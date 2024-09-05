@@ -1,0 +1,44 @@
+{
+    "datetime" : "202308301917Z",
+    "version_format" : "1.2.1",
+
+    "mapping" : [
+        {
+            "source_major_version" : "7",
+            "target_major_version" : "8",
+            "entries" : [
+                {
+                    "source" : "packages-microsoft-com-prod",
+                    "target" : ["packages-microsoft-com-prod-8"]
+                }
+            ]
+        }
+    ],
+
+    "repositories" : [
+        {
+            "pesid" : "packages-microsoft-com-prod",
+            "entries" : [
+                {
+                    "repoid" : "packages-microsoft-com-prod",
+                    "major_version" : "7",
+                    "repo_type" : "rpm",
+                    "arch" : "x86_64",
+                    "channel" : "ga"
+                }
+            ]
+        },
+        {
+            "pesid" : "packages-microsoft-com-prod-8",
+            "entries" : [
+                {
+                    "repoid" : "packages-microsoft-com-prod-8",
+                    "major_version" : "8",
+                    "repo_type" : "rpm",
+                    "arch" : "x86_64",
+                    "channel" : "ga"
+                }
+            ]
+        }
+    ]
+}
