@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.2
-Release:	16%{?dist}.%{pes_events_build_date}
+Release:	17%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -154,6 +154,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Fri Sep 06 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-17.20230823
+- Switch CentOS Stream9 repositories from mirrorlist into baseurl at mirror.stream.centos.org
+
 * Tue Sep 03 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-16.20230823
 - Revert "Temporary force 9.3 version due to RHEL-36249"
 
