@@ -1,31 +1,31 @@
 [centos9-baseos]
 name=CentOS-9-stream - Base
-mirrorlist=https://mirrors.centos.org/mirrorlist?path=/9-stream/BaseOS/$basearch/os/
-#baseurl=http://mirror.centos.org/$contentdir/9-stream/BaseOS/$basearch/os/
+#mirrorlist=https://mirrors.centos.org/mirrorlist?path=/9-stream/BaseOS/$basearch/os/
+baseurl=http://mirror.stream.centos.org/9-stream/BaseOS/$basearch/os/
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-CentOS-Official
 
 [centos9-appstream]
 name=CentOS-9-stream - AppStream
-mirrorlist=https://mirrors.centos.org/mirrorlist?path=/9-stream/AppStream/$basearch/os/
-#baseurl=http://mirror.centos.org/$contentdir/9-stream/AppStream/$basearch/os/
+#mirrorlist=https://mirrors.centos.org/mirrorlist?path=/9-stream/AppStream/$basearch/os/
+baseurl=http://mirror.stream.centos.org/9-stream/AppStream/$basearch/os/
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-CentOS-Official
 
 [centos9-crb]
 name=CentOS-9-stream - CRB
-mirrorlist=https://mirrors.centos.org/mirrorlist?path=/9-stream/CRB/$basearch/os/
-#baseurl=http://mirror.centos.org/$contentdir/9-stream/CRB/$basearch/os/
+#mirrorlist=https://mirrors.centos.org/mirrorlist?path=/9-stream/CRB/$basearch/os/
+baseurl=http://mirror.stream.centos.org/9-stream/CRB/$basearch/os/
 gpgcheck=1
 enabled=0
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-CentOS-Official
 
 [centos9-ha]
 name=CentOS-9-stream - HA
-mirrorlist=https://mirrors.centos.org/mirrorlist?path=/9-stream/HighAvailability/$basearch/os/
-#baseurl=http://mirror.centos.org/$contentdir/9-stream/HighAvailability/$basearch/os/
+#mirrorlist=https://mirrors.centos.org/mirrorlist?path=/9-stream/HighAvailability/$basearch/os/
+baseurl=http://mirror.stream.centos.org/9-stream/HighAvailability/$basearch/os/
 gpgcheck=1
 enabled=0
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-CentOS-Official
@@ -40,16 +40,16 @@ gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-K
 
 [centos9-nfv]
 name=CentOS-9-stream - NFV
-mirrorlist=https://mirrors.centos.org/mirrorlist?path=/9-stream/NFV/$basearch/os/
-#baseurl=http://mirror.centos.org/$contentdir/9-stream/NFV/$basearch/os/
+#mirrorlist=https://mirrors.centos.org/mirrorlist?path=/9-stream/NFV/$basearch/os/
+baseurl=http://mirror.stream.centos.org/9-stream/NFV/$basearch/os/
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-CentOS-Official
 
 [centos9-rt]
 name=CentOS-9-stream - RT
-mirrorlist=https://mirrors.centos.org/mirrorlist?path=/9-stream/RT/$basearch/os/
-#baseurl=http://mirror.centos.org/$contentdir/9-stream/RT/$basearch/os/
+#mirrorlist=https://mirrors.centos.org/mirrorlist?path=/9-stream/RT/$basearch/os/
+baseurl=http://mirror.stream.centos.org/9-stream/RT/$basearch/os/
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-CentOS-Official
