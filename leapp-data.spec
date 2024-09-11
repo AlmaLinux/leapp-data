@@ -46,7 +46,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.4
-Release:	6%{?dist}.%{pes_events_build_date}
+Release:	7%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -153,6 +153,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Wed Sep 11 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-7.20240827
+- Do not remove libunwind package to unblock 7to8 and imunify360-php-i360 upgrade
+
 * Fri Sep 06 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-6.20240827
 - Switch CentOS Stream9 repositories from mirrorlist into baseurl at mirror.stream.centos.org
 
