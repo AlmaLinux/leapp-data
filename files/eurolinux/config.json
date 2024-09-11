@@ -254,6 +254,11 @@
             "name": "libssh2-docs",
             "initial_release": 8,
             "target_release": 8
+        },
+        {
+            "name": "libunwind",
+            "initial_release": 7,
+            "target_release": 8
         }
     ],
 
