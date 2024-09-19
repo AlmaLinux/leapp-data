@@ -4,7 +4,7 @@
 %define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 %if 0%{?rhel} == 7
-%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce microsoft
+%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce microsoft imunify360-alt-php
 %define target_version 8
 %if %{dist_name} == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-8
@@ -153,8 +153,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
-* Tue Sep 17 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-7.20240827
+* Thu Sep 19 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-7.20240827
  - Replace libunwind package if imunify360 vendor is enabled
+ - Add new vendor, imunify360-alt-php - CloudLinux Imunify360 alt-php packages
 
 * Fri Sep 06 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-6.20240827
 - Switch CentOS Stream9 repositories from mirrorlist into baseurl at mirror.stream.centos.org

@@ -1,0 +1,6 @@
+[cloudlinux9-imunify360-alt-php]
+name=Imunify360 alt-php repository for EL9 - $basearch
+baseurl=https://repo.alt.cloudlinux.com/el/<imunify360_alt_php_token>/alt-php/9/updates/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/imunify360-alt-php.gpg
