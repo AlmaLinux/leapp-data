@@ -153,8 +153,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
-* Tue Sep 17 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-7.20240827
+* Thu Sep 26 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-7.20240827
  - Replace libunwind package if imunify360 vendor is enabled
+ - Move GeoIP package if epel vendor is enabled
 
 * Fri Sep 06 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-6.20240827
 - Switch CentOS Stream9 repositories from mirrorlist into baseurl at mirror.stream.centos.org
