@@ -208,6 +208,11 @@
             "name": "libssh2-docs",
             "initial_release": 8,
             "target_release": 8
+        },
+        {
+            "name": "openssl-libs",
+            "initial_release": 9,
+            "target_release": 9
         }
     ],
 
