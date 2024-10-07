@@ -46,7 +46,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.4
-Release:	7%{?dist}.%{pes_events_build_date}
+Release:	8%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -153,6 +153,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Mon Oct 07 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-8.20240827
+ - Change major release number into $releasever in AlmaLinux repositories configuration
+
 * Fri Sep 27 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-7.20240827
  - Replace libunwind package if imunify360 vendor is enabled
  - Move GeoIP package if epel vendor is enabled
