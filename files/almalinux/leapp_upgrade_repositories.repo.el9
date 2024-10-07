@@ -1,79 +1,79 @@
 [almalinux9-baseos]
-name=AlmaLinux 9 - BaseOS
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/baseos
-# baseurl=https://repo.almalinux.org/almalinux/9/BaseOS/$basearch/os/
+name=AlmaLinux $releasever - BaseOS
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/baseos
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/BaseOS/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-9
 
 [almalinux9-appstream]
-name=AlmaLinux 9 - AppStream
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/appstream
-# baseurl=https://repo.almalinux.org/almalinux/9/AppStream/$basearch/os/
+name=AlmaLinux $releasever - AppStream
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/appstream
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/AppStream/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-9
 
 [almalinux9-crb]
-name=AlmaLinux 9 - CRB
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/crb
-# baseurl=https://repo.almalinux.org/almalinux/9/CRB/$basearch/os/
+name=AlmaLinux $releasever - CRB
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/crb
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/CRB/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-9
 
 [almalinux9-highavailability]
-name=AlmaLinux 9 - HighAvailability
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/ha
-# baseurl=https://repo.almalinux.org/almalinux/9/HighAvailability/$basearch/os/
+name=AlmaLinux $releasever - HighAvailability
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/ha
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/HighAvailability/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-9
 
 [almalinux9-resilientstorage]
-name=AlmaLinux 9 - ResilientStorage
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/resilientstorage
-# baseurl=https://repo.almalinux.org/almalinux/9/ResilientStorage/$basearch/os/
+name=AlmaLinux $releasever - ResilientStorage
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/resilientstorage
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/ResilientStorage/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-9
 
 [almalinux9-extras]
-name=AlmaLinux 9 - Extras
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/extras
-# baseurl=https://repo.almalinux.org/almalinux/9/extras/$basearch/os/
+name=AlmaLinux $releasever - Extras
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/extras
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/extras/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-9
 
 [almalinux9-sap]
-name=AlmaLinux 9 - SAP
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/sap
-# baseurl=https://repo.almalinux.org/almalinux/9/SAP/$basearch/os/
+name=AlmaLinux $releasever - SAP
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/sap
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/SAP/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-9
 
 [almalinux9-saphana]
-name=AlmaLinux 9 - SAPHANA
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/saphana
-# baseurl=https://repo.almalinux.org/almalinux/9/SAPHANA/$basearch/os/
+name=AlmaLinux $releasever - SAPHANA
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/saphana
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/SAPHANA/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-9
 
 [almalinux9-rt]
-name=AlmaLinux 9 - RT
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/rt
-# baseurl=https://repo.almalinux.org/almalinux/9/RT/$basearch/os/
+name=AlmaLinux $releasever - RT
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/rt
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/RT/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-9
 
 [almalinux9-nfv]
-name=AlmaLinux 9 - NFV
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/9/nfv
-# baseurl=https://repo.almalinux.org/almalinux/9/NFV/$basearch/os/
+name=AlmaLinux $releasever - NFV
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/nfv
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/NFV/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/RPM-GPG-KEY-AlmaLinux-9
