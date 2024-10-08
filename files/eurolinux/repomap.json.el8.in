@@ -43,7 +43,7 @@
             "pesid": "base",
             "entries": [
                 {
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "repo_type": "rpm",
                     "repoid": "base",
                     "major_version": "7",
@@ -55,7 +55,7 @@
             "pesid": "certify-baseos",
             "entries": [
                 {
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "repo_type": "rpm",
                     "repoid": "certify-baseos",
                     "channel": "ga",
@@ -67,7 +67,7 @@
             "pesid": "certify-appstream",
             "entries": [
                 {
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "repo_type": "rpm",
                     "repoid": "certify-appstream",
                     "channel": "ga",
@@ -79,7 +79,7 @@
             "pesid": "certify-powertools",
             "entries": [
                 {
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "repo_type": "rpm",
                     "repoid": "certify-powertools",
                     "channel": "ga",
@@ -91,7 +91,7 @@
             "pesid": "high-availability",
             "entries": [
                 {
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "repo_type": "rpm",
                     "repoid": "high-availability",
                     "channel": "ga",
@@ -103,7 +103,7 @@
             "pesid": "resilient-storage",
             "entries": [
                 {
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "repoid": "resilient-storage",
                     "repo_type": "rpm",
                     "channel": "ga",
@@ -115,7 +115,7 @@
             "pesid": "updates",
             "entries": [
                 {
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "repoid": "updates",
                     "repo_type": "rpm",
                     "major_version": "7",
@@ -127,7 +127,7 @@
             "pesid": "extras",
             "entries": [
                 {
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "repo_type": "rpm",
                     "major_version": "7",
                     "repoid": "extras",
