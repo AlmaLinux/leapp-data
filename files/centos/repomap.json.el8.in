@@ -46,7 +46,7 @@
             "entries": [
                 {
                     "repo_type": "rpm",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "major_version": "7",
                     "repoid": "base",
                     "channel": "ga"
@@ -60,7 +60,7 @@
                     "repo_type": "rpm",
                     "repoid": "centos8-baseos",
                     "major_version": "8",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
@@ -71,7 +71,7 @@
                 {
                     "repo_type": "rpm",
                     "major_version": "8",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "repoid": "centos8-appstream",
                     "channel": "ga"
                 }
@@ -84,7 +84,7 @@
                     "repoid": "centos8-powertools",
                     "repo_type": "rpm",
                     "major_version": "8",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
@@ -95,7 +95,7 @@
                 {
                     "repo_type": "rpm",
                     "major_version": "8",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "repoid": "centos8-ha",
                     "channel": "ga"
                 }
@@ -106,7 +106,7 @@
             "entries": [
                 {
                     "repo_type": "rpm",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "major_version": "7",
                     "repoid": "updates",
                     "channel": "ga"
@@ -119,7 +119,7 @@
                 {
                     "repo_type": "rpm",
                     "repoid": "extras",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "major_version": "7",
                     "channel": "ga"
                 }
@@ -132,7 +132,7 @@
                     "repo_type": "rpm",
                     "repoid": "centos8-extras",
                     "major_version": "8",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
@@ -144,7 +144,7 @@
                     "repo_type": "rpm",
                     "repoid": "centos8-rt",
                     "major_version": "8",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
@@ -156,7 +156,7 @@
                     "repo_type": "rpm",
                     "repoid": "centos8-nfv",
                     "major_version": "8",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]

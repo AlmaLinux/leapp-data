@@ -12,61 +12,43 @@
                 {
                     "source": "baseos",
                     "target": [
-                        "almalinux9-baseos"
+                        "centos9-baseos"
                     ]
                 },
                 {
                     "source": "appstream",
                     "target": [
-                        "almalinux9-appstream"
+                        "centos9-appstream"
                     ]
                 },
                 {
                     "source": "powertools",
                     "target": [
-                        "almalinux9-crb"
+                        "centos9-crb"
                     ]
                 },
                 {
                     "source": "ha",
                     "target": [
-                        "almalinux9-highavailability"
-                    ]
-                },
-                {
-                    "source": "resilientstorage",
-                    "target": [
-                        "almalinux9-resilientstorage"
+                        "centos9-ha"
                     ]
                 },
                 {
                     "source": "extras",
                     "target": [
-                        "almalinux9-extras"
+                        "centos9-extras"
                     ]
                 },
                 {
                     "source": "rt",
                     "target": [
-                        "almalinux9-rt"
+                        "centos9-rt"
                     ]
                 },
                 {
                     "source": "nfv",
                     "target": [
-                        "almalinux9-nfv"
-                    ]
-                },
-                {
-                    "source": "sap",
-                    "target": [
-                        "almalinux9-sap"
-                    ]
-                },
-                {
-                    "source": "saphana",
-                    "target": [
-                        "almalinux9-saphana"
+                        "centos9-extras"
                     ]
                 }
             ]
@@ -80,7 +62,7 @@
                     "repoid": "baseos",
                     "major_version": "8",
                     "repo_type": "rpm",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
@@ -92,7 +74,7 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "repoid": "appstream",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
@@ -104,7 +86,7 @@
                     "major_version": "8",
                     "repoid": "powertools",
                     "repo_type": "rpm",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
@@ -116,19 +98,7 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "repoid": "ha",
-                    "arch": "x86_64",
-                    "channel": "ga"
-                }
-            ]
-        },
-        {
-            "pesid": "resilientstorage",
-            "entries": [
-                {
-                    "major_version": "8",
-                    "repo_type": "rpm",
-                    "repoid": "resilientstorage",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
@@ -140,7 +110,7 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "repoid": "extras",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
@@ -152,7 +122,7 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "repoid": "rt",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
@@ -164,151 +134,91 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "repoid": "nfv",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
         },
-        {
-            "pesid": "sap",
+	{
+            "pesid": "centos9-baseos",
             "entries": [
                 {
-                    "major_version": "8",
-                    "repo_type": "rpm",
-                    "repoid": "sap",
-                    "arch": "x86_64",
-                    "channel": "ga"
-                }
-            ]
-        },
-        {
-            "pesid": "saphana",
-            "entries": [
-                {
-                    "major_version": "8",
-                    "repo_type": "rpm",
-                    "repoid": "saphana",
-                    "arch": "x86_64",
-                    "channel": "ga"
-                }
-            ]
-        },
-        {
-            "pesid": "almalinux9-baseos",
-            "entries": [
-                {
-                    "repoid": "almalinux9-baseos",
+                    "repoid": "centos9-baseos",
                     "major_version": "9",
                     "repo_type": "rpm",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
         },
         {
-            "pesid": "almalinux9-appstream",
+            "pesid": "centos9-appstream",
             "entries": [
                 {
                     "major_version": "9",
                     "repo_type": "rpm",
-                    "repoid": "almalinux9-appstream",
-                    "arch": "x86_64",
+                    "repoid": "centos9-appstream",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
         },
         {
-            "pesid": "almalinux9-crb",
+            "pesid": "centos9-crb",
             "entries": [
                 {
                     "major_version": "9",
-                    "repoid": "almalinux9-crb",
+                    "repoid": "centos9-crb",
                     "repo_type": "rpm",
-                    "arch": "x86_64",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
         },
         {
-            "pesid": "almalinux9-highavailability",
+            "pesid": "centos9-ha",
             "entries": [
                 {
                     "major_version": "9",
                     "repo_type": "rpm",
-                    "repoid": "almalinux9-highavailability",
-                    "arch": "x86_64",
+                    "repoid": "centos9-ha",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
         },
         {
-            "pesid": "almalinux9-resilientstorage",
+            "pesid": "centos9-extras",
             "entries": [
                 {
                     "major_version": "9",
                     "repo_type": "rpm",
-                    "repoid": "almalinux9-resilientstorage",
-                    "arch": "x86_64",
+                    "repoid": "centos9-extras",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
         },
         {
-            "pesid": "almalinux9-extras",
+            "pesid": "centos9-rt",
             "entries": [
                 {
                     "major_version": "9",
                     "repo_type": "rpm",
-                    "repoid": "almalinux9-extras",
-                    "arch": "x86_64",
+                    "repoid": "centos9-rt",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
         },
         {
-            "pesid": "almalinux9-rt",
+            "pesid": "centos9-nfv",
             "entries": [
                 {
                     "major_version": "9",
                     "repo_type": "rpm",
-                    "repoid": "almalinux9-rt",
-                    "arch": "x86_64",
-                    "channel": "ga"
-                }
-            ]
-        },
-        {
-            "pesid": "almalinux9-nfv",
-            "entries": [
-                {
-                    "major_version": "9",
-                    "repo_type": "rpm",
-                    "repoid": "almalinux9-nfv",
-                    "arch": "x86_64",
-                    "channel": "ga"
-                }
-            ]
-        },
-        {
-            "pesid": "almalinux9-sap",
-            "entries": [
-                {
-                    "major_version": "9",
-                    "repo_type": "rpm",
-                    "repoid": "almalinux9-sap",
-                    "arch": "x86_64",
-                    "channel": "ga"
-                }
-            ]
-        },
-        {
-            "pesid": "almalinux9-saphana",
-            "entries": [
-                {
-                    "major_version": "9",
-                    "repo_type": "rpm",
-                    "repoid": "almalinux9-saphana",
-                    "arch": "x86_64",
+                    "repoid": "centos9-nfv",
+                    "arch": "{arch}",
                     "channel": "ga"
                 }
             ]
