@@ -1,5 +1,5 @@
 {
-    "datetime": "202204020934Z",
+    "datetime": "202410101010Z",
     "version_format": "1.2.1",
     "provided_data_streams": [
         "3.0"
@@ -33,6 +33,146 @@
                     "source": "extras",
                     "target": [
                         "ol8-baseos"
+                    ]
+                },
+                {
+                    "source": "centos7-els",
+                    "target": [
+                        "ol8-baseos",
+                        "ol8-appstream",
+                        "ol8-crb",
+                        "ol8-addons",
+                        "ol8-uek"
+                    ]
+                },
+                {
+                    "source": "centos7-els-testing",
+                    "target": [
+                        "ol8-baseos",
+                        "ol8-appstream",
+                        "ol8-crb",
+                        "ol8-addons",
+                        "ol8-uek"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-1",
+                    "target": [
+                        "ol8-baseos",
+                        "ol8-appstream",
+                        "ol8-crb",
+                        "ol8-addons",
+                        "ol8-uek"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-1-bypass",
+                    "target": [
+                        "ol8-baseos",
+                        "ol8-appstream",
+                        "ol8-crb",
+                        "ol8-addons",
+                        "ol8-uek"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-2",
+                    "target": [
+                        "ol8-baseos",
+                        "ol8-appstream",
+                        "ol8-crb",
+                        "ol8-addons",
+                        "ol8-uek"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-2-bypass",
+                    "target": [
+                        "ol8-baseos",
+                        "ol8-appstream",
+                        "ol8-crb",
+                        "ol8-addons",
+                        "ol8-uek"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-3",
+                    "target": [
+                        "ol8-baseos",
+                        "ol8-appstream",
+                        "ol8-crb",
+                        "ol8-addons",
+                        "ol8-uek"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-3-bypass",
+                    "target": [
+                        "ol8-baseos",
+                        "ol8-appstream",
+                        "ol8-crb",
+                        "ol8-addons",
+                        "ol8-uek"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-4",
+                    "target": [
+                        "ol8-baseos",
+                        "ol8-appstream",
+                        "ol8-crb",
+                        "ol8-addons",
+                        "ol8-uek"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-4-bypass",
+                    "target": [
+                        "ol8-baseos",
+                        "ol8-appstream",
+                        "ol8-crb",
+                        "ol8-addons",
+                        "ol8-uek"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-5",
+                    "target": [
+                        "ol8-baseos",
+                        "ol8-appstream",
+                        "ol8-crb",
+                        "ol8-addons",
+                        "ol8-uek"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-5-bypass",
+                    "target": [
+                        "ol8-baseos",
+                        "ol8-appstream",
+                        "ol8-crb",
+                        "ol8-addons",
+                        "ol8-uek"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-6",
+                    "target": [
+                        "ol8-baseos",
+                        "ol8-appstream",
+                        "ol8-crb",
+                        "ol8-addons",
+                        "ol8-uek"
+                    ]
+                },
+                {
+                    "source": "centos7els-rollout-6-bypass",
+                    "target": [
+                        "ol8-baseos",
+                        "ol8-appstream",
+                        "ol8-crb",
+                        "ol8-addons",
+                        "ol8-uek"
                     ]
                 }
             ]
@@ -188,6 +328,174 @@
                     "channel": "ga",
                     "arch": "x86_64",
                     "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7-els",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7-els",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7-els-testing",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7-els-testing",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-1",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-1",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-1-bypass",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-1-bypass",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-2",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-2",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-2-bypass",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-2-bypass",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-3",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-3",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-3-bypass",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-3-bypass",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-4",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-4",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-4-bypass",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-4-bypass",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-5",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-5",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-5-bypass",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-5-bypass",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-6",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-6",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "centos7els-rollout-6-bypass",
+            "entries": [
+                {
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "centos7els-rollout-6-bypass",
+                    "arch": "x86_64",
+                    "channel": "ga"
                 }
             ]
         }
