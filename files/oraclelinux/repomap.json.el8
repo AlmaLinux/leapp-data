@@ -46,7 +46,7 @@
                     "repoid": "base",
                     "major_version": "7",
                     "channel": "ga",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "repo_type": "rpm"
                 },
                 {
@@ -71,7 +71,7 @@
                 {
                     "repoid": "ol8_baseos_latest",
                     "channel": "ga",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "major_version": "8",
                     "repo_type": "rpm"
                 }
@@ -90,7 +90,7 @@
                 {
                     "channel": "ga",
                     "repoid": "ol8_appstream",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "major_version": "8",
                     "repo_type": "rpm"
                 }
@@ -109,7 +109,7 @@
                 {
                     "repoid": "ol8_codeready_builder",
                     "channel": "ga",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "major_version": "8",
                     "repo_type": "rpm"
                 }
@@ -121,7 +121,7 @@
                 {
                     "repoid": "ol8_addons",
                     "channel": "ga",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "major_version": "8",
                     "repo_type": "rpm"
                 },
@@ -140,7 +140,7 @@
                 {
                     "channel": "ga",
                     "repoid": "ol8_UEKR6",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "major_version": "8",
                     "repo_type": "rpm"
                 },
@@ -160,7 +160,7 @@
                     "major_version": "7",
                     "channel": "ga",
                     "repoid": "updates",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "repo_type": "rpm"
                 },
                 {
@@ -186,7 +186,7 @@
                     "major_version": "7",
                     "repoid": "extras",
                     "channel": "ga",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "repo_type": "rpm"
                 }
             ]

@@ -7,7 +7,6 @@ fi
 
 dist_name=$1
 major_ver=$2
-arch=$(rpm -E %_arch)
 
 declare -A os_repos
 os_repos["almalinux7"]="almalinux8-appstream almalinux8-powertools almalinux8-baseos"
@@ -39,12 +38,6 @@ case $major_ver in
         exit 1;
         ;;
 esac
-
-distro_map_file="files/${dist_name}/repomap.json.el${target_version}"
-if test -e "${distro_map_file}.in"; then
-    sed -i "s/{arch}/${arch}/g" "${distro_map_file}.in" && \
-    mv -f "${distro_map_file}.in" "${distro_map_file}"
-fi
 
 epel_pes_file=vendors.d/epel_pes.json_template
 epel_map_file="vendors.d/epel_map.json_template.el${target_version}"
