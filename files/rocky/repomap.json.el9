@@ -80,7 +80,7 @@
                     "repoid": "baseos",
                     "major_version": "8",
                     "repo_type": "rpm",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -92,7 +92,7 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "repoid": "appstream",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -104,7 +104,7 @@
                     "major_version": "8",
                     "repoid": "powertools",
                     "repo_type": "rpm",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -116,7 +116,7 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "repoid": "ha",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -128,7 +128,7 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "repoid": "rt",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -140,7 +140,7 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "repoid": "nfv",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -152,7 +152,7 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "repoid": "sap",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -164,7 +164,7 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "repoid": "saphana",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -176,7 +176,7 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "repoid": "resilient-storage",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -188,7 +188,7 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "repoid": "extras",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -200,7 +200,7 @@
                     "repoid": "rocky9-baseos",
                     "major_version": "9",
                     "repo_type": "rpm",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -212,7 +212,7 @@
                     "major_version": "9",
                     "repo_type": "rpm",
                     "repoid": "rocky9-appstream",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -224,7 +224,7 @@
                     "major_version": "9",
                     "repoid": "rocky9-crb",
                     "repo_type": "rpm",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -236,7 +236,7 @@
                     "major_version": "9",
                     "repo_type": "rpm",
                     "repoid": "rocky9-ha",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -248,7 +248,7 @@
                     "major_version": "9",
                     "repo_type": "rpm",
                     "repoid": "rocky9-resilient-storage",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -260,7 +260,7 @@
                     "major_version": "9",
                     "repo_type": "rpm",
                     "repoid": "rocky9-extras",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -272,7 +272,7 @@
                     "major_version": "9",
                     "repo_type": "rpm",
                     "repoid": "rocky9-rt",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -284,7 +284,7 @@
                     "major_version": "9",
                     "repo_type": "rpm",
                     "repoid": "rocky9-nfv",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -296,7 +296,7 @@
                     "major_version": "9",
                     "repo_type": "rpm",
                     "repoid": "rocky9-sap",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]
@@ -308,7 +308,7 @@
                     "major_version": "9",
                     "repo_type": "rpm",
                     "repoid": "rocky9-saphana",
-                    "arch": "{arch}",
+                    "arch": "x86_64",
                     "channel": "ga"
                 }
             ]

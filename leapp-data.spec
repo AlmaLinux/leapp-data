@@ -1,7 +1,5 @@
 %global pes_events_build_date 20240827
 
-%define debug_package %{nil}
-
 %define dist_list almalinux centos eurolinux oraclelinux rocky
 %define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
@@ -9,23 +7,18 @@
 %define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce microsoft imunify360-alt-php
 %define target_version 8
 %if %{dist_name} == "almalinux"
-%define exclusivearch x86_64 aarch64 ppc64le
 %define gpg_key RPM-GPG-KEY-AlmaLinux-8
 %endif
 %if %{dist_name} == "centos"
-%define exclusivearch x86_64 aarch64 ppc64le
 %define gpg_key RPM-GPG-KEY-CentOS-Official
 %endif
 %if %{dist_name} == "eurolinux"
-%define exclusivearch x86_64 aarch64
 %define gpg_key RPM-GPG-KEY-eurolinux8
 %endif
 %if %{dist_name} == "oraclelinux"
-%define exclusivearch x86_64 aarch64
 %define gpg_key RPM-GPG-KEY-oracle-ol8
 %endif
 %if %{dist_name} == "rocky"
-%define exclusivearch x86_64 aarch64
 %define gpg_key RPM-GPG-KEY-Rocky-8
 %endif
 %endif
@@ -33,23 +26,18 @@
 %define supported_vendors epel mariadb nginx-stable nginx-mainline postgresql docker-ce microsoft
 %define target_version 9
 %if %{dist_name} == "almalinux"
-%define exclusivearch x86_64 aarch64 ppc64le s390x
 %define gpg_key RPM-GPG-KEY-AlmaLinux-9
 %endif
 %if %{dist_name} == "centos"
-%define exclusivearch x86_64 aarch64 ppc64le
 %define gpg_key RPM-GPG-KEY-CentOS-Official RPM-GPG-KEY-CentOS-SIG-Extras
 %endif
 %if %{dist_name} == "eurolinux"
-%define exclusivearch x86_64 aarch64
 %define gpg_key RPM-GPG-KEY-eurolinux9
 %endif
 %if %{dist_name} == "oraclelinux"
-%define exclusivearch %{nil}
 %define gpg_key RPM-GPG-KEY-oracle-ol9
 %endif
 %if %{dist_name} == "rocky"
-%define exclusivearch x86_64 aarch64
 %define gpg_key RPM-GPG-KEY-Rocky-9
 %endif
 %endif
@@ -58,13 +46,13 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.4
-Release:	9%{?dist}.%{pes_events_build_date}
+Release:	8%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
 URL:		https://github.com/AlmaLinux/leapp-data
 Source0:	leapp-data-%{version}.tar.gz
-ExclusiveArch: %{exclusivearch}
+BuildArch:  noarch
 
 Conflicts: %{conflict_dists}
 
@@ -165,9 +153,6 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
-* Tue Oct 08 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-9.20240827
- - Support elevation on machines other than x86_64
-
 * Mon Oct 07 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-8.20240827
  - Change major release number into $releasever in AlmaLinux repositories configuration
 
