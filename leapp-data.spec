@@ -46,7 +46,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.4
-Release:	8%{?dist}.%{pes_events_build_date}
+Release:	10%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -153,6 +153,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Thu Oct 10 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-10.20240827
+- Add CentOS 7 ELS repos support for upgrades to OracleLinux
+
 * Mon Oct 07 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-8.20240827
  - Change major release number into $releasever in AlmaLinux repositories configuration
 
