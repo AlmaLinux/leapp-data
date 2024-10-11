@@ -1,5 +1,5 @@
 {
-    "datetime": "202306191746Z",
+    "datetime": "202410141100Z",
     "version_format": "1.2.1",
     "mapping": [
         {
@@ -65,6 +65,20 @@
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg-common",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg-common",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
@@ -75,6 +89,20 @@
                     "major_version": "7",
                     "repoid": "pgdg15",
                     "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg15",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg15",
+                    "arch": "ppc64le",
                     "channel": "ga",
                     "repo_type": "rpm"
                 }
@@ -89,6 +117,20 @@
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg14",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg14",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
@@ -99,6 +141,20 @@
                     "major_version": "7",
                     "repoid": "pgdg13",
                     "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg13",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg13",
+                    "arch": "ppc64le",
                     "channel": "ga",
                     "repo_type": "rpm"
                 }
@@ -113,6 +169,20 @@
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg12",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg12",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
@@ -123,6 +193,20 @@
                     "major_version": "7",
                     "repoid": "pgdg11",
                     "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg11",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "pgdg11",
+                    "arch": "ppc64le",
                     "channel": "ga",
                     "repo_type": "rpm"
                 }
@@ -137,6 +221,20 @@
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg-common",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg-common",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
@@ -147,6 +245,20 @@
                     "major_version": "8",
                     "repoid": "el8-pgdg15",
                     "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg15",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg15",
+                    "arch": "ppc64le",
                     "channel": "ga",
                     "repo_type": "rpm"
                 }
@@ -161,6 +273,20 @@
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg14",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg14",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
@@ -171,6 +297,20 @@
                     "major_version": "8",
                     "repoid": "el8-pgdg13",
                     "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg13",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg13",
+                    "arch": "ppc64le",
                     "channel": "ga",
                     "repo_type": "rpm"
                 }
@@ -185,6 +325,20 @@
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg12",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg12",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
@@ -195,6 +349,20 @@
                     "major_version": "8",
                     "repoid": "el8-pgdg11",
                     "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg11",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg11",
+                    "arch": "ppc64le",
                     "channel": "ga",
                     "repo_type": "rpm"
                 }
@@ -209,6 +377,20 @@
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg-centos8-sysupdates",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg-centos8-sysupdates",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
@@ -219,6 +401,20 @@
                     "major_version": "8",
                     "repoid": "el8-pgdg-rhel8-extras",
                     "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg-rhel8-extras",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-pgdg-rhel8-extras",
+                    "arch": "ppc64le",
                     "channel": "ga",
                     "repo_type": "rpm"
                 }

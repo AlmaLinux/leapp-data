@@ -17,7 +17,7 @@ gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
 
 [el9-pgdg-rocky9-sysupdates]
 name=PostgreSQL Supplementary ucommon RPMs for RHEL / Rocky / AlmaLinux 9 - $basearch
-baseurl=https://download.postgresql.org/pub/repos/yum/common/pgdg-rocky9-sysupdates/redhat/rhel-9-$basearch
+baseurl=https://download.postgresql.org/pub/repos/yum/common/pgdg-rocky9-sysupdates/redhat/rhel-9-x86_64
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
@@ -33,6 +33,13 @@ gpgcheck=1
 gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
 
 # PGDG Red Hat Enterprise Linux / Rocky stable repositories:
+
+[el9-pgdg17]
+name=PostgreSQL 17 for RHEL / Rocky / AlmaLinux 9 - $basearch
+baseurl=https://download.postgresql.org/pub/repos/yum/17/redhat/rhel-9-$basearch
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
 
 [el9-pgdg16]
 name=PostgreSQL 16 for RHEL / Rocky / AlmaLinux 9 - $basearch

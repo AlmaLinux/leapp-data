@@ -1,5 +1,5 @@
 {
-    "datetime": "202306191741Z",
+    "datetime": "202410111825Z",
     "version_format": "1.2.1",
     "mapping": [
         {
@@ -25,6 +25,20 @@
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "nginx-mainline",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "nginx-mainline",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
@@ -35,6 +49,20 @@
                     "major_version": "8",
                     "repoid": "el8-nginx-mainline",
                     "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-nginx-mainline",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-nginx-mainline",
+                    "arch": "s390x",
                     "channel": "ga",
                     "repo_type": "rpm"
                 }

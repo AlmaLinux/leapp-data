@@ -1,5 +1,5 @@
 {
-    "datetime": "202306191741Z",
+    "datetime": "202410111815Z",
     "version_format": "1.2.1",
     "mapping": [
         {
@@ -73,6 +73,13 @@
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-mariadb-main",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
@@ -85,6 +92,13 @@
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-mariadb-maxscale",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
@@ -95,6 +109,13 @@
                     "major_version": "8",
                     "repoid": "el8-mariadb-tools",
                     "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-mariadb-tools",
+                    "arch": "aarch64",
                     "channel": "ga",
                     "repo_type": "rpm"
                 }

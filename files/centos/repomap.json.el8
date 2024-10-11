@@ -1,5 +1,5 @@
 {
-    "datetime": "202204020934Z",
+    "datetime": "202410111235Z",
     "version_format": "1.2.1",
     "provided_data_streams": [
         "3.0"
@@ -50,6 +50,20 @@
                     "major_version": "7",
                     "repoid": "base",
                     "channel": "ga"
+                },
+                {
+                    "repo_type": "rpm",
+                    "arch": "aarch64",
+                    "major_version": "7",
+                    "repoid": "base",
+                    "channel": "ga"
+                },
+                {
+                    "repo_type": "rpm",
+                    "arch": "ppc64le",
+                    "major_version": "7",
+                    "repoid": "base",
+                    "channel": "ga"
                 }
             ]
         },
@@ -62,6 +76,20 @@
                     "major_version": "8",
                     "arch": "x86_64",
                     "channel": "ga"
+                },
+                {
+                    "repo_type": "rpm",
+                    "repoid": "centos8-baseos",
+                    "major_version": "8",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "repo_type": "rpm",
+                    "repoid": "centos8-baseos",
+                    "major_version": "8",
+                    "arch": "ppc64le",
+                    "channel": "ga"
                 }
             ]
         },
@@ -72,6 +100,20 @@
                     "repo_type": "rpm",
                     "major_version": "8",
                     "arch": "x86_64",
+                    "repoid": "centos8-appstream",
+                    "channel": "ga"
+                },
+                {
+                    "repo_type": "rpm",
+                    "major_version": "8",
+                    "arch": "aarch64",
+                    "repoid": "centos8-appstream",
+                    "channel": "ga"
+                },
+                {
+                    "repo_type": "rpm",
+                    "major_version": "8",
+                    "arch": "ppc64le",
                     "repoid": "centos8-appstream",
                     "channel": "ga"
                 }
@@ -86,6 +128,20 @@
                     "major_version": "8",
                     "arch": "x86_64",
                     "channel": "ga"
+                },
+                {
+                    "repoid": "centos8-powertools",
+                    "repo_type": "rpm",
+                    "major_version": "8",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "repoid": "centos8-powertools",
+                    "repo_type": "rpm",
+                    "major_version": "8",
+                    "arch": "ppc64le",
+                    "channel": "ga"
                 }
             ]
         },
@@ -98,6 +154,20 @@
                     "arch": "x86_64",
                     "repoid": "centos8-ha",
                     "channel": "ga"
+                },
+                {
+                    "repo_type": "rpm",
+                    "major_version": "8",
+                    "arch": "aarch64",
+                    "repoid": "centos8-ha",
+                    "channel": "ga"
+                },
+                {
+                    "repo_type": "rpm",
+                    "major_version": "8",
+                    "arch": "ppc64le",
+                    "repoid": "centos8-ha",
+                    "channel": "ga"
                 }
             ]
         },
@@ -107,6 +177,20 @@
                 {
                     "repo_type": "rpm",
                     "arch": "x86_64",
+                    "major_version": "7",
+                    "repoid": "updates",
+                    "channel": "ga"
+                },
+                {
+                    "repo_type": "rpm",
+                    "arch": "aarch64",
+                    "major_version": "7",
+                    "repoid": "updates",
+                    "channel": "ga"
+                },
+                {
+                    "repo_type": "rpm",
+                    "arch": "ppc64le",
                     "major_version": "7",
                     "repoid": "updates",
                     "channel": "ga"
@@ -122,6 +206,20 @@
                     "arch": "x86_64",
                     "major_version": "7",
                     "channel": "ga"
+                },
+                {
+                    "repo_type": "rpm",
+                    "repoid": "extras",
+                    "arch": "aarch64",
+                    "major_version": "7",
+                    "channel": "ga"
+                },
+                {
+                    "repo_type": "rpm",
+                    "repoid": "extras",
+                    "arch": "ppc64le",
+                    "major_version": "7",
+                    "channel": "ga"
                 }
             ]
         },
@@ -133,6 +231,20 @@
                     "repoid": "centos8-extras",
                     "major_version": "8",
                     "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "repo_type": "rpm",
+                    "repoid": "centos8-extras",
+                    "major_version": "8",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "repo_type": "rpm",
+                    "repoid": "centos8-extras",
+                    "major_version": "8",
+                    "arch": "ppc64le",
                     "channel": "ga"
                 }
             ]

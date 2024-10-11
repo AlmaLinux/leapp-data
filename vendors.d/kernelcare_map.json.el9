@@ -21,9 +21,16 @@
             "entries": [
                 {
                     "repoid": "kernelcare",
-                    "major_version": "7",
+                    "major_version": "8",
                     "repo_type": "rpm",
                     "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "repoid": "kernelcare",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "aarch64",
                     "channel": "ga"
                 }
             ]
@@ -36,6 +43,13 @@
                     "major_version": "9",
                     "repo_type": "rpm",
                     "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "repoid": "kernelcare-9",
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "arch": "aarch64",
                     "channel": "ga"
                 }
             ]

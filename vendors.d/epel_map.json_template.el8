@@ -1,5 +1,5 @@
 {
-    "datetime": "202306191741Z",
+    "datetime": "202410141150Z",
     "version_format": "1.2.1",
     "mapping": [
         {
@@ -49,6 +49,20 @@
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "epel",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "epel",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
@@ -59,6 +73,27 @@
                     "major_version": "8",
                     "repoid": "el8-epel",
                     "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-epel",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-epel",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "el8-epel",
+                    "arch": "s390x",
                     "channel": "ga",
                     "repo_type": "rpm"
                 }
@@ -73,6 +108,20 @@
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "base",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "7",
+                    "repoid": "base",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
@@ -83,6 +132,27 @@
                     "major_version": "8",
                     "repoid": "{appstream}",
                     "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "{appstream}",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "{appstream}",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "{appstream}",
+                    "arch": "s390x",
                     "channel": "ga",
                     "repo_type": "rpm"
                 }
@@ -97,6 +167,27 @@
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "{powertools}",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "{powertools}",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "{powertools}",
+                    "arch": "s390x",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
@@ -107,6 +198,27 @@
                     "major_version": "8",
                     "repoid": "{baseos}",
                     "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "{baseos}",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "{baseos}",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "{baseos}",
+                    "arch": "s390x",
                     "channel": "ga",
                     "repo_type": "rpm"
                 }

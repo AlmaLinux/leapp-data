@@ -64,7 +64,7 @@ gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-K
 
 [almalinux8-nfv]
 name=AlmaLinux $releasever - NFV
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/nfv
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/nfv?arch=x86_64
 # baseurl=https://repo.almalinux.org/almalinux/$releasever/NFV/$basearch/os/
 enabled=1
 gpgcheck=1

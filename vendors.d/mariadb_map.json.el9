@@ -1,5 +1,5 @@
 {
-    "datetime": "202306191741Z",
+    "datetime": "202410111815Z",
     "version_format": "1.2.1",
     "mapping": [
         {
@@ -37,6 +37,13 @@
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "mariadb-main",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
@@ -47,6 +54,13 @@
                     "major_version": "8",
                     "repoid": "mariadb-maxscale",
                     "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "mariadb-maxscale",
+                    "arch": "aarch64",
                     "channel": "ga",
                     "repo_type": "rpm"
                 }
@@ -61,6 +75,13 @@
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
+                },
+                {
+                    "major_version": "8",
+                    "repoid": "mariadb-tools",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
@@ -73,6 +94,13 @@
                     "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm"
+                },
+                {
+                    "major_version": "9",
+                    "repoid": "el9-mariadb-main",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
                 }
             ]
         },
@@ -83,6 +111,13 @@
                     "major_version": "9",
                     "repoid": "el9-mariadb-maxscale",
                     "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "9",
+                    "repoid": "el9-mariadb-maxscale",
+                    "arch": "aarch64",
                     "channel": "ga",
                     "repo_type": "rpm"
                 }
