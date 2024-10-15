@@ -19,7 +19,7 @@ module_hotfixes = true
 
 [el9-mariadb-tools]
 name = MariaDB Tools
-baseurl = https://downloads.mariadb.com/Tools/rhel/9/$basearch
+baseurl = https://downloads.mariadb.com/Tools/rhel/9/x86_64
 gpgkey = file:///etc/leapp/files/vendors.d/rpm-gpg/mariadb-Enterprise-GPG-KEY
 gpgcheck = 1
 enabled = 1

@@ -1,5 +1,5 @@
 {
-    "datetime": "202204020934Z",
+    "datetime": "202410111750Z",
     "version_format": "1.2.1",
     "mapping": [
         {
@@ -25,6 +25,13 @@
                     "repo_type": "rpm",
                     "arch": "x86_64",
                     "channel": "ga"
+                },
+                {
+                    "repoid": "kernelcare",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "arch": "aarch64",
+                    "channel": "ga"
                 }
             ]
         },
@@ -36,6 +43,13 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "repoid": "kernelcare-8",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "aarch64",
                     "channel": "ga"
                 }
             ]

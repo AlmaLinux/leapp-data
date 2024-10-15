@@ -1,5 +1,5 @@
 {
-    "datetime": "202204020934Z",
+    "datetime": "202410111305Z",
     "version_format": "1.2.1",
     "provided_data_streams": [
         "3.0"
@@ -48,6 +48,13 @@
                     "repoid": "base",
                     "major_version": "7",
                     "channel": "ga"
+                },
+                {
+                    "arch": "aarch64",
+                    "repo_type": "rpm",
+                    "repoid": "base",
+                    "major_version": "7",
+                    "channel": "ga"
                 }
             ]
         },
@@ -56,6 +63,13 @@
             "entries": [
                 {
                     "arch": "x86_64",
+                    "repo_type": "rpm",
+                    "repoid": "certify-baseos",
+                    "channel": "ga",
+                    "major_version": "8"
+                },
+                {
+                    "arch": "aarch64",
                     "repo_type": "rpm",
                     "repoid": "certify-baseos",
                     "channel": "ga",
@@ -72,6 +86,13 @@
                     "repoid": "certify-appstream",
                     "channel": "ga",
                     "major_version": "8"
+                },
+                {
+                    "arch": "aarch64",
+                    "repo_type": "rpm",
+                    "repoid": "certify-appstream",
+                    "channel": "ga",
+                    "major_version": "8"
                 }
             ]
         },
@@ -80,6 +101,13 @@
             "entries": [
                 {
                     "arch": "x86_64",
+                    "repo_type": "rpm",
+                    "repoid": "certify-powertools",
+                    "channel": "ga",
+                    "major_version": "8"
+                },
+                {
+                    "arch": "aarch64",
                     "repo_type": "rpm",
                     "repoid": "certify-powertools",
                     "channel": "ga",
@@ -96,6 +124,13 @@
                     "repoid": "high-availability",
                     "channel": "ga",
                     "major_version": "8"
+                },
+                {
+                    "arch": "aarch64",
+                    "repo_type": "rpm",
+                    "repoid": "high-availability",
+                    "channel": "ga",
+                    "major_version": "8"
                 }
             ]
         },
@@ -104,6 +139,13 @@
             "entries": [
                 {
                     "arch": "x86_64",
+                    "repoid": "resilient-storage",
+                    "repo_type": "rpm",
+                    "channel": "ga",
+                    "major_version": "8"
+                },
+                {
+                    "arch": "aarch64",
                     "repoid": "resilient-storage",
                     "repo_type": "rpm",
                     "channel": "ga",
@@ -120,6 +162,13 @@
                     "repo_type": "rpm",
                     "major_version": "7",
                     "channel": "ga"
+                },
+                {
+                    "arch": "aarch64",
+                    "repoid": "updates",
+                    "repo_type": "rpm",
+                    "major_version": "7",
+                    "channel": "ga"
                 }
             ]
         },
@@ -128,6 +177,13 @@
             "entries": [
                 {
                     "arch": "x86_64",
+                    "repo_type": "rpm",
+                    "major_version": "7",
+                    "repoid": "extras",
+                    "channel": "ga"
+                },
+                {
+                    "arch": "aarch64",
                     "repo_type": "rpm",
                     "major_version": "7",
                     "repoid": "extras",

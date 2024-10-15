@@ -23,7 +23,7 @@
 %endif
 %endif
 %if 0%{?rhel} == 8
-%define supported_vendors epel mariadb nginx-stable nginx-mainline postgresql docker-ce microsoft
+%define supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce microsoft
 %define target_version 9
 %if %{dist_name} == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-9
@@ -46,7 +46,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.4
-Release:	10%{?dist}.%{pes_events_build_date}
+Release:	11%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -153,6 +153,10 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Mon Oct 14 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-11.20240827
+- Support elevation on machines other than x86_64 with adding relevant architectures into map files
+- Back kernelcare vendor support for upgrades from 8 to 9
+
 * Thu Oct 10 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-10.20240827
 - Add CentOS 7 ELS repos support for upgrades to OracleLinux
 

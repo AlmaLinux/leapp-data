@@ -1,5 +1,5 @@
 {
-    "datetime": "202204020934Z",
+    "datetime": "202410111415Z",
     "version_format": "1.2.1",
     "provided_data_streams": [
         "3.0"
@@ -50,6 +50,13 @@
                     "major_version": "7",
                     "repo_type": "rpm",
                     "arch": "x86_64"
+                },
+                {
+                    "channel": "ga",
+                    "repoid": "base",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "arch": "aarch64"
                 }
             ]
         },
@@ -62,6 +69,13 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "arch": "x86_64"
+                },
+                {
+                    "channel": "ga",
+                    "repoid": "rocky8-baseos",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "aarch64"
                 }
             ]
         },
@@ -74,6 +88,13 @@
                     "repo_type": "rpm",
                     "repoid": "rocky8-appstream",
                     "arch": "x86_64"
+                },
+                {
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "rocky8-appstream",
+                    "arch": "aarch64"
                 }
             ]
         },
@@ -86,6 +107,13 @@
                     "repo_type": "rpm",
                     "repoid": "rocky8-powertools",
                     "arch": "x86_64"
+                },
+                {
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "rocky8-powertools",
+                    "arch": "aarch64"
                 }
             ]
         },
@@ -98,6 +126,13 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "arch": "x86_64"
+                },
+                {
+                    "repoid": "rocky8-ha",
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "aarch64"
                 }
             ]
         },
@@ -110,6 +145,13 @@
                     "repo_type": "rpm",
                     "repoid": "rocky8-resilient-storage",
                     "arch": "x86_64"
+                },
+                {
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "rocky8-resilient-storage",
+                    "arch": "aarch64"
                 }
             ]
         },
@@ -122,6 +164,13 @@
                     "repo_type": "rpm",
                     "repoid": "updates",
                     "arch": "x86_64"
+                },
+                {
+                    "channel": "ga",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "updates",
+                    "arch": "aarch64"
                 }
             ]
         },
@@ -134,6 +183,13 @@
                     "major_version": "7",
                     "repo_type": "rpm",
                     "arch": "x86_64"
+                },
+                {
+                    "channel": "ga",
+                    "repoid": "extras",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "arch": "aarch64"
                 }
             ]
         },
@@ -145,6 +201,13 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "arch": "x86_64",
+                    "repoid": "rocky8-extras"
+                },
+                {
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "aarch64",
                     "repoid": "rocky8-extras"
                 }
             ]
@@ -169,6 +232,13 @@
                     "major_version": "8",
                     "repo_type": "rpm",
                     "arch": "x86_64",
+                    "repoid": "rocky8-nfv"
+                },
+                {
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "aarch64",
                     "repoid": "rocky8-nfv"
                 }
             ]

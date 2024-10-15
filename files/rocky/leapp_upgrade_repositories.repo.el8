@@ -56,7 +56,7 @@ gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/RPM-GPG-K
 
 [rocky8-rt]
 name=Rocky Linux 8 - RT
-mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=$basearch&repo=RT-8
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=x86_64&repo=RT-8
 #baseurl=http://dl.rockylinux.org/pub/rocky/8/RT/$basearch/os/
 gpgcheck=1
 enabled=1
