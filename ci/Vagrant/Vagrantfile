@@ -1,0 +1,27 @@
+Vagrant.configure("2") do |config|
+
+    config.env.enable
+    config.vm.box = ENV['vm_box']
+
+    config.vm.define 'elevatevm'
+    # 10 min for upgrade on reboot to complete
+    config.vm.boot_timeout = 600
+
+    config.vm.provider "libvirt" do |v|
+        v.memory = 12288
+        v.cpus = 4
+
+        # Redirect output from the serial console of the VM to the file
+        v.serial :type => "file", :source => {:path => "/var/log/elevatevm_consoles/serial.log"}
+    end
+
+    config.vm.provision "shell", inline: <<-SHELL
+        [ "$(rpm --eval %rhel)" = "7" ] && sudo curl -o /etc/yum.repos.d/CentOS-Base.repo https://el7.repo.almalinux.org/centos/CentOS-Base.repo
+        sudo yum -y -q install dnf
+        sudo dnf -y -q update
+    SHELL
+
+    # Reboot after upgrade
+    config.vm.provision :reload
+
+end
