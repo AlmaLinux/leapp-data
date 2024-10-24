@@ -44,25 +44,25 @@ on:
         description: 'CentOS'
         required: true
         type: boolean
-        default: false
+        default: true
 
       eurolinux:
         description: 'EuroLinux'
         required: true
         type: boolean
-        default: false
+        default: true
 
       oraclelinux:
         description: 'OracleLinux (7 to 8 only)'
         required: true
         type: boolean
-        default: false
+        default: true
 
       rocky:
         description: 'Rocky Linux'
         required: true
         type: boolean
-        default: false
+        default: true
 
       vendors:
         description: 'Install vendors'
@@ -75,7 +75,7 @@ on:
 
 jobs:
   elevate:
-    name: ELevate to ${{ matrix.distro }} ${{ matrix.scenario }}
+    name: from ${{ matrix.scenario == '8' && (contains(matrix.distro, 'scientific') && 'scientific 7' || 'centos 7') || (format('{0} 8', matrix.distro)) }} to ${{ contains(matrix.distro, 'scientific') && 'almalinux' || matrix.distro}} ${{ matrix.scenario }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -94,6 +94,8 @@ jobs:
     env:
       version8_minor: 10
       version9_minor: 4
+      vm_serial_log: '/var/log/elevatevm_consoles/serial.log'
+      vm_boot_timeout: 600
 
     steps:
     - uses: actions/checkout@v4
@@ -110,24 +112,27 @@ jobs:
             variant=el7toel8
             source_release=7
             minor_version=${{ env.version8_minor }}
+            source_distro=centos
+            [ "${{ matrix.distro }}" = "scientific" ] && source_distro=scientific
             ;;
           9)
             variant=el8toel9
             source_release=8
             minor_version=${{ env.version9_minor }}
+            source_distro=${{ matrix.distro }}
             ;;
         esac
         target_distro=${{ matrix.distro }}
         target_release="${{ matrix.scenario }}.${minor_version}"
 
         # Target system release file, string and Vagrant image
-        release_file=/etc/${{ matrix.distro }}-release
+        target_release_file=/etc/${{ matrix.distro }}-release
         case ${{ matrix.distro }} in
           almalinux|scientific )
             vm_box=almalinux/${source_release}
             target_distro=almalinux
             target_release_string="AlmaLinux release ${target_release}"
-            release_file=/etc/almalinux-release
+            target_release_file=/etc/almalinux-release
             ;;
           centos )
             vm_box=eurolinux-vagrant/centos-stream-${source_release} # generic/centos8s
@@ -137,39 +142,47 @@ jobs:
           eurolinux )
             vm_box=eurolinux-vagrant/eurolinux-${source_release}
             target_release_string="EuroLinux release ${target_release}"
-            release_file=/etc/el-release
+            target_release_file=/etc/el-release
             ;;
           oraclelinux )
             vm_box=eurolinux-vagrant/oracle-linux-${source_release} # generic/oracle8
             target_release_string="Oracle Linux Server release ${target_release}"
-            release_file=/etc/oracle-release
+            target_release_file=/etc/oracle-release
             ;;
           rocky )
             vm_box=eurolinux-vagrant/rocky-${source_release} # generic/rocky8
             target_release_string="Rocky Linux release ${target_release}"
             ;;
         esac
-        if [ "${{ matrix.scenario }}" = "8" ]; then
+        if [ "${source_release}" = "7" ]; then
+          # Elevate all from CentOS 7
           vm_box=centos/${source_release} # eurolinux-vagrant/centos-7 generic/centos7
-          [ "${{ matrix.distro }}" = "scientific" ] && vm_box=eurolinux-vagrant/scientific-linux-${source_release}
+          # Elevate from Scientific Linux 7 to AlmaLinux 8
+          [ "${source_distro}" = "scientific" ] && vm_box=eurolinux-vagrant/scientific-linux-${source_release}
         fi
 
         echo "target_release_string=${target_release_string}" >> $GITHUB_ENV
-        echo "release_file=${release_file}" >> $GITHUB_ENV
+        echo "target_release_file=${target_release_file}" >> $GITHUB_ENV
         echo "source_release=${source_release}" >> $GITHUB_ENV
         echo "target_release=${target_release}" >> $GITHUB_ENV
+        echo "source_distro=${source_distro}" >> $GITHUB_ENV
         echo "target_distro=${target_distro}" >> $GITHUB_ENV
+        echo "variant_long=${source_distro}${source_release}-to-${target_distro}${{ matrix.scenario }}" >> $GITHUB_ENV
 
-        # Set Vagrant ENV variable for config.vm.box, copy config file
+        # Set Vagrant ENV variables, copy Vagrantfile
         echo "vm_box='${vm_box}'" > .env
+        echo "vm_serial_log='${{ env.vm_serial_log }}'" >> .env
+        echo "vm_boot_timeout=${{ env.vm_boot_timeout }}" >> .env
         cp -av ci/Vagrant/Vagrantfile ./
 
         # Leapp packages
         leapp_pkgs="leapp leapp-upgrade-${variant}"
-        [ "${{ inputs.leapp-data-git }}" = "false" ] && leapp_pkgs="${leapp_pkgs} leapp-data-${target_distro}"
+        if [ "${{ inputs.leapp-data-git }}" = "false" ]; then
+          leapp_pkgs="${leapp_pkgs} leapp-data-${target_distro}"
+        fi
         echo "leapp_pkgs=${leapp_pkgs}" >> $GITHUB_ENV
 
-        # leapp logs directory
+        # Leapp logs directory
         leapp_log_dir="/var/log/leapp"
         echo "leapp_log_dir=${leapp_log_dir}" >> $GITHUB_ENV
         mkdir -p .${leapp_log_dir}
@@ -184,7 +197,7 @@ jobs:
         export LC_COLLATE=C
         export LC_CTYPE=en_US.UTF-8
 
-        # Phase to run: 'install', 'preupgrade', 'mitigate' or 'upgrade'
+        # Phase to run, one of: 'install', 'preupgrade', 'mitigate', 'upgrade'
         phase=$1
         res=0
 
@@ -192,11 +205,11 @@ jobs:
         if [ "$phase" = "install" ]; then
           dnf -y -q install 'dnf-command(config-manager)'
 
-          case ${{ matrix.scenario }} in
-            8)
+          case ${{ env.source_release }} in
+            7)
               source_distro=centos${{ env.source_release }}
               ;;
-            9)
+            8)
               source_distro=almalinux-${{ env.source_release }}
               ;;
           esac
@@ -238,17 +251,19 @@ jobs:
 
         # Mitigate inhibitor(s) and answer question(s)
         if [ "$phase" = "mitigate" ]; then
-          case ${{ matrix.scenario }} in
-            8 )
+          case ${{ env.source_release }} in
+            7)
+              # TODO: workaround if Scientific Linux to install almalinux-release package
+              if [ "${{ env.source_distro }}" = "scientific" ]; then
+                rm -rf /usr/share/redhat-release /usr/share/doc/redhat-release
+              fi
               lsmod | grep pata_acpi >/dev/null 2>&1 && rmmod pata_acpi;
               lsmod | grep floppy >/dev/null 2>&1 && rmmod floppy;
               sed -i 's/^.*PermitRootLogin.*$/PermitRootLogin yes # inhibited/g' /etc/ssh/sshd_config;
-              # TODO: ScientificLinux workaround to install almalinux-release package
-              [ "${{ matrix.distro }}" = "scientific" ] && rm -rf /usr/share/redhat-release /usr/share/doc/redhat-release
               leapp answer --section remove_pam_pkcs11_module_check.confirm=True;
               res=$?
               ;;
-            9 )
+            8)
               sed -i 's/\(PermitRootLogin yes\)/\1 # inhibited/g' /etc/ssh/sshd_config;
               sed -i s/^AllowZoneDrifting=.*/AllowZoneDrifting=no/ /etc/firewalld/firewalld.conf;
               leapp answer --section check_vdo.confirm=True;
@@ -280,7 +295,7 @@ jobs:
 
         # Verdor name to install, one of: 'epel', 'kernelcare', 'imunify', ...
         vendor=$1
-        # Source system release number: '7' or '8'
+        # Source system release number: '7', '8', ...
         source_release=$2
         res=0
 
@@ -333,29 +348,39 @@ jobs:
         gpgkey=https://nginx.org/keys/nginx_signing.key
         module_hotfixes=true
         NGINX
+
           sudo dnf -y install nginx
           res=$?
         fi
 
         if [ "${vendor}" = "mariadb" ]; then
           # MariaDB server requires some packages from EPEL on EL7
-          [ "${source_release}" = "7" ] && sudo dnf -y -q install epel-release
-          # --skip-maxscale to not configure 'mariadb-maxscale' repository as it is broken for EL7
-          # --os-type and --os-version to install on EuroLinux
+          if [ "${source_release}" = "7" ]; then 
+           sudo dnf -y -q install epel-release
+          fi
+
+          # Skip 'mariadb-maxscale' repository as it is broken for EL7
+          # --os-* options to install on EuroLinux
           sudo curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash -s -- \
-          --skip-maxscale \
-          --os-version=${source_release} \
-          --os-type=rhel
+            --skip-maxscale \
+            --os-version=${source_release} \
+            --os-type=rhel
           sudo dnf -y install MariaDB-server
           res=$?
         fi
 
         if [ "${vendor}" = "postgresql" ]; then
           sudo dnf install --disablerepo=* -y -q https://download.postgresql.org/pub/repos/yum/reporpms/EL-${source_release}-x86_64/pgdg-redhat-repo-latest.noarch.rpm
-          [ "${source_release}" = "8" ] && sudo dnf -y -q module disable postgresql
-          [ "${source_release}" = "7" ] && sudo dnf -y -q install epel-release
+          case ${source_release} in
+            7)
+              sudo dnf -y -q install epel-release;;
+            8)
+              sudo dnf -y -q module disable postgresql;;
+          esac
+
           # TODO to mitigate "[Errno -1] repomd.xml signature could not be verified for pgdg-common"
           sed -i 's/repo_gpgcheck.*$/repo_gpgcheck=0/g' /etc/yum.repos.d/pgdg-redhat-all.repo
+
           sudo dnf install -y postgresql15-server
           res=$?
         fi
@@ -367,12 +392,17 @@ jobs:
         fi
 
         if [ "${vendor}" = "microsoft" ]; then
-          ms_release_pkg=packages-microsoft-prod-1.0-1.el7.noarch.rpm
-          ms_pkgs="omi aspnetcore-runtime-7.0 dotnet-targeting-pack-7.0 dotnet-sdk-7.0"
-          if [ "${source_release}" = "8" ]; then
-            ms_release_pkg=packages-microsoft-prod.rpm
-            ms_pkgs="sysmonforlinux sysinternalsebpf procmon"
-          fi
+          case ${source_release} in
+            7)
+              ms_release_pkg=packages-microsoft-prod-1.0-1.el7.noarch.rpm
+              ms_pkgs="omi aspnetcore-runtime-7.0 dotnet-targeting-pack-7.0 dotnet-sdk-7.0"
+              ;;
+            8)
+              ms_release_pkg=packages-microsoft-prod.rpm
+              ms_pkgs="sysmonforlinux sysinternalsebpf procmon"
+              ;;
+          esac
+
           sudo dnf install -y -q https://packages.microsoft.com/rhel/${source_release}/prod/Packages/p/${ms_release_pkg}
           sudo dnf install -y ${ms_pkgs}
           res=$?
@@ -404,6 +434,7 @@ jobs:
         mkdir -p ${rpmbuild_topdir}/SOURCES/${name}-${version}
         /bin/cp -a /vagrant/* ${rpmbuild_topdir}/SOURCES/${name}-${version}/
         /bin/cp /vagrant/leapp-data.spec ${rpmbuild_topdir}/SPECS/
+        # Exclude some files generated by the workflow
         rm -f ${rpmbuild_topdir}/SOURCES/${name}-${version}/{ELevate.sh,Verndors.sh,leapp-data-rpm.sh}
         cd ${rpmbuild_topdir}/SOURCES/ && tar zcf ${source} ${name}-${version}
 
@@ -456,29 +487,27 @@ jobs:
 
     - name: Print source system release
       run: |
-        echo "[Debug] $(sudo vagrant ssh elevatevm -c 'cat /etc/redhat-release')"
+        system_release=$(sudo vagrant ssh elevatevm -c 'cat /etc/redhat-release')
+        echo "[Debug] ${system_release}"
 
     - name: Install leapp and data from RPMs
       id: install-leapp-rpms
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/ELevate.sh install" || exit 1
 
-        pkgs_versions=
-        for pkg in ${{ env.leapp_pkgs }}; do
-          pkg_version=$(sudo vagrant ssh elevatevm -c "rpm -q --queryformat '%{VERSION}-%{RELEASE}\n' ${pkg}")
-
-          # Format packages versions in list format: 'item1', 'item2', ...
-          [ "x${pkgs_versions}" = "x" ] && pkgs_versions="'${pkg} ${pkg_version}'" || pkgs_versions="${pkgs_versions}, '${pkg} ${pkg_version}'"
-        done
+        # ELevate packages list (for the workflow summary) formatted like: 'item1', 'item2', ...
+        pkgs_versions=$(sudo vagrant ssh elevatevm -c "rpm -q ${{ env.leapp_pkgs }} | xargs | sed \"s/^/'/;s/$/'/;s/ /', '/g\"")
         echo "pkgs_versions=${pkgs_versions}" >> $GITHUB_ENV
-        echo "[Debug] pkgs_versions=${pkgs_versions}"
+        echo "[Debug] ${pkgs_versions}"
 
     - name: Build leapp-data package from Git, and install it
       if: inputs.leapp-data-git
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/leapp-data-rpm.sh" || exit 1
-        leapp_data_version=$(sudo vagrant ssh elevatevm -c "sudo rpm -q --queryformat '%{VERSION}-%{RELEASE}' leapp-data-${{ env.target_distro }}" || exit 1)
-        echo "pkgs_versions=${{ env.pkgs_versions }}, 'leapp-data-${{ env.target_distro }} ${leapp_data_version} (${{ github.ref_name }})'" >> $GITHUB_ENV
+
+        # ELevate packages list (for the workflow summary) formatted like: 'item1', 'item2', ...
+        leapp_data_version=$(sudo vagrant ssh elevatevm -c "sudo rpm -q leapp-data-${{ env.target_distro }}" || exit 1)
+        echo "pkgs_versions=${{ env.pkgs_versions }}, '${leapp_data_version} (branch ${{ github.ref_name }})'" >> $GITHUB_ENV
 
     - name: Vendor - EPEL
       if: inputs.vendors == 'all' && env.target_distro == 'almalinux'
@@ -557,7 +586,7 @@ jobs:
 
     - name: Check upgraded system release
       run: |
-        release=$(sudo vagrant ssh elevatevm -c 'cat ${{ env.release_file }}')
+        release=$(sudo vagrant ssh elevatevm -c 'cat ${{ env.target_release_file }}')
         if [[ ${release} = *'${{ env.target_release_string }}'* ]]; then
           echo "[Debug] '${release}' matched"
         else
@@ -567,7 +596,7 @@ jobs:
     - name: List of packages remain installed from source system
       id: list-remain-packages
       run: |
-        # Format packages versions in list format: 'item1', 'item2', ...
+        # Remain installed packages list (for the workflow summary) formatted like: 'item1', 'item2', ...
         remain_pkgs=$(sudo vagrant ssh elevatevm -c "sudo rpm -qa" | grep el${{ env.source_release }} | xargs | sed "s/^/'/;s/$/'/;s/ /', '/g")
         echo "remain_pkgs=${remain_pkgs}" >> $GITHUB_ENV
         echo "[Debug] ${remain_pkgs}"
@@ -575,29 +604,29 @@ jobs:
     - name: Serial console log
       if: ( success() || failure() ) && steps.vagrant-up.outcome == 'success'
       run: |
-        serial_log=/var/log/elevatevm_consoles/serial.log
-        sudo chmod +r ${serial_log}
-        cp -av ${serial_log} ${{ matrix.distro }}-${{ env.target_release }}-serial-console.log
-        cat ${serial_log}
+        echo "[Debug] ${{ env.vm_serial_log }}"
+        sudo chmod +r ${{ env.vm_serial_log }}
+        cp -av ${{ env.vm_serial_log }} ${{ env.variant_long }}-serial-console.log
+        cat ${{ env.vm_serial_log }}
 
     - name: Prepare leapp logs
       if: ( success() || failure() ) && ( steps.leapp-preupgrade.outcome == 'success' || steps.leapp-upgrade.outcome == 'success' )
       run: |
-        tar cf ${{ matrix.distro }}-${{ env.target_release }}-leapp-logs.tar .${{ env.leapp_log_dir }}
+        tar cf ${{ env.variant_long }}-leapp-logs.tar .${{ env.leapp_log_dir }}
 
     - name: Leapp logs as artifact
       uses: actions/upload-artifact@v4
       if: ( success() || failure() ) && ( steps.leapp-preupgrade.outcome == 'success' || steps.leapp-upgrade.outcome == 'success' )
       with:
-        name: ${{ matrix.distro }}-${{ env.target_release }}-leapp-logs.tar
-        path: ${{ matrix.distro }}-${{ env.target_release }}-leapp-logs.tar
+        name: ${{ env.variant_long }}-leapp-logs.tar
+        path: ${{ env.variant_long }}-leapp-logs.tar
 
     - name: Serial console log as artifact
       uses: actions/upload-artifact@v4
       if: ( success() || failure() ) && steps.vagrant-up.outcome == 'success'
       with:
-        name: ${{ matrix.distro }}-${{ env.target_release }}-serial-console.log
-        path: ${{ matrix.distro }}-${{ env.target_release }}-serial-console.log
+        name: ${{ env.variant_long }}-serial-console.log
+        path: ${{ env.variant_long }}-serial-console.log
 
     - name: Print tests summary
       if: ( success() || failure() ) && ( steps.install-leapp-rpms.outcome == 'success' || steps.list-remain-packages.outcome == 'success' )
@@ -606,8 +635,8 @@ jobs:
         result-encoding: string
         script: |
           core.summary
-              .addHeading('${{ inputs.repository }} packages:', '4')
+              .addHeading('ELevate packages from ${{ inputs.repository }}:', '4')
               .addList([${{ env.pkgs_versions }}], true)
-              .addHeading('EL${{ env.source_release }} packages remain installed:', '4')
+              .addHeading('${{ env.source_distro }}${{ env.source_release }} packages remain installed:', '4')
               .addList([${{ env.remain_pkgs }}], true)
               .write()
