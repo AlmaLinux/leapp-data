@@ -1,5 +1,7 @@
 %global pes_events_build_date 20240827
 
+%define repositorydir %{_datadir}/leapp-repository/repositories
+
 %define dist_list almalinux centos eurolinux oraclelinux rocky
 %define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
@@ -46,7 +48,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.4
-Release:	11%{?dist}.%{pes_events_build_date}
+Release:	12%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -113,9 +115,9 @@ mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el8 \
       %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
 rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el9
-mkdir -p %{buildroot}%{_sysconfdir}/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/
+mkdir -p %{buildroot}%{repositorydir}/system_upgrade/common/files/rpm-gpg/8/
 for key in %{gpg_key}; do
-    mv -f files/rpm-gpg/${key} %{buildroot}%{_sysconfdir}/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/
+    mv -f files/rpm-gpg/${key} %{buildroot}%{repositorydir}/system_upgrade/common/files/rpm-gpg/8/
 done
 %endif
 %if 0%{?rhel} == 8
@@ -124,9 +126,9 @@ mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el9 \
       %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
 rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
-mkdir -p %{buildroot}%{_sysconfdir}/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/
+mkdir -p %{buildroot}%{repositorydir}/system_upgrade/common/files/rpm-gpg/9/
 for key in %{gpg_key}; do
-    mv -f files/rpm-gpg/${key} %{buildroot}%{_sysconfdir}/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/
+    mv -f files/rpm-gpg/${key} %{buildroot}%{repositorydir}/system_upgrade/common/files/rpm-gpg/9/
 done
 %endif
 
@@ -143,16 +145,19 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 %files
 %doc LICENSE NOTICE README.md
 %if 0%{?rhel} == 8
-%{_sysconfdir}/leapp/repos.d/system_upgrade/common/files/rpm-gpg/9/
+%{repositorydir}/system_upgrade/common/files/rpm-gpg/9/*
 %endif
 
 %if 0%{?rhel} == 7
-%{_sysconfdir}/leapp/repos.d/system_upgrade/common/files/rpm-gpg/8/
+%{repositorydir}/system_upgrade/common/files/rpm-gpg/8/*
 %endif
 %{_sysconfdir}/leapp/files/*
 
 
 %changelog
+* Fri Nov 15 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-12.20240827
+- Move operating systems' GPG keys from %{_sysconfdir}/leapp/repos.d to %{repositorydir}
+
 * Mon Oct 14 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-11.20240827
 - Support elevation on machines other than x86_64 with adding relevant architectures into map files
 - Back kernelcare vendor support for upgrades from 8 to 9
@@ -215,7 +220,7 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 * Tue Jul 16 2024 Andrew Lukoshko <alukoshko@almalinux.org> - 0.2-14.20230823
 - Add CentOS 7 ELS repos support for upgrades to AlmaLinux
- 
+
 * Mon Jul 1 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.2-13.20230823
 - Define 'supported_vendors' and 'target_version' to simplify data management for specific version
 - Support of MariaDB verndors data for both EL8 and EL9
