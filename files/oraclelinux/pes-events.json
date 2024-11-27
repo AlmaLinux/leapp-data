@@ -1,7 +1,9 @@
 {
-    "timestamp": "202408141104Z",
+    "timestamp": "202411121506Z",
     "provided_data_streams": [
-        "3.1"
+        "3.0",
+        "3.1",
+        "3.2"
     ],
     "packageinfo": [
         {
@@ -6091,7 +6093,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -6127,7 +6128,7 @@
                             null
                         ],
                         "name": "sblim-cmpi-devel",
-                        "repository": "ol8-appstream"
+                        "repository": "ol8-crb"
                     }
                 ],
                 "set_id": 6137
@@ -85014,7 +85015,7 @@
                             null
                         ],
                         "name": "sblim-sfcc-devel",
-                        "repository": "ol8-appstream"
+                        "repository": "ol8-crb"
                     }
                 ],
                 "set_id": 4075
@@ -85114,7 +85115,7 @@
                             null
                         ],
                         "name": "texinfo-tex",
-                        "repository": "ol8-baseos"
+                        "repository": "ol8-crb"
                     }
                 ],
                 "set_id": 4079
@@ -85248,7 +85249,7 @@
                             null
                         ],
                         "name": "tog-pegasus-devel",
-                        "repository": "ol8-appstream"
+                        "repository": "ol8-crb"
                     }
                 ],
                 "set_id": 4085
@@ -252458,7 +252459,7 @@
                             null
                         ],
                         "name": "libvoikko-devel",
-                        "repository": "ol8-baseos"
+                        "repository": "ol8-crb"
                     }
                 ],
                 "set_id": 10641
@@ -263865,7 +263866,7 @@
                             null
                         ],
                         "name": "sblim-gather-provider",
-                        "repository": "ol8-appstream"
+                        "repository": "ol8-crb"
                     }
                 ],
                 "set_id": 11398
@@ -300627,40 +300628,6 @@
             }
         },
         {
-            "action": 0,
-            "architectures": [
-                "aarch64",
-                "ppc64le",
-                "s390x",
-                "x86_64"
-            ],
-            "id": 10241,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "ibus-typing-booster-tests",
-                        "repository": "ol8-baseos"
-                    }
-                ],
-                "set_id": 14146
-            },
-            "initial_release": {
-                "major_version": 8,
-                "minor_version": 3,
-                "os_name": "OL"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 8,
-                "minor_version": 4,
-                "os_name": "OL"
-            }
-        },
-        {
             "action": 1,
             "architectures": [
                 "aarch64",
@@ -305432,117 +305399,6 @@
                     }
                 ],
                 "set_id": 14628
-            },
-            "initial_release": {
-                "major_version": 8,
-                "minor_version": 6,
-                "os_name": "OL"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 9,
-                "minor_version": 0,
-                "os_name": "OL"
-            }
-        },
-        {
-            "action": 1,
-            "architectures": [
-                "aarch64",
-                "ppc64le",
-                "s390x",
-                "x86_64"
-            ],
-            "id": 10583,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            {
-                                "name": "javapackages-tools",
-                                "stream": "201801"
-                            }
-                        ],
-                        "name": "javapackages-local",
-                        "repository": "crb"
-                    }
-                ],
-                "set_id": 14629
-            },
-            "initial_release": {
-                "major_version": 8,
-                "minor_version": 6,
-                "os_name": "OL"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 9,
-                "minor_version": 0,
-                "os_name": "OL"
-            }
-        },
-        {
-            "action": 1,
-            "architectures": [
-                "aarch64",
-                "ppc64le",
-                "s390x",
-                "x86_64"
-            ],
-            "id": 10584,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            {
-                                "name": "javapackages-tools",
-                                "stream": "201801"
-                            }
-                        ],
-                        "name": "maven-local",
-                        "repository": "crb"
-                    }
-                ],
-                "set_id": 14630
-            },
-            "initial_release": {
-                "major_version": 8,
-                "minor_version": 6,
-                "os_name": "OL"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 9,
-                "minor_version": 0,
-                "os_name": "OL"
-            }
-        },
-        {
-            "action": 1,
-            "architectures": [
-                "aarch64",
-                "ppc64le",
-                "s390x",
-                "x86_64"
-            ],
-            "id": 10585,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            {
-                                "name": "javapackages-tools",
-                                "stream": "201801"
-                            }
-                        ],
-                        "name": "python3-javapackages",
-                        "repository": "crb"
-                    }
-                ],
-                "set_id": 14631
             },
             "initial_release": {
                 "major_version": 8,
@@ -314741,51 +314597,6 @@
             "release": {
                 "major_version": 8,
                 "minor_version": 2,
-                "os_name": "OL"
-            }
-        },
-        {
-            "action": 1,
-            "architectures": [
-                "aarch64",
-                "ppc64le",
-                "s390x",
-                "x86_64"
-            ],
-            "id": 11234,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            {
-                                "name": "container-tools",
-                                "stream": "3.0"
-                            },
-                            {
-                                "name": "container-tools",
-                                "stream": "rhel8"
-                            },
-                            {
-                                "name": "container-tools",
-                                "stream": "4.0"
-                            }
-                        ],
-                        "name": "libslirp-devel",
-                        "repository": "appstream"
-                    }
-                ],
-                "set_id": 15684
-            },
-            "initial_release": {
-                "major_version": 8,
-                "minor_version": 6,
-                "os_name": "OL"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 9,
-                "minor_version": 0,
                 "os_name": "OL"
             }
         },
@@ -338332,7 +338143,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -338388,7 +338198,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -338605,7 +338414,7 @@
                             }
                         ],
                         "name": "perl-DBD-SQLite",
-                        "repository": "ol8-baseos"
+                        "repository": "ol8-appstream"
                     }
                 ],
                 "set_id": 16807
@@ -338719,7 +338528,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -338905,7 +338713,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -339073,7 +338880,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -339179,7 +338985,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -339285,7 +339090,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -339527,7 +339331,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -339633,7 +339436,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -339739,7 +339541,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -339845,7 +339646,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -339951,7 +339751,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -340057,7 +339856,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -340163,7 +339961,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -340269,7 +340066,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -340375,7 +340171,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -340537,7 +340332,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -340643,7 +340437,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -340749,7 +340542,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -340855,7 +340647,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -340961,7 +340752,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -342370,7 +342160,7 @@
                             null
                         ],
                         "name": "fwupd-devel",
-                        "repository": "ol8-baseos"
+                        "repository": "ol8-crb"
                     }
                 ],
                 "set_id": 16997
@@ -383917,6 +383707,720 @@
             }
         },
         {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 16759,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "insights-client",
+                        "repository": "base"
+                    }
+                ],
+                "set_id": 22955
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 5,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 7,
+                "minor_version": 6,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17245,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "rhc",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23561
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 3,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 4,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17246,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "rhc-worker-playbook",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23562
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 3,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 4,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17247,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "python3-cloud-what",
+                        "repository": "ol8-baseos"
+                    }
+                ],
+                "set_id": 23563
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 4,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17266,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "openldap-servers",
+                        "repository": "ol8-crb"
+                    }
+                ],
+                "set_id": 23584
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 6,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17267,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "aspnetcore-runtime-9.0",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23586
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17268,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "aspnetcore-runtime-dbg-9.0",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23587
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17269,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "aspnetcore-targeting-pack-9.0",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23588
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17270,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "dotnet",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23589
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17271,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "dotnet-apphost-pack-9.0",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23590
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17272,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "dotnet-host",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23591
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17273,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "dotnet-hostfxr-9.0",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23592
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17274,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "dotnet-runtime-9.0",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23593
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17275,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "dotnet-runtime-dbg-9.0",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23594
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17276,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "dotnet-sdk-9.0",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23595
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17277,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "dotnet-sdk-9.0-source-built-artifacts",
+                        "repository": "ol8-crb"
+                    }
+                ],
+                "set_id": 23596
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17278,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "dotnet-sdk-aot-9.0",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23597
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17279,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "dotnet-sdk-dbg-9.0",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23598
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17280,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "dotnet-targeting-pack-9.0",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23599
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17281,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "dotnet-templates-9.0",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23600
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "OL"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 17282,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "netstandard-targeting-pack-2.1",
+                        "repository": "ol8-appstream"
+                    }
+                ],
+                "set_id": 23601
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "OL"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "OL"
+            }
+        },
+        {
             "action": 3,
             "architectures": [
                 "x86_64",
@@ -383924,7 +384428,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16696,
+            "id": 17283,
             "in_packageset": {
                 "package": [
                     {
@@ -383935,7 +384439,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 22888
+                "set_id": 23603
             },
             "initial_release": {
                 "major_version": 7,
@@ -383960,7 +384464,7 @@
                         "repository": "ol8-baseos"
                     }
                 ],
-                "set_id": 22887
+                "set_id": 23602
             },
             "release": {
                 "major_version": 8,
@@ -383978,7 +384482,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16697,
+            "id": 17284,
             "in_packageset": {
                 "package": [
                     {
@@ -383989,7 +384493,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 22889
+                "set_id": 23604
             },
             "initial_release": {
                 "major_version": 7,
@@ -384012,7 +384516,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16698,
+            "id": 17285,
             "in_packageset": {
                 "package": [
                     {
@@ -384023,7 +384527,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 22891
+                "set_id": 23606
             },
             "initial_release": {
                 "major_version": 7,
@@ -384048,7 +384552,7 @@
                         "repository": "ol8-baseos"
                     }
                 ],
-                "set_id": 22890
+                "set_id": 23605
             },
             "release": {
                 "major_version": 8,
@@ -384066,7 +384570,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16699,
+            "id": 17286,
             "in_packageset": {
                 "package": [
                     {
@@ -384077,7 +384581,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 22893
+                "set_id": 23608
             },
             "initial_release": {
                 "major_version": 7,
@@ -384102,7 +384606,7 @@
                         "repository": "ol8-baseos"
                     }
                 ],
-                "set_id": 22892
+                "set_id": 23607
             },
             "release": {
                 "major_version": 8,
@@ -384120,7 +384624,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16700,
+            "id": 17287,
             "in_packageset": {
                 "package": [
                     {
@@ -384131,7 +384635,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 22895
+                "set_id": 23610
             },
             "initial_release": {
                 "major_version": 7,
@@ -384156,7 +384660,7 @@
                         "repository": "ol8-baseos"
                     }
                 ],
-                "set_id": 22894
+                "set_id": 23609
             },
             "release": {
                 "major_version": 8,
@@ -384174,7 +384678,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16701,
+            "id": 17288,
             "in_packageset": {
                 "package": [
                     {
@@ -384185,7 +384689,7 @@
                         "repository": "powertools"
                     }
                 ],
-                "set_id": 22896
+                "set_id": 23611
             },
             "initial_release": {
                 "major_version": 8,
@@ -384217,7 +384721,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16702,
+            "id": 17289,
             "in_packageset": {
                 "package": [
                     {
@@ -384228,7 +384732,7 @@
                         "repository": "ol8_appstream"
                     }
                 ],
-                "set_id": 22897
+                "set_id": 23612
             },
             "initial_release": {
                 "major_version": 8,
@@ -384260,7 +384764,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16703,
+            "id": 17290,
             "in_packageset": {
                 "package": [
                     {
@@ -384271,7 +384775,7 @@
                         "repository": "ol8_appstream"
                     }
                 ],
-                "set_id": 22898
+                "set_id": 23613
             },
             "initial_release": {
                 "major_version": 8,
@@ -384303,7 +384807,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16704,
+            "id": 17291,
             "in_packageset": {
                 "package": [
                     {
@@ -384314,7 +384818,7 @@
                         "repository": "ol8_baseos_latest"
                     }
                 ],
-                "set_id": 22899
+                "set_id": 23614
             },
             "initial_release": {
                 "major_version": 8,
@@ -384346,7 +384850,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16705,
+            "id": 17292,
             "in_packageset": {
                 "package": [
                     {
@@ -384357,7 +384861,7 @@
                         "repository": "ol8_appstream"
                     }
                 ],
-                "set_id": 22900
+                "set_id": 23615
             },
             "initial_release": {
                 "major_version": 8,
@@ -384389,7 +384893,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16706,
+            "id": 17293,
             "in_packageset": {
                 "package": [
                     {
@@ -384400,7 +384904,7 @@
                         "repository": "ol8_appstream"
                     }
                 ],
-                "set_id": 22901
+                "set_id": 23616
             },
             "initial_release": {
                 "major_version": 8,
@@ -384432,7 +384936,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16707,
+            "id": 17294,
             "in_packageset": {
                 "package": [
                     {
@@ -384443,7 +384947,7 @@
                         "repository": "ol8_baseos_latest"
                     }
                 ],
-                "set_id": 22902
+                "set_id": 23617
             },
             "initial_release": {
                 "major_version": 8,
@@ -384475,7 +384979,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16708,
+            "id": 17295,
             "in_packageset": {
                 "package": [
                     {
@@ -384486,7 +384990,7 @@
                         "repository": "ol8_baseos_latest"
                     }
                 ],
-                "set_id": 22903
+                "set_id": 23618
             },
             "initial_release": {
                 "major_version": 8,
@@ -384518,7 +385022,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16709,
+            "id": 17296,
             "in_packageset": {
                 "package": [
                     {
@@ -384529,7 +385033,7 @@
                         "repository": "ol8_appstream"
                     }
                 ],
-                "set_id": 22904
+                "set_id": 23619
             },
             "initial_release": {
                 "major_version": 8,
@@ -384561,7 +385065,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16710,
+            "id": 17297,
             "in_packageset": {
                 "package": [
                     {
@@ -384572,7 +385076,7 @@
                         "repository": "ol8_appstream"
                     }
                 ],
-                "set_id": 22905
+                "set_id": 23620
             },
             "initial_release": {
                 "major_version": 8,
@@ -384604,7 +385108,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16711,
+            "id": 17298,
             "in_packageset": {
                 "package": [
                     {
@@ -384615,7 +385119,7 @@
                         "repository": "ol8_appstream"
                     }
                 ],
-                "set_id": 22906
+                "set_id": 23621
             },
             "initial_release": {
                 "major_version": 8,
@@ -384647,7 +385151,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16712,
+            "id": 17299,
             "in_packageset": {
                 "package": [
                     {
@@ -384658,7 +385162,7 @@
                         "repository": "ol8_appstream"
                     }
                 ],
-                "set_id": 22907
+                "set_id": 23622
             },
             "initial_release": {
                 "major_version": 8,
@@ -384690,7 +385194,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16713,
+            "id": 17300,
             "in_packageset": {
                 "package": [
                     {
@@ -384701,7 +385205,7 @@
                         "repository": "ol8_appstream"
                     }
                 ],
-                "set_id": 22908
+                "set_id": 23623
             },
             "initial_release": {
                 "major_version": 8,
@@ -384733,7 +385237,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16714,
+            "id": 17301,
             "in_packageset": {
                 "package": [
                     {
@@ -384744,7 +385248,7 @@
                         "repository": "ol8_appstream"
                     }
                 ],
-                "set_id": 22909
+                "set_id": 23624
             },
             "initial_release": {
                 "major_version": 8,
@@ -384776,7 +385280,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16715,
+            "id": 17302,
             "in_packageset": {
                 "package": [
                     {
@@ -384787,7 +385291,7 @@
                         "repository": "ol8_appstream"
                     }
                 ],
-                "set_id": 22910
+                "set_id": 23625
             },
             "initial_release": {
                 "major_version": 8,
@@ -384819,7 +385323,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 16716,
+            "id": 17303,
             "in_packageset": {
                 "package": [
                     {
@@ -384830,7 +385334,7 @@
                         "repository": "ol8_appstream"
                     }
                 ],
-                "set_id": 22911
+                "set_id": 23626
             },
             "initial_release": {
                 "major_version": 8,

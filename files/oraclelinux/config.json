@@ -95,10 +95,13 @@
         "rhel9-SAP-NetWeaver",
         "rhel9-SAP-Solutions",
         "rhel9-ceph5",
+        "rhel9-Supplementary",
 
         "rhel10-AppStream",
         "rhel10-BaseOS",
-        "rhel10-CRB"
+        "rhel10-CRB",
+        "rhel10-HighAvailability",
+        "rhel10-SAP-Solutions"
     ],
 
     "package_replacing": [
@@ -212,6 +215,21 @@
         {
             "name": "openssl-libs",
             "initial_release": 9,
+            "target_release": 9
+        },
+        {
+            "name": "redhat-cloud-client-configuration",
+            "initial_release": 7,
+            "target_release": 7
+        },
+        {
+            "name": "redhat-cloud-client-configuration",
+            "initial_release": 8,
+            "target_release": 8
+        },
+        {
+            "name": "redhat-cloud-client-configuration",
+            "initial_release": 8,
             "target_release": 9
         }
     ],
