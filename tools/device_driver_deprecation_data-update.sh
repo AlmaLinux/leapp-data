@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # AlmaLinux releases
-releases=('8.10' '9.4')
+releases=('8.10' '9.5')
 
 # Path where to store device driver deprecation data file
 # '../files/almalinux'
@@ -9,7 +9,10 @@ dist_name=almalinux
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 result_path="${parent_path}/../files/${dist_name}/"
 
-# Data stream version, which is currenyly supported by ELevate
+# Distros list to copy device driver deprecation data file for
+dists="centos eurolinux oraclelinux rocky"
+
+# Data stream version, which is currently supported by ELevate
 provided_data_streams="3.1"
 
 # Date stamp to add to device driver deprecation data
@@ -22,10 +25,15 @@ release_notes_sha=master
 # Upstream leapp-repository GitHub URL, device driver deprecation data (in JSON format) file name, and Git SHA
 leapp_repository_url=https://raw.githubusercontent.com/oamg/leapp-repository
 device_driver_deprecation_data_json="device_driver_deprecation_data.json"
-leapp_repository_sha=a757c6d0c269008ba7688c4273899dd53ca31756
+leapp_repository_sha=2dc7efa41ccf7206e0e33d687d7931846f3e4390
 
 printf "\nDownload %s at %s\n" ${device_driver_deprecation_data_json} ${leapp_repository_sha}
 curl -s -o ${device_driver_deprecation_data_json} ${leapp_repository_url}/${leapp_repository_sha}/etc/leapp/files/${device_driver_deprecation_data_json} || exit 1
+
+for dist in $dists; do
+    printf "\nUpdate %s for %s\n" ${device_driver_deprecation_data_json} ${dist}
+    cp -av ${device_driver_deprecation_data_json} ${parent_path}/../files/${dist}/
+done
 
 printf "\nAppend provided_data_streams with '%s'\n" ${provided_data_streams}
 cat << 'EOF' > tmp.jq
@@ -47,7 +55,7 @@ jq --arg created_at "$date_stamp" '.created_at |= $created_at' ${device_driver_d
     mv -f ${device_driver_deprecation_data_json}.tmp ${device_driver_deprecation_data_json}
 
 for version in "${releases[@]}"; do
-    printf "\nProcessing %s for AlmaLinux release %s ...\n" ${device_driver_deprecation_data_json} ${version}
+    printf "\nProcessing %s for AlmaLinux release %s ...\n" ${device_driver_deprecation_data_json} "${version}"
 
     version_major=${version%.*}
     release_notes_md="${version}.md"

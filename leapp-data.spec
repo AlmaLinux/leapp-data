@@ -1,4 +1,4 @@
-%global pes_events_build_date 20240827
+%global pes_events_build_date 20241127
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
@@ -47,8 +47,8 @@
 %bcond_without check
 
 Name:		leapp-data-%{dist_name}
-Version:	0.4
-Release:	12%{?dist}.%{pes_events_build_date}
+Version:	0.5
+Release:	1%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -155,6 +155,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Wed Nov 27 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.5-1.20241127
+- update device driver deprecation data to upstream state 2dc7efa41ccf7206e0e33d687d7931846f3e4390
+
 * Fri Nov 15 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.4-12.20240827
 - Move operating systems' GPG keys from %{_sysconfdir}/leapp/repos.d to %{repositorydir}
 
