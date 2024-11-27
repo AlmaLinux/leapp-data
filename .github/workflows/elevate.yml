@@ -585,6 +585,7 @@ jobs:
         else
           echo "[Debug] '${release}' did not match '${{ env.target_release_string }}'" && false
         fi
+        echo "matched_release=${release}" >> $GITHUB_ENV
 
     - name: List of packages remain installed from source system
       id: list-remain-packages
@@ -628,6 +629,7 @@ jobs:
         result-encoding: string
         script: |
           core.summary
+              .addHeading('Upgraded to: ${{ env.matched_release }}', '4')
               .addHeading('ELevate packages from ${{ inputs.repository }}:', '4')
               .addList([${{ env.pkgs_versions }}], true)
               .addHeading('${{ env.source_distro }}${{ env.source_release }} packages remain installed:', '4')
