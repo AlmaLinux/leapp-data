@@ -110,6 +110,14 @@
         "rhel10-CRB": {
             "in_packageset": "crb",
             "out_packageset": "centos10-crb"
+        },
+        "rhel10-HighAvailability": {
+            "in_packageset": "highavailability",
+            "out_packageset": "centos10-highavailability"
+        },
+        "rhel10-SAP-Solutions": {
+            "in_packageset": "saphana",
+            "out_packageset": "centos10-saphana"
         }
     },
     "removable_repositories":[
@@ -138,7 +146,8 @@
 
         "rhel9-SAP-NetWeaver",
         "rhel9-SAP-Solutions",
-        "rhel9-ceph5"
+        "rhel9-ceph5",
+        "rhel9-Supplementary"
     ],
 
     "package_replacing": [
@@ -270,6 +279,21 @@
         {
             "name": "openssl-libs",
             "initial_release": 9,
+            "target_release": 9
+        },
+        {
+            "name": "redhat-cloud-client-configuration",
+            "initial_release": 7,
+            "target_release": 7
+        },
+        {
+            "name": "redhat-cloud-client-configuration",
+            "initial_release": 8,
+            "target_release": 8
+        },
+        {
+            "name": "redhat-cloud-client-configuration",
+            "initial_release": 8,
             "target_release": 9
         }
     ],

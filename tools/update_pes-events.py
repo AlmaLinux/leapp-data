@@ -1,7 +1,7 @@
 import json
 import requests
 
-specific_commit = 'a757c6d0c269008ba7688c4273899dd53ca31756'
+specific_commit = '2dc7efa41ccf7206e0e33d687d7931846f3e4390'
 
 
 def download_pes_events(session, url):
@@ -17,7 +17,7 @@ def read_config_file(dist_name):
 def is_package_match(package_name, release, initial_release, removable_packages):
     for i in removable_packages:
         if (
-            i['name'] == package_name and 
+            i['name'] == package_name and
             i['target_release'] == release and
             i['initial_release'] == initial_release
         ):
@@ -81,7 +81,7 @@ def remove_data(remove_packages, remove_repositories, pes_events_data):
                             package['release']['major_version'] if 'release' in package and package['release'] is not None else None,
                             package['initial_release']['major_version'] if 'initial_release' in package and package['initial_release'] is not None else None,
                             remove_packages
-                        ) or 
+                        ) or
                         any(specific_package['repository'] in repos_set for specific_package in package[packageset]['package'])
                     ):
                         return False
@@ -96,10 +96,10 @@ def add_new_packages(additional_actions, pes_events_data):
         new_id = max(existing_ids) + 1 if existing_ids else 1
         existing_ids.add(new_id)
         return new_id
-    
+
     existing_ids = set()
     existing_set_ids = set()
-    
+
     for package in pes_events_data['packageinfo']:
         existing_ids.add(package['id'])
         for packageset in ['out_packageset', 'in_packageset']:
