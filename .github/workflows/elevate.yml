@@ -90,6 +90,8 @@ jobs:
             scenario: '9'
           - distro: 'scientific'
             scenario: '9'
+          - distro: 'eurolinux'
+            scenario: '8'
 
     env:
       vm_serial_log: '/var/log/elevatevm_consoles/serial.log'

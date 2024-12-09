@@ -48,7 +48,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.5
-Release:	1%{?dist}.%{pes_events_build_date}
+Release:	2%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -155,6 +155,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Mon Dec 09 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.5-2.20241127
+- Switch EuroLinux repositories into https://vault.cdn.euro-linux.com
+
 * Thu Nov 28 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.5-1.20241127
 - Update data to the upstream most recent state:
  - Device driver deprecation data:
