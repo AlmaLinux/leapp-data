@@ -46,12 +46,6 @@ on:
         type: boolean
         default: true
 
-      eurolinux:
-        description: 'EuroLinux'
-        required: true
-        type: boolean
-        default: true
-
       oraclelinux:
         description: 'OracleLinux (7 to 8 only)'
         required: true
@@ -81,7 +75,7 @@ jobs:
       fail-fast: false
       matrix:
         # Set distro+scenario matrix based on boolean inputs.* with true value
-        distro: ${{ fromJSON(format('["{0}", "{1}", "{2}", "{3}", "{4}", "{5}"]', ( inputs.almalinux && 'almalinux' ), ( inputs.almalinux && 'scientific' ), ( inputs.centos && 'centos' ), ( inputs.eurolinux && 'eurolinux' ), ( inputs.oraclelinux && 'oraclelinux' ), ( inputs.rocky && 'rocky' ) )) }}
+        distro: ${{ fromJSON(format('["{0}", "{1}", "{2}", "{3}", "{4}"]', ( inputs.almalinux && 'almalinux' ), ( inputs.almalinux && 'scientific' ), ( inputs.centos && 'centos' ), ( inputs.oraclelinux && 'oraclelinux' ), ( inputs.rocky && 'rocky' ) )) }}
         scenario: ${{ fromJSON(format('["{0}", "{1}"]', ( inputs.to8 && '8' ), ( inputs.to9 && '9' ) )) }}
         exclude:
           - distro: 'false'
@@ -90,8 +84,6 @@ jobs:
             scenario: '9'
           - distro: 'scientific'
             scenario: '9'
-          - distro: 'eurolinux'
-            scenario: '8'
 
     env:
       vm_serial_log: '/var/log/elevatevm_consoles/serial.log'
@@ -134,11 +126,6 @@ jobs:
           centos )
             vm_box=eurolinux-vagrant/centos-stream-${source_release} # generic/centos8s
             target_release_string="CentOS Stream release ${{ matrix.scenario }}"
-            ;;
-          eurolinux )
-            vm_box=eurolinux-vagrant/eurolinux-${source_release}
-            target_release_string="EuroLinux release ${{ matrix.scenario }}"
-            target_release_file=/etc/el-release
             ;;
           oraclelinux )
             vm_box=eurolinux-vagrant/oracle-linux-${source_release} # generic/oracle8
