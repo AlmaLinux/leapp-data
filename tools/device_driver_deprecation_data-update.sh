@@ -10,7 +10,7 @@ parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 result_path="${parent_path}/../files/${dist_name}/"
 
 # Distros list to copy device driver deprecation data file for
-dists="centos eurolinux oraclelinux rocky"
+dists="centos oraclelinux rocky"
 
 # Data stream version, which is currently supported by ELevate
 provided_data_streams="3.1"

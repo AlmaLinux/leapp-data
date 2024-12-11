@@ -2,8 +2,8 @@
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
-%define dist_list almalinux centos eurolinux oraclelinux rocky
-%define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
+%define dist_list almalinux centos oraclelinux rocky
+%define conflict_dists() %(for i in almalinux centos oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 %if 0%{?rhel} == 7
 %define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce microsoft imunify360-alt-php
@@ -13,9 +13,6 @@
 %endif
 %if %{dist_name} == "centos"
 %define gpg_key RPM-GPG-KEY-CentOS-Official
-%endif
-%if %{dist_name} == "eurolinux"
-%define gpg_key RPM-GPG-KEY-eurolinux8
 %endif
 %if %{dist_name} == "oraclelinux"
 %define gpg_key RPM-GPG-KEY-oracle-ol8
@@ -33,9 +30,6 @@
 %if %{dist_name} == "centos"
 %define gpg_key RPM-GPG-KEY-CentOS-Official RPM-GPG-KEY-CentOS-SIG-Extras
 %endif
-%if %{dist_name} == "eurolinux"
-%define gpg_key RPM-GPG-KEY-eurolinux9
-%endif
 %if %{dist_name} == "oraclelinux"
 %define gpg_key RPM-GPG-KEY-oracle-ol9
 %endif
@@ -48,7 +42,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.5
-Release:	1%{?dist}.%{pes_events_build_date}
+Release:	2%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -155,6 +149,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Tue Dec 10 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.5-2.20241127
+- Drop EuroLinux support
+
 * Thu Nov 28 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.5-1.20241127
 - Update data to the upstream most recent state:
  - Device driver deprecation data:
