@@ -1,0 +1,695 @@
+{
+    "datetime": "202410111040Z",
+    "version_format": "1.2.1",
+    "provided_data_streams": [
+        "3.0"
+    ],
+    "mapping": [
+        {
+            "source_major_version": "9",
+            "target_major_version": "10",
+            "entries": [
+                {
+                    "source": "baseos",
+                    "target": [
+                        "almalinux10-baseos"
+                    ]
+                },
+                {
+                    "source": "appstream",
+                    "target": [
+                        "almalinux10-appstream"
+                    ]
+                },
+                {
+                    "source": "powertools",
+                    "target": [
+                        "almalinux10-crb"
+                    ]
+                },
+                {
+                    "source": "ha",
+                    "target": [
+                        "almalinux10-highavailability"
+                    ]
+                },
+                {
+                    "source": "resilientstorage",
+                    "target": [
+                        "almalinux10-resilientstorage"
+                    ]
+                },
+                {
+                    "source": "extras",
+                    "target": [
+                        "almalinux10-extras"
+                    ]
+                },
+                {
+                    "source": "rt",
+                    "target": [
+                        "almalinux10-rt"
+                    ]
+                },
+                {
+                    "source": "nfv",
+                    "target": [
+                        "almalinux10-nfv"
+                    ]
+                },
+                {
+                    "source": "sap",
+                    "target": [
+                        "almalinux10-sap"
+                    ]
+                },
+                {
+                    "source": "saphana",
+                    "target": [
+                        "almalinux10-saphana"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "baseos",
+            "entries": [
+                {
+                    "repoid": "baseos",
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "repoid": "baseos",
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "repoid": "baseos",
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "repoid": "baseos",
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "appstream",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "appstream",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "appstream",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "appstream",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "appstream",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "powertools",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "powertools",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repoid": "powertools",
+                    "repo_type": "rpm",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repoid": "powertools",
+                    "repo_type": "rpm",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repoid": "powertools",
+                    "repo_type": "rpm",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "ha",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "ha",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "ha",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "ha",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "ha",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "resilientstorage",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "resilientstorage",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "resilientstorage",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "resilientstorage",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "resilientstorage",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "extras",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "extras",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "extras",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "extras",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "extras",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "rt",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "rt",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "rt",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "rt",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "rt",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "nfv",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "nfv",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "nfv",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "nfv",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "nfv",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "sap",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "sap",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "sap",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "sap",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "sap",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "saphana",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "saphana",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "saphana",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "saphana",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "repoid": "saphana",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux10-baseos",
+            "entries": [
+                {
+                    "repoid": "almalinux10-baseos",
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "repoid": "almalinux10-baseos",
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "repoid": "almalinux10-baseos",
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "repoid": "almalinux10-baseos",
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux10-appstream",
+            "entries": [
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-appstream",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-appstream",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-appstream",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-appstream",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux10-crb",
+            "entries": [
+                {
+                    "major_version": "10",
+                    "repoid": "almalinux10-crb",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repoid": "almalinux10-crb",
+                    "repo_type": "rpm",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repoid": "almalinux10-crb",
+                    "repo_type": "rpm",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repoid": "almalinux10-crb",
+                    "repo_type": "rpm",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux10-highavailability",
+            "entries": [
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-highavailability",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-highavailability",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-highavailability",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-highavailability",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux10-resilientstorage",
+            "entries": [
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-resilientstorage",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-resilientstorage",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-resilientstorage",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-resilientstorage",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux10-extras",
+            "entries": [
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-extras",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-extras",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-extras",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-extras",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux10-rt",
+            "entries": [
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-rt",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux10-nfv",
+            "entries": [
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-nfv",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux10-sap",
+            "entries": [
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-sap",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-sap",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-sap",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-sap",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "almalinux10-saphana",
+            "entries": [
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-saphana",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-saphana",
+                    "arch": "aarch64",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-saphana",
+                    "arch": "ppc64le",
+                    "channel": "ga"
+                },
+                {
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "repoid": "almalinux10-saphana",
+                    "arch": "s390x",
+                    "channel": "ga"
+                }
+            ]
+        }
+    ]
+}

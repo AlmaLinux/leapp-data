@@ -19,6 +19,8 @@ os_repos["centos8"]="centos9-appstream centos9-crb centos9-baseos"
 os_repos["oraclelinux8"]="ol9_appstream ol9_codeready_builder ol9_baseos"
 os_repos["rocky8"]="rocky9-appstream rocky9-crb rocky9-baseos"
 
+os_repos["almalinux9"]="almalinux10-appstream almalinux10-crb almalinux10-baseos"
+
 declare -A os_name
 os_name["almalinux"]="AlmaLinux"
 os_name["centos"]="CentOS"
@@ -30,6 +32,8 @@ case $major_ver in
         target_version=8 ;;
     8)
         target_version=9 ;;
+    9)
+        target_version=10 ;;
     *)
         echo "Unsupported major version";
         exit 1;
@@ -53,7 +57,7 @@ if [ -n "${os_repos[$dist_name$major_ver]}" ]; then
 
     mv ${epel_pes_file} vendors.d/epel_pes.json
     mv ${epel_map_file} vendors.d/epel_map.json
-    mv ${microsoft_pes_file} vendors.d/microsoft_pes.json
+    mv ${microsoft_pes_file} vendors.d/microsoft_pes.json || true
 else
     echo "Unsupported OS"
     exit 1

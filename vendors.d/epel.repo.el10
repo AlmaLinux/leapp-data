@@ -1,0 +1,10 @@
+[el10-epel]
+name=Extra Packages for Enterprise Linux 10 - $basearch
+# It is much more secure to use the metalink, but if you wish to use a local mirror
+# place its address here.
+#baseurl=https://dl.fedoraproject.org/pub/epel/10/Everything/$basearch
+metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-10&arch=$basearch&infra=$infra&content=$contentdir
+enabled=1
+gpgcheck=1
+countme=1
+gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/epel.gpg
