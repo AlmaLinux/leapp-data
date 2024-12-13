@@ -30,14 +30,6 @@ enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/10/RPM-GPG-KEY-AlmaLinux-10
 
-[almalinux10-resilientstorage]
-name=AlmaLinux 10.0-beta - ResilientStorage
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/10.0-beta/resilientstorage
-# baseurl=https://vault.almalinux.org/10.0-beta/ResilientStorage/$basearch/os/
-enabled=1
-gpgcheck=1
-gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/10/RPM-GPG-KEY-AlmaLinux-10
-
 [almalinux10-extras]
 name=AlmaLinux 10.0-beta - Extras
 mirrorlist=https://mirrors.almalinux.org/mirrorlist/10.0-beta/extras

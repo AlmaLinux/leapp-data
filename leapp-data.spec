@@ -64,11 +64,7 @@ Conflicts: %{conflict_dists}
 BuildRequires: python36
 BuildRequires: python36-jsonschema
 %endif
-%if 0%{?rhel} == 8
-BuildRequires: python3
-BuildRequires: python3-jsonschema
-%endif
-%if 0%{?rhel} == 9
+%if 0%{?rhel} >= 8
 BuildRequires: python3
 BuildRequires: python3-jsonschema
 %endif

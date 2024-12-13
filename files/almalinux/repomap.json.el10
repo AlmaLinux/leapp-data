@@ -22,7 +22,7 @@
                     ]
                 },
                 {
-                    "source": "powertools",
+                    "source": "crb",
                     "target": [
                         "almalinux10-crb"
                     ]
@@ -31,12 +31,6 @@
                     "source": "ha",
                     "target": [
                         "almalinux10-highavailability"
-                    ]
-                },
-                {
-                    "source": "resilientstorage",
-                    "target": [
-                        "almalinux10-resilientstorage"
                     ]
                 },
                 {
@@ -140,32 +134,32 @@
             ]
         },
         {
-            "pesid": "powertools",
+            "pesid": "crb",
             "entries": [
                 {
                     "major_version": "9",
-                    "repoid": "powertools",
+                    "repoid": "crb",
                     "repo_type": "rpm",
                     "arch": "x86_64",
                     "channel": "ga"
                 },
                 {
                     "major_version": "9",
-                    "repoid": "powertools",
+                    "repoid": "crb",
                     "repo_type": "rpm",
                     "arch": "aarch64",
                     "channel": "ga"
                 },
                 {
                     "major_version": "9",
-                    "repoid": "powertools",
+                    "repoid": "crb",
                     "repo_type": "rpm",
                     "arch": "ppc64le",
                     "channel": "ga"
                 },
                 {
                     "major_version": "9",
-                    "repoid": "powertools",
+                    "repoid": "crb",
                     "repo_type": "rpm",
                     "arch": "s390x",
                     "channel": "ga"
@@ -530,39 +524,6 @@
                     "major_version": "10",
                     "repo_type": "rpm",
                     "repoid": "almalinux10-highavailability",
-                    "arch": "s390x",
-                    "channel": "ga"
-                }
-            ]
-        },
-        {
-            "pesid": "almalinux10-resilientstorage",
-            "entries": [
-                {
-                    "major_version": "10",
-                    "repo_type": "rpm",
-                    "repoid": "almalinux10-resilientstorage",
-                    "arch": "x86_64",
-                    "channel": "ga"
-                },
-                {
-                    "major_version": "10",
-                    "repo_type": "rpm",
-                    "repoid": "almalinux10-resilientstorage",
-                    "arch": "aarch64",
-                    "channel": "ga"
-                },
-                {
-                    "major_version": "10",
-                    "repo_type": "rpm",
-                    "repoid": "almalinux10-resilientstorage",
-                    "arch": "ppc64le",
-                    "channel": "ga"
-                },
-                {
-                    "major_version": "10",
-                    "repo_type": "rpm",
-                    "repoid": "almalinux10-resilientstorage",
                     "arch": "s390x",
                     "channel": "ga"
                 }
