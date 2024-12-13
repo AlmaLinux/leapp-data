@@ -22,6 +22,12 @@ on:
         type: boolean
         default: true
 
+      to10:
+        description: 'ELevate 9 to 10'
+        required: true
+        type: boolean
+        default: true
+
       repository:
         description: 'ELevate packages repository'
         required: true
@@ -69,14 +75,15 @@ on:
 
 jobs:
   elevate:
-    name: from ${{ matrix.scenario == '8' && (contains(matrix.distro, 'scientific') && 'scientific 7' || 'centos 7') || (format('{0} 8', matrix.distro)) }} to ${{ contains(matrix.distro, 'scientific') && 'almalinux' || matrix.distro}} ${{ matrix.scenario }}
+    name: from ${{ matrix.scenario == '8' && (contains(matrix.distro, 'scientific') && 'scientific 7' || 'centos 7') || (format('{0} {1}', matrix.distro, ( matrix.scenario == '9' && '8' || '9' ) )) }} to ${{ contains(matrix.distro, 'scientific') && 'almalinux' || matrix.distro}} ${{ matrix.scenario }}
     runs-on: ubuntu-24.04
     strategy:
       fail-fast: false
       matrix:
         # Set distro+scenario matrix based on boolean inputs.* with true value
         distro: ${{ fromJSON(format('["{0}", "{1}", "{2}", "{3}", "{4}"]', ( inputs.almalinux && 'almalinux' ), ( inputs.almalinux && 'scientific' ), ( inputs.centos && 'centos' ), ( inputs.oraclelinux && 'oraclelinux' ), ( inputs.rocky && 'rocky' ) )) }}
-        scenario: ${{ fromJSON(format('["{0}", "{1}"]', ( inputs.to8 && '8' ), ( inputs.to9 && '9' ) )) }}
+        scenario: ${{ fromJSON(format('["{0}", "{1}", "{2}"]', ( inputs.to8 && '8' ), ( inputs.to9 && '9' ), ( inputs.to10 && '10' ) )) }}
+        repository: ${{ fromJSON(format('["{0}"]', inputs.repository)) }}
         exclude:
           - distro: 'false'
           - scenario: 'false'
@@ -84,6 +91,24 @@ jobs:
             scenario: '9'
           - distro: 'scientific'
             scenario: '9'
+          # TODO: ELevate to 10: skip all distros except AlmaLinux
+          - distro: 'centos'
+            scenario: '10'
+          - distro: 'scientific'
+            scenario: '10'
+          - distro: 'oraclelinux'
+            scenario: '10'
+          - distro: 'rocky'
+            scenario: '10'
+          # TODO: ELevate to 10: skip all repositories except 'NG (ALBS product)'
+          - scenario: '10'
+            repository: 'stable'
+          - scenario: '10'
+            repository: 'stable (ALBS product)'
+          - scenario: '10'
+            repository: 'testing'
+          - scenario: '10'
+            repository: 'testing (ALBS product)'
 
     env:
       vm_serial_log: '/var/log/elevatevm_consoles/serial.log'
@@ -101,17 +126,20 @@ jobs:
         # Source and target systems
         case ${{ matrix.scenario }} in
           8)
-            variant=el7toel8
             source_release=7
             source_distro=centos
             [ "${{ matrix.distro }}" = "scientific" ] && source_distro=scientific
             ;;
           9)
-            variant=el8toel9
             source_release=8
             source_distro=${{ matrix.distro }}
             ;;
+          10)
+            source_release=9
+            source_distro=${{ matrix.distro }}
+            ;;
         esac
+        variant=el${source_release}toel${{ matrix.scenario }}
         target_distro=${{ matrix.distro }}
 
         # Target system release file, string and Vagrant image
@@ -191,7 +219,7 @@ jobs:
             7)
               source_distro=centos${{ env.source_release }}
               ;;
-            8)
+            8|9)
               source_distro=almalinux-${{ env.source_release }}
               ;;
           esac
@@ -250,6 +278,9 @@ jobs:
               sed -i s/^AllowZoneDrifting=.*/AllowZoneDrifting=no/ /etc/firewalld/firewalld.conf;
               leapp answer --section check_vdo.confirm=True;
               res=$?
+              ;;
+            9)
+              res=0
               ;;
           esac
         fi
@@ -502,32 +533,32 @@ jobs:
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh epel ${{ env.source_release }}" || exit 1
 
     - name: Vendor - KernelCare
-      if: inputs.vendors == 'all'
+      if: inputs.vendors == 'all' && matrix.scenario != '10'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh kernelcare ${{ env.source_release }}" || exit 1
 
     - name: Vendor - Nginx
-      if: inputs.vendors == 'all'
+      if: inputs.vendors == 'all' && matrix.scenario != '10'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh nginx ${{ env.source_release }}" || exit 1
 
     - name: Vendor - MariaDB
-      if: inputs.vendors == 'all'
+      if: inputs.vendors == 'all' && matrix.scenario != '10'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh mariadb ${{ env.source_release }}" || exit 1
 
     - name: Vendor - PostgreSQL
-      if: inputs.vendors == 'all'
+      if: inputs.vendors == 'all' && matrix.scenario != '10'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh postgresql ${{ env.source_release }}" || exit 1
 
     - name: Vendor - Docker-CE
-      if: inputs.vendors == 'all'
+      if: inputs.vendors == 'all' && matrix.scenario != '10'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh docker ${{ env.source_release }}" || exit 1
 
     - name: Vendor - Microsoft
-      if: inputs.vendors == 'all'
+      if: inputs.vendors == 'all' && matrix.scenario != '10'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh microsoft ${{ env.source_release }}" || exit 1
 
