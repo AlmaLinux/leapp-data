@@ -37,12 +37,19 @@
 %define gpg_key RPM-GPG-KEY-Rocky-9
 %endif
 %endif
+%if 0%{?rhel} == 9
+%define supported_vendors epel
+%define target_version 10
+%if "%{dist_name}" == "almalinux"
+%define gpg_key RPM-GPG-KEY-AlmaLinux-10
+%endif
+%endif
 
 %bcond_without check
 
 Name:		leapp-data-%{dist_name}
-Version:	0.5
-Release:	2%{?dist}.%{pes_events_build_date}
+Version:	0.6
+Release:	1%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -57,7 +64,7 @@ Conflicts: %{conflict_dists}
 BuildRequires: python36
 BuildRequires: python36-jsonschema
 %endif
-%if 0%{?rhel} == 8
+%if 0%{?rhel} >= 8
 BuildRequires: python3
 BuildRequires: python3-jsonschema
 %endif
@@ -95,7 +102,7 @@ for vendor in %{supported_vendors}; do
       mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el%{target_version} \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json
 done
-find %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/ -name \*.el\? -a ! -name \*.el%{target_version} -delete
+find %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/ -name \*.el\* -a ! -name \*.el%{target_version} -delete
 
 
 # Main part
@@ -109,6 +116,7 @@ mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el8 \
       %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
 rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el9
+rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el10
 mkdir -p %{buildroot}%{repositorydir}/system_upgrade/common/files/rpm-gpg/8/
 for key in %{gpg_key}; do
     mv -f files/rpm-gpg/${key} %{buildroot}%{repositorydir}/system_upgrade/common/files/rpm-gpg/8/
@@ -120,9 +128,22 @@ mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el9 \
       %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
 rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
+rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el10
 mkdir -p %{buildroot}%{repositorydir}/system_upgrade/common/files/rpm-gpg/9/
 for key in %{gpg_key}; do
     mv -f files/rpm-gpg/${key} %{buildroot}%{repositorydir}/system_upgrade/common/files/rpm-gpg/9/
+done
+%endif
+%if 0%{?rhel} == 9
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el10 \
+      %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
+mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el10 \
+      %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
+rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el9
+rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
+mkdir -p %{buildroot}%{repositorydir}/system_upgrade/common/files/rpm-gpg/10/
+for key in %{gpg_key}; do
+    mv -f files/rpm-gpg/${key} %{buildroot}%{repositorydir}/system_upgrade/common/files/rpm-gpg/10/
 done
 %endif
 
@@ -138,6 +159,10 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 %files
 %doc LICENSE NOTICE README.md
+%if 0%{?rhel} == 9
+%{repositorydir}/system_upgrade/common/files/rpm-gpg/10/*
+%endif
+
 %if 0%{?rhel} == 8
 %{repositorydir}/system_upgrade/common/files/rpm-gpg/9/*
 %endif
@@ -149,6 +174,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Thu Dec 12 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.6-1.20241127
+- ELevate to AlmaLinux 10.0 Beta with EPEL vendor supported
+
 * Tue Dec 10 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.5-2.20241127
 - Drop EuroLinux support
 
