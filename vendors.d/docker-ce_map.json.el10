@@ -1,0 +1,154 @@
+{
+    "datetime": "202412181645Z",
+    "version_format": "1.2.1",
+    "mapping": [
+        {
+            "source_major_version": "9",
+            "target_major_version": "10",
+            "entries": [
+                {
+                    "source": "docker-ce-stable",
+                    "target": [
+                        "el10-docker-ce-stable"
+                    ]
+                },
+                {
+                    "source": "docker-ce-test",
+                    "target": [
+                        "el10-docker-ce-test"
+                    ]
+                },
+                {
+                    "source": "docker-ce-nightly",
+                    "target": [
+                        "el10-docker-ce-test"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "docker-ce-stable",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "docker-ce-stable",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "9",
+                    "repoid": "docker-ce-stable",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "9",
+                    "repoid": "docker-ce-stable",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "docker-ce-test",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "docker-ce-test",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "9",
+                    "repoid": "docker-ce-test",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "9",
+                    "repoid": "docker-ce-test",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "docker-ce-nightly",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "docker-ce-nightly",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "9",
+                    "repoid": "docker-ce-nightly",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "9",
+                    "repoid": "docker-ce-nightly",
+                    "arch": "ppc64le",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el10-docker-ce-stable",
+            "entries": [
+                {
+                    "major_version": "10",
+                    "repoid": "el10-docker-ce-stable",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "10",
+                    "repoid": "el10-docker-ce-stable",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        },
+        {
+            "pesid": "el10-docker-ce-test",
+            "entries": [
+                {
+                    "major_version": "10",
+                    "repoid": "el10-docker-ce-test",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                },
+                {
+                    "major_version": "10",
+                    "repoid": "el10-docker-ce-test",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm"
+                }
+            ]
+        }
+    ],
+    "provided_data_streams": [
+        "1.1",
+        "2.0",
+        "3.0",
+        "3.1"
+    ]
+}

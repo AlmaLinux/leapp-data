@@ -38,7 +38,7 @@
 %endif
 %endif
 %if 0%{?rhel} == 9
-%define supported_vendors epel
+%define supported_vendors epel docker-ce
 %define target_version 10
 %if "%{dist_name}" == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-10
@@ -174,8 +174,8 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
-* Thu Dec 12 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.6-1.20241127
-- ELevate to AlmaLinux 10.0 Beta with EPEL vendor supported
+* Wed Dec 18 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.6-1.20241127
+- ELevate to AlmaLinux 10.0 Beta with EPEL and docker-ce vendors supported
 
 * Tue Dec 10 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.5-2.20241127
 - Drop EuroLinux support
