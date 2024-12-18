@@ -553,7 +553,7 @@ jobs:
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh postgresql ${{ env.source_release }}" || exit 1
 
     - name: Vendor - Docker-CE
-      if: inputs.vendors == 'all' && matrix.scenario != '10'
+      if: inputs.vendors == 'all'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh docker ${{ env.source_release }}" || exit 1
 

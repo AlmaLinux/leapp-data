@@ -1,0 +1,13 @@
+[el10-docker-ce-stable]
+name=Docker CE Stable - $basearch
+baseurl=https://download.docker.com/linux/centos/10/$basearch/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://download.docker.com/linux/centos/gpg
+
+[el10-docker-ce-test]
+name=Docker CE Test - $basearch
+baseurl=https://download.docker.com/linux/centos/10/$basearch/test
+enabled=0
+gpgcheck=1
+gpgkey=https://download.docker.com/linux/centos/gpg
