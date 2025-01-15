@@ -43,13 +43,16 @@
 %if "%{dist_name}" == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-10
 %endif
+%if "%{dist_name}" == "centos"
+%define gpg_key RPM-GPG-KEY-centosofficial-SHA256 RPM-GPG-KEY-CentOS-SIG-Extras-SHA512
+%endif
 %endif
 
 %bcond_without check
 
 Name:		leapp-data-%{dist_name}
 Version:	0.6
-Release:	1%{?dist}.%{pes_events_build_date}
+Release:	2%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -174,6 +177,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Wed Jan 15 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.6-2.20241127
+- ELevate to CentOS Stream release 10
+
 * Wed Dec 18 2024 Yuriy Kohut <ykohut@almalinux.org> - 0.6-1.20241127
 - ELevate to AlmaLinux 10.0 Beta with EPEL and docker-ce vendors supported
 
