@@ -91,9 +91,7 @@ jobs:
             scenario: '9'
           - distro: 'scientific'
             scenario: '9'
-          # TODO: ELevate to 10: skip all distros except AlmaLinux
-          - distro: 'centos'
-            scenario: '10'
+          # TODO: ELevate to 10: skip all distros except AlmaLinux and CentOS
           - distro: 'scientific'
             scenario: '10'
           - distro: 'oraclelinux'
@@ -280,6 +278,8 @@ jobs:
               res=$?
               ;;
             9)
+              # TODO: workaround for CentOS Stream 9 SHA1 deprecated signature
+              [ ${{ matrix.distro }} = "centos" ] && rpm -e gpg-pubkey-8483c65d-5ccc5b19 || true
               res=0
               ;;
           esac
