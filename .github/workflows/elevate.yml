@@ -374,7 +374,7 @@ jobs:
 
           # Skip 'mariadb-maxscale' repository as it is broken for EL7
           # --os-* options to install on EuroLinux
-          sudo curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash -s -- \
+          sudo curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash -s -- \
             --skip-maxscale \
             --os-version=${source_release} \
             --os-type=rhel
