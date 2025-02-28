@@ -182,6 +182,14 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
  - Device driver deprecation data:
   - leapp-repository sha 518722058ca53e94c8efa8958ca8fd7cac40dca7
 
+ - PES data:
+  - pes-events.json: upstream state 518722058ca53e94c8efa8958ca8fd7cac40dca7
+  - config.json (all distros):
+   - add libreport-rhel-anaconda-bugzilla (except centos) to the removable packages list, with scenarios: 9to9, 9to10
+   - add redhat-flatpak-repo, redhat-flatpak-preinstall-firefox, redhat-flatpak-preinstall-thunderbird to the removable packages list, with scenarios: 9to10
+  - epel_pes.json_template:
+   - remove duplicated id and set_id
+
 * Wed Jan 15 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.6-2.20241127
 - ELevate to CentOS Stream release 10
 
