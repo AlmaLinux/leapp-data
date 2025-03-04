@@ -103,10 +103,6 @@ jobs:
             repository: 'stable'
           - scenario: '10'
             repository: 'stable (ALBS product)'
-          - scenario: '10'
-            repository: 'testing'
-          - scenario: '10'
-            repository: 'testing (ALBS product)'
 
     env:
       vm_serial_log: '/var/log/elevatevm_consoles/serial.log'
