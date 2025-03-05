@@ -1557,7 +1557,7 @@
       "device_id": "",
       "device_name": "",
       "device_type": "pci",
-      "driver_name": "3w-9xxx",
+      "driver_name": "3w_9xxx",
       "maintained_in_rhel": []
     },
     {
@@ -1568,7 +1568,7 @@
       "device_id": "",
       "device_name": "",
       "device_type": "pci",
-      "driver_name": "3w-sas",
+      "driver_name": "3w_sas",
       "maintained_in_rhel": []
     },
     {
@@ -2555,7 +2555,7 @@
       "device_id": "",
       "device_name": "",
       "device_type": "pci",
-      "driver_name": "acard-ahci",
+      "driver_name": "acard_ahci",
       "maintained_in_rhel": []
     },
     {
@@ -2570,6 +2570,42 @@
       "device_name": "PF_KEY sockets",
       "device_type": "pci",
       "driver_name": "af_key",
+      "maintained_in_rhel": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "available_in_rhel": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "deprecation_announced": "",
+      "device_id": "",
+      "device_name": "Seattle AHCI SATA platform driver",
+      "device_type": "pci",
+      "driver_name": "ahci_seattle",
+      "maintained_in_rhel": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "available_in_rhel": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "deprecation_announced": "",
+      "device_id": "",
+      "device_name": "APM X-Gene AHCI SATA driver",
+      "device_type": "pci",
+      "driver_name": "ahci_xgene",
       "maintained_in_rhel": [
         7,
         8,
@@ -3029,7 +3065,7 @@
       "device_id": "",
       "device_name": "",
       "device_type": "pci",
-      "driver_name": "firewire-core",
+      "driver_name": "firewire_core",
       "maintained_in_rhel": [
         7,
         8,
@@ -3078,7 +3114,8 @@
       "available_in_rhel": [
         7,
         8,
-        9
+        9,
+        10
       ],
       "deprecation_announced": "",
       "device_id": "",
@@ -3087,7 +3124,27 @@
       "driver_name": "hfi1",
       "maintained_in_rhel": [
         7,
-        8
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "available_in_rhel": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "deprecation_announced": "",
+      "device_id": "",
+      "device_name": "HISILICON SAS controller driver",
+      "device_type": "pci",
+      "driver_name": "hisi_sas_main",
+      "maintained_in_rhel": [
+        7,
+        8,
+        9
       ]
     },
     {
@@ -4485,6 +4542,30 @@
     },
     {
       "available_in_rhel": [
+        9,
+        10
+      ],
+      "deprecation_announced": "",
+      "device_id": "0x15B3:0x1023",
+      "device_name": "ConnectX-8",
+      "device_type": "pci",
+      "driver_name": "mlx5",
+      "maintained_in_rhel": [
+        9,
+        10
+      ]
+    },
+    {
+      "available_in_rhel": [],
+      "deprecation_announced": "",
+      "device_id": "0x15B3:0x1025",
+      "device_name": "ConnectX-9",
+      "device_type": "pci",
+      "driver_name": "mlx5",
+      "maintained_in_rhel": []
+    },
+    {
+      "available_in_rhel": [
         7,
         8,
         9,
@@ -4496,7 +4577,9 @@
       "device_type": "pci",
       "driver_name": "mlx5",
       "maintained_in_rhel": [
-        7
+        7,
+        9,
+        10
       ]
     },
     {
@@ -5064,7 +5147,7 @@
       "device_id": "",
       "device_name": "",
       "device_type": "pci",
-      "driver_name": "nvmet-fc",
+      "driver_name": "nvmet_fc",
       "maintained_in_rhel": [
         7
       ]
@@ -5080,7 +5163,7 @@
       "device_id": "",
       "device_name": "",
       "device_type": "pci",
-      "driver_name": "nvmet-tcp",
+      "driver_name": "nvmet_tcp",
       "maintained_in_rhel": [
         7
       ]
@@ -6072,5 +6155,5 @@
       "maintained_in_rhel": []
     }
   ],
-  "created_at": "20241127160819"
+  "created_at": "20250228085903"
 }

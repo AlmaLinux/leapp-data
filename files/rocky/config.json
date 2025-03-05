@@ -301,6 +301,31 @@
             "name": "redhat-cloud-client-configuration",
             "initial_release": 8,
             "target_release": 9
+        },
+        {
+            "name": "libreport-rhel-anaconda-bugzilla",
+            "initial_release": 9,
+            "target_release": 9
+        },
+        {
+            "name": "libreport-rhel-anaconda-bugzilla",
+            "initial_release": 9,
+            "target_release": 10
+        },
+        {
+            "name": "redhat-flatpak-preinstall-firefox",
+            "initial_release": 9,
+            "target_release": 10
+        },
+        {
+            "name": "redhat-flatpak-preinstall-thunderbird",
+            "initial_release": 9,
+            "target_release": 10
+        },
+        {
+            "name": "redhat-flatpak-repo",
+            "initial_release": 9,
+            "target_release": 10
         }
     ],
 
