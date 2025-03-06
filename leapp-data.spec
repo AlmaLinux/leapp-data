@@ -2,8 +2,8 @@
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
-%define dist_list almalinux centos oraclelinux rocky
-%define conflict_dists() %(for i in almalinux centos oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
+%define dist_list almalinux almalinux-kitten centos oraclelinux rocky
+%define conflict_dists() %(for i in almalinux almalinux-kitten centos oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 %if 0%{?rhel} == 7
 %define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce microsoft imunify360-alt-php
@@ -43,6 +43,9 @@
 %if "%{dist_name}" == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-10
 %endif
+%if "%{dist_name}" == "almalinux-kitten"
+%define gpg_key RPM-GPG-KEY-AlmaLinux-10
+%endif
 %if "%{dist_name}" == "centos"
 %define gpg_key RPM-GPG-KEY-centosofficial-SHA256 RPM-GPG-KEY-CentOS-SIG-Extras-SHA512
 %endif
@@ -51,7 +54,7 @@
 %bcond_without check
 
 Name:		leapp-data-%{dist_name}
-Version:	0.7
+Version:	0.8
 Release:	1%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
@@ -89,7 +92,7 @@ sh tools/generate_map_pes_files.sh "%{dist_name}" "%{?rhel}"
 # Third-party repositories part
 mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 cp -rf vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
-if [ "%{dist_name}" != "almalinux" ]; then
+if [[ %{dist_name} != *"almalinux"* ]]; then
     rm -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel*
 fi
 for vendor in %{supported_vendors}; do
@@ -177,6 +180,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Thu Mar 06 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.8-1.20250228
+- AlmaLinux Kitten 10 support
+
 * Fri Feb 28 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.7-1.20250228
 - Update data to the upstream most recent state:
  - Device driver deprecation data:
