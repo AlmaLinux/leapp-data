@@ -74,51 +74,84 @@ on:
           - all
 
 jobs:
-  elevate:
-    name: from ${{ matrix.scenario == '8' && (contains(matrix.distro, 'scientific') && 'scientific 7' || 'centos 7') || (format('{0} {1}', ( contains(matrix.distro, 'almalinux-kitten') && 'almalinux' || matrix.distro ), ( matrix.scenario == '9' && '8' || ( (matrix.distro != 'false' && matrix.scenario != '') && '9' || matrix.scenario) ) )) }} to ${{ contains(matrix.distro, 'scientific') && 'almalinux' || matrix.distro}} ${{ matrix.scenario }}
+  set-variants-matrix:
+    name: Set variants matrix
     runs-on: ubuntu-24.04
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - name: Set matrix
+        id: set-matrix
+        run: |
+          # ELevate matrix is json array of string elements like:
+          #  ["centos 7 to almalinux 8", "almalinux 8 to almalinux 9", ...]
+          matrix=
+
+          # AlmaLinux variants
+          if [ "${{ inputs.almalinux }}" = "true" ]; then
+            if [ "${{ inputs.to8 }}" = "true" ]; then
+              VARIANTS+=("centos 7 to almalinux 8")
+              VARIANTS+=("scientific 7 to almalinux 8")
+            fi
+            if [ "${{ inputs.to9 }}" = "true" ]; then
+              VARIANTS+=("almalinux 8 to almalinux 9")
+            fi
+            if [ "${{ inputs.to10 }}" = "true" ]; then
+              # ELevation to AlmaLinux 10 is available for testing and NG repositories
+              [[ "${{ inputs.repository }}" == *"testing"*  || "${{ inputs.repository }}" == *"NG"* ]] && \
+                VARIANTS+=("almalinux 9 to almalinux 10")
+              # ELevation to AlmaLinux Kitten 10 is available for NG repository
+              [[ "${{ inputs.repository }}" == *"NG"*  ]] && \
+                VARIANTS+=("almalinux 9 to almalinux-kitten 10")
+            fi
+          fi
+
+          # CentOS variants
+          if [ "${{ inputs.centos }}" = "true" ]; then
+            if [ "${{ inputs.to8 }}" = "true" ]; then
+              VARIANTS+=("centos 7 to centos 8")
+            fi
+            if [ "${{ inputs.to9 }}" = "true" ]; then
+              VARIANTS+=("centos 8 to centos 9")
+            fi
+            if [ "${{ inputs.to10 }}" = "true" ]; then
+            # ELevation to CentOS Stream 10 is available for testing and NG repositories
+              [[ "${{ inputs.repository }}" == *"testing"*  || "${{ inputs.repository }}" == *"NG"* ]] && \
+                VARIANTS+=("centos 9 to centos 10")
+            fi
+          fi
+
+          # Oracle Linux variants
+          if [ "${{ inputs.oraclelinux }}" = "true" ]; then
+            if [ "${{ inputs.to8 }}" = "true" ]; then
+              VARIANTS+=("centos 7 to oraclelinux 8")
+            fi
+          fi
+
+          # Rocky Linux variants
+          if [ "${{ inputs.rocky }}" = "true" ]; then
+            if [ "${{ inputs.to8 }}" = "true" ]; then
+              VARIANTS+=("centos 7 to rocky 8")
+            fi
+            if [ "${{ inputs.to9 }}" = "true" ]; then
+              VARIANTS+=("rocky 8 to rocky 9")
+            fi
+          fi
+
+          [ ${#VARIANTS[@]} -ne 0 ] && matrix=$(printf '"%s",' "${VARIANTS[@]}")
+          matrix=${matrix%,}  # Remove the trailing comma
+          echo matrix=$(jq -c <<< [${matrix}]) >> $GITHUB_OUTPUT
+
+  elevate:
+    name: ${{ matrix.VARIANT }}
+    runs-on: ubuntu-24.04
+    needs: [set-variants-matrix]
+    # Skip the job if the matrix is empty
+    if: ${{ needs.set-variants-matrix.outputs.matrix != '[]' }}
     strategy:
       fail-fast: false
       matrix:
-        # Set distro+scenario+repository matrix based on boolean inputs.* with true value
-        distro: ${{ fromJSON(format('["{0}", "{1}", "{2}", "{3}"]', ( inputs.almalinux && 'almalinux", "almalinux-kitten", "scientific' || 'false'), ( inputs.centos && 'centos' ), ( inputs.oraclelinux && 'oraclelinux' ), ( inputs.rocky && 'rocky' ) )) }}
-        scenario: ${{ fromJSON(format('["{0}", "{1}", "{2}"]', ( inputs.to8 && '8' ), ( inputs.to9 && '9' ), ( inputs.to10 && '10' ) )) }}
-        repository: ${{ fromJSON(format('["{0}"]', inputs.repository )) }}
-        exclude:
-          - distro: 'false'
-          - scenario: 'false'
-          - repository: 'false'
-          # ELevation to 9 is not available for: oraclelinux, scientific
-          - distro: 'oraclelinux'
-            scenario: '9'
-          - distro: 'scientific'
-            scenario: '9'
-          # ELevation to 10 is not available for: oraclelinux, scientific, rocky
-          - distro: 'oraclelinux'
-            scenario: '10'
-          - distro: 'rocky'
-            scenario: '10'
-          - distro: 'scientific'
-            scenario: '10'
-          # For almalinux-kitten ELevation is available if 9 to 10
-          - distro: 'almalinux-kitten'
-            scenario: '8'
-          - distro: 'almalinux-kitten'
-            scenario: '9'
-          # TODO: ELevate to 10: skip stable repositories
-          - scenario: '10'
-            repository: 'stable'
-          - scenario: '10'
-            repository: 'stable (ALBS product)'
-          # TODO: ELevate to almalinux-kitten: skip all except 'NG (ALBS product)' repository
-          - distro: 'almalinux-kitten'
-            repository: 'stable'
-          - distro: 'almalinux-kitten'
-            repository: 'stable (ALBS product)'
-          - distro: 'almalinux-kitten'
-            repository: 'testing'
-          - distro: 'almalinux-kitten'
-            repository: 'testing (ALBS product)'
+        VARIANT: ${{ fromJSON(needs.set-variants-matrix.outputs.matrix) }}
 
     env:
       vm_serial_log: '/var/log/elevatevm_consoles/serial.log'
@@ -129,53 +162,33 @@ jobs:
 
     - name: Prepare some environment variables
       run: |
-        # Source and target systems
-        case ${{ matrix.scenario }} in
-          8)
-            source_release=7
-            source_distro=centos
-            [ "${{ matrix.distro }}" = "scientific" ] && source_distro=scientific
-            ;;
-          9)
-            source_release=8
-            source_distro=${{ matrix.distro }}
-            ;;
-          10)
-            source_release=9
-            source_distro=${{ matrix.distro }}
-            [ "${{ matrix.distro }}" = "almalinux-kitten" ] && source_distro=almalinux
-            ;;
-        esac
-        variant=el${source_release}toel${{ matrix.scenario }}
-        target_distro=${{ matrix.distro }}
+        # Read source and target systems
+        read -r source_distro source_release to target_distro target_release <<<"${{ matrix.VARIANT }}"
 
         # Target system release file, string and Vagrant image
-        target_release_file=/etc/${{ matrix.distro }}-release
-        case ${{ matrix.distro }} in
-          almalinux|scientific )
+        target_release_file=/etc/${target_distro}-release
+        case ${target_distro} in
+          almalinux)
             vm_box=almalinux/${source_release}
-            target_distro=almalinux
-            target_release_string="AlmaLinux release ${{ matrix.scenario }}"
-            target_release_file=/etc/almalinux-release
+            target_release_string="AlmaLinux release ${target_release}"
             ;;
           almalinux-kitten )
             vm_box=almalinux/${source_release}
-            target_distro=almalinux-kitten
-            target_release_string="AlmaLinux Kitten release ${{ matrix.scenario }}"
+            target_release_string="AlmaLinux Kitten release ${target_release}"
             target_release_file=/etc/almalinux-release
             ;;
           centos )
             vm_box=eurolinux-vagrant/centos-stream-${source_release} # generic/centos8s
-            target_release_string="CentOS Stream release ${{ matrix.scenario }}"
+            target_release_string="CentOS Stream release ${target_release}"
             ;;
           oraclelinux )
             vm_box=eurolinux-vagrant/oracle-linux-${source_release} # generic/oracle8
-            target_release_string="Oracle Linux Server release ${{ matrix.scenario }}"
+            target_release_string="Oracle Linux Server release ${target_release}"
             target_release_file=/etc/oracle-release
             ;;
           rocky )
             vm_box=eurolinux-vagrant/rocky-${source_release} # generic/rocky8
-            target_release_string="Rocky Linux release ${{ matrix.scenario }}"
+            target_release_string="Rocky Linux release ${target_release}"
             ;;
         esac
         if [ "${source_release}" = "7" ]; then
@@ -187,10 +200,11 @@ jobs:
 
         echo "target_release_string=${target_release_string}" >> $GITHUB_ENV
         echo "target_release_file=${target_release_file}" >> $GITHUB_ENV
+        echo "target_release=${target_release}" >> $GITHUB_ENV
+        echo "target_distro=${target_distro}" >> $GITHUB_ENV
         echo "source_release=${source_release}" >> $GITHUB_ENV
         echo "source_distro=${source_distro}" >> $GITHUB_ENV
-        echo "target_distro=${target_distro}" >> $GITHUB_ENV
-        echo "variant_long=${source_distro}${source_release}-to-${target_distro}${{ matrix.scenario }}" >> $GITHUB_ENV
+        echo "variant_long=${source_distro}${source_release}-to-${target_distro}${target_release}" >> $GITHUB_ENV
 
         # Set Vagrant ENV variables, copy Vagrantfile
         echo "vm_box='${vm_box}'" > .env
@@ -199,7 +213,7 @@ jobs:
         cp -av ci/Vagrant/Vagrantfile ./
 
         # Leapp packages
-        leapp_pkgs="leapp leapp-upgrade-${variant}"
+        leapp_pkgs="leapp leapp-upgrade-el${source_release}toel${target_release}"
         if [ "${{ inputs.leapp-data-git }}" = "false" ]; then
           leapp_pkgs="${leapp_pkgs} leapp-data-${target_distro}"
         fi
@@ -294,7 +308,7 @@ jobs:
               ;;
             9)
               # TODO: workaround for CentOS Stream 9 SHA1 deprecated signature
-              [ ${{ matrix.distro }} = "centos" ] && rpm -e gpg-pubkey-8483c65d-5ccc5b19 || true
+              [ ${{ env.source_distro }} = "centos" ] && rpm -e gpg-pubkey-8483c65d-5ccc5b19 || true
               res=0
               ;;
           esac
@@ -341,8 +355,8 @@ jobs:
         if [ "${vendor}" = "imunify" ]; then
           # TODO prepare/install the repository config instead of changing vendor's one
           sudo cp -av /etc/leapp/files/vendors.d/imunify.repo /etc/yum.repos.d/
-          sudo sed -i "s/\/${{ matrix.scenario }}\//\/${source_release}\//g" /etc/yum.repos.d/imunify.repo
-          sudo sed -i 's/cloudlinux${{ matrix.scenario }}-//g' /etc/yum.repos.d/imunify.repo
+          sudo sed -i "s/\/${{ env.target_release }}\//\/${source_release}\//g" /etc/yum.repos.d/imunify.repo
+          sudo sed -i 's/cloudlinux${{ env.target_release }}-//g' /etc/yum.repos.d/imunify.repo
 
           sudo dnf -y install \
             imunify360-php-i360 \
@@ -549,22 +563,22 @@ jobs:
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh epel ${{ env.source_release }}" || exit 1
 
     - name: Vendor - KernelCare
-      if: inputs.vendors == 'all' && matrix.scenario != '10'
+      if: inputs.vendors == 'all' && env.target_release != '10'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh kernelcare ${{ env.source_release }}" || exit 1
 
     - name: Vendor - Nginx
-      if: inputs.vendors == 'all' && matrix.scenario != '10'
+      if: inputs.vendors == 'all' && env.target_release != '10'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh nginx ${{ env.source_release }}" || exit 1
 
     - name: Vendor - MariaDB
-      if: inputs.vendors == 'all' && matrix.scenario != '10'
+      if: inputs.vendors == 'all' && env.target_release != '10'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh mariadb ${{ env.source_release }}" || exit 1
 
     - name: Vendor - PostgreSQL
-      if: inputs.vendors == 'all' && matrix.scenario != '10'
+      if: inputs.vendors == 'all' && env.target_release != '10'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh postgresql ${{ env.source_release }}" || exit 1
 
@@ -574,12 +588,12 @@ jobs:
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh docker ${{ env.source_release }}" || exit 1
 
     - name: Vendor - Microsoft
-      if: inputs.vendors == 'all' && matrix.scenario != '10'
+      if: inputs.vendors == 'all' && env.target_release != '10'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh microsoft ${{ env.source_release }}" || exit 1
 
     - name: Vendor - Imunify360
-      if: inputs.vendors == 'all' && matrix.scenario == '8'
+      if: inputs.vendors == 'all' && env.target_release == '8'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh imunify ${{ env.source_release }}" || exit 1
 
