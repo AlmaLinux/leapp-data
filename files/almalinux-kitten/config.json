@@ -1,0 +1,2065 @@
+{
+    "dist_name": "almalinux",
+    "os_names": [
+        {
+            "major_version": 7,
+            "os_name": "CentOS"
+        },
+        {
+            "major_version": 8,
+            "os_name": "AlmaLinux"
+        },
+        {
+            "major_version": 9,
+            "os_name": "AlmaLinux"
+        },
+        {
+            "major_version": 10,
+            "os_name": "AlmaLinux"
+        }
+    ],
+
+    "repository_replacing": {
+        "rhel7-base": {
+            "out_packageset": "base",
+            "in_packageset": "base"
+        },
+        "rhel7-optional": {
+            "out_packageset": "base",
+            "in_packageset": "base"
+        },
+        "rhel7-extras": {
+            "out_packageset": "base",
+            "in_packageset": "base"
+        },
+        "rhel7-highavailability": {
+            "out_packageset": "base",
+            "in_packageset": "base"
+        },
+        "rhel7-resilientstorage": {
+            "out_packageset": "base",
+            "in_packageset": "base"
+        },
+
+        "rhel8-AppStream": {
+            "in_packageset": "appstream",
+            "out_packageset": "almalinux8-appstream"
+        },
+        "rhel8-BaseOS": {
+            "in_packageset": "baseos",
+            "out_packageset": "almalinux8-baseos"
+        },
+        "rhel8-HighAvailability": {
+            "in_packageset": "ha",
+            "out_packageset": "almalinux8-ha"
+        },
+        "rhel8-CRB": {
+            "in_packageset": "powertools",
+            "out_packageset":  "almalinux8-powertools"
+        },
+        "rhel8-RT": {
+            "in_packageset": "rt",
+            "out_packageset": "almalinux8-rt"
+        },
+        "rhel8-ResilientStorage": {
+            "in_packageset": "resilientstorage",
+            "out_packageset": "almalinux8-resilientstorage"
+        },
+        "rhel8-NFV": {
+            "in_packageset": "nfv",
+            "out_packageset": "almalinux8-nfv"
+        },
+        "rhel8-SAP-NetWeaver": {
+            "in_packageset": "sap",
+            "out_packageset": "almalinux8-sap"
+        },
+        "rhel8-SAP-Solutions": {
+            "in_packageset": "saphana",
+            "out_packageset": "almalinux8-saphana"
+        },
+
+        "rhel9-AppStream": {
+            "in_packageset": "appstream",
+            "out_packageset": "almalinux9-appstream"
+        },
+        "rhel9-BaseOS": {
+            "in_packageset": "baseos",
+            "out_packageset": "almalinux9-baseos"
+        },
+        "rhel9-HighAvailability": {
+            "in_packageset": "ha",
+            "out_packageset": "almalinux9-highavailability"
+        },
+        "rhel9-CRB": {
+            "in_packageset": "crb",
+            "out_packageset": "almalinux9-crb"
+        },
+        "rhel9-RT": {
+            "in_packageset": "rt",
+            "out_packageset": "almalinux9-rt"
+        },
+        "rhel9-ResilientStorage": {
+            "in_packageset": "resilientstorage",
+            "out_packageset": "almalinux9-resilientstorage"
+        },
+        "rhel9-NFV": {
+            "in_packageset": "nfv",
+            "out_packageset": "almalinux9-nfv"
+        },
+        "rhel9-SAP-NetWeaver": {
+            "in_packageset": "sap",
+            "out_packageset": "almalinux9-sap"
+        },
+        "rhel9-SAP-Solutions": {
+            "in_packageset": "saphana",
+            "out_packageset": "almalinux9-saphana"
+        },
+
+        "rhel10-AppStream": {
+            "in_packageset": "appstream",
+            "out_packageset": "almalinux10-appstream"
+        },
+        "rhel10-BaseOS": {
+            "in_packageset": "baseos",
+            "out_packageset": "almalinux10-baseos"
+        },
+        "rhel10-CRB": {
+            "in_packageset": "crb",
+            "out_packageset": "almalinux10-crb"
+        },
+        "rhel10-HighAvailability": {
+            "in_packageset": "highavailability",
+            "out_packageset": "almalinux10-highavailability"
+        },
+        "rhel10-SAP-Solutions": {
+            "in_packageset": "saphana",
+            "out_packageset": "almalinux10-saphana"
+        }
+    },
+    "removable_repositories":[
+        "rhel7-ansible-2",
+        "rhel7-rt",
+        "rhel7-rhevh",
+        "rhel7-rhceph-tools-3",
+        "rhel7-rhgs-server-3.1",
+        "rhel7-resilientstorage",
+        "rhel7-dotnet-1",
+        "rhel7-sap",
+        "rhel7-rhscl-1",
+        "rhel7-openstack-13",
+        "rhel7-ose-3.9",
+        "rhel7-rhn-tools",
+        "rhel7-nfv",
+        "rhel7-sap-hana",
+        "rhel7-ose-3.7",
+        "rhel7-dotnet-1",
+
+        "rhel8-Supplementary",
+        "rhel8-Advanced-Virt",
+        "rhel8-ceph5",
+
+        "rhel9-ceph5",
+        "rhel9-Supplementary"
+    ],
+
+    "package_replacing": [
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-release",
+            "to": "almalinux-release"
+        },
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-logos",
+            "to": {
+                "in_packageset": "centos-logos",
+                "out_packageset": "almalinux-logos"
+            }
+        },
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-backgrounds",
+            "to": "almalinux-backgrounds"
+        },
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-logos-httpd",
+            "to": "almalinux-logos-httpd"
+        },
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-logos-ipa",
+            "to": "almalinux-logos-ipa"
+        },
+        {
+            "initial_release": 7,
+            "target_release": 8,
+            "name": "redhat-bookmarks",
+            "to": "centos-bookmarks"
+        },
+        {
+            "initial_release": 8,
+            "target_release": 9,
+            "name": "redhat-bookmarks",
+            "to": "almalinux-bookmarks"
+        },
+        {
+            "initial_release": null,
+            "target_release": 8,
+            "name": "redhat-logos-ipa",
+            "to": "almalinux-logos-ipa"
+        },
+        {
+            "initial_release": 8,
+            "target_release": 9,
+            "name": "redhat-logos",
+            "to": "almalinux-logos"
+        },
+        {
+            "initial_release": 8,
+            "target_release": 9,
+            "name": "redhat-logos-httpd",
+            "to": "almalinux-logos-httpd"
+        }
+    ],
+    "removable_packages":[
+        {
+            "name": "redhat-release-server",
+            "initial_release": 7,
+            "target_release": 8
+        },
+        {
+            "name": "libreport-rhel",
+            "initial_release": 8,
+            "target_release": 8
+        },
+        {
+            "name": "libreport-rhel-bugzilla",
+            "initial_release": 8,
+            "target_release": 8
+        },
+        {
+            "name": "redhat-release-computenode",
+            "initial_release": 7,
+            "target_release": 8
+        },
+        {
+            "name": "redhat-release-workstation",
+            "initial_release": 7,
+            "target_release": 8
+        },
+        {
+            "name": "redhat-release-client",
+            "initial_release": 7,
+            "target_release": 8
+        },
+        {
+            "name": "libssh2",
+            "initial_release": 7,
+            "target_release": 8
+        },
+        {
+            "name": "libssh2-devel",
+            "initial_release": 7,
+            "target_release": 8
+        },
+        {
+            "name": "libssh2-docs",
+            "initial_release": 7,
+            "target_release": 8
+        },
+        {
+            "name": "libssh2",
+            "initial_release": 8,
+            "target_release": 8
+        },
+        {
+            "name": "libssh2-devel",
+            "initial_release": 8,
+            "target_release": 8
+        },
+        {
+            "name": "libssh2-docs",
+            "initial_release": 8,
+            "target_release": 8
+        },
+        {
+            "name": "openssl-libs",
+            "initial_release": 9,
+            "target_release": 9
+        },
+        {
+            "name": "redhat-cloud-client-configuration",
+            "initial_release": 7,
+            "target_release": 7
+        },
+        {
+            "name": "redhat-cloud-client-configuration",
+            "initial_release": 8,
+            "target_release": 8
+        },
+        {
+            "name": "redhat-cloud-client-configuration",
+            "initial_release": 8,
+            "target_release": 9
+        },
+        {
+            "name": "libreport-rhel-anaconda-bugzilla",
+            "initial_release": 9,
+            "target_release": 9
+        },
+        {
+            "name": "libreport-rhel-anaconda-bugzilla",
+            "initial_release": 9,
+            "target_release": 10
+        },
+        {
+            "name": "redhat-flatpak-preinstall-firefox",
+            "initial_release": 9,
+            "target_release": 10
+        },
+        {
+            "name": "redhat-flatpak-preinstall-thunderbird",
+            "initial_release": 9,
+            "target_release": 10
+        },
+        {
+            "name": "redhat-flatpak-repo",
+            "initial_release": 9,
+            "target_release": 10
+        }
+    ],
+
+    "additional_actions":[
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "centos-release",
+                        "repository": "base"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "almalinux-release",
+                        "repository": "almalinux8-baseos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libreport-rhel-bugzilla",
+                        "repository": "base"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 6,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 3,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libssh2",
+                        "repository": "base"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libssh",
+                        "repository": "almalinux8-baseos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libssh2-devel",
+                        "repository": "base"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libssh-devel",
+                        "repository": "almalinux8-baseos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libssh2-docs",
+                        "repository": "base"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libssh-docs",
+                        "repository": "almalinux8-baseos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "ustr",
+                        "repository": "powertools"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "nautilus-sendto",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libdmapsharing",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "iptstate",
+                        "repository": "baseos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "gupnp",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libplist",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "jimtcl",
+                        "repository": "baseos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libmodman",
+                        "repository": "baseos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libimobiledevice",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "khmeros-fonts-common",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "gupnp-dlna",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "gupnp-av",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "lua-socket",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "usbmuxd",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "gssdp",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libusbmuxd",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "sl-release-notes",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "sl7-upgrade",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "yum-conf-extras",
+                        "repository": "repos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "yum-conf-repos",
+                        "repository": "repos"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "yum-conf-sl7x",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "sl-bookmarks",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+              "x86_64",
+              "aarch64"
+            ],
+            "id": 0,
+            "in_packageset": {
+              "package": [
+                {
+                  "modulestreams": [
+                    null
+                  ],
+                  "name": "sl-indexhtml",
+                  "repository": "sl"
+                }
+              ],
+              "set_id": 0
+            },
+            "initial_release": {
+              "major_version": 7,
+              "minor_version": 7,
+              "os_name": "scientific",
+              "tag": null,
+              "z_stream": null
+            },
+            "modulestream_maps": [
+              {
+                  "in_modulestream": null,
+                  "out_modulestream": null
+              }
+            ],
+            "out_packageset": {
+              "package": [
+                {
+                  "modulestreams": [
+                    null
+                  ],
+                  "name": "almalinux-indexhtml",
+                  "repository": "almalinux8-baseos"
+                }
+              ],
+              "set_id": 0
+            },
+            "release": {
+              "major_version": 8,
+              "minor_version": 0,
+              "os_name": "AlmaLinux",
+              "tag": null,
+              "z_stream": null
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+              "x86_64",
+              "aarch64"
+            ],
+            "id": 0,
+            "in_packageset": {
+              "package": [
+                {
+                  "modulestreams": [
+                    null
+                  ],
+                  "name": "sl-logos",
+                  "repository": "sl"
+                }
+              ],
+              "set_id": 0
+            },
+            "initial_release": {
+              "major_version": 7,
+              "minor_version": 7,
+              "os_name": "scientific",
+              "tag": null,
+              "z_stream": null
+            },
+            "modulestream_maps": [
+              {
+                  "in_modulestream": null,
+                  "out_modulestream": null
+              }
+            ],
+            "out_packageset": {
+              "package": [
+                {
+                  "modulestreams": [
+                    null
+                  ],
+                  "name": "almalinux-logos",
+                  "repository": "almalinux8-appstream"
+                }
+              ],
+              "set_id": 0
+            },
+            "release": {
+              "major_version": 8,
+              "minor_version": 0,
+              "os_name": "AlmaLinux",
+              "tag": null,
+              "z_stream": null
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+              "x86_64",
+              "aarch64"
+            ],
+            "id": 0,
+            "in_packageset": {
+              "package": [
+                {
+                  "modulestreams": [
+                    null
+                  ],
+                  "name": "sl-release",
+                  "repository": "sl"
+                }
+              ],
+              "set_id": 0
+            },
+            "initial_release": {
+              "major_version": 7,
+              "minor_version": 7,
+              "os_name": "scientific",
+              "tag": null,
+              "z_stream": null
+            },
+            "modulestream_maps": [
+              {
+                  "in_modulestream": null,
+                  "out_modulestream": null
+              }
+            ],
+            "out_packageset": {
+              "package": [
+                {
+                  "modulestreams": [
+                    null
+                  ],
+                  "name": "almalinux-release",
+                  "repository": "almalinux8-baseos"
+                }
+              ],
+              "set_id": 0
+            },
+            "release": {
+              "major_version": 8,
+              "minor_version": 0,
+              "os_name": "AlmaLinux",
+              "tag": null,
+              "z_stream": null
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+              "x86_64",
+              "aarch64"
+            ],
+            "id": 0,
+            "in_packageset": {
+              "package": [
+                {
+                  "modulestreams": [
+                    null
+                  ],
+                  "name": "libssh2",
+                  "repository": "sl"
+                }
+              ],
+              "set_id": 0
+            },
+            "initial_release": {
+              "major_version": 7,
+              "minor_version": 7,
+              "os_name": "scientific",
+              "tag": null,
+              "z_stream": null
+            },
+            "modulestream_maps": [
+              {
+                  "in_modulestream": null,
+                  "out_modulestream": null
+              }
+            ],
+            "out_packageset": {
+              "package": [
+                {
+                  "modulestreams": [
+                          null
+                        ],
+                  "name": "libssh",
+                  "repository": "almalinux8-baseos"
+                }
+              ],
+              "set_id": 0
+            },
+            "release": {
+              "major_version": 8,
+              "minor_version": 0,
+              "os_name": "AlmaLinux",
+              "tag": null,
+              "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "kmod-openafs-1.6-sl",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+              "x86_64",
+              "aarch64"
+            ],
+            "id": 0,
+            "in_packageset": {
+              "package": [
+                {
+                  "modulestreams": [
+                    null
+                  ],
+                  "name": "yum-plugin-upgrade-helper",
+                  "repository": "sl"
+                }
+              ],
+              "set_id": 0
+            },
+            "initial_release": {
+              "major_version": 7,
+              "minor_version": 7,
+              "os_name": "scientific",
+              "tag": null,
+              "z_stream": null
+            },
+            "modulestream_maps": [
+              {
+                  "in_modulestream": null,
+                  "out_modulestream": null
+              }
+            ],
+            "out_packageset": {
+              "package": [
+                {
+                  "modulestreams": [
+                          null
+                        ],
+                  "name": "yum-utils",
+                  "repository": "almalinux8-baseos"
+                }
+              ],
+              "set_id": 0
+            },
+            "release": {
+              "major_version": 8,
+              "minor_version": 0,
+              "os_name": "AlmaLinux",
+              "tag": null,
+              "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "openafs-1.6-sl-devel",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "openafs-1.6-sl-authlibs",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "openafs-1.6-sl-krb5",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "openafs-1.6-sl-server",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "openafs-1.6-sl-kpasswd",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "openafs-1.6-sl-compat",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "openafs-1.6-sl-kernel-source",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "openafs-1.6-sl-module-tools",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "openafs-1.6-sl",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 0,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                          null
+                        ],
+                        "name": "openafs-1.6-sl-plumbing-tools",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 0
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        }
+    ]
+}

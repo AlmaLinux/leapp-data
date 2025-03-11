@@ -75,37 +75,49 @@ on:
 
 jobs:
   elevate:
-    name: from ${{ matrix.scenario == '8' && (contains(matrix.distro, 'scientific') && 'scientific 7' || 'centos 7') || (format('{0} {1}', matrix.distro, ( matrix.scenario == '9' && '8' || '9' ) )) }} to ${{ contains(matrix.distro, 'scientific') && 'almalinux' || matrix.distro}} ${{ matrix.scenario }}
+    name: from ${{ matrix.scenario == '8' && (contains(matrix.distro, 'scientific') && 'scientific 7' || 'centos 7') || (format('{0} {1}', ( contains(matrix.distro, 'almalinux-kitten') && 'almalinux' || matrix.distro ), ( matrix.scenario == '9' && '8' || ( (matrix.distro != 'false' && matrix.scenario != '') && '9' || matrix.scenario) ) )) }} to ${{ contains(matrix.distro, 'scientific') && 'almalinux' || matrix.distro}} ${{ matrix.scenario }}
     runs-on: ubuntu-24.04
     strategy:
       fail-fast: false
       matrix:
-        # Set distro+scenario matrix based on boolean inputs.* with true value
-        distro: ${{ fromJSON(format('["{0}", "{1}", "{2}", "{3}", "{4}"]', ( inputs.almalinux && 'almalinux' ), ( inputs.almalinux && 'scientific' ), ( inputs.centos && 'centos' ), ( inputs.oraclelinux && 'oraclelinux' ), ( inputs.rocky && 'rocky' ) )) }}
+        # Set distro+scenario+repository matrix based on boolean inputs.* with true value
+        distro: ${{ fromJSON(format('["{0}", "{1}", "{2}", "{3}"]', ( inputs.almalinux && 'almalinux", "almalinux-kitten", "scientific' || 'false'), ( inputs.centos && 'centos' ), ( inputs.oraclelinux && 'oraclelinux' ), ( inputs.rocky && 'rocky' ) )) }}
         scenario: ${{ fromJSON(format('["{0}", "{1}", "{2}"]', ( inputs.to8 && '8' ), ( inputs.to9 && '9' ), ( inputs.to10 && '10' ) )) }}
-        repository: ${{ fromJSON(format('["{0}"]', inputs.repository)) }}
+        repository: ${{ fromJSON(format('["{0}"]', inputs.repository )) }}
         exclude:
           - distro: 'false'
           - scenario: 'false'
+          - repository: 'false'
+          # ELevation to 9 is not available for: oraclelinux, scientific
           - distro: 'oraclelinux'
             scenario: '9'
           - distro: 'scientific'
             scenario: '9'
-          # TODO: ELevate to 10: skip all distros except AlmaLinux and CentOS
-          - distro: 'scientific'
-            scenario: '10'
+          # ELevation to 10 is not available for: oraclelinux, scientific, rocky
           - distro: 'oraclelinux'
             scenario: '10'
           - distro: 'rocky'
             scenario: '10'
-          # TODO: ELevate to 10: skip all repositories except 'NG (ALBS product)'
+          - distro: 'scientific'
+            scenario: '10'
+          # For almalinux-kitten ELevation is available if 9 to 10
+          - distro: 'almalinux-kitten'
+            scenario: '8'
+          - distro: 'almalinux-kitten'
+            scenario: '9'
+          # TODO: ELevate to 10: skip stable repositories
           - scenario: '10'
             repository: 'stable'
           - scenario: '10'
             repository: 'stable (ALBS product)'
-          - scenario: '10'
+          # TODO: ELevate to almalinux-kitten: skip all except 'NG (ALBS product)' repository
+          - distro: 'almalinux-kitten'
+            repository: 'stable'
+          - distro: 'almalinux-kitten'
+            repository: 'stable (ALBS product)'
+          - distro: 'almalinux-kitten'
             repository: 'testing'
-          - scenario: '10'
+          - distro: 'almalinux-kitten'
             repository: 'testing (ALBS product)'
 
     env:
@@ -114,10 +126,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-
-    - name: Update and install need utilities into the runner
-      run: |
-        sudo apt-get -y update
 
     - name: Prepare some environment variables
       run: |
@@ -135,6 +143,7 @@ jobs:
           10)
             source_release=9
             source_distro=${{ matrix.distro }}
+            [ "${{ matrix.distro }}" = "almalinux-kitten" ] && source_distro=almalinux
             ;;
         esac
         variant=el${source_release}toel${{ matrix.scenario }}
@@ -147,6 +156,12 @@ jobs:
             vm_box=almalinux/${source_release}
             target_distro=almalinux
             target_release_string="AlmaLinux release ${{ matrix.scenario }}"
+            target_release_file=/etc/almalinux-release
+            ;;
+          almalinux-kitten )
+            vm_box=almalinux/${source_release}
+            target_distro=almalinux-kitten
+            target_release_string="AlmaLinux Kitten release ${{ matrix.scenario }}"
             target_release_file=/etc/almalinux-release
             ;;
           centos )
@@ -462,6 +477,7 @@ jobs:
 
     - name: Install KVM and libvirt packages
       run: |
+        sudo apt-get -y update
         sudo apt-get -y install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
         sudo systemctl enable --now libvirtd
         sudo adduser "$(id -un)" libvirt
@@ -528,7 +544,7 @@ jobs:
         echo "pkgs_versions=${{ env.pkgs_versions }}, '${leapp_data_version} (branch ${{ github.ref_name }})'" >> $GITHUB_ENV
 
     - name: Vendor - EPEL
-      if: inputs.vendors == 'all' && env.target_distro == 'almalinux'
+      if: inputs.vendors == 'all' && contains(env.target_distro, 'almalinux')
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh epel ${{ env.source_release }}" || exit 1
 

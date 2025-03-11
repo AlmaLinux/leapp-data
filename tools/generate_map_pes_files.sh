@@ -20,10 +20,13 @@ os_repos["oraclelinux8"]="ol9_appstream ol9_codeready_builder ol9_baseos"
 os_repos["rocky8"]="rocky9-appstream rocky9-crb rocky9-baseos"
 
 os_repos["almalinux9"]="almalinux10-appstream almalinux10-crb almalinux10-baseos"
+# To generate data for leapp-data-almalinux-kitten package on AlmaLinux 9
+os_repos["almalinux-kitten9"]="almalinux10-appstream almalinux10-crb almalinux10-baseos"
 os_repos["centos9"]="centos10-appstream centos10-crb centos10-baseos"
 
 declare -A os_name
 os_name["almalinux"]="AlmaLinux"
+os_name["almalinux-kitten"]="AlmaLinux"
 os_name["centos"]="CentOS"
 os_name["oraclelinux"]="OL"
 os_name["rocky"]="Rocky"

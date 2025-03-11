@@ -5,9 +5,8 @@ releases=('8.10' '9.5')
 
 # Path where to store device driver deprecation data file
 # '../files/almalinux'
-dist_name=almalinux
+dist_names="almalinux almalinux-kitten"
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
-result_path="${parent_path}/../files/${dist_name}/"
 
 # Distros list to copy device driver deprecation data file for
 dists="centos oraclelinux rocky"
@@ -96,5 +95,9 @@ EOF
     unset delimiter1 id delimiter2 name delimiter3 driver delimiter4
 done
 
-printf "\nMove %s to %s\n" ${device_driver_deprecation_data_json} "${result_path}"
-mkdir -p "${result_path}" && mv -f "${device_driver_deprecation_data_json}" "${result_path}/"
+for dist in $dist_names; do
+    result_path="${parent_path}/../files/${dist}/"
+    printf "\nCopy %s to %s\n" ${device_driver_deprecation_data_json} "${result_path}"
+    mkdir -p "${result_path}" && cp -av "${device_driver_deprecation_data_json}" "${result_path}/"
+done
+rm -f "${device_driver_deprecation_data_json}"
