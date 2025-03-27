@@ -52,7 +52,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.6
-Release:	2%{?dist}.%{pes_events_build_date}
+Release:	3%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -177,6 +177,11 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Thu Mar 27 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.6-3.20241127
+- Update pes-events.json and config.json (except centos):
+ - solve valgrind-docs, valgrind-scripts with valgrind package conflicts during 8to9 upgrade
+- Bump the package release
+
 * Wed Jan 15 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.6-2.20241127
 - ELevate to CentOS Stream release 10
 
