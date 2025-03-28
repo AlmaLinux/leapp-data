@@ -6,7 +6,7 @@
 %define conflict_dists() %(for i in almalinux centos oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 %if 0%{?rhel} == 7
-%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce microsoft imunify360-alt-php
+%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce imunify360-alt-php
 %define target_version 8
 %if %{dist_name} == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-8
@@ -22,7 +22,7 @@
 %endif
 %endif
 %if 0%{?rhel} == 8
-%define supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce microsoft
+%define supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce
 %define target_version 9
 %if %{dist_name} == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-9
@@ -52,7 +52,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.6
-Release:	3%{?dist}.%{pes_events_build_date}
+Release:	4%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -177,6 +177,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Fri Mar 28 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.6-4.20241127
+- Exclude microsoft vendor from the package
+
 * Thu Mar 27 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.6-3.20241127
 - Update pes-events.json and config.json (except centos):
  - solve valgrind-docs, valgrind-scripts with valgrind package conflicts during 8to9 upgrade
