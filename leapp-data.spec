@@ -55,7 +55,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.8
-Release:	3%{?dist}.%{pes_events_build_date}
+Release:	4%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -180,6 +180,11 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Tue May 06 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.8-4.20250228
+- Update data to the upstream most recent state:
+ - Device driver deprecation data:
+  - leapp-repository sha 9c621a91199c093f603ef30ba3daf59010c20e47
+
 * Fri Mar 28 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.8-3.20250228
 - Exclude microsoft vendor from the package
 
