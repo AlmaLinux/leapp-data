@@ -1,4 +1,4 @@
-%global pes_events_build_date 20250228
+%global pes_events_build_date 20250505
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
@@ -180,10 +180,15 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
-* Tue May 06 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.8-4.20250228
+* Wed May 07 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.8-4.20250505
 - Update data to the upstream most recent state:
  - Device driver deprecation data:
   - leapp-repository sha 9c621a91199c093f603ef30ba3daf59010c20e47
+
+ - PES data:
+  - pes-events.json: upstream state 9c621a91199c093f603ef30ba3daf59010c20e47
+  - epel_pes.json_template:
+   - remove duplicated id and set_id
 
 * Fri Mar 28 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.8-3.20250228
 - Exclude microsoft vendor from the package
