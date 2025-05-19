@@ -180,13 +180,13 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
-* Wed May 07 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.8-4.20250505
+* Thu May 15 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.8-4.20250505
 - Update data to the upstream most recent state:
  - Device driver deprecation data:
   - leapp-repository sha 9c621a91199c093f603ef30ba3daf59010c20e47
 
  - PES data:
-  - pes-events.json: upstream state 9c621a91199c093f603ef30ba3daf59010c20e47
+  - pes-events.json: upstream state ffd6d8e456484630f99d98d5bff955914af02aa5
   - epel_pes.json_template:
    - remove duplicated id and set_id
 
