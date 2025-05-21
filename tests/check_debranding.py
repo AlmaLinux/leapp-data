@@ -41,7 +41,8 @@ excludes = [
     '"name": "redhat-text-vf-fonts"',
     '"name": "redhat-mono-vf-fonts"',
     '"name": "redhat-indexhtml"',
-    '"name": "redhat-display-vf-fonts"'
+    '"name": "redhat-display-vf-fonts"',
+    '"name": "ansible-collection-redhat-rhel_mgmt"'
 ]
 
 

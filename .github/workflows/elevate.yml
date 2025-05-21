@@ -14,7 +14,7 @@ on:
         description: 'ELevate 7 to 8'
         required: true
         type: boolean
-        default: true
+        default: false
 
       to9:
         description: 'ELevate 8 to 9'
@@ -56,7 +56,7 @@ on:
         description: 'OracleLinux (7 to 8 only)'
         required: true
         type: boolean
-        default: true
+        default: false
 
       rocky:
         description: 'Rocky Linux'

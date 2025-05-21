@@ -1,4 +1,4 @@
-%global pes_events_build_date 20250228
+%global pes_events_build_date 20250505
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
@@ -8,6 +8,7 @@
 %if 0%{?rhel} == 7
 %define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce imunify360-alt-php
 %define target_version 8
+%define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
 %if %{dist_name} == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-8
 %endif
@@ -24,6 +25,7 @@
 %if 0%{?rhel} == 8
 %define supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce
 %define target_version 9
+%define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
 %if %{dist_name} == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-9
 %endif
@@ -40,11 +42,13 @@
 %if 0%{?rhel} == 9
 %define supported_vendors epel docker-ce
 %define target_version 10
+%define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
 %if "%{dist_name}" == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-10
 %endif
 %if "%{dist_name}" == "almalinux-kitten"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-10
+%define dist_gpg_path distro/almalinux/rpm-gpg/%{target_version}
 %endif
 %if "%{dist_name}" == "centos"
 %define gpg_key RPM-GPG-KEY-centosofficial-SHA256 RPM-GPG-KEY-CentOS-SIG-Extras-SHA512
@@ -54,8 +58,8 @@
 %bcond_without check
 
 Name:		leapp-data-%{dist_name}
-Version:	0.8
-Release:	3%{?dist}.%{pes_events_build_date}
+Version:	0.9
+Release:	1%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -123,10 +127,6 @@ mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el8 \
       %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
 rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el9
 rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el10
-mkdir -p %{buildroot}%{repositorydir}/system_upgrade/common/files/rpm-gpg/8/
-for key in %{gpg_key}; do
-    mv -f files/rpm-gpg/${key} %{buildroot}%{repositorydir}/system_upgrade/common/files/rpm-gpg/8/
-done
 %endif
 %if 0%{?rhel} == 8
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9 \
@@ -135,10 +135,6 @@ mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el9 \
       %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
 rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
 rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el10
-mkdir -p %{buildroot}%{repositorydir}/system_upgrade/common/files/rpm-gpg/9/
-for key in %{gpg_key}; do
-    mv -f files/rpm-gpg/${key} %{buildroot}%{repositorydir}/system_upgrade/common/files/rpm-gpg/9/
-done
 %endif
 %if 0%{?rhel} == 9
 mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el10 \
@@ -147,11 +143,15 @@ mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el10 \
       %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
 rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el9
 rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
-mkdir -p %{buildroot}%{repositorydir}/system_upgrade/common/files/rpm-gpg/10/
-for key in %{gpg_key}; do
-    mv -f files/rpm-gpg/${key} %{buildroot}%{repositorydir}/system_upgrade/common/files/rpm-gpg/10/
-done
 %endif
+
+for key in %{gpg_key}; do
+      for rpm_gpg_path in rpm-gpg/%{target_version} %{dist_gpg_path}; do
+            mkdir -p %{buildroot}%{repositorydir}/system_upgrade/common/files/${rpm_gpg_path}
+            cp -av files/rpm-gpg/${key} %{buildroot}%{repositorydir}/system_upgrade/common/files/${rpm_gpg_path}/
+      done
+      rm -f files/rpm-gpg/${key}
+done
 
 %check
 %if %{with check}
@@ -165,21 +165,23 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 %files
 %doc LICENSE NOTICE README.md
-%if 0%{?rhel} == 9
-%{repositorydir}/system_upgrade/common/files/rpm-gpg/10/*
-%endif
-
-%if 0%{?rhel} == 8
-%{repositorydir}/system_upgrade/common/files/rpm-gpg/9/*
-%endif
-
-%if 0%{?rhel} == 7
-%{repositorydir}/system_upgrade/common/files/rpm-gpg/8/*
-%endif
+%{repositorydir}/system_upgrade/common/files/rpm-gpg/%{target_version}/*
+%{repositorydir}/system_upgrade/common/files/%{dist_gpg_path}/*
 %{_sysconfdir}/leapp/files/*
 
 
 %changelog
+* Mon May 19 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.9-1.20250505
+- Update data to the upstream most recent state:
+ - Device driver deprecation data:
+  - leapp-repository sha 9c621a91199c093f603ef30ba3daf59010c20e47
+ - PES data:
+  - pes-events.json: upstream state ffd6d8e456484630f99d98d5bff955914af02aa5
+  - epel_pes.json_template:
+   - remove duplicated id and set_id
+- Install rpm public GPG key(s) into distro specific path
+- Bump the package version
+
 * Fri Mar 28 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.8-3.20250228
 - Exclude microsoft vendor from the package
 
