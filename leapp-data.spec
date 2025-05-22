@@ -26,16 +26,16 @@
 %define supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce
 %define target_version 9
 %define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
-%if %{dist_name} == "almalinux"
+%if "%{dist_name}" == "almalinux"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-9
 %endif
-%if %{dist_name} == "centos"
+%if "%{dist_name}" == "centos"
 %define gpg_key RPM-GPG-KEY-CentOS-Official RPM-GPG-KEY-CentOS-SIG-Extras
 %endif
-%if %{dist_name} == "oraclelinux"
+%if "%{dist_name}" == "oraclelinux"
 %define gpg_key RPM-GPG-KEY-oracle-ol9
 %endif
-%if %{dist_name} == "rocky"
+%if "%{dist_name}" == "rocky"
 %define gpg_key RPM-GPG-KEY-Rocky-9
 %endif
 %endif
