@@ -580,7 +580,7 @@ jobs:
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh mariadb ${{ env.source_release }}" || exit 1
 
     - name: Vendor - PostgreSQL
-      if: inputs.vendors == 'all' && env.target_release != '10'
+      if: inputs.vendors == 'all'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh postgresql ${{ env.source_release }}" || exit 1
 
