@@ -1,71 +1,71 @@
 [almalinux10-baseos]
-name=AlmaLinux 10.0-beta - BaseOS
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/10.0-beta/baseos
-# baseurl=https://vault.almalinux.org/10.0-beta/BaseOS/$basearch/os/
+name=AlmaLinux $releasever - BaseOS
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/baseos
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/BaseOS/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/10/RPM-GPG-KEY-AlmaLinux-10
 
 [almalinux10-appstream]
-name=AlmaLinux 10.0-beta - AppStream
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/10.0-beta/appstream
-# baseurl=https://vault.almalinux.org/10.0-beta/AppStream/$basearch/os/
+name=AlmaLinux $releasever - AppStream
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/appstream
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/AppStream/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/10/RPM-GPG-KEY-AlmaLinux-10
 
 [almalinux10-crb]
-name=AlmaLinux 10.0-beta - CRB
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/10.0-beta/crb
-# baseurl=https://vault.almalinux.org/10.0-beta/CRB/$basearch/os/
+name=AlmaLinux $releasever - CRB
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/crb
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/CRB/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/10/RPM-GPG-KEY-AlmaLinux-10
 
 [almalinux10-highavailability]
-name=AlmaLinux 10.0-beta - HighAvailability
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/10.0-beta/ha
-# baseurl=https://vault.almalinux.org/10.0-beta/HighAvailability/$basearch/os/
+name=AlmaLinux $releasever - HighAvailability
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/ha
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/HighAvailability/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/10/RPM-GPG-KEY-AlmaLinux-10
 
 [almalinux10-extras]
-name=AlmaLinux 10.0-beta - Extras
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/10.0-beta/extras
-# baseurl=https://vault.almalinux.org/10.0-beta/extras/$basearch/os/
+name=AlmaLinux $releasever - Extras
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/extras
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/extras/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/10/RPM-GPG-KEY-AlmaLinux-10
 
 [almalinux10-sap]
-name=AlmaLinux 10.0-beta - SAP
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/10.0-beta/sap
-# baseurl=https://vault.almalinux.org/10.0-beta/SAP/$basearch/os/
+name=AlmaLinux $releasever - SAP
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/sap
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/SAP/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/10/RPM-GPG-KEY-AlmaLinux-10
 
 [almalinux10-saphana]
-name=AlmaLinux 10.0-beta - SAPHANA
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/10.0-beta/saphana
-# baseurl=https://vault.almalinux.org/10.0-beta/SAPHANA/$basearch/os/
+name=AlmaLinux $releasever - SAPHANA
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/saphana
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/SAPHANA/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/10/RPM-GPG-KEY-AlmaLinux-10
 
 [almalinux10-rt]
-name=AlmaLinux 10.0-beta - RT
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/10.0-beta/rt?arch=x86_64
-# baseurl=https://vault.almalinux.org/10.0-beta/RT/$basearch/os/
+name=AlmaLinux $releasever - RT
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/rt?arch=x86_64
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/RT/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/10/RPM-GPG-KEY-AlmaLinux-10
 
 [almalinux10-nfv]
-name=AlmaLinux 10.0-beta - NFV
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/10.0-beta/nfv?arch=x86_64
-# baseurl=https://vault.almalinux.org/10.0-beta/NFV/$basearch/os/
+name=AlmaLinux $releasever - NFV
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/nfv?arch=x86_64
+# baseurl=https://repo.almalinux.org/almalinux/$releasever/NFV/$basearch/os/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/repos.d/system_upgrade/common/files/rpm-gpg/10/RPM-GPG-KEY-AlmaLinux-10
