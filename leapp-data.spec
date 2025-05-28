@@ -52,7 +52,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.6
-Release:	4%{?dist}.%{pes_events_build_date}
+Release:	5%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -177,6 +177,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Wed May 28 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.6-5.20241127
+- ELevate to AlmaLinux 10.0 stable
+
 * Fri Mar 28 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.6-4.20241127
 - Exclude microsoft vendor from the package
 
