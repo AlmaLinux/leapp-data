@@ -100,8 +100,8 @@ jobs:
               # ELevation to AlmaLinux 10 is available for testing and NG repositories
               [[ "${{ inputs.repository }}" == *"testing"*  || "${{ inputs.repository }}" == *"NG"* ]] && \
                 VARIANTS+=("almalinux 9 to almalinux 10")
-              # ELevation to AlmaLinux Kitten 10 is available for NG repository
-              [[ "${{ inputs.repository }}" == *"NG"*  ]] && \
+              # ELevation to AlmaLinux Kitten 10 is available for testing and NG repositories
+              [[ "${{ inputs.repository }}" == *"testing"*  || "${{ inputs.repository }}" == *"NG"* ]] && \
                 VARIANTS+=("almalinux 9 to almalinux-kitten 10")
             fi
           fi
