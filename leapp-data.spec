@@ -59,7 +59,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.9
-Release:	1%{?dist}.%{pes_events_build_date}
+Release:	2%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -171,6 +171,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Wed May 28 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.9-2.20250505
+- ELevate to AlmaLinux 10.0 stable
+
 * Mon May 19 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.9-1.20250505
 - Update data to the upstream most recent state:
  - Device driver deprecation data:
