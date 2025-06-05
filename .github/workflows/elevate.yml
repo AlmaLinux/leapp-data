@@ -14,7 +14,7 @@ on:
         description: 'ELevate 7 to 8'
         required: true
         type: boolean
-        default: false
+        default: true
 
       to9:
         description: 'ELevate 8 to 9'
@@ -56,7 +56,7 @@ on:
         description: 'OracleLinux (7 to 8 only)'
         required: true
         type: boolean
-        default: false
+        default: true
 
       rocky:
         description: 'Rocky Linux'
@@ -97,12 +97,8 @@ jobs:
               VARIANTS+=("almalinux 8 to almalinux 9")
             fi
             if [ "${{ inputs.to10 }}" = "true" ]; then
-              # ELevation to AlmaLinux 10 is available for testing and NG repositories
-              [[ "${{ inputs.repository }}" == *"testing"*  || "${{ inputs.repository }}" == *"NG"* ]] && \
-                VARIANTS+=("almalinux 9 to almalinux 10")
-              # ELevation to AlmaLinux Kitten 10 is available for testing and NG repositories
-              [[ "${{ inputs.repository }}" == *"testing"*  || "${{ inputs.repository }}" == *"NG"* ]] && \
-                VARIANTS+=("almalinux 9 to almalinux-kitten 10")
+              VARIANTS+=("almalinux 9 to almalinux 10")
+              VARIANTS+=("almalinux 9 to almalinux-kitten 10")
             fi
           fi
 
@@ -115,9 +111,7 @@ jobs:
               VARIANTS+=("centos 8 to centos 9")
             fi
             if [ "${{ inputs.to10 }}" = "true" ]; then
-            # ELevation to CentOS Stream 10 is available for testing and NG repositories
-              [[ "${{ inputs.repository }}" == *"testing"*  || "${{ inputs.repository }}" == *"NG"* ]] && \
-                VARIANTS+=("centos 9 to centos 10")
+              VARIANTS+=("centos 9 to centos 10")
             fi
           fi
 
@@ -398,15 +392,23 @@ jobs:
         if [ "${vendor}" = "mariadb" ]; then
           # MariaDB server requires some packages from EPEL on EL7
           if [ "${source_release}" = "7" ]; then
-           sudo dnf -y -q install epel-release
-          fi
+            cat << 'MARIADB'> /etc/yum.repos.d/mariadb.repo
+        [mariadb-main]
+        name = MariaDB
+        baseurl = https://rpm.mariadb.org/11.rolling/rhel/$releasever/$basearch
+        gpgkey= https://rpm.mariadb.org/RPM-GPG-KEY-MariaDB
+        gpgcheck=1
+        MARIADB
 
-          # Skip 'mariadb-maxscale' repository as it is broken for EL7
-          # --os-* options to install on EuroLinux
-          sudo curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash -s -- \
-            --skip-maxscale \
-            --os-version=${source_release} \
-            --os-type=rhel
+            sudo dnf -y -q install epel-release
+          else
+            # Skip 'mariadb-maxscale' repository as it is broken for EL7
+            # --os-* options to install on EuroLinux
+            sudo curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash -s -- \
+              --skip-maxscale \
+              --os-version=${source_release} \
+              --os-type=rhel
+          fi
           sudo dnf -y install MariaDB-server
           res=$?
         fi
