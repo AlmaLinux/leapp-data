@@ -1,9 +1,9 @@
-%global pes_events_build_date 20250505
+%global pes_events_build_date 20250624
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
-%define dist_list almalinux almalinux-kitten centos oraclelinux rocky
-%define conflict_dists() %(for i in almalinux almalinux-kitten centos oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
+%define dist_list almalinux almalinux-kitten centos
+%define conflict_dists() %(for i in almalinux almalinux-kitten centos; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 %if 0%{?rhel} == 7
 %define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce imunify360-alt-php tuxcare
@@ -15,12 +15,6 @@
 %if %{dist_name} == "centos"
 %define gpg_key RPM-GPG-KEY-CentOS-Official
 %endif
-%if %{dist_name} == "oraclelinux"
-%define gpg_key RPM-GPG-KEY-oracle-ol8
-%endif
-%if %{dist_name} == "rocky"
-%define gpg_key RPM-GPG-KEY-Rocky-8
-%endif
 %endif
 %if 0%{?rhel} == 8
 %define supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce tuxcare
@@ -31,12 +25,6 @@
 %endif
 %if "%{dist_name}" == "centos"
 %define gpg_key RPM-GPG-KEY-CentOS-Official RPM-GPG-KEY-CentOS-SIG-Extras
-%endif
-%if "%{dist_name}" == "oraclelinux"
-%define gpg_key RPM-GPG-KEY-oracle-ol9
-%endif
-%if "%{dist_name}" == "rocky"
-%define gpg_key RPM-GPG-KEY-Rocky-9
 %endif
 %endif
 %if 0%{?rhel} == 9
@@ -58,8 +46,8 @@
 %bcond_without check
 
 Name:		leapp-data-%{dist_name}
-Version:	0.9
-Release:	4%{?dist}.%{pes_events_build_date}
+Version:	0.10
+Release:	1%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -171,6 +159,14 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Wed Jul 16 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-1.20250624
+- Update all data into stream 4.0
+- Update all repomap files into new format version 1.3.0. Add 'distro' field
+- Rename Vendors' repositories mapping json files into templates and process them with generate_map_pes_files.sh
+- Update data to the upstream most recent state:
+ - PES data:
+  - pes-events.json: upstream state 2544f574969626bfe99cfd8aadd8eef36ecb2841
+- Bump the package version
 
 * Fri Jul 11 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.9-4.20250505
 - New vendor, tuxcare

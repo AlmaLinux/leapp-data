@@ -1,6 +1,6 @@
 {
-    "datetime": "202410111720Z",
-    "version_format": "1.2.1",
+    "datetime": "202506241030Z",
+    "version_format": "1.3.0",
     "mapping": [
         {
             "source_major_version": "7",
@@ -36,21 +36,24 @@
                     "repoid": "docker-ce-stable",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "7",
                     "repoid": "docker-ce-stable",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "7",
                     "repoid": "docker-ce-stable",
                     "arch": "ppc64le",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         },
@@ -62,21 +65,24 @@
                     "repoid": "docker-ce-test",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "7",
                     "repoid": "docker-ce-test",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "7",
                     "repoid": "docker-ce-test",
                     "arch": "ppc64le",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         },
@@ -88,21 +94,24 @@
                     "repoid": "docker-ce-nightly",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "7",
                     "repoid": "docker-ce-nightly",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "7",
                     "repoid": "docker-ce-nightly",
                     "arch": "ppc64le",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         },
@@ -114,21 +123,24 @@
                     "repoid": "el8-docker-ce-stable",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "8",
                     "repoid": "el8-docker-ce-stable",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "8",
                     "repoid": "el8-docker-ce-stable",
                     "arch": "ppc64le",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         },
@@ -140,21 +152,24 @@
                     "repoid": "el8-docker-ce-test",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "8",
                     "repoid": "el8-docker-ce-test",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "8",
                     "repoid": "el8-docker-ce-test",
                     "arch": "ppc64le",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         },
@@ -166,29 +181,29 @@
                     "repoid": "el8-docker-ce-nightly",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "8",
                     "repoid": "el8-docker-ce-nightly",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "8",
                     "repoid": "el8-docker-ce-nightly",
                     "arch": "ppc64le",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         }
     ],
     "provided_data_streams": [
-        "1.1",
-        "2.0",
-        "3.0",
-        "3.1"
+        "4.0"
     ]
 }

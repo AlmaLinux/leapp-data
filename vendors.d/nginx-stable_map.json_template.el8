@@ -1,15 +1,15 @@
 {
-    "datetime": "202410111835Z",
-    "version_format": "1.2.1",
+    "datetime": "202506241030Z",
+    "version_format": "1.3.0",
     "mapping": [
         {
-            "source_major_version": "8",
-            "target_major_version": "9",
+            "source_major_version": "7",
+            "target_major_version": "8",
             "entries": [
                 {
                     "source": "nginx-stable",
                     "target": [
-                        "el9-nginx-stable"
+                        "el8-nginx-stable"
                     ]
                 }
             ]
@@ -20,59 +20,62 @@
             "pesid": "nginx-stable",
             "entries": [
                 {
-                    "major_version": "8",
+                    "major_version": "7",
                     "repoid": "nginx-stable",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
-                    "major_version": "8",
+                    "major_version": "7",
                     "repoid": "nginx-stable",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
-                    "major_version": "8",
+                    "major_version": "7",
                     "repoid": "nginx-stable",
-                    "arch": "s390x",
+                    "arch": "ppc64le",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         },
         {
-            "pesid": "el9-nginx-stable",
+            "pesid": "el8-nginx-stable",
             "entries": [
                 {
-                    "major_version": "9",
-                    "repoid": "el9-nginx-stable",
+                    "major_version": "8",
+                    "repoid": "el8-nginx-stable",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
-                    "major_version": "9",
-                    "repoid": "el9-nginx-stable",
+                    "major_version": "8",
+                    "repoid": "el8-nginx-stable",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
-                    "major_version": "9",
-                    "repoid": "el9-nginx-stable",
+                    "major_version": "8",
+                    "repoid": "el8-nginx-stable",
                     "arch": "s390x",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         }
     ],
     "provided_data_streams": [
-        "1.1",
-        "2.0",
-        "3.0",
-        "3.1"
+        "4.0"
     ]
 }

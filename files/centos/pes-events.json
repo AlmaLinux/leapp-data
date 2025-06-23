@@ -1,7 +1,7 @@
 {
-    "timestamp": "202505091506Z",
+    "timestamp": "202505191506Z",
     "provided_data_streams": [
-        "3.3"
+        "4.0"
     ],
     "packageinfo": [
         {
@@ -147603,7 +147603,10 @@
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "httpcomponents-client-cache",
                         "repository": "centos8-powertools"
@@ -147611,7 +147614,11 @@
                 ],
                 "set_id": 6640
             },
-            "initial_release": null,
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 9,
+                "os_name": "CentOS"
+            },
             "modulestream_maps": [],
             "out_packageset": null,
             "release": {
@@ -147673,7 +147680,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -147699,14 +147705,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "httpcomponents-core-javadoc",
                         "repository": "centos8-powertools"
@@ -147723,7 +147735,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -147749,14 +147760,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "httpcomponents-project",
                         "repository": "centos8-powertools"
@@ -148080,9 +148097,7 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
-                "s390x",
                 "x86_64"
             ],
             "id": 4131,
@@ -148106,14 +148121,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "pki-deps",
+                        "stream": "10.6"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "pki-deps",
+                                "stream": "10.6"
+                            }
                         ],
                         "name": "jakarta-commons-httpclient",
                         "repository": "centos8-appstream"
@@ -148130,7 +148151,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -148156,14 +148176,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "pki-deps",
+                        "stream": "10.6"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "pki-deps",
+                                "stream": "10.6"
+                            }
                         ],
                         "name": "jakarta-commons-httpclient-demo",
                         "repository": "centos8-appstream"
@@ -148180,7 +148206,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -148206,14 +148231,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "pki-deps",
+                        "stream": "10.6"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "pki-deps",
+                                "stream": "10.6"
+                            }
                         ],
                         "name": "jakarta-commons-httpclient-javadoc",
                         "repository": "centos8-appstream"
@@ -148230,7 +148261,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -148256,14 +148286,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "pki-deps",
+                        "stream": "10.6"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "pki-deps",
+                                "stream": "10.6"
+                            }
                         ],
                         "name": "jakarta-commons-httpclient-manual",
                         "repository": "centos8-appstream"
@@ -148829,7 +148865,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -148855,14 +148890,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "javacc",
                         "repository": "centos8-powertools"
@@ -148879,7 +148920,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -148905,14 +148945,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "javacc-demo",
                         "repository": "centos8-powertools"
@@ -148929,7 +148975,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -148955,14 +149000,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "javacc-javadoc",
                         "repository": "centos8-powertools"
@@ -148979,7 +149030,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -149005,14 +149055,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "javacc-manual",
                         "repository": "centos8-powertools"
@@ -149029,7 +149085,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -149055,14 +149110,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "javacc-maven-plugin",
                         "repository": "centos8-powertools"
@@ -149244,7 +149305,6 @@
         {
             "action": 4,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -149270,28 +149330,40 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "ivy-local",
                         "repository": "centos8-powertools"
                     },
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "javapackages-filesystem",
                         "repository": "centos8-powertools"
                     },
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "javapackages-tools",
                         "repository": "centos8-powertools"
@@ -149308,7 +149380,6 @@
         {
             "action": 4,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -149334,21 +149405,30 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "javapackages-local",
                         "repository": "centos8-powertools"
                     },
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-local",
                         "repository": "centos8-powertools"
@@ -149530,9 +149610,7 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
-                "s390x",
                 "x86_64"
             ],
             "id": 4159,
@@ -149556,14 +149634,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "jaxen",
                         "repository": "centos8-powertools"
@@ -149580,7 +149664,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -149606,14 +149689,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "jaxen-demo",
                         "repository": "centos8-powertools"
@@ -150189,7 +150278,10 @@
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "jdom2",
                         "repository": "centos8-powertools"
@@ -150197,7 +150289,11 @@
                 ],
                 "set_id": 6737
             },
-            "initial_release": null,
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 9,
+                "os_name": "CentOS"
+            },
             "modulestream_maps": [],
             "out_packageset": null,
             "release": {
@@ -151861,7 +151957,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -151887,14 +151982,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "jflex",
                         "repository": "centos8-powertools"
@@ -151911,7 +152012,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -151937,14 +152037,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "jflex-javadoc",
                         "repository": "centos8-powertools"
@@ -152903,7 +153009,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -152929,14 +153034,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "junit-javadoc",
                         "repository": "centos8-powertools"
@@ -152953,7 +153064,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -152979,14 +153089,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "junit-manual",
                         "repository": "centos8-powertools"
@@ -153036,9 +153152,7 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
-                "s390x",
                 "x86_64"
             ],
             "id": 4250,
@@ -153062,14 +153176,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "jvnet-parent",
                         "repository": "centos8-powertools"
@@ -153086,7 +153206,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -153112,14 +153231,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "jzlib",
                         "repository": "centos8-powertools"
@@ -153136,7 +153261,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -153162,14 +153286,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "jzlib-demo",
                         "repository": "centos8-powertools"
@@ -153186,7 +153316,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -153212,14 +153341,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "jzlib-javadoc",
                         "repository": "centos8-powertools"
@@ -153501,7 +153636,6 @@
         {
             "action": 4,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -153527,21 +153661,30 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "maven",
+                        "stream": "3.5"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "maven",
+                                "stream": "3.5"
+                            }
                         ],
                         "name": "maven",
                         "repository": "centos8-appstream"
                     },
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "maven",
+                                "stream": "3.5"
+                            }
                         ],
                         "name": "maven-lib",
                         "repository": "centos8-appstream"
@@ -153558,7 +153701,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -153584,14 +153726,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-javadoc",
                         "repository": "centos8-powertools"
@@ -153608,7 +153756,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -153634,14 +153781,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-antrun-plugin",
                         "repository": "centos8-powertools"
@@ -153658,7 +153811,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -153684,14 +153836,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-antrun-plugin-javadoc",
                         "repository": "centos8-powertools"
@@ -153708,7 +153866,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -153734,14 +153891,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-archiver",
                         "repository": "centos8-powertools"
@@ -153758,7 +153921,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -153784,14 +153946,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-archiver-javadoc",
                         "repository": "centos8-powertools"
@@ -153808,7 +153976,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -153834,14 +154001,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-artifact-resolver",
                         "repository": "centos8-powertools"
@@ -153858,7 +154031,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -153884,14 +154056,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-artifact-resolver-javadoc",
                         "repository": "centos8-powertools"
@@ -153908,7 +154086,6 @@
         {
             "action": 3,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -153934,14 +154111,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-artifact-transfer",
                         "repository": "centos8-powertools"
@@ -153958,7 +154141,6 @@
         {
             "action": 3,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -153984,14 +154166,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-artifact-transfer-javadoc",
                         "repository": "centos8-powertools"
@@ -154008,7 +154196,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154034,14 +154221,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-assembly-plugin",
                         "repository": "centos8-powertools"
@@ -154058,7 +154251,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154084,14 +154276,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-assembly-plugin-javadoc",
                         "repository": "centos8-powertools"
@@ -154174,7 +154372,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154200,14 +154397,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-clean-plugin",
                         "repository": "centos8-powertools"
@@ -154224,7 +154427,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154250,14 +154452,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-clean-plugin-javadoc",
                         "repository": "centos8-powertools"
@@ -154274,7 +154482,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154300,14 +154507,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-common-artifact-filters",
                         "repository": "centos8-powertools"
@@ -154324,7 +154537,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154350,14 +154562,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-common-artifact-filters-javadoc",
                         "repository": "centos8-powertools"
@@ -154374,7 +154592,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154400,14 +154617,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-compiler-plugin",
                         "repository": "centos8-powertools"
@@ -154424,7 +154647,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154450,14 +154672,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-compiler-plugin-javadoc",
                         "repository": "centos8-powertools"
@@ -154474,7 +154702,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154500,14 +154727,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-dependency-analyzer",
                         "repository": "centos8-powertools"
@@ -154524,7 +154757,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154550,14 +154782,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-dependency-analyzer-javadoc",
                         "repository": "centos8-powertools"
@@ -154574,7 +154812,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154600,14 +154837,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-dependency-plugin",
                         "repository": "centos8-powertools"
@@ -154624,7 +154867,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154650,14 +154892,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-dependency-plugin-javadoc",
                         "repository": "centos8-powertools"
@@ -154674,7 +154922,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154700,14 +154947,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-dependency-tree",
                         "repository": "centos8-powertools"
@@ -154724,7 +154977,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154750,14 +155002,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-dependency-tree-javadoc",
                         "repository": "centos8-powertools"
@@ -154840,7 +155098,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154866,14 +155123,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia",
                         "repository": "centos8-powertools"
@@ -154890,7 +155153,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154916,14 +155178,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-core",
                         "repository": "centos8-powertools"
@@ -154940,7 +155208,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -154966,14 +155233,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-javadoc",
                         "repository": "centos8-powertools"
@@ -154990,7 +155263,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155016,14 +155288,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-logging-api",
                         "repository": "centos8-powertools"
@@ -155040,7 +155318,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155066,14 +155343,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-module-apt",
                         "repository": "centos8-powertools"
@@ -155090,7 +155373,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155116,14 +155398,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-module-confluence",
                         "repository": "centos8-powertools"
@@ -155140,7 +155428,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155166,14 +155453,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-module-docbook-simple",
                         "repository": "centos8-powertools"
@@ -155190,7 +155483,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155216,14 +155508,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-module-fml",
                         "repository": "centos8-powertools"
@@ -155240,7 +155538,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155266,14 +155563,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-module-latex",
                         "repository": "centos8-powertools"
@@ -155290,7 +155593,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155316,14 +155618,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-module-rtf",
                         "repository": "centos8-powertools"
@@ -155340,7 +155648,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155366,14 +155673,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-module-twiki",
                         "repository": "centos8-powertools"
@@ -155390,7 +155703,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155416,14 +155728,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-module-xdoc",
                         "repository": "centos8-powertools"
@@ -155440,7 +155758,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155466,14 +155783,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-module-xhtml",
                         "repository": "centos8-powertools"
@@ -155490,7 +155813,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155516,14 +155838,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-modules",
                         "repository": "centos8-powertools"
@@ -155540,7 +155868,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155566,14 +155893,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-sink-api",
                         "repository": "centos8-powertools"
@@ -155590,7 +155923,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155616,14 +155948,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-test-docs",
                         "repository": "centos8-powertools"
@@ -155640,7 +155978,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155666,14 +156003,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-tests",
                         "repository": "centos8-powertools"
@@ -155723,7 +156066,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155749,14 +156091,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-sitetools",
                         "repository": "centos8-powertools"
@@ -155773,7 +156121,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155799,14 +156146,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-sitetools-javadoc",
                         "repository": "centos8-powertools"
@@ -155823,7 +156176,6 @@
         {
             "action": 3,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155849,14 +156201,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-sitetools",
                         "repository": "centos8-powertools"
@@ -155873,7 +156231,6 @@
         {
             "action": 3,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155899,14 +156256,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-doxia-sitetools-javadoc",
                         "repository": "centos8-powertools"
@@ -155923,7 +156286,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155949,14 +156311,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-enforcer",
                         "repository": "centos8-powertools"
@@ -155973,7 +156341,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -155999,14 +156366,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-enforcer-api",
                         "repository": "centos8-powertools"
@@ -156023,7 +156396,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -156049,14 +156421,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-enforcer-javadoc",
                         "repository": "centos8-powertools"
@@ -156073,7 +156451,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -156099,14 +156476,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-enforcer-plugin",
                         "repository": "centos8-powertools"
@@ -156123,7 +156506,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -156149,14 +156531,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-enforcer-rules",
                         "repository": "centos8-powertools"
@@ -156173,7 +156561,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -156199,14 +156586,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-file-management",
                         "repository": "centos8-powertools"
@@ -156223,7 +156616,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -156249,14 +156641,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-file-management-javadoc",
                         "repository": "centos8-powertools"
@@ -156273,7 +156671,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -156299,14 +156696,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-filtering",
                         "repository": "centos8-powertools"
@@ -156323,7 +156726,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -156349,14 +156751,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-filtering-javadoc",
                         "repository": "centos8-powertools"
@@ -156439,7 +156847,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -156465,14 +156872,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-install-plugin",
                         "repository": "centos8-powertools"
@@ -156489,7 +156902,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -156515,14 +156927,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-install-plugin-javadoc",
                         "repository": "centos8-powertools"
@@ -156539,7 +156957,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -156565,14 +156982,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-invoker",
                         "repository": "centos8-powertools"
@@ -156589,7 +157012,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -156615,14 +157037,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-invoker-javadoc",
                         "repository": "centos8-powertools"
@@ -156639,7 +157067,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -156665,14 +157092,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-invoker-plugin",
                         "repository": "centos8-powertools"
@@ -156689,7 +157122,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -156715,14 +157147,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-invoker-plugin-javadoc",
                         "repository": "centos8-powertools"
@@ -156739,7 +157177,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -156765,14 +157202,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-jar-plugin",
                         "repository": "centos8-powertools"
@@ -156789,7 +157232,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -156815,14 +157257,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-jar-plugin-javadoc",
                         "repository": "centos8-powertools"
@@ -157136,7 +157584,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -157162,14 +157609,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-parent",
                         "repository": "centos8-powertools"
@@ -157186,7 +157639,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -157212,14 +157664,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-plugin-build-helper",
                         "repository": "centos8-powertools"
@@ -157236,7 +157694,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -157262,14 +157719,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-plugin-build-helper-javadoc",
                         "repository": "centos8-powertools"
@@ -157286,7 +157749,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -157312,14 +157774,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-plugin-bundle",
                         "repository": "centos8-powertools"
@@ -157336,7 +157804,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -157362,14 +157829,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-plugin-bundle-javadoc",
                         "repository": "centos8-powertools"
@@ -157386,7 +157859,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -157412,14 +157884,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-plugin-testing",
                         "repository": "centos8-powertools"
@@ -157436,7 +157914,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -157462,14 +157939,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-plugin-testing-harness",
                         "repository": "centos8-powertools"
@@ -157486,7 +157969,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -157512,14 +157994,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-plugin-testing-javadoc",
                         "repository": "centos8-powertools"
@@ -157536,7 +158024,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -157562,14 +158049,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-plugin-testing-tools",
                         "repository": "centos8-powertools"
@@ -157586,7 +158079,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -157612,14 +158104,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-test-tools",
                         "repository": "centos8-powertools"
@@ -158784,7 +159282,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -158810,14 +159307,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-reporting-api-javadoc",
                         "repository": "centos8-powertools"
@@ -159547,7 +160050,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -159573,14 +160075,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-shared-incremental-javadoc",
                         "repository": "centos8-powertools"
@@ -159597,7 +160105,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -159623,14 +160130,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-shared-io",
                         "repository": "centos8-powertools"
@@ -159647,7 +160160,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -159673,14 +160185,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-shared-io-javadoc",
                         "repository": "centos8-powertools"
@@ -159813,7 +160331,6 @@
         {
             "action": 6,
             "architectures": [
-                "aarch64",
                 "ppc64le",
                 "s390x",
                 "x86_64"
@@ -159839,14 +160356,20 @@
             "modulestream_maps": [
                 {
                     "in_modulestream": null,
-                    "out_modulestream": null
+                    "out_modulestream": {
+                        "name": "javapackages-tools",
+                        "stream": "201801"
+                    }
                 }
             ],
             "out_packageset": {
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "javapackages-tools",
+                                "stream": "201801"
+                            }
                         ],
                         "name": "maven-shared-utils-javadoc",
                         "repository": "centos8-powertools"
@@ -689598,12 +690121,145 @@
         {
             "action": 1,
             "architectures": [
+                "aarch64",
+                "ppc64le",
+                "x86_64"
+            ],
+            "id": 19561,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "dyninst-testsuite",
+                        "repository": "centos10-crb"
+                    }
+                ],
+                "set_id": 26167
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "x86_64"
+            ],
+            "id": 19562,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "dyninst-testsuite",
+                        "repository": "centos9-crb"
+                    }
+                ],
+                "set_id": 26168
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 6,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "x86_64"
+            ],
+            "id": 19563,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "dyninst-testsuite",
+                        "repository": "centos10-crb"
+                    }
+                ],
+                "set_id": 26169
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19564,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "rpm-plugin-dbus-announce",
+                        "repository": "centos10-appstream"
+                    }
+                ],
+                "set_id": 26170
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
                 "x86_64",
                 "aarch64",
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19561,
+            "id": 19565,
             "in_packageset": {
                 "package": [
                     {
@@ -689614,7 +690270,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 26167
+                "set_id": 26171
             },
             "initial_release": {
                 "major_version": 7,
@@ -689637,7 +690293,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19562,
+            "id": 19566,
             "in_packageset": {
                 "package": [
                     {
@@ -689645,114 +690301,6 @@
                             null
                         ],
                         "name": "libssh2",
-                        "repository": "base"
-                    }
-                ],
-                "set_id": 26169
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "CentOS",
-                "tag": null,
-                "z_stream": null
-            },
-            "modulestream_maps": [
-                {
-                    "in_modulestream": null,
-                    "out_modulestream": null
-                }
-            ],
-            "out_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "libssh",
-                        "repository": "centos8-baseos"
-                    }
-                ],
-                "set_id": 26168
-            },
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "CentOS",
-                "tag": null,
-                "z_stream": null
-            }
-        },
-        {
-            "action": 3,
-            "architectures": [
-                "x86_64",
-                "aarch64",
-                "ppc64le",
-                "s390x"
-            ],
-            "id": 19563,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "libssh2-devel",
-                        "repository": "base"
-                    }
-                ],
-                "set_id": 26171
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "CentOS",
-                "tag": null,
-                "z_stream": null
-            },
-            "modulestream_maps": [
-                {
-                    "in_modulestream": null,
-                    "out_modulestream": null
-                }
-            ],
-            "out_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "libssh-devel",
-                        "repository": "centos8-baseos"
-                    }
-                ],
-                "set_id": 26170
-            },
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "CentOS",
-                "tag": null,
-                "z_stream": null
-            }
-        },
-        {
-            "action": 3,
-            "architectures": [
-                "x86_64",
-                "aarch64",
-                "ppc64le",
-                "s390x"
-            ],
-            "id": 19564,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "libssh2-docs",
                         "repository": "base"
                     }
                 ],
@@ -689777,7 +690325,7 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "libssh-docs",
+                        "name": "libssh",
                         "repository": "centos8-baseos"
                     }
                 ],
@@ -689792,93 +690340,7 @@
             }
         },
         {
-            "action": 1,
-            "architectures": [
-                "x86_64",
-                "aarch64",
-                "ppc64le",
-                "s390x"
-            ],
-            "id": 19565,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "ustr",
-                        "repository": "powertools"
-                    }
-                ],
-                "set_id": 26174
-            },
-            "initial_release": {
-                "major_version": 8,
-                "minor_version": 5,
-                "os_name": "CentOS",
-                "tag": null,
-                "z_stream": null
-            },
-            "modulestream_maps": [
-                {
-                    "in_modulestream": null,
-                    "out_modulestream": null
-                }
-            ],
-            "out_packageset": null,
-            "release": {
-                "major_version": 9,
-                "minor_version": 0,
-                "os_name": "CentOS",
-                "tag": null,
-                "z_stream": null
-            }
-        },
-        {
-            "action": 1,
-            "architectures": [
-                "x86_64",
-                "aarch64",
-                "ppc64le",
-                "s390x"
-            ],
-            "id": 19566,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "nautilus-sendto",
-                        "repository": "appstream"
-                    }
-                ],
-                "set_id": 26175
-            },
-            "initial_release": {
-                "major_version": 8,
-                "minor_version": 5,
-                "os_name": "CentOS",
-                "tag": null,
-                "z_stream": null
-            },
-            "modulestream_maps": [
-                {
-                    "in_modulestream": null,
-                    "out_modulestream": null
-                }
-            ],
-            "out_packageset": null,
-            "release": {
-                "major_version": 9,
-                "minor_version": 0,
-                "os_name": "CentOS",
-                "tag": null,
-                "z_stream": null
-            }
-        },
-        {
-            "action": 1,
+            "action": 3,
             "architectures": [
                 "x86_64",
                 "aarch64",
@@ -689892,15 +690354,15 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "libdmapsharing",
-                        "repository": "appstream"
+                        "name": "libssh2-devel",
+                        "repository": "base"
                     }
                 ],
-                "set_id": 26176
+                "set_id": 26175
             },
             "initial_release": {
-                "major_version": 8,
-                "minor_version": 5,
+                "major_version": 7,
+                "minor_version": 7,
                 "os_name": "CentOS",
                 "tag": null,
                 "z_stream": null
@@ -689911,9 +690373,20 @@
                     "out_modulestream": null
                 }
             ],
-            "out_packageset": null,
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libssh-devel",
+                        "repository": "centos8-baseos"
+                    }
+                ],
+                "set_id": 26174
+            },
             "release": {
-                "major_version": 9,
+                "major_version": 8,
                 "minor_version": 0,
                 "os_name": "CentOS",
                 "tag": null,
@@ -689921,7 +690394,7 @@
             }
         },
         {
-            "action": 1,
+            "action": 3,
             "architectures": [
                 "x86_64",
                 "aarch64",
@@ -689935,15 +690408,15 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "iptstate",
-                        "repository": "baseos"
+                        "name": "libssh2-docs",
+                        "repository": "base"
                     }
                 ],
                 "set_id": 26177
             },
             "initial_release": {
-                "major_version": 8,
-                "minor_version": 5,
+                "major_version": 7,
+                "minor_version": 7,
                 "os_name": "CentOS",
                 "tag": null,
                 "z_stream": null
@@ -689954,9 +690427,20 @@
                     "out_modulestream": null
                 }
             ],
-            "out_packageset": null,
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libssh-docs",
+                        "repository": "centos8-baseos"
+                    }
+                ],
+                "set_id": 26176
+            },
             "release": {
-                "major_version": 9,
+                "major_version": 8,
                 "minor_version": 0,
                 "os_name": "CentOS",
                 "tag": null,
@@ -689978,8 +690462,8 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "gupnp",
-                        "repository": "appstream"
+                        "name": "ustr",
+                        "repository": "powertools"
                     }
                 ],
                 "set_id": 26178
@@ -690021,7 +690505,7 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "libplist",
+                        "name": "nautilus-sendto",
                         "repository": "appstream"
                     }
                 ],
@@ -690064,8 +690548,8 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "jimtcl",
-                        "repository": "baseos"
+                        "name": "libdmapsharing",
+                        "repository": "appstream"
                     }
                 ],
                 "set_id": 26180
@@ -690107,7 +690591,7 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "libmodman",
+                        "name": "iptstate",
                         "repository": "baseos"
                     }
                 ],
@@ -690150,7 +690634,7 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "libimobiledevice",
+                        "name": "gupnp",
                         "repository": "appstream"
                     }
                 ],
@@ -690193,7 +690677,7 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "man-pages-overrides",
+                        "name": "libplist",
                         "repository": "appstream"
                     }
                 ],
@@ -690236,8 +690720,8 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "khmeros-fonts-common",
-                        "repository": "appstream"
+                        "name": "jimtcl",
+                        "repository": "baseos"
                     }
                 ],
                 "set_id": 26184
@@ -690279,8 +690763,8 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "gupnp-dlna",
-                        "repository": "appstream"
+                        "name": "libmodman",
+                        "repository": "baseos"
                     }
                 ],
                 "set_id": 26185
@@ -690322,7 +690806,7 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "gupnp-av",
+                        "name": "libimobiledevice",
                         "repository": "appstream"
                     }
                 ],
@@ -690365,7 +690849,7 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "lua-socket",
+                        "name": "man-pages-overrides",
                         "repository": "appstream"
                     }
                 ],
@@ -690408,7 +690892,7 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "usbmuxd",
+                        "name": "khmeros-fonts-common",
                         "repository": "appstream"
                     }
                 ],
@@ -690451,7 +690935,7 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "gssdp",
+                        "name": "gupnp-dlna",
                         "repository": "appstream"
                     }
                 ],
@@ -690494,11 +690978,183 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "libusbmuxd",
+                        "name": "gupnp-av",
                         "repository": "appstream"
                     }
                 ],
                 "set_id": 26190
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 19582,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "lua-socket",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 26191
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 19583,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "usbmuxd",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 26192
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 19584,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "gssdp",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 26193
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 5,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 19585,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libusbmuxd",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 26194
             },
             "initial_release": {
                 "major_version": 8,
