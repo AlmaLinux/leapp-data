@@ -346,6 +346,15 @@ jobs:
           res=$?
         fi
 
+        if [ "${vendor}" = "tuxcare" ]; then
+          sudo dnf -y install https://repo.alt.tuxcare.com/alt-common/alt-common-release-install.x86_64.rpm
+          sudo dnf -y install \
+            alt-libgd \
+            alt-openssl11-libs \
+            alt-sqlite
+          res=$?
+        fi
+
         if [ "${vendor}" = "imunify" ]; then
           # TODO prepare/install the repository config instead of changing vendor's one
           sudo cp -av /etc/leapp/files/vendors.d/imunify.repo /etc/yum.repos.d/
@@ -595,6 +604,11 @@ jobs:
       if: false && inputs.vendors == 'all' && env.target_release != '10'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh microsoft ${{ env.source_release }}" || exit 1
+
+    - name: Vendor - TuxCare
+      if: inputs.vendors == 'all'
+      run: |
+        sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh tuxcare ${{ env.source_release }}" || exit 1
 
     - name: Vendor - Imunify360
       if: inputs.vendors == 'all' && env.target_release == '8'
