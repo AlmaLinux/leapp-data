@@ -374,15 +374,23 @@ jobs:
         if [ "${vendor}" = "mariadb" ]; then
           # MariaDB server requires some packages from EPEL on EL7
           if [ "${source_release}" = "7" ]; then
-           sudo dnf -y -q install epel-release
-          fi
+            cat << 'MARIADB'> /etc/yum.repos.d/mariadb.repo
+        [mariadb-main]
+        name = MariaDB
+        baseurl = https://rpm.mariadb.org/11.rolling/rhel/$releasever/$basearch
+        gpgkey= https://rpm.mariadb.org/RPM-GPG-KEY-MariaDB
+        gpgcheck=1
+        MARIADB
 
-          # Skip 'mariadb-maxscale' repository as it is broken for EL7
-          # --os-* options to install on EuroLinux
-          sudo curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash -s -- \
-            --skip-maxscale \
-            --os-version=${source_release} \
-            --os-type=rhel
+            sudo dnf -y -q install epel-release
+          else
+            # Skip 'mariadb-maxscale' repository as it is broken for EL7
+            # --os-* options to install on EuroLinux
+            sudo curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash -s -- \
+              --skip-maxscale \
+              --os-version=${source_release} \
+              --os-type=rhel
+          fi
           sudo dnf -y install MariaDB-server
           res=$?
         fi
