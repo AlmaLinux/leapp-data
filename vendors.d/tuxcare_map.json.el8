@@ -1,0 +1,45 @@
+{
+    "datetime": "2025071001300Z",
+    "version_format": "1.2.1",
+    "mapping": [
+        {
+            "source_major_version": "7",
+            "target_major_version": "8",
+            "entries": [
+                {
+                    "source": "el7-alt-common",
+                    "target": ["el8-alt-common"]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "el7-alt-common",
+            "entries": [
+                {
+                    "repoid": "alt-common",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "el8-alt-common",
+            "entries": [
+                {
+                    "repoid": "el8-alt-common",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        }
+    ],
+    "provided_data_streams": [
+        "3.3"
+    ]
+}

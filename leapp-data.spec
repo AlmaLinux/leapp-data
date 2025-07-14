@@ -6,7 +6,7 @@
 %define conflict_dists() %(for i in almalinux almalinux-kitten centos oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 %if 0%{?rhel} == 7
-%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce imunify360-alt-php
+%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce imunify360-alt-php tuxcare
 %define target_version 8
 %define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
 %if %{dist_name} == "almalinux"
@@ -23,7 +23,7 @@
 %endif
 %endif
 %if 0%{?rhel} == 8
-%define supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce
+%define supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce tuxcare
 %define target_version 9
 %define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
 %if "%{dist_name}" == "almalinux"
@@ -40,7 +40,7 @@
 %endif
 %endif
 %if 0%{?rhel} == 9
-%define supported_vendors epel docker-ce postgresql
+%define supported_vendors epel docker-ce postgresql tuxcare
 %define target_version 10
 %define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
 %if "%{dist_name}" == "almalinux"
@@ -59,7 +59,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.9
-Release:	3%{?dist}.%{pes_events_build_date}
+Release:	4%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -171,6 +171,11 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+
+* Fri Jul 11 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.9-4.20250505
+- New vendor, tuxcare
+ - add alt-common repository - alt common Extended Lifecycle Support by TuxCare
+
 * Wed May 28 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.9-3.20250505
 - Add PostgreSQL Vendor for 9 to 10 upgrade
 
