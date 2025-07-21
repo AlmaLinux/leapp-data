@@ -52,18 +52,6 @@ on:
         type: boolean
         default: true
 
-      oraclelinux:
-        description: 'OracleLinux (7 to 8 only)'
-        required: true
-        type: boolean
-        default: true
-
-      rocky:
-        description: 'Rocky Linux'
-        required: true
-        type: boolean
-        default: true
-
       vendors:
         description: 'Install vendors'
         required: true
@@ -115,23 +103,6 @@ jobs:
             fi
           fi
 
-          # Oracle Linux variants
-          if [ "${{ inputs.oraclelinux }}" = "true" ]; then
-            if [ "${{ inputs.to8 }}" = "true" ]; then
-              VARIANTS+=("centos 7 to oraclelinux 8")
-            fi
-          fi
-
-          # Rocky Linux variants
-          if [ "${{ inputs.rocky }}" = "true" ]; then
-            if [ "${{ inputs.to8 }}" = "true" ]; then
-              VARIANTS+=("centos 7 to rocky 8")
-            fi
-            if [ "${{ inputs.to9 }}" = "true" ]; then
-              VARIANTS+=("rocky 8 to rocky 9")
-            fi
-          fi
-
           [ ${#VARIANTS[@]} -ne 0 ] && matrix=$(printf '"%s",' "${VARIANTS[@]}")
           matrix=${matrix%,}  # Remove the trailing comma
           echo matrix=$(jq -c <<< [${matrix}]) >> $GITHUB_OUTPUT
@@ -174,15 +145,6 @@ jobs:
           centos )
             vm_box=eurolinux-vagrant/centos-stream-${source_release} # generic/centos8s
             target_release_string="CentOS Stream release ${target_release}"
-            ;;
-          oraclelinux )
-            vm_box=eurolinux-vagrant/oracle-linux-${source_release} # generic/oracle8
-            target_release_string="Oracle Linux Server release ${target_release}"
-            target_release_file=/etc/oracle-release
-            ;;
-          rocky )
-            vm_box=eurolinux-vagrant/rocky-${source_release} # generic/rocky8
-            target_release_string="Rocky Linux release ${target_release}"
             ;;
         esac
         if [ "${source_release}" = "7" ]; then

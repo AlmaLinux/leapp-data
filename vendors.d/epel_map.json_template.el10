@@ -1,6 +1,6 @@
 {
-    "datetime": "202412121200Z",
-    "version_format": "1.2.1",
+    "datetime": "202506241030Z",
+    "version_format": "1.3.0",
     "mapping": [
         {
             "source_major_version": "9",
@@ -42,28 +42,32 @@
                     "repoid": "epel",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "9",
                     "repoid": "epel",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "9",
                     "repoid": "epel",
                     "arch": "ppc64le",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "9",
                     "repoid": "epel",
                     "arch": "s390x",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         },
@@ -75,28 +79,32 @@
                     "repoid": "el10-epel",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "10",
                     "repoid": "el10-epel",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "10",
                     "repoid": "el10-epel",
                     "arch": "ppc64le",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "10",
                     "repoid": "el10-epel",
                     "arch": "s390x",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         },
@@ -108,28 +116,32 @@
                     "repoid": "{baseos}",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "10",
                     "repoid": "{baseos}",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "10",
                     "repoid": "{baseos}",
                     "arch": "ppc64le",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "10",
                     "repoid": "{baseos}",
                     "arch": "s390x",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         },
@@ -141,28 +153,32 @@
                     "repoid": "{appstream}",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "10",
                     "repoid": "{appstream}",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "10",
                     "repoid": "{appstream}",
                     "arch": "ppc64le",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "10",
                     "repoid": "{appstream}",
                     "arch": "s390x",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         },
@@ -174,36 +190,37 @@
                     "repoid": "{powertools}",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "10",
                     "repoid": "{powertools}",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "10",
                     "repoid": "{powertools}",
                     "arch": "ppc64le",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "10",
                     "repoid": "{powertools}",
                     "arch": "s390x",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         }
     ],
     "provided_data_streams": [
-        "1.1",
-        "2.0",
-        "3.0",
-        "3.1"
+        "4.0"
     ]
 }

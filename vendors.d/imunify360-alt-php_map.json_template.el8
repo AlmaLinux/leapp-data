@@ -1,6 +1,6 @@
 {
-    "datetime": "202409180900Z",
-    "version_format": "1.2.1",
+    "datetime": "202506241030Z",
+    "version_format": "1.3.0",
     "mapping": [
         {
             "source_major_version": "7",
@@ -21,6 +21,7 @@
                     "repoid": "imunify360-alt-php",
                     "major_version": "7",
                     "repo_type": "rpm",
+                    "distro": "{distro}",
                     "arch": "x86_64",
                     "channel": "ga"
                 }
@@ -33,6 +34,7 @@
                     "repoid": "cloudlinux8-imunify360-alt-php",
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "{distro}",
                     "arch": "x86_64",
                     "channel": "ga"
                 }

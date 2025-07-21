@@ -1,6 +1,6 @@
 {
-    "datetime": "202412181645Z",
-    "version_format": "1.2.1",
+    "datetime": "202506241030Z",
+    "version_format": "1.3.0",
     "mapping": [
         {
             "source_major_version": "9",
@@ -36,21 +36,24 @@
                     "repoid": "docker-ce-stable",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "9",
                     "repoid": "docker-ce-stable",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "9",
                     "repoid": "docker-ce-stable",
                     "arch": "ppc64le",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         },
@@ -62,21 +65,24 @@
                     "repoid": "docker-ce-test",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "9",
                     "repoid": "docker-ce-test",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "9",
                     "repoid": "docker-ce-test",
                     "arch": "ppc64le",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         },
@@ -88,21 +94,24 @@
                     "repoid": "docker-ce-nightly",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "9",
                     "repoid": "docker-ce-nightly",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "9",
                     "repoid": "docker-ce-nightly",
                     "arch": "ppc64le",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         },
@@ -114,14 +123,16 @@
                     "repoid": "el10-docker-ce-stable",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "10",
                     "repoid": "el10-docker-ce-stable",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         },
@@ -133,22 +144,21 @@
                     "repoid": "el10-docker-ce-test",
                     "arch": "x86_64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 },
                 {
                     "major_version": "10",
                     "repoid": "el10-docker-ce-test",
                     "arch": "aarch64",
                     "channel": "ga",
-                    "repo_type": "rpm"
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
                 }
             ]
         }
     ],
     "provided_data_streams": [
-        "1.1",
-        "2.0",
-        "3.0",
-        "3.1"
+        "4.0"
     ]
 }

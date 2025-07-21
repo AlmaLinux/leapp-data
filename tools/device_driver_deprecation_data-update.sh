@@ -9,10 +9,10 @@ dist_names="almalinux almalinux-kitten"
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 
 # Distros list to copy device driver deprecation data file for
-dists="centos oraclelinux rocky"
+dists="centos"
 
 # Data stream version, which is currently supported by ELevate
-provided_data_streams="3.3"
+provided_data_streams="4.0"
 
 # Date stamp to add to device driver deprecation data
 date_stamp=$(date -u '+%Y%m%d%H%M%S')

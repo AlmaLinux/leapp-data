@@ -1,6 +1,6 @@
 {
-    "datetime": "202204020934Z",
-    "version_format": "1.2.1",
+    "datetime": "202506241030Z",
+    "version_format": "1.3.0",
     "mapping": [
         {
             "source_major_version": "8",
@@ -33,6 +33,7 @@
                     "repoid": "imunify360",
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "{distro}",
                     "arch": "x86_64",
                     "channel": "ga"
                 }
@@ -45,6 +46,7 @@
                     "repoid": "cloudlinux-imunify360",
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "{distro}",
                     "arch": "x86_64",
                     "channel": "ga"
                 }
@@ -57,6 +59,7 @@
                     "repoid": "cloudlinux9-imunify360",
                     "major_version": "9",
                     "repo_type": "rpm",
+                    "distro": "{distro}",
                     "arch": "x86_64",
                     "channel": "ga"
                 }
@@ -69,6 +72,7 @@
                     "repoid": "imunify360-testing",
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "{distro}",
                     "arch": "x86_64",
                     "channel": "beta"
                 }
@@ -81,6 +85,7 @@
                     "repoid": "cloudlinux-imunify360-testing",
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "{distro}",
                     "arch": "x86_64",
                     "channel": "beta"
                 }
@@ -93,6 +98,7 @@
                     "repoid": "cloudlinux9-imunify360-testing",
                     "major_version": "9",
                     "repo_type": "rpm",
+                    "distro": "{distro}",
                     "arch": "x86_64",
                     "channel": "beta"
                 }

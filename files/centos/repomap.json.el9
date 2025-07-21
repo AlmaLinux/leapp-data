@@ -1,8 +1,8 @@
 {
-    "datetime": "2024101101250Z",
-    "version_format": "1.2.1",
+    "datetime": "202506241030Z",
+    "version_format": "1.3.0",
     "provided_data_streams": [
-        "3.0"
+        "4.0"
     ],
     "mapping": [
         {
@@ -62,6 +62,7 @@
                     "repoid": "baseos",
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "arch": "x86_64",
                     "channel": "ga"
                 },
@@ -69,6 +70,7 @@
                     "repoid": "baseos",
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "arch": "aarch64",
                     "channel": "ga"
                 },
@@ -76,6 +78,7 @@
                     "repoid": "baseos",
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "arch": "ppc64le",
                     "channel": "ga"
                 }
@@ -87,6 +90,7 @@
                 {
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "appstream",
                     "arch": "x86_64",
                     "channel": "ga"
@@ -94,6 +98,7 @@
                 {
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "appstream",
                     "arch": "aarch64",
                     "channel": "ga"
@@ -101,6 +106,7 @@
                 {
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "appstream",
                     "arch": "ppc64le",
                     "channel": "ga"
@@ -114,6 +120,7 @@
                     "major_version": "8",
                     "repoid": "powertools",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "arch": "x86_64",
                     "channel": "ga"
                 },
@@ -121,6 +128,7 @@
                     "major_version": "8",
                     "repoid": "powertools",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "arch": "aarch64",
                     "channel": "ga"
                 },
@@ -128,6 +136,7 @@
                     "major_version": "8",
                     "repoid": "powertools",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "arch": "ppc64le",
                     "channel": "ga"
                 }
@@ -139,6 +148,7 @@
                 {
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "ha",
                     "arch": "x86_64",
                     "channel": "ga"
@@ -146,6 +156,7 @@
                 {
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "ha",
                     "arch": "aarch64",
                     "channel": "ga"
@@ -153,6 +164,7 @@
                 {
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "ha",
                     "arch": "ppc64le",
                     "channel": "ga"
@@ -165,6 +177,7 @@
                 {
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "extras",
                     "arch": "x86_64",
                     "channel": "ga"
@@ -172,6 +185,7 @@
                 {
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "extras",
                     "arch": "aarch64",
                     "channel": "ga"
@@ -179,6 +193,7 @@
                 {
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "extras",
                     "arch": "ppc64le",
                     "channel": "ga"
@@ -191,6 +206,7 @@
                 {
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "rt",
                     "arch": "x86_64",
                     "channel": "ga"
@@ -203,6 +219,7 @@
                 {
                     "major_version": "8",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "nfv",
                     "arch": "x86_64",
                     "channel": "ga"
@@ -216,6 +233,7 @@
                     "repoid": "centos9-baseos",
                     "major_version": "9",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "arch": "x86_64",
                     "channel": "ga"
                 },
@@ -223,6 +241,7 @@
                     "repoid": "centos9-baseos",
                     "major_version": "9",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "arch": "aarch64",
                     "channel": "ga"
                 },
@@ -230,6 +249,7 @@
                     "repoid": "centos9-baseos",
                     "major_version": "9",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "arch": "ppc64le",
                     "channel": "ga"
                 }
@@ -241,6 +261,7 @@
                 {
                     "major_version": "9",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "centos9-appstream",
                     "arch": "x86_64",
                     "channel": "ga"
@@ -248,6 +269,7 @@
                 {
                     "major_version": "9",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "centos9-appstream",
                     "arch": "aarch64",
                     "channel": "ga"
@@ -255,6 +277,7 @@
                 {
                     "major_version": "9",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "centos9-appstream",
                     "arch": "ppc64le",
                     "channel": "ga"
@@ -268,6 +291,7 @@
                     "major_version": "9",
                     "repoid": "centos9-crb",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "arch": "x86_64",
                     "channel": "ga"
                 },
@@ -275,6 +299,7 @@
                     "major_version": "9",
                     "repoid": "centos9-crb",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "arch": "aarch64",
                     "channel": "ga"
                 },
@@ -282,6 +307,7 @@
                     "major_version": "9",
                     "repoid": "centos9-crb",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "arch": "ppc64le",
                     "channel": "ga"
                 }
@@ -293,6 +319,7 @@
                 {
                     "major_version": "9",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "centos9-ha",
                     "arch": "x86_64",
                     "channel": "ga"
@@ -300,6 +327,7 @@
                 {
                     "major_version": "9",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "centos9-ha",
                     "arch": "aarch64",
                     "channel": "ga"
@@ -307,6 +335,7 @@
                 {
                     "major_version": "9",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "centos9-ha",
                     "arch": "ppc64le",
                     "channel": "ga"
@@ -319,6 +348,7 @@
                 {
                     "major_version": "9",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "centos9-extras",
                     "arch": "x86_64",
                     "channel": "ga"
@@ -326,6 +356,7 @@
                 {
                     "major_version": "9",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "centos9-extras",
                     "arch": "aarch64",
                     "channel": "ga"
@@ -333,6 +364,7 @@
                 {
                     "major_version": "9",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "centos9-extras",
                     "arch": "ppc64le",
                     "channel": "ga"
@@ -345,6 +377,7 @@
                 {
                     "major_version": "9",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "centos9-rt",
                     "arch": "x86_64",
                     "channel": "ga"
@@ -357,6 +390,7 @@
                 {
                     "major_version": "9",
                     "repo_type": "rpm",
+                    "distro": "centos",
                     "repoid": "centos9-nfv",
                     "arch": "x86_64",
                     "channel": "ga"

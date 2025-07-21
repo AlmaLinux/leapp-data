@@ -35333,7 +35333,7 @@
                         "repository": "el8-appstream"
                     }
                 ],
-                "set_id": 26221
+                "set_id": 36046
             },
             "release": {
                 "major_version": 8,
@@ -35358,7 +35358,7 @@
                         "repository": "epel"
                     }
                 ],
-                "set_id": 26222
+                "set_id": 36047
             },
             "initial_release": {
                 "major_version": 7,
@@ -35374,7 +35374,7 @@
                         "repository": "el8-powertools"
                     }
                 ],
-                "set_id": 26223
+                "set_id": 36048
             },
             "release": {
                 "major_version": 8,
@@ -35399,7 +35399,7 @@
                         "repository": "epel"
                     }
                 ],
-                "set_id": 26224
+                "set_id": 36049
             },
             "initial_release": {
                 "major_version": 7,
@@ -252928,7 +252928,7 @@
                 "ppc64le"
             ],
             "description": "",
-            "id": 19605,
+            "id": 35773,
             "in_packageset": {
                 "package": [
                     {
@@ -252963,7 +252963,7 @@
                 "ppc64le"
             ],
             "description": "",
-            "id": 19606,
+            "id": 35774,
             "in_packageset": {
                 "package": [
                     {
@@ -252998,7 +252998,7 @@
                 "ppc64le"
             ],
             "description": "",
-            "id": 19607,
+            "id": 35775,
             "in_packageset": {
                 "package": [
                     {
@@ -253033,7 +253033,7 @@
                 "ppc64le"
             ],
             "description": "",
-            "id": 19608,
+            "id": 35776,
             "in_packageset": {
                 "package": [
                     {
@@ -353246,9 +353246,7 @@
         }
     ],
     "provided_data_streams": [
-        "2.0",
-        "3.0",
-        "3.1"
+        "4.0"
     ],
-    "timestamp": "202308241055Z"
+    "timestamp": "202506241030Z"
 }
