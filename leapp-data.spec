@@ -1,4 +1,4 @@
-%global pes_events_build_date 20250624
+%global pes_events_build_date 20250711
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.10
-Release:	1%{?dist}.%{pes_events_build_date}
+Release:	2%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -159,6 +159,15 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Mon Jul 21 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-2.20250711
+- Update data to the upstream most recent state:
+ - Device driver deprecation data:
+  - leapp-repository sha 93cae9c88e964d6485ad8314ae65deb0ab676862
+ - PES data:
+  - pes-events.json: upstream state 93cae9c88e964d6485ad8314ae65deb0ab676862
+  - epel_pes.json_template:
+   - remove duplicated id and set_id
+
 * Wed Jul 16 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-1.20250624
 - Update all data into stream 4.0
 - Update all repomap files into new format version 1.3.0. Add 'distro' field
