@@ -24,7 +24,7 @@ release_notes_sha=master
 # Upstream leapp-repository GitHub URL, device driver deprecation data (in JSON format) file name, and Git SHA
 leapp_repository_url=https://raw.githubusercontent.com/oamg/leapp-repository
 device_driver_deprecation_data_json="device_driver_deprecation_data.json"
-leapp_repository_sha=9c621a91199c093f603ef30ba3daf59010c20e47
+leapp_repository_sha=93cae9c88e964d6485ad8314ae65deb0ab676862
 
 printf "\nDownload %s at %s\n" ${device_driver_deprecation_data_json} ${leapp_repository_sha}
 curl -s -o ${device_driver_deprecation_data_json} ${leapp_repository_url}/${leapp_repository_sha}/etc/leapp/files/${device_driver_deprecation_data_json} || exit 1

@@ -295,6 +295,8 @@ jobs:
               res=$?
               ;;
             8)
+              # TODO: workaround for Rocky's rocky-logos package, and conflict on /usr/share/redhat-logos file
+              [ ${{ env.source_distro }} = "rocky" ] && rpm -e --nodeps rocky-logos || true
               sed -i 's/\(PermitRootLogin yes\)/\1 # inhibited/g' /etc/ssh/sshd_config;
               sed -i s/^AllowZoneDrifting=.*/AllowZoneDrifting=no/ /etc/firewalld/firewalld.conf;
               leapp answer --section check_vdo.confirm=True;
