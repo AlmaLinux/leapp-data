@@ -463,6 +463,11 @@ jobs:
           res=$?
         fi
 
+        if [ "${vendor}" = "firmware" ]; then
+          sudo dnf install -y linux-firmware
+          res=$?
+        fi
+
         exit ${res}
         EOF
         chmod +x Vendors.sh
@@ -616,6 +621,11 @@ jobs:
       if: inputs.vendors == 'all' && env.target_release == '8'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh imunify ${{ env.source_release }}" || exit 1
+
+    - name: Linux Firmware
+      if: inputs.vendors == 'all'
+      run: |
+        sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh firmware ${{ env.source_release }}" || exit 1
 
     - name: leapp preupgrade
       id: leapp-preupgrade
