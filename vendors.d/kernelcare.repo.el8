@@ -5,4 +5,4 @@ name=kernelcare
 baseurl=https://repo.cloudlinux.com/kernelcare/8/$basearch
 enabled=1
 gpgcheck=1
-gpgkey=https://repo.cloudlinux.com/kernelcare/RPM-GPG-KEY-KernelCare
+gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/kernelcare.gpg

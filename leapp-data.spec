@@ -172,6 +172,7 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 %changelog
 * Fri Aug 08 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.9-6.20250729
+- Vendor kernelcare: use local GPG key instead of remote one
 - Update data to the upstream most recent state:
  - PES data:
   - pes-events.json: upstream state 300e1579c28d630a9c0be2599083a79d441cc6b2
