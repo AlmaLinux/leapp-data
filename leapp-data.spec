@@ -1,4 +1,4 @@
-%global pes_events_build_date 20250711
+%global pes_events_build_date 20250729
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.10
-Release:	2%{?dist}.%{pes_events_build_date}
+Release:	3%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -159,6 +159,15 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Thu Aug 07 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-3.20250729
+- Vendor kernelcare: use local GPG key instead of remote one
+- Update data to the upstream most recent state:
+ - PES data:
+  - pes-events.json: upstream state 300e1579c28d630a9c0be2599083a79d441cc6b2
+  - epel_pes.json_template:
+   - remove duplicated id and set_id
+  - config.joson (almalinux, almalinux-kitten): add redhat-cloud-client-configuration-cdn to the removable packages list, with scenarios: 9to9
+
 * Mon Jul 21 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-2.20250711
 - Update data to the upstream most recent state:
  - Device driver deprecation data:
