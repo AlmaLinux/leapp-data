@@ -1,5 +1,5 @@
 {
-    "timestamp": "202507110905Z",
+    "timestamp": "202507291505Z",
     "provided_data_streams": [
         "3.3"
     ],
@@ -250626,7 +250626,14 @@
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            }
                         ],
                         "name": "php-pecl-xdebug",
                         "repository": "appstream"
@@ -250641,7 +250648,17 @@
             },
             "modulestream_maps": [
                 {
-                    "in_modulestream": null,
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
                     "out_modulestream": null
                 }
             ],
@@ -340222,6 +340239,10 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
                             }
                         ],
                         "name": "php-recode",
@@ -340296,6 +340317,14 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
                             }
                         ],
                         "name": "php-xmlrpc",
@@ -361446,6 +361475,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php",
@@ -361466,6 +361507,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361475,7 +361537,7 @@
                             null
                         ],
                         "name": "php",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14230
@@ -361502,6 +361564,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-bcmath",
@@ -361522,6 +361596,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361531,7 +361626,7 @@
                             null
                         ],
                         "name": "php-bcmath",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14232
@@ -361558,6 +361653,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-cli",
@@ -361578,6 +361685,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361587,7 +361715,7 @@
                             null
                         ],
                         "name": "php-cli",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14234
@@ -361614,6 +361742,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-common",
@@ -361634,6 +361774,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361643,7 +361804,7 @@
                             null
                         ],
                         "name": "php-common",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14236
@@ -361670,6 +361831,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-dba",
@@ -361690,6 +361863,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361699,7 +361893,7 @@
                             null
                         ],
                         "name": "php-dba",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14238
@@ -361726,6 +361920,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-dbg",
@@ -361746,6 +361952,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361755,7 +361982,7 @@
                             null
                         ],
                         "name": "php-dbg",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14240
@@ -361782,6 +362009,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-devel",
@@ -361802,6 +362041,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361811,7 +362071,7 @@
                             null
                         ],
                         "name": "php-devel",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14242
@@ -361838,6 +362098,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-embedded",
@@ -361858,6 +362130,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361867,7 +362160,7 @@
                             null
                         ],
                         "name": "php-embedded",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14244
@@ -361894,6 +362187,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-enchant",
@@ -361914,6 +362219,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361923,7 +362249,7 @@
                             null
                         ],
                         "name": "php-enchant",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14246
@@ -361950,6 +362276,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-fpm",
@@ -361970,6 +362308,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361979,7 +362338,7 @@
                             null
                         ],
                         "name": "php-fpm",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14248
@@ -362006,6 +362365,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-gd",
@@ -362026,6 +362397,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -362035,7 +362427,7 @@
                             null
                         ],
                         "name": "php-gd",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14250
@@ -362062,6 +362454,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-gmp",
@@ -362082,6 +362486,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -362091,7 +362516,7 @@
                             null
                         ],
                         "name": "php-gmp",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14252
@@ -362118,6 +362543,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-intl",
@@ -362138,6 +362575,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -362147,7 +362605,7 @@
                             null
                         ],
                         "name": "php-intl",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14254
@@ -362159,7 +362617,7 @@
             }
         },
         {
-            "action": 6,
+            "action": 1,
             "architectures": [
                 "aarch64",
                 "ppc64le",
@@ -362174,6 +362632,14 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
                             }
                         ],
                         "name": "php-json",
@@ -362187,27 +362653,8 @@
                 "minor_version": 6,
                 "os_name": "AlmaLinux"
             },
-            "modulestream_maps": [
-                {
-                    "in_modulestream": {
-                        "name": "php",
-                        "stream": "7.2"
-                    },
-                    "out_modulestream": null
-                }
-            ],
-            "out_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "php-json",
-                        "repository": "almalinux9-baseos"
-                    }
-                ],
-                "set_id": 14256
-            },
+            "modulestream_maps": [],
+            "out_packageset": null,
             "release": {
                 "major_version": 9,
                 "minor_version": 0,
@@ -362230,6 +362677,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-ldap",
@@ -362250,6 +362709,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -362259,7 +362739,7 @@
                             null
                         ],
                         "name": "php-ldap",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14258
@@ -362286,6 +362766,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-mbstring",
@@ -362306,6 +362798,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -362315,7 +362828,7 @@
                             null
                         ],
                         "name": "php-mbstring",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14260
@@ -362342,6 +362855,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-mysqlnd",
@@ -362362,6 +362887,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -362371,7 +362917,7 @@
                             null
                         ],
                         "name": "php-mysqlnd",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14262
@@ -362398,6 +362944,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-odbc",
@@ -362418,6 +362976,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -362427,7 +363006,7 @@
                             null
                         ],
                         "name": "php-odbc",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14264
@@ -362454,6 +363033,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-opcache",
@@ -362474,6 +363065,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -362483,7 +363095,7 @@
                             null
                         ],
                         "name": "php-opcache",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14266
@@ -362510,6 +363122,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-pdo",
@@ -362530,6 +363154,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -362539,7 +363184,7 @@
                             null
                         ],
                         "name": "php-pdo",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14268
@@ -362628,7 +363273,7 @@
                             null
                         ],
                         "name": "php-pear",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14270
@@ -362655,6 +363300,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-pecl-apcu",
@@ -362673,6 +363330,27 @@
                     "in_modulestream": {
                         "name": "php",
                         "stream": "7.2"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
                     },
                     "out_modulestream": null
                 }
@@ -362711,6 +363389,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-pecl-apcu-devel",
@@ -362731,6 +363421,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -362740,7 +363451,7 @@
                             null
                         ],
                         "name": "php-pecl-apcu-devel",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14274
@@ -362767,6 +363478,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-pecl-zip",
@@ -362787,6 +363510,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -362796,7 +363540,7 @@
                             null
                         ],
                         "name": "php-pecl-zip",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14276
@@ -362823,6 +363567,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-pgsql",
@@ -362843,6 +363599,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -362852,7 +363629,7 @@
                             null
                         ],
                         "name": "php-pgsql",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14278
@@ -362879,6 +363656,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-process",
@@ -362899,6 +363688,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -362908,7 +363718,7 @@
                             null
                         ],
                         "name": "php-process",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14280
@@ -362935,6 +363745,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-snmp",
@@ -362955,6 +363777,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -362964,7 +363807,7 @@
                             null
                         ],
                         "name": "php-snmp",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14282
@@ -362991,6 +363834,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-soap",
@@ -363011,6 +363866,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -363020,7 +363896,7 @@
                             null
                         ],
                         "name": "php-soap",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14284
@@ -363047,6 +363923,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-xml",
@@ -363067,6 +363955,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -363076,7 +363985,7 @@
                             null
                         ],
                         "name": "php-xml",
-                        "repository": "almalinux9-baseos"
+                        "repository": "almalinux9-appstream"
                     }
                 ],
                 "set_id": 14286
@@ -694300,6 +695209,612 @@
             }
         },
         {
+            "action": 2,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19640,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "lftp",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26270
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 2,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19641,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "ftp",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26271
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 2,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19642,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "vsftpd",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26272
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19643,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "hunspell-ka",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26273
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 6,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19644,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
+                            }
+                        ],
+                        "name": "php-ffi",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 26274
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "php-ffi",
+                        "repository": "almalinux9-appstream"
+                    }
+                ],
+                "set_id": 26275
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 2,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19645,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            {
+                                "name": "php",
+                                "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            }
+                        ],
+                        "name": "php-json",
+                        "repository": "almalinux8-appstream"
+                    }
+                ],
+                "set_id": 26276
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 2,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19646,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            {
+                                "name": "php",
+                                "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            }
+                        ],
+                        "name": "php-recode",
+                        "repository": "almalinux8-appstream"
+                    }
+                ],
+                "set_id": 26277
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 2,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19647,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            {
+                                "name": "php",
+                                "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            }
+                        ],
+                        "name": "php-xmlrpc",
+                        "repository": "almalinux8-appstream"
+                    }
+                ],
+                "set_id": 26278
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19648,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "perl-XS-Parse-Keyword-Builder",
+                        "repository": "almalinux10-crb"
+                    }
+                ],
+                "set_id": 26279
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19649,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "bindgen-cli",
+                        "repository": "almalinux10-crb"
+                    }
+                ],
+                "set_id": 26280
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19650,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "bindgen-cli",
+                        "repository": "almalinux9-crb"
+                    }
+                ],
+                "set_id": 26281
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 6,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19651,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "cbindgen",
+                        "repository": "almalinux10-crb"
+                    }
+                ],
+                "set_id": 26282
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19652,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "cbindgen",
+                        "repository": "almalinux9-crb"
+                    }
+                ],
+                "set_id": 26283
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 6,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19653,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "image-builder",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26284
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19654,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "image-builder",
+                        "repository": "almalinux9-appstream"
+                    }
+                ],
+                "set_id": 26285
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 6,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19655,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "fips-provider-next",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26286
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
             "action": 3,
             "architectures": [
                 "x86_64",
@@ -694307,7 +695822,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19640,
+            "id": 19656,
             "in_packageset": {
                 "package": [
                     {
@@ -694318,7 +695833,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 26271
+                "set_id": 26288
             },
             "initial_release": {
                 "major_version": 7,
@@ -694343,7 +695858,7 @@
                         "repository": "almalinux8-baseos"
                     }
                 ],
-                "set_id": 26270
+                "set_id": 26287
             },
             "release": {
                 "major_version": 8,
@@ -694361,7 +695876,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19641,
+            "id": 19657,
             "in_packageset": {
                 "package": [
                     {
@@ -694372,7 +695887,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 26272
+                "set_id": 26289
             },
             "initial_release": {
                 "major_version": 7,
@@ -694395,7 +695910,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19642,
+            "id": 19658,
             "in_packageset": {
                 "package": [
                     {
@@ -694406,7 +695921,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 26274
+                "set_id": 26291
             },
             "initial_release": {
                 "major_version": 7,
@@ -694431,7 +695946,7 @@
                         "repository": "almalinux8-baseos"
                     }
                 ],
-                "set_id": 26273
+                "set_id": 26290
             },
             "release": {
                 "major_version": 8,
@@ -694449,7 +695964,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19643,
+            "id": 19659,
             "in_packageset": {
                 "package": [
                     {
@@ -694460,7 +695975,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 26276
+                "set_id": 26293
             },
             "initial_release": {
                 "major_version": 7,
@@ -694485,7 +696000,7 @@
                         "repository": "almalinux8-baseos"
                     }
                 ],
-                "set_id": 26275
+                "set_id": 26292
             },
             "release": {
                 "major_version": 8,
@@ -694503,7 +696018,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19644,
+            "id": 19660,
             "in_packageset": {
                 "package": [
                     {
@@ -694514,7 +696029,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 26278
+                "set_id": 26295
             },
             "initial_release": {
                 "major_version": 7,
@@ -694539,7 +696054,7 @@
                         "repository": "almalinux8-baseos"
                     }
                 ],
-                "set_id": 26277
+                "set_id": 26294
             },
             "release": {
                 "major_version": 8,
@@ -694557,7 +696072,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19645,
+            "id": 19661,
             "in_packageset": {
                 "package": [
                     {
@@ -694568,7 +696083,7 @@
                         "repository": "powertools"
                     }
                 ],
-                "set_id": 26279
+                "set_id": 26296
             },
             "initial_release": {
                 "major_version": 8,
@@ -694600,7 +696115,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19646,
+            "id": 19662,
             "in_packageset": {
                 "package": [
                     {
@@ -694611,7 +696126,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26280
+                "set_id": 26297
             },
             "initial_release": {
                 "major_version": 8,
@@ -694643,7 +696158,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19647,
+            "id": 19663,
             "in_packageset": {
                 "package": [
                     {
@@ -694654,7 +696169,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26281
+                "set_id": 26298
             },
             "initial_release": {
                 "major_version": 8,
@@ -694686,7 +696201,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19648,
+            "id": 19664,
             "in_packageset": {
                 "package": [
                     {
@@ -694697,7 +696212,7 @@
                         "repository": "baseos"
                     }
                 ],
-                "set_id": 26282
+                "set_id": 26299
             },
             "initial_release": {
                 "major_version": 8,
@@ -694729,7 +696244,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19649,
+            "id": 19665,
             "in_packageset": {
                 "package": [
                     {
@@ -694740,7 +696255,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26283
+                "set_id": 26300
             },
             "initial_release": {
                 "major_version": 8,
@@ -694772,7 +696287,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19650,
+            "id": 19666,
             "in_packageset": {
                 "package": [
                     {
@@ -694783,7 +696298,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26284
+                "set_id": 26301
             },
             "initial_release": {
                 "major_version": 8,
@@ -694815,7 +696330,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19651,
+            "id": 19667,
             "in_packageset": {
                 "package": [
                     {
@@ -694826,7 +696341,7 @@
                         "repository": "baseos"
                     }
                 ],
-                "set_id": 26285
+                "set_id": 26302
             },
             "initial_release": {
                 "major_version": 8,
@@ -694858,7 +696373,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19652,
+            "id": 19668,
             "in_packageset": {
                 "package": [
                     {
@@ -694869,7 +696384,7 @@
                         "repository": "baseos"
                     }
                 ],
-                "set_id": 26286
+                "set_id": 26303
             },
             "initial_release": {
                 "major_version": 8,
@@ -694901,7 +696416,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19653,
+            "id": 19669,
             "in_packageset": {
                 "package": [
                     {
@@ -694912,7 +696427,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26287
+                "set_id": 26304
             },
             "initial_release": {
                 "major_version": 8,
@@ -694944,7 +696459,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19654,
+            "id": 19670,
             "in_packageset": {
                 "package": [
                     {
@@ -694955,7 +696470,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26288
+                "set_id": 26305
             },
             "initial_release": {
                 "major_version": 8,
@@ -694987,7 +696502,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19655,
+            "id": 19671,
             "in_packageset": {
                 "package": [
                     {
@@ -694998,7 +696513,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26289
+                "set_id": 26306
             },
             "initial_release": {
                 "major_version": 8,
@@ -695030,7 +696545,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19656,
+            "id": 19672,
             "in_packageset": {
                 "package": [
                     {
@@ -695041,7 +696556,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26290
+                "set_id": 26307
             },
             "initial_release": {
                 "major_version": 8,
@@ -695073,7 +696588,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19657,
+            "id": 19673,
             "in_packageset": {
                 "package": [
                     {
@@ -695084,7 +696599,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26291
+                "set_id": 26308
             },
             "initial_release": {
                 "major_version": 8,
@@ -695116,7 +696631,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19658,
+            "id": 19674,
             "in_packageset": {
                 "package": [
                     {
@@ -695127,7 +696642,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26292
+                "set_id": 26309
             },
             "initial_release": {
                 "major_version": 8,
@@ -695159,7 +696674,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19659,
+            "id": 19675,
             "in_packageset": {
                 "package": [
                     {
@@ -695170,7 +696685,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26293
+                "set_id": 26310
             },
             "initial_release": {
                 "major_version": 8,
@@ -695202,7 +696717,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19660,
+            "id": 19676,
             "in_packageset": {
                 "package": [
                     {
@@ -695213,7 +696728,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26294
+                "set_id": 26311
             },
             "initial_release": {
                 "major_version": 8,
@@ -695235,607 +696750,6 @@
                 "os_name": "AlmaLinux",
                 "tag": null,
                 "z_stream": null
-            }
-        },
-        {
-            "action": 1,
-            "architectures": [
-                "x86_64"
-            ],
-            "id": 19661,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "sl-release-notes",
-                        "repository": "sl"
-                    }
-                ],
-                "set_id": 26295
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "scientific"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "AlmaLinux"
-            }
-        },
-        {
-            "action": 1,
-            "architectures": [
-                "x86_64"
-            ],
-            "id": 19662,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "sl7-upgrade",
-                        "repository": "sl"
-                    }
-                ],
-                "set_id": 26296
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "scientific"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "AlmaLinux"
-            }
-        },
-        {
-            "action": 1,
-            "architectures": [
-                "x86_64"
-            ],
-            "id": 19663,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "yum-conf-extras",
-                        "repository": "repos"
-                    }
-                ],
-                "set_id": 26297
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "scientific"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "AlmaLinux"
-            }
-        },
-        {
-            "action": 1,
-            "architectures": [
-                "x86_64"
-            ],
-            "id": 19664,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "yum-conf-repos",
-                        "repository": "repos"
-                    }
-                ],
-                "set_id": 26298
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "scientific"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "AlmaLinux"
-            }
-        },
-        {
-            "action": 1,
-            "architectures": [
-                "x86_64"
-            ],
-            "id": 19665,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "yum-conf-sl7x",
-                        "repository": "sl"
-                    }
-                ],
-                "set_id": 26299
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "scientific"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "AlmaLinux"
-            }
-        },
-        {
-            "action": 1,
-            "architectures": [
-                "x86_64"
-            ],
-            "id": 19666,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "sl-bookmarks",
-                        "repository": "sl"
-                    }
-                ],
-                "set_id": 26300
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "scientific"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "AlmaLinux"
-            }
-        },
-        {
-            "action": 3,
-            "architectures": [
-                "x86_64",
-                "aarch64"
-            ],
-            "id": 19667,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "sl-indexhtml",
-                        "repository": "sl"
-                    }
-                ],
-                "set_id": 26302
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "scientific",
-                "tag": null,
-                "z_stream": null
-            },
-            "modulestream_maps": [
-                {
-                    "in_modulestream": null,
-                    "out_modulestream": null
-                }
-            ],
-            "out_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "almalinux-indexhtml",
-                        "repository": "almalinux8-baseos"
-                    }
-                ],
-                "set_id": 26301
-            },
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "AlmaLinux",
-                "tag": null,
-                "z_stream": null
-            }
-        },
-        {
-            "action": 3,
-            "architectures": [
-                "x86_64",
-                "aarch64"
-            ],
-            "id": 19668,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "sl-logos",
-                        "repository": "sl"
-                    }
-                ],
-                "set_id": 26304
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "scientific",
-                "tag": null,
-                "z_stream": null
-            },
-            "modulestream_maps": [
-                {
-                    "in_modulestream": null,
-                    "out_modulestream": null
-                }
-            ],
-            "out_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "almalinux-logos",
-                        "repository": "almalinux8-appstream"
-                    }
-                ],
-                "set_id": 26303
-            },
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "AlmaLinux",
-                "tag": null,
-                "z_stream": null
-            }
-        },
-        {
-            "action": 3,
-            "architectures": [
-                "x86_64",
-                "aarch64"
-            ],
-            "id": 19669,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "sl-release",
-                        "repository": "sl"
-                    }
-                ],
-                "set_id": 26306
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "scientific",
-                "tag": null,
-                "z_stream": null
-            },
-            "modulestream_maps": [
-                {
-                    "in_modulestream": null,
-                    "out_modulestream": null
-                }
-            ],
-            "out_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "almalinux-release",
-                        "repository": "almalinux8-baseos"
-                    }
-                ],
-                "set_id": 26305
-            },
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "AlmaLinux",
-                "tag": null,
-                "z_stream": null
-            }
-        },
-        {
-            "action": 3,
-            "architectures": [
-                "x86_64",
-                "aarch64"
-            ],
-            "id": 19670,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "libssh2",
-                        "repository": "sl"
-                    }
-                ],
-                "set_id": 26308
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "scientific",
-                "tag": null,
-                "z_stream": null
-            },
-            "modulestream_maps": [
-                {
-                    "in_modulestream": null,
-                    "out_modulestream": null
-                }
-            ],
-            "out_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "libssh",
-                        "repository": "almalinux8-baseos"
-                    }
-                ],
-                "set_id": 26307
-            },
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "AlmaLinux",
-                "tag": null,
-                "z_stream": null
-            }
-        },
-        {
-            "action": 1,
-            "architectures": [
-                "x86_64"
-            ],
-            "id": 19671,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "kmod-openafs-1.6-sl",
-                        "repository": "sl"
-                    }
-                ],
-                "set_id": 26309
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "scientific"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "AlmaLinux"
-            }
-        },
-        {
-            "action": 3,
-            "architectures": [
-                "x86_64",
-                "aarch64"
-            ],
-            "id": 19672,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "yum-plugin-upgrade-helper",
-                        "repository": "sl"
-                    }
-                ],
-                "set_id": 26311
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "scientific",
-                "tag": null,
-                "z_stream": null
-            },
-            "modulestream_maps": [
-                {
-                    "in_modulestream": null,
-                    "out_modulestream": null
-                }
-            ],
-            "out_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "yum-utils",
-                        "repository": "almalinux8-baseos"
-                    }
-                ],
-                "set_id": 26310
-            },
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "AlmaLinux",
-                "tag": null,
-                "z_stream": null
-            }
-        },
-        {
-            "action": 1,
-            "architectures": [
-                "x86_64"
-            ],
-            "id": 19673,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "openafs-1.6-sl-devel",
-                        "repository": "sl"
-                    }
-                ],
-                "set_id": 26312
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "scientific"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "AlmaLinux"
-            }
-        },
-        {
-            "action": 1,
-            "architectures": [
-                "x86_64"
-            ],
-            "id": 19674,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "openafs-1.6-sl-authlibs",
-                        "repository": "sl"
-                    }
-                ],
-                "set_id": 26313
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "scientific"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "AlmaLinux"
-            }
-        },
-        {
-            "action": 1,
-            "architectures": [
-                "x86_64"
-            ],
-            "id": 19675,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "openafs-1.6-sl-krb5",
-                        "repository": "sl"
-                    }
-                ],
-                "set_id": 26314
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "scientific"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "AlmaLinux"
-            }
-        },
-        {
-            "action": 1,
-            "architectures": [
-                "x86_64"
-            ],
-            "id": 19676,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "openafs-1.6-sl-server",
-                        "repository": "sl"
-                    }
-                ],
-                "set_id": 26315
-            },
-            "initial_release": {
-                "major_version": 7,
-                "minor_version": 7,
-                "os_name": "scientific"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 8,
-                "minor_version": 0,
-                "os_name": "AlmaLinux"
             }
         },
         {
@@ -695850,11 +696764,11 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "openafs-1.6-sl-kpasswd",
+                        "name": "sl-release-notes",
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26316
+                "set_id": 26312
             },
             "initial_release": {
                 "major_version": 7,
@@ -695881,11 +696795,11 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "openafs-1.6-sl-compat",
+                        "name": "sl7-upgrade",
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26317
+                "set_id": 26313
             },
             "initial_release": {
                 "major_version": 7,
@@ -695912,11 +696826,11 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "openafs-1.6-sl-kernel-source",
-                        "repository": "sl"
+                        "name": "yum-conf-extras",
+                        "repository": "repos"
                     }
                 ],
-                "set_id": 26318
+                "set_id": 26314
             },
             "initial_release": {
                 "major_version": 7,
@@ -695943,11 +696857,11 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "openafs-1.6-sl-module-tools",
-                        "repository": "sl"
+                        "name": "yum-conf-repos",
+                        "repository": "repos"
                     }
                 ],
-                "set_id": 26319
+                "set_id": 26315
             },
             "initial_release": {
                 "major_version": 7,
@@ -695974,11 +696888,11 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "openafs-1.6-sl",
+                        "name": "yum-conf-sl7x",
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26320
+                "set_id": 26316
             },
             "initial_release": {
                 "major_version": 7,
@@ -696005,11 +696919,612 @@
                         "modulestreams": [
                             null
                         ],
-                        "name": "openafs-1.6-sl-plumbing-tools",
+                        "name": "sl-bookmarks",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 26317
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64"
+            ],
+            "id": 19683,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "sl-indexhtml",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 26319
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "almalinux-indexhtml",
+                        "repository": "almalinux8-baseos"
+                    }
+                ],
+                "set_id": 26318
+            },
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64"
+            ],
+            "id": 19684,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "sl-logos",
                         "repository": "sl"
                     }
                 ],
                 "set_id": 26321
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "almalinux-logos",
+                        "repository": "almalinux8-appstream"
+                    }
+                ],
+                "set_id": 26320
+            },
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64"
+            ],
+            "id": 19685,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "sl-release",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 26323
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "almalinux-release",
+                        "repository": "almalinux8-baseos"
+                    }
+                ],
+                "set_id": 26322
+            },
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64"
+            ],
+            "id": 19686,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libssh2",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 26325
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libssh",
+                        "repository": "almalinux8-baseos"
+                    }
+                ],
+                "set_id": 26324
+            },
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 19687,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "kmod-openafs-1.6-sl",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 26326
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64"
+            ],
+            "id": 19688,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "yum-plugin-upgrade-helper",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 26328
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific",
+                "tag": null,
+                "z_stream": null
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "yum-utils",
+                        "repository": "almalinux8-baseos"
+                    }
+                ],
+                "set_id": 26327
+            },
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux",
+                "tag": null,
+                "z_stream": null
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 19689,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "openafs-1.6-sl-devel",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 26329
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 19690,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "openafs-1.6-sl-authlibs",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 26330
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 19691,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "openafs-1.6-sl-krb5",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 26331
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 19692,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "openafs-1.6-sl-server",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 26332
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 19693,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "openafs-1.6-sl-kpasswd",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 26333
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 19694,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "openafs-1.6-sl-compat",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 26334
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 19695,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "openafs-1.6-sl-kernel-source",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 26335
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 19696,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "openafs-1.6-sl-module-tools",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 26336
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 19697,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "openafs-1.6-sl",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 26337
+            },
+            "initial_release": {
+                "major_version": 7,
+                "minor_version": 7,
+                "os_name": "scientific"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 19698,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "openafs-1.6-sl-plumbing-tools",
+                        "repository": "sl"
+                    }
+                ],
+                "set_id": 26338
             },
             "initial_release": {
                 "major_version": 7,
@@ -696032,7 +697547,7 @@
                 "s390x",
                 "x86_64"
             ],
-            "id": 19683,
+            "id": 19699,
             "in_packageset": {
                 "package": [
                     {
@@ -696050,7 +697565,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26323
+                "set_id": 26340
             },
             "initial_release": {
                 "major_version": 8,
@@ -696073,7 +697588,7 @@
                         "repository": "almalinux9-appstream"
                     }
                 ],
-                "set_id": 26322
+                "set_id": 26339
             },
             "release": {
                 "major_version": 9,
