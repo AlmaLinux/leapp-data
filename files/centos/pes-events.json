@@ -1,5 +1,5 @@
 {
-    "timestamp": "202507110905Z",
+    "timestamp": "202507291505Z",
     "provided_data_streams": [
         "3.3"
     ],
@@ -250313,7 +250313,14 @@
                 "package": [
                     {
                         "modulestreams": [
-                            null
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            }
                         ],
                         "name": "php-pecl-xdebug",
                         "repository": "appstream"
@@ -250328,7 +250335,17 @@
             },
             "modulestream_maps": [
                 {
-                    "in_modulestream": null,
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
                     "out_modulestream": null
                 }
             ],
@@ -339170,6 +339187,10 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
                             }
                         ],
                         "name": "php-recode",
@@ -339244,6 +339265,14 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
                             }
                         ],
                         "name": "php-xmlrpc",
@@ -360394,6 +360423,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php",
@@ -360414,6 +360455,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -360423,7 +360485,7 @@
                             null
                         ],
                         "name": "php",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14230
@@ -360450,6 +360512,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-bcmath",
@@ -360470,6 +360544,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -360479,7 +360574,7 @@
                             null
                         ],
                         "name": "php-bcmath",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14232
@@ -360506,6 +360601,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-cli",
@@ -360526,6 +360633,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -360535,7 +360663,7 @@
                             null
                         ],
                         "name": "php-cli",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14234
@@ -360562,6 +360690,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-common",
@@ -360582,6 +360722,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -360591,7 +360752,7 @@
                             null
                         ],
                         "name": "php-common",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14236
@@ -360618,6 +360779,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-dba",
@@ -360638,6 +360811,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -360647,7 +360841,7 @@
                             null
                         ],
                         "name": "php-dba",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14238
@@ -360674,6 +360868,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-dbg",
@@ -360694,6 +360900,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -360703,7 +360930,7 @@
                             null
                         ],
                         "name": "php-dbg",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14240
@@ -360730,6 +360957,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-devel",
@@ -360750,6 +360989,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -360759,7 +361019,7 @@
                             null
                         ],
                         "name": "php-devel",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14242
@@ -360786,6 +361046,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-embedded",
@@ -360806,6 +361078,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -360815,7 +361108,7 @@
                             null
                         ],
                         "name": "php-embedded",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14244
@@ -360842,6 +361135,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-enchant",
@@ -360862,6 +361167,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -360871,7 +361197,7 @@
                             null
                         ],
                         "name": "php-enchant",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14246
@@ -360898,6 +361224,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-fpm",
@@ -360918,6 +361256,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -360927,7 +361286,7 @@
                             null
                         ],
                         "name": "php-fpm",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14248
@@ -360954,6 +361313,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-gd",
@@ -360974,6 +361345,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -360983,7 +361375,7 @@
                             null
                         ],
                         "name": "php-gd",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14250
@@ -361010,6 +361402,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-gmp",
@@ -361030,6 +361434,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361039,7 +361464,7 @@
                             null
                         ],
                         "name": "php-gmp",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14252
@@ -361066,6 +361491,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-intl",
@@ -361086,6 +361523,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361095,7 +361553,7 @@
                             null
                         ],
                         "name": "php-intl",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14254
@@ -361107,7 +361565,7 @@
             }
         },
         {
-            "action": 6,
+            "action": 1,
             "architectures": [
                 "aarch64",
                 "ppc64le",
@@ -361122,6 +361580,14 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
                             }
                         ],
                         "name": "php-json",
@@ -361135,27 +361601,8 @@
                 "minor_version": 6,
                 "os_name": "CentOS"
             },
-            "modulestream_maps": [
-                {
-                    "in_modulestream": {
-                        "name": "php",
-                        "stream": "7.2"
-                    },
-                    "out_modulestream": null
-                }
-            ],
-            "out_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "php-json",
-                        "repository": "centos9-baseos"
-                    }
-                ],
-                "set_id": 14256
-            },
+            "modulestream_maps": [],
+            "out_packageset": null,
             "release": {
                 "major_version": 9,
                 "minor_version": 0,
@@ -361178,6 +361625,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-ldap",
@@ -361198,6 +361657,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361207,7 +361687,7 @@
                             null
                         ],
                         "name": "php-ldap",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14258
@@ -361234,6 +361714,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-mbstring",
@@ -361254,6 +361746,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361263,7 +361776,7 @@
                             null
                         ],
                         "name": "php-mbstring",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14260
@@ -361290,6 +361803,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-mysqlnd",
@@ -361310,6 +361835,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361319,7 +361865,7 @@
                             null
                         ],
                         "name": "php-mysqlnd",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14262
@@ -361346,6 +361892,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-odbc",
@@ -361366,6 +361924,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361375,7 +361954,7 @@
                             null
                         ],
                         "name": "php-odbc",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14264
@@ -361402,6 +361981,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-opcache",
@@ -361422,6 +362013,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361431,7 +362043,7 @@
                             null
                         ],
                         "name": "php-opcache",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14266
@@ -361458,6 +362070,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-pdo",
@@ -361478,6 +362102,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361487,7 +362132,7 @@
                             null
                         ],
                         "name": "php-pdo",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14268
@@ -361576,7 +362221,7 @@
                             null
                         ],
                         "name": "php-pear",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14270
@@ -361603,6 +362248,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-pecl-apcu",
@@ -361621,6 +362278,27 @@
                     "in_modulestream": {
                         "name": "php",
                         "stream": "7.2"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
                     },
                     "out_modulestream": null
                 }
@@ -361659,6 +362337,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-pecl-apcu-devel",
@@ -361679,6 +362369,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361688,7 +362399,7 @@
                             null
                         ],
                         "name": "php-pecl-apcu-devel",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14274
@@ -361715,6 +362426,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-pecl-zip",
@@ -361735,6 +362458,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361744,7 +362488,7 @@
                             null
                         ],
                         "name": "php-pecl-zip",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14276
@@ -361771,6 +362515,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-pgsql",
@@ -361791,6 +362547,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361800,7 +362577,7 @@
                             null
                         ],
                         "name": "php-pgsql",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14278
@@ -361827,6 +362604,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-process",
@@ -361847,6 +362636,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361856,7 +362666,7 @@
                             null
                         ],
                         "name": "php-process",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14280
@@ -361883,6 +362693,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-snmp",
@@ -361903,6 +362725,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361912,7 +362755,7 @@
                             null
                         ],
                         "name": "php-snmp",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14282
@@ -361939,6 +362782,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-soap",
@@ -361959,6 +362814,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -361968,7 +362844,7 @@
                             null
                         ],
                         "name": "php-soap",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14284
@@ -361995,6 +362871,18 @@
                             {
                                 "name": "php",
                                 "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
                             }
                         ],
                         "name": "php-xml",
@@ -362015,6 +362903,27 @@
                         "stream": "7.2"
                     },
                     "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.3"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
                 }
             ],
             "out_packageset": {
@@ -362024,7 +362933,7 @@
                             null
                         ],
                         "name": "php-xml",
-                        "repository": "centos9-baseos"
+                        "repository": "centos9-appstream"
                     }
                 ],
                 "set_id": 14286
@@ -692993,6 +693902,646 @@
             }
         },
         {
+            "action": 2,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19640,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "lftp",
+                        "repository": "centos10-appstream"
+                    }
+                ],
+                "set_id": 26270
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 2,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19641,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "ftp",
+                        "repository": "centos10-appstream"
+                    }
+                ],
+                "set_id": 26271
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 2,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19642,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "vsftpd",
+                        "repository": "centos10-appstream"
+                    }
+                ],
+                "set_id": 26272
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19643,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "hunspell-ka",
+                        "repository": "centos10-appstream"
+                    }
+                ],
+                "set_id": 26273
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 6,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19644,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "8.0"
+                            }
+                        ],
+                        "name": "php-ffi",
+                        "repository": "appstream"
+                    }
+                ],
+                "set_id": 26274
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "7.4"
+                    },
+                    "out_modulestream": null
+                },
+                {
+                    "in_modulestream": {
+                        "name": "php",
+                        "stream": "8.0"
+                    },
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "php-ffi",
+                        "repository": "centos9-appstream"
+                    }
+                ],
+                "set_id": 26275
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 2,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19645,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            {
+                                "name": "php",
+                                "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            }
+                        ],
+                        "name": "php-json",
+                        "repository": "centos8-appstream"
+                    }
+                ],
+                "set_id": 26276
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 2,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19646,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            {
+                                "name": "php",
+                                "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            }
+                        ],
+                        "name": "php-recode",
+                        "repository": "centos8-appstream"
+                    }
+                ],
+                "set_id": 26277
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 2,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19647,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            {
+                                "name": "php",
+                                "stream": "7.2"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.3"
+                            },
+                            {
+                                "name": "php",
+                                "stream": "7.4"
+                            }
+                        ],
+                        "name": "php-xmlrpc",
+                        "repository": "centos8-appstream"
+                    }
+                ],
+                "set_id": 26278
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19648,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "perl-XS-Parse-Keyword-Builder",
+                        "repository": "centos10-crb"
+                    }
+                ],
+                "set_id": 26279
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19649,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "bindgen-cli",
+                        "repository": "centos10-crb"
+                    }
+                ],
+                "set_id": 26280
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19650,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "bindgen-cli",
+                        "repository": "centos9-crb"
+                    }
+                ],
+                "set_id": 26281
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 6,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19651,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "cbindgen",
+                        "repository": "centos10-crb"
+                    }
+                ],
+                "set_id": 26282
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19652,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "cbindgen",
+                        "repository": "centos9-crb"
+                    }
+                ],
+                "set_id": 26283
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 6,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19653,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "image-builder",
+                        "repository": "centos10-appstream"
+                    }
+                ],
+                "set_id": 26284
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19654,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "image-builder",
+                        "repository": "centos9-appstream"
+                    }
+                ],
+                "set_id": 26285
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 6,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19655,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "fips-provider-next",
+                        "repository": "centos10-appstream"
+                    }
+                ],
+                "set_id": 26286
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "CentOS"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19656,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "redhat-cloud-client-configuration-cdn",
+                        "repository": "centos9-appstream"
+                    }
+                ],
+                "set_id": 26287
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 5,
+                "os_name": "CentOS"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 6,
+                "os_name": "CentOS"
+            }
+        },
+        {
             "action": 1,
             "architectures": [
                 "x86_64",
@@ -693000,7 +694549,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19640,
+            "id": 19657,
             "in_packageset": {
                 "package": [
                     {
@@ -693011,7 +694560,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 26270
+                "set_id": 26288
             },
             "initial_release": {
                 "major_version": 7,
@@ -693034,7 +694583,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19641,
+            "id": 19658,
             "in_packageset": {
                 "package": [
                     {
@@ -693045,7 +694594,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 26272
+                "set_id": 26290
             },
             "initial_release": {
                 "major_version": 7,
@@ -693070,7 +694619,7 @@
                         "repository": "centos8-baseos"
                     }
                 ],
-                "set_id": 26271
+                "set_id": 26289
             },
             "release": {
                 "major_version": 8,
@@ -693088,7 +694637,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19642,
+            "id": 19659,
             "in_packageset": {
                 "package": [
                     {
@@ -693099,7 +694648,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 26274
+                "set_id": 26292
             },
             "initial_release": {
                 "major_version": 7,
@@ -693124,7 +694673,7 @@
                         "repository": "centos8-baseos"
                     }
                 ],
-                "set_id": 26273
+                "set_id": 26291
             },
             "release": {
                 "major_version": 8,
@@ -693142,7 +694691,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19643,
+            "id": 19660,
             "in_packageset": {
                 "package": [
                     {
@@ -693153,7 +694702,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 26276
+                "set_id": 26294
             },
             "initial_release": {
                 "major_version": 7,
@@ -693178,7 +694727,7 @@
                         "repository": "centos8-baseos"
                     }
                 ],
-                "set_id": 26275
+                "set_id": 26293
             },
             "release": {
                 "major_version": 8,
@@ -693196,7 +694745,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19644,
+            "id": 19661,
             "in_packageset": {
                 "package": [
                     {
@@ -693207,7 +694756,7 @@
                         "repository": "powertools"
                     }
                 ],
-                "set_id": 26277
+                "set_id": 26295
             },
             "initial_release": {
                 "major_version": 8,
@@ -693239,7 +694788,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19645,
+            "id": 19662,
             "in_packageset": {
                 "package": [
                     {
@@ -693250,7 +694799,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26278
+                "set_id": 26296
             },
             "initial_release": {
                 "major_version": 8,
@@ -693282,7 +694831,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19646,
+            "id": 19663,
             "in_packageset": {
                 "package": [
                     {
@@ -693293,7 +694842,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26279
+                "set_id": 26297
             },
             "initial_release": {
                 "major_version": 8,
@@ -693325,7 +694874,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19647,
+            "id": 19664,
             "in_packageset": {
                 "package": [
                     {
@@ -693336,7 +694885,7 @@
                         "repository": "baseos"
                     }
                 ],
-                "set_id": 26280
+                "set_id": 26298
             },
             "initial_release": {
                 "major_version": 8,
@@ -693368,7 +694917,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19648,
+            "id": 19665,
             "in_packageset": {
                 "package": [
                     {
@@ -693379,7 +694928,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26281
+                "set_id": 26299
             },
             "initial_release": {
                 "major_version": 8,
@@ -693411,7 +694960,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19649,
+            "id": 19666,
             "in_packageset": {
                 "package": [
                     {
@@ -693422,7 +694971,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26282
+                "set_id": 26300
             },
             "initial_release": {
                 "major_version": 8,
@@ -693454,7 +695003,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19650,
+            "id": 19667,
             "in_packageset": {
                 "package": [
                     {
@@ -693465,7 +695014,7 @@
                         "repository": "baseos"
                     }
                 ],
-                "set_id": 26283
+                "set_id": 26301
             },
             "initial_release": {
                 "major_version": 8,
@@ -693497,7 +695046,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19651,
+            "id": 19668,
             "in_packageset": {
                 "package": [
                     {
@@ -693508,7 +695057,7 @@
                         "repository": "baseos"
                     }
                 ],
-                "set_id": 26284
+                "set_id": 26302
             },
             "initial_release": {
                 "major_version": 8,
@@ -693540,7 +695089,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19652,
+            "id": 19669,
             "in_packageset": {
                 "package": [
                     {
@@ -693551,7 +695100,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26285
+                "set_id": 26303
             },
             "initial_release": {
                 "major_version": 8,
@@ -693583,7 +695132,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19653,
+            "id": 19670,
             "in_packageset": {
                 "package": [
                     {
@@ -693594,7 +695143,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26286
+                "set_id": 26304
             },
             "initial_release": {
                 "major_version": 8,
@@ -693626,7 +695175,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19654,
+            "id": 19671,
             "in_packageset": {
                 "package": [
                     {
@@ -693637,7 +695186,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26287
+                "set_id": 26305
             },
             "initial_release": {
                 "major_version": 8,
@@ -693669,7 +695218,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19655,
+            "id": 19672,
             "in_packageset": {
                 "package": [
                     {
@@ -693680,7 +695229,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26288
+                "set_id": 26306
             },
             "initial_release": {
                 "major_version": 8,
@@ -693712,7 +695261,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19656,
+            "id": 19673,
             "in_packageset": {
                 "package": [
                     {
@@ -693723,7 +695272,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26289
+                "set_id": 26307
             },
             "initial_release": {
                 "major_version": 8,
@@ -693755,7 +695304,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19657,
+            "id": 19674,
             "in_packageset": {
                 "package": [
                     {
@@ -693766,7 +695315,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26290
+                "set_id": 26308
             },
             "initial_release": {
                 "major_version": 8,
@@ -693798,7 +695347,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19658,
+            "id": 19675,
             "in_packageset": {
                 "package": [
                     {
@@ -693809,7 +695358,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26291
+                "set_id": 26309
             },
             "initial_release": {
                 "major_version": 8,
@@ -693841,7 +695390,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19659,
+            "id": 19676,
             "in_packageset": {
                 "package": [
                     {
@@ -693852,7 +695401,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26292
+                "set_id": 26310
             },
             "initial_release": {
                 "major_version": 8,
@@ -693884,7 +695433,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19660,
+            "id": 19677,
             "in_packageset": {
                 "package": [
                     {
@@ -693895,7 +695444,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26293
+                "set_id": 26311
             },
             "initial_release": {
                 "major_version": 8,

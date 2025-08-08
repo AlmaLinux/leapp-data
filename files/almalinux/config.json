@@ -332,6 +332,11 @@
             "name": "redhat-flatpak-repo",
             "initial_release": 9,
             "target_release": 10
+        },
+        {
+            "name": "redhat-cloud-client-configuration-cdn",
+            "initial_release": 9,
+            "target_release": 9
         }
     ],
 
