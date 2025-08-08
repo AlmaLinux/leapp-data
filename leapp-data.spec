@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.10
-Release:	3%{?dist}.%{pes_events_build_date}
+Release:	4%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -159,6 +159,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Fri Aug 08 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-4.20250729
+- Vendor mariadb: switch into 12.rolloing repository
+
 * Thu Aug 07 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-3.20250729
 - Vendor kernelcare: use local GPG key instead of remote one
 - Update data to the upstream most recent state:
