@@ -172,6 +172,7 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 %changelog
 * Fri Aug 08 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.9-6.20250729
+- Vendor mariadb: switch into 12.rolloing repository
 - Vendor kernelcare: use local GPG key instead of remote one
 - Update data to the upstream most recent state:
  - PES data:
