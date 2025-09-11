@@ -318,10 +318,8 @@ jobs:
         fi
 
         if [ "${vendor}" = "imunify" ]; then
-          # TODO prepare/install the repository config instead of changing vendor's one
-          sudo cp -av /etc/leapp/files/vendors.d/imunify.repo /etc/yum.repos.d/
-          sudo sed -i "s/\/${{ env.target_release }}\//\/${source_release}\//g" /etc/yum.repos.d/imunify.repo
-          sudo sed -i 's/cloudlinux${{ env.target_release }}-//g' /etc/yum.repos.d/imunify.repo
+          sudo dnf -y install \
+            https://repo.imunify360.cloudlinux.com/defense360/imunify-release-latest.el${source_release}.rpm
 
           sudo dnf -y install \
             imunify360-php-i360 \
