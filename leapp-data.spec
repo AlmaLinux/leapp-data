@@ -52,7 +52,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.6
-Release:	6%{?dist}.%{pes_events_build_date}
+Release:	7%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -177,6 +177,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Thu Sep 11 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.6-7.20241127
+- Vendor imunify: update rpm GPG key
+
 * Thu Jul 10 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.6-6.20241127
 - New vendor, tuxcare
  - add alt-common repository - alt common Extended Lifecycle Support by TuxCare
