@@ -1,4 +1,4 @@
-%global pes_events_build_date 20250729
+%global pes_events_build_date 20250813
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
@@ -46,8 +46,8 @@
 %bcond_without check
 
 Name:		leapp-data-%{dist_name}
-Version:	0.10
-Release:	8%{?dist}.%{pes_events_build_date}
+Version:	0.11
+Release:	1%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -159,6 +159,15 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Thu Nov 27 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.11-1.20250813
+- Update data to the upstream most recent state:
+ - Device driver deprecation data:
+  - leapp-repository sha f73be94c6d195af02bf7595e9604cac171d096e1
+ - PES data:
+  - pes-events.json: upstream state f73be94c6d195af02bf7595e9604cac171d096e1
+  - epel_pes.json_template:
+   - remove duplicated id and set_id
+
 * Wed Nov 26 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-8.20250729
 - Vendor PostgreSQL: correct extras repository base url
 

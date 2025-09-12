@@ -2754,7 +2754,7 @@
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0200:0x9005:0x0200",
-      "device_name": "",
+      "device_name": "Adaptec: AAC-RAID: Themisto Jupiter Platform",
       "device_type": "pci",
       "driver_name": "aacraid",
       "maintained_in_rhel": [
@@ -2860,6 +2860,21 @@
       "deprecation_announced": "",
       "device_id": "0x9005:0x0285:0x1028:0x0287",
       "device_name": "Adaptec: AAC-RAID: PowerEdge Expandable RAID Controller 320/DC",
+      "device_type": "pci",
+      "driver_name": "aacraid",
+      "maintained_in_rhel": [
+        7
+      ]
+    },
+    {
+      "available_in_rhel": [
+        7,
+        8,
+        9
+      ],
+      "deprecation_announced": "",
+      "device_id": "0x9005:0x0285:0x1028:0x0291",
+      "device_name": "Adaptec: AAC-RAID: CERC SATA RAID 2 PCI SATA 6ch (DellCorsair)",
       "device_type": "pci",
       "driver_name": "aacraid",
       "maintained_in_rhel": [
@@ -3487,7 +3502,7 @@
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0287:0x9005:0x0800",
-      "device_name": "",
+      "device_name": "Adaptec: AAC-RAID: Themisto Jupiter Platform",
       "device_type": "pci",
       "driver_name": "aacraid",
       "maintained_in_rhel": [
@@ -3502,7 +3517,7 @@
       ],
       "deprecation_announced": "",
       "device_id": "0x9005:0x0288",
-      "device_name": "",
+      "device_name": "Adaptec: AAC-RAID: NEMER/ARK Catch All",
       "device_type": "pci",
       "driver_name": "aacraid",
       "maintained_in_rhel": [
@@ -7136,5 +7151,5 @@
       "maintained_in_rhel": []
     }
   ],
-  "created_at": "20250721112841"
+  "created_at": "20250912141814"
 }

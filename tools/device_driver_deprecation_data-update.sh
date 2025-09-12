@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # AlmaLinux releases
-releases=('8.10' '9.5')
+releases=('8.10' '9.6')
 
 # Path where to store device driver deprecation data file
 # '../files/almalinux'
@@ -24,7 +24,7 @@ release_notes_sha=master
 # Upstream leapp-repository GitHub URL, device driver deprecation data (in JSON format) file name, and Git SHA
 leapp_repository_url=https://raw.githubusercontent.com/oamg/leapp-repository
 device_driver_deprecation_data_json="device_driver_deprecation_data.json"
-leapp_repository_sha=93cae9c88e964d6485ad8314ae65deb0ab676862
+leapp_repository_sha=f73be94c6d195af02bf7595e9604cac171d096e1
 
 printf "\nDownload %s at %s\n" ${device_driver_deprecation_data_json} ${leapp_repository_sha}
 curl -s -o ${device_driver_deprecation_data_json} ${leapp_repository_url}/${leapp_repository_sha}/etc/leapp/files/${device_driver_deprecation_data_json} || exit 1
