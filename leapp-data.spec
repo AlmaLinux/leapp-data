@@ -28,7 +28,7 @@
 %endif
 %endif
 %if 0%{?rhel} == 9
-%define supported_vendors epel docker-ce postgresql tuxcare
+%define supported_vendors epel nginx-stable nginx-mainline docker-ce postgresql tuxcare
 %define target_version 10
 %define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
 %if "%{dist_name}" == "almalinux"
@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.10
-Release:	5%{?dist}.%{pes_events_build_date}
+Release:	6%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -159,6 +159,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Tue Oct 14 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-6.20250729
+- Add Nginx Vendor for 9 to 10 upgrade
+
 * Thu Sep 11 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-5.20250729
 - Vendor imunify: update rpm GPG key
 
