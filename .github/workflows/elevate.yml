@@ -591,7 +591,7 @@ jobs:
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh nginx ${{ env.source_release }}" || exit 1
 
     - name: Vendor - MariaDB
-      if: inputs.vendors == 'all' && env.target_release != '10'
+      if: inputs.vendors == 'all'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh mariadb ${{ env.source_release }}" || exit 1
 
