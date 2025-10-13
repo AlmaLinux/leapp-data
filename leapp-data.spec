@@ -175,6 +175,7 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 - Add new Vendors for 9 to 10 upgrade:
   - Nginx Vendor
   - MariaDB Vendor (without MaxScale and Tools repositories)
+  - Microsoft Vendor (still disabled for all upgrades)
 
 * Thu Sep 11 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.9-7.20250729
 - Vendor imunify: update rpm GPG key
