@@ -570,7 +570,7 @@ jobs:
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh epel ${{ env.source_release }}" || exit 1
 
     - name: Vendor - KernelCare
-      if: inputs.vendors == 'all' && env.target_release != '10'
+      if: inputs.vendors == 'all'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh kernelcare ${{ env.source_release }}" || exit 1
 

@@ -40,7 +40,7 @@
 %endif
 %endif
 %if 0%{?rhel} == 9
-%define supported_vendors epel mariadb nginx-stable nginx-mainline docker-ce postgresql tuxcare
+%define supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline docker-ce postgresql tuxcare
 %define target_version 10
 %define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
 %if "%{dist_name}" == "almalinux"
@@ -176,6 +176,7 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
   - Nginx Vendor
   - MariaDB Vendor (without MaxScale and Tools repositories)
   - Microsoft Vendor (still disabled for all upgrades)
+  - KernelCare Vendor (use el-sig202505 repository)
 
 * Thu Sep 11 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.9-7.20250729
 - Vendor imunify: update rpm GPG key
