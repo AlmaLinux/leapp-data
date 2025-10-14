@@ -1,8 +1,8 @@
 # KernelCare repository.
 
-[kernelcare-9]
+[kernelcare-10]
 name=kernelcare
-baseurl=https://repo.cloudlinux.com/kernelcare/el-sig202505/9/$basearch
+baseurl=https://repo.cloudlinux.com/kernelcare/el-sig202505/10/$basearch
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/kernelcare.gpg

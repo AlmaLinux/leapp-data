@@ -1,0 +1,65 @@
+{
+    "datetime": "202510141425Z",
+    "version_format": "1.3.0",
+    "mapping": [
+        {
+            "source_major_version": "9",
+            "target_major_version": "10",
+            "entries": [
+                {
+                    "source": "nginx-stable",
+                    "target": [
+                        "el10-nginx-stable"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "nginx-stable",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "nginx-stable",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
+                },
+                {
+                    "major_version": "9",
+                    "repoid": "nginx-stable",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
+                }
+            ]
+        },
+        {
+            "pesid": "el10-nginx-stable",
+            "entries": [
+                {
+                    "major_version": "10",
+                    "repoid": "el10-nginx-stable",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
+                },
+                {
+                    "major_version": "10",
+                    "repoid": "el10-nginx-stable",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
+                }
+            ]
+        }
+    ],
+    "provided_data_streams": [
+        "4.0"
+    ]
+}
