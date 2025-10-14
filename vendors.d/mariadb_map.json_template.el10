@@ -1,0 +1,65 @@
+{
+    "datetime": "202510141430Z",
+    "version_format": "1.3.0",
+    "mapping": [
+        {
+            "source_major_version": "9",
+            "target_major_version": "10",
+            "entries": [
+                {
+                    "source": "mariadb-main",
+                    "target": [
+                        "el10-mariadb-main"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "mariadb-main",
+            "entries": [
+                {
+                    "major_version": "9",
+                    "repoid": "mariadb-main",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
+                },
+                {
+                    "major_version": "9",
+                    "repoid": "mariadb-main",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
+                }
+            ]
+        },
+        {
+            "pesid": "el10-mariadb-main",
+            "entries": [
+                {
+                    "major_version": "10",
+                    "repoid": "el10-mariadb-main",
+                    "arch": "x86_64",
+                    "channel": "ga",
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
+                },
+                {
+                    "major_version": "10",
+                    "repoid": "el10-mariadb-main",
+                    "arch": "aarch64",
+                    "channel": "ga",
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
+                }
+            ]
+        }
+    ],
+    "provided_data_streams": [
+        "4.0"
+    ]
+}

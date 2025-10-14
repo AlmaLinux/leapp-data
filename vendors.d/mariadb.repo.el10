@@ -1,0 +1,26 @@
+[el10-mariadb-main]
+name = MariaDB Server
+baseurl = https://dlm.mariadb.com/repo/mariadb-server/12.rolling/yum/rhel/10/$basearch
+gpgkey = file:///etc/leapp/files/vendors.d/rpm-gpg/mariadb-Server-GPG-KEY
+gpgcheck = 1
+enabled = 1
+module_hotfixes = true
+
+# [el10-mariadb-maxscale]
+# # To use the latest stable release of MaxScale, use "latest" as the version
+# # To use the latest beta (or stable if no current beta) release of MaxScale, use "beta" as the version
+# name = MariaDB MaxScale
+# baseurl = https://dlm.mariadb.com/repo/maxscale/latest/yum/rhel/10/$basearch
+# gpgkey = file:///etc/leapp/files/vendors.d/rpm-gpg/mariadb-MaxScale-GPG-KEY
+# gpgcheck = 1
+# enabled = 1
+# module_hotfixes = true
+
+
+# [el10-mariadb-tools]
+# name = MariaDB Tools
+# baseurl = https://downloads.mariadb.com/Tools/rhel/10/x86_64
+# gpgkey = file:///etc/leapp/files/vendors.d/rpm-gpg/mariadb-Enterprise-GPG-KEY
+# gpgcheck = 1
+# enabled = 1
+# module_hotfixes = true
