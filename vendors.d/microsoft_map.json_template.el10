@@ -1,0 +1,49 @@
+{
+    "datetime" : "202510131320Z",
+    "version_format": "1.3.0",
+
+    "mapping" : [
+        {
+            "source_major_version" : "9",
+            "target_major_version" : "10",
+            "entries" : [
+                {
+                    "source" : "packages-microsoft-com-prod",
+                    "target" : ["packages-microsoft-com-prod-10"]
+                }
+            ]
+        }
+    ],
+
+    "repositories" : [
+        {
+            "pesid" : "packages-microsoft-com-prod",
+            "entries" : [
+                {
+                    "repoid" : "packages-microsoft-com-prod",
+                    "major_version" : "9",
+                    "repo_type" : "rpm",
+                    "arch" : "x86_64",
+                    "channel" : "ga",
+                    "distro": "{distro}"
+                }
+            ]
+        },
+        {
+            "pesid" : "packages-microsoft-com-prod-10",
+            "entries" : [
+                {
+                    "repoid" : "packages-microsoft-com-prod-10",
+                    "major_version" : "10",
+                    "repo_type" : "rpm",
+                    "arch" : "x86_64",
+                    "channel" : "ga",
+                    "distro": "{distro}"
+                }
+            ]
+        }
+    ],
+    "provided_data_streams": [
+        "4.0"
+    ]
+}

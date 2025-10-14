@@ -1,0 +1,102 @@
+{
+    "legal_notice": "",
+    "packageinfo": [
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 1,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "procmon",
+                        "repository": "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id": 2
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 3,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "sysinternalsebpf",
+                        "repository": "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id": 4
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 1,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 5,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "sysmonforlinux",
+                        "repository": "packages-microsoft-com-prod"
+                    }
+                ],
+                "set_id": 6
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        }
+    ],
+    "provided_data_streams": [
+        "4.0"
+    ],
+    "timestamp": "202510131320Z"
+}

@@ -405,19 +405,8 @@ jobs:
         fi
 
         if [ "${vendor}" = "microsoft" ]; then
-          case ${source_release} in
-            7)
-              ms_release_pkg=packages-microsoft-prod-1.0-1.el7.noarch.rpm
-              ms_pkgs="omi aspnetcore-runtime-7.0 dotnet-targeting-pack-7.0 dotnet-sdk-7.0"
-              ;;
-            8)
-              ms_release_pkg=packages-microsoft-prod.rpm
-              ms_pkgs="sysmonforlinux sysinternalsebpf procmon"
-              ;;
-          esac
-
-          sudo dnf install -y -q https://packages.microsoft.com/rhel/${source_release}/prod/Packages/p/${ms_release_pkg}
-          sudo dnf install -y ${ms_pkgs}
+          sudo dnf install -y -q https://packages.microsoft.com/config/rhel/${source_release}/packages-microsoft-prod.rpm
+          sudo dnf install -y azure-cli
           res=$?
         fi
 
@@ -566,7 +555,7 @@ jobs:
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh docker ${{ env.source_release }}" || exit 1
 
     - name: Vendor - Microsoft
-      if: false && inputs.vendors == 'all' && env.target_release != '10'
+      if: false && inputs.vendors == 'all'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh microsoft ${{ env.source_release }}" || exit 1
 
