@@ -2,7 +2,7 @@
 
 [kernelcare-8]
 name=kernelcare
-baseurl=https://repo.cloudlinux.com/kernelcare/8/$basearch
+baseurl=https://repo.cloudlinux.com/kernelcare/el-sig202505/8/$basearch
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/kernelcare.gpg
