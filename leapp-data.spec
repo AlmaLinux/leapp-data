@@ -6,7 +6,7 @@
 %define conflict_dists() %(for i in almalinux almalinux-kitten centos; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 %if 0%{?rhel} == 7
-%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce imunify360-alt-php tuxcare
+%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce imunify360-alt-php tuxcare elevate
 %define target_version 8
 %define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
 %if %{dist_name} == "almalinux"
@@ -17,7 +17,7 @@
 %endif
 %endif
 %if 0%{?rhel} == 8
-%define supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce tuxcare
+%define supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce tuxcare elevate
 %define target_version 9
 %define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
 %if "%{dist_name}" == "almalinux"
@@ -28,7 +28,7 @@
 %endif
 %endif
 %if 0%{?rhel} == 9
-%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline docker-ce postgresql imunify360-alt-php tuxcare
+%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline docker-ce postgresql imunify360-alt-php tuxcare elevate
 %define target_version 10
 %define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
 %if "%{dist_name}" == "almalinux"
@@ -160,9 +160,12 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 %changelog
 * Fri Oct 17 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-7.20250729
+- Add new Vendor, elevate - ELevate enables upgrades between major versions of RHEL derivatives
 - Add new Vendors for 9 to 10 upgrade:
   - imunify Vendor
   - imunify360-alt-php Vendor
+- Vendor imunify360-alt-php update rpm GPG key
+- Vendors imunify and imunify360-alt-php: update packages SIGs
 
 * Tue Oct 14 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-6.20250729
 - Add new Vendors for 9 to 10 upgrade:

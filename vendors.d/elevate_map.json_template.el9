@@ -1,0 +1,78 @@
+{
+    "datetime" : "202510161800Z",
+    "version_format" : "1.3.0",
+
+    "mapping" : [
+        {
+            "source_major_version" : "8",
+            "target_major_version" : "9",
+            "entries" : [
+                {
+                    "source" : "elevate",
+                    "target" : ["elevate-9"]
+                }
+            ]
+        }
+    ],
+
+    "repositories" : [
+        {
+            "pesid" : "elevate",
+            "entries" : [
+                {
+                    "repoid" : "elevate",
+                    "major_version" : "8",
+                    "repo_type" : "rpm",
+                    "distro": "{distro}",
+                    "arch" : "x86_64",
+                    "channel" : "ga"
+                },
+                {
+                    "repoid" : "elevate",
+                    "major_version" : "8",
+                    "repo_type" : "rpm",
+                    "distro": "{distro}",
+                    "arch" : "aarch64",
+                    "channel" : "ga"
+                },
+                {
+                    "repoid" : "elevate",
+                    "major_version" : "8",
+                    "repo_type" : "rpm",
+                    "distro": "{distro}",
+                    "arch" : "ppc64le",
+                    "channel" : "ga"
+                }
+            ]
+        },
+        {
+            "pesid" : "elevate-9",
+            "entries" : [
+                {
+                    "repoid" : "elevate-9",
+                    "major_version" : "9",
+                    "repo_type" : "rpm",
+                    "distro": "{distro}",
+                    "arch" : "x86_64",
+                    "channel" : "ga"
+                },
+                {
+                    "repoid" : "elevate-9",
+                    "major_version" : "9",
+                    "repo_type" : "rpm",
+                    "distro": "{distro}",
+                    "arch" : "aarch64",
+                    "channel" : "ga"
+                },
+                {
+                    "repoid" : "elevate-9",
+                    "major_version" : "9",
+                    "repo_type" : "rpm",
+                    "distro": "{distro}",
+                    "arch" : "ppc64le",
+                    "channel" : "ga"
+                }
+            ]
+        }
+    ]
+}
