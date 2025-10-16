@@ -1,0 +1,7 @@
+[el8-elevate]
+name=ELevate
+baseurl=https://repo.almalinux.org/elevate/el8/$basearch/
+gpgcheck=1
+enabled=1
+priority=90
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-ELevate
