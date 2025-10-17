@@ -40,7 +40,7 @@
 %endif
 %endif
 %if 0%{?rhel} == 9
-%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline docker-ce postgresql tuxcare
+%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline docker-ce postgresql imunify360-alt-php tuxcare
 %define target_version 10
 %define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
 %if "%{dist_name}" == "almalinux"
@@ -172,7 +172,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 %changelog
 * Fri Oct 17 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.9-9.20251013
-- Add new imunify Vendor for 9 to 10 upgrade
+- Add new Vendors for 9 to 10 upgrade:
+  - imunify Vendor
+  - imunify360-alt-php Vendor
 
 * Mon Oct 13 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.9-8.20251013
 - Add new Vendors for 9 to 10 upgrade:
