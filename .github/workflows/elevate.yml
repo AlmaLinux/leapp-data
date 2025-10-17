@@ -565,7 +565,7 @@ jobs:
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh tuxcare ${{ env.source_release }}" || exit 1
 
     - name: Vendor - Imunify360
-      if: inputs.vendors == 'all' && env.target_release == '8'
+      if: inputs.vendors == 'all' && ( env.target_release == '8' || env.target_release == '10' )
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh imunify ${{ env.source_release }}" || exit 1
 
