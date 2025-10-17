@@ -40,7 +40,7 @@
 %endif
 %endif
 %if 0%{?rhel} == 9
-%define supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline docker-ce postgresql tuxcare
+%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline docker-ce postgresql tuxcare
 %define target_version 10
 %define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
 %if "%{dist_name}" == "almalinux"
@@ -59,7 +59,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.9
-Release:	8%{?dist}.%{pes_events_build_date}
+Release:	9%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -171,6 +171,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Fri Oct 17 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.9-9.20251013
+- Add new imunify Vendor for 9 to 10 upgrade
+
 * Mon Oct 13 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.9-8.20251013
 - Add new Vendors for 9 to 10 upgrade:
   - Nginx Vendor
