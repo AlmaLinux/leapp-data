@@ -59,7 +59,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.9
-Release:	9%{?dist}.%{pes_events_build_date}
+Release:	10%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -171,6 +171,10 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Mon Oct 20 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.9-10.20251013
+- Correct ELevate's RPM signature
+- Correct Imunify's EL9 imunify360-testing repository baseurl
+
 * Fri Oct 17 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.9-9.20251013
 - Add new Vendor, elevate - ELevate enables upgrades between major versions of RHEL derivatives
 - Add new Vendors for 9 to 10 upgrade:
