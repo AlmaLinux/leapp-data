@@ -1,0 +1,42 @@
+{
+    "datetime": "202510171345Z",
+    "version_format": "1.2.1",
+    "mapping": [
+        {
+            "source_major_version": "9",
+            "target_major_version": "10",
+            "entries": [
+                {
+                    "source": "imunify360-alt-php",
+                    "target": ["cloudlinux10-imunify360-alt-php"]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "imunify360-alt-php",
+            "entries": [
+                {
+                    "repoid": "imunify360-alt-php",
+                    "major_version": "9",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        },
+        {
+            "pesid": "cloudlinux10-imunify360-alt-php",
+            "entries": [
+                {
+                    "repoid": "cloudlinux10-imunify360-alt-php",
+                    "major_version": "10",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "channel": "ga"
+                }
+            ]
+        }
+    ]
+}

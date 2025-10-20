@@ -1,0 +1,72 @@
+{
+    "datetime" : "202510161800Z",
+    "version_format" : "1.2.1",
+
+    "mapping" : [
+        {
+            "source_major_version" : "9",
+            "target_major_version" : "10",
+            "entries" : [
+                {
+                    "source" : "elevate",
+                    "target" : ["elevate-10"]
+                }
+            ]
+        }
+    ],
+
+    "repositories" : [
+        {
+            "pesid" : "elevate",
+            "entries" : [
+                {
+                    "repoid" : "elevate",
+                    "major_version" : "9",
+                    "repo_type" : "rpm",
+                    "arch" : "x86_64",
+                    "channel" : "ga"
+                },
+                {
+                    "repoid" : "elevate",
+                    "major_version" : "9",
+                    "repo_type" : "rpm",
+                    "arch" : "aarch64",
+                    "channel" : "ga"
+                },
+                {
+                    "repoid" : "elevate",
+                    "major_version" : "9",
+                    "repo_type" : "rpm",
+                    "arch" : "ppc64le",
+                    "channel" : "ga"
+                }
+            ]
+        },
+        {
+            "pesid" : "elevate-10",
+            "entries" : [
+                {
+                    "repoid" : "elevate-10",
+                    "major_version" : "10",
+                    "repo_type" : "rpm",
+                    "arch" : "x86_64",
+                    "channel" : "ga"
+                },
+                {
+                    "repoid" : "elevate-10",
+                    "major_version" : "10",
+                    "repo_type" : "rpm",
+                    "arch" : "aarch64",
+                    "channel" : "ga"
+                },
+                {
+                    "repoid" : "elevate-10",
+                    "major_version" : "10",
+                    "repo_type" : "rpm",
+                    "arch" : "ppc64le",
+                    "channel" : "ga"
+                }
+            ]
+        }
+    ]
+}
