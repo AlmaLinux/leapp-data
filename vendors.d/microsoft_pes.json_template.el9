@@ -6,7 +6,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 1,
+            "id": 36114,
             "in_packageset": {
                 "package": [
                     {
@@ -37,7 +37,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 3,
+            "id": 36115,
             "in_packageset": {
                 "package": [
                     {
@@ -68,7 +68,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 5,
+            "id": 36116,
             "in_packageset": {
                 "package": [
                     {
@@ -96,7 +96,7 @@
         }
     ],
     "provided_data_streams": [
-        "4.0"
+        "4.1"
     ],
     "timestamp": "202506241030Z"
 }

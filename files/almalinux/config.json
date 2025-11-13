@@ -153,13 +153,23 @@
         "rhel7-sap-hana",
         "rhel7-ose-3.7",
         "rhel7-dotnet-1",
+        "rhel7-jbeap-7.4",
+        "rhel7-ansible-2.5",
 
         "rhel8-Supplementary",
         "rhel8-Advanced-Virt",
         "rhel8-ceph5",
+        "rhel8-jbeap-8.0",
+        "rhel8-jbeap-7.4",
+        "rhel8-jbeap-8.1",
 
         "rhel9-ceph5",
-        "rhel9-Supplementary"
+        "rhel9-Supplementary",
+        "rhel9-jbeap-8.0",
+        "rhel9-jbeap-7.4",
+        "rhel9-jbeap-8.1",
+
+        "rhel-drivers"
     ],
 
     "package_replacing": [
@@ -337,6 +347,11 @@
             "name": "redhat-cloud-client-configuration-cdn",
             "initial_release": 9,
             "target_release": 9
+        },
+        {
+            "name": "rhel-drivers",
+            "initial_release": 10,
+            "target_release": 10
         }
     ],
 

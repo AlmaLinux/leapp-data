@@ -1,4 +1,4 @@
-%global pes_events_build_date 20250813
+%global pes_events_build_date 20251112
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.11
-Release:	1%{?dist}.%{pes_events_build_date}
+Release:	2%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -159,7 +159,21 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
-* Thu Nov 27 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.11-1.20250813
+* Thu Nov 27 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.11-2.20251112
+- Data stream version 4.1
+- Update data to the upstream most recent state:
+ - PES data:
+  - pes-events.json: upstream state 60c4987cf45c8c795c2e2607e376c35831aebafd
+  - epel_pes.json_template:
+   - remove duplicated id and set_id
+  - config.json:
+   - for almalinux, almalinux-kitten and centos add rhel7-jbeap-7.4, rhel8-jbeap-8.0, rhel8-jbeap-7.4, rhel8-jbeap-8.1, rhel9-jbeap-8.0, rhel9-jbeap-7.4, rhel9-jbeap-8.1, rhel-drivers to the removable repositories list
+   - for almalinux, almalinux-kitten and centos add rhel-drivers to the removable packages list
+
+* Wed Nov 26 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-8.20250729
+- Vendor PostgreSQL: correct extras repository base url
+
+* Tue Oct 21 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.11-1.20250813
 - Update data to the upstream most recent state:
  - Device driver deprecation data:
   - leapp-repository sha f73be94c6d195af02bf7595e9604cac171d096e1
@@ -167,9 +181,6 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
   - pes-events.json: upstream state f73be94c6d195af02bf7595e9604cac171d096e1
   - epel_pes.json_template:
    - remove duplicated id and set_id
-
-* Wed Nov 26 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-8.20250729
-- Vendor PostgreSQL: correct extras repository base url
 
 * Fri Oct 17 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-7.20250729
 - Add new Vendor, elevate - ELevate enables upgrades between major versions of RHEL derivatives
