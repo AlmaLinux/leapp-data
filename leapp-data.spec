@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.10
-Release:	7%{?dist}.%{pes_events_build_date}
+Release:	8%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -159,6 +159,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Wed Nov 26 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-8.20250729
+- Vendor PostgreSQL: correct extras repository base url
+
 * Fri Oct 17 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-7.20250729
 - Add new Vendor, elevate - ELevate enables upgrades between major versions of RHEL derivatives
 - Add new Vendors for 9 to 10 upgrade:

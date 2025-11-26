@@ -27,7 +27,7 @@ gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
 
 [el10-pgdg-rhel10-extras]
 name=Extra packages to support some RPMs in the PostgreSQL RPM repo RHEL / Rocky / AlmaLinux 10 - $basearch
-baseurl=https://download.postgresql.org/pub/repos/yum/common/pgdg-rhel10-extras/redhat/rhel-10-$basearch
+baseurl=https://download.postgresql.org/pub/repos/yum/extras/redhat/rhel-10-$basearch
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
