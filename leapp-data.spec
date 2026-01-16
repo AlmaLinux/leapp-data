@@ -52,7 +52,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.6
-Release:	10%{?dist}.%{pes_events_build_date}
+Release:	11%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -177,6 +177,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Fri Jan 16 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.6-11.20241127
+- Vendor PostgreSQL: remove Supplementary ucommon RPMs (sysupdates) repositories
+
 * Wed Nov 26 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.6-10.20241127
 - Vendor PostgreSQL: correct extras repository base url
 
