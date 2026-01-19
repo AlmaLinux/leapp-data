@@ -177,8 +177,10 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
-* Fri Jan 16 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.6-11.20241127
-- Vendor PostgreSQL: remove Supplementary ucommon RPMs (sysupdates) repositories
+* Mon Jan 19 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.6-11.20241127
+- Vendor PostgreSQL:
+ - remove Supplementary ucommon RPMs (sysupdates) repositories
+ - switch "PostgreSQL 12 for RHEL / CentOS" repositories into yum-archive.postgresql.org
 
 * Wed Nov 26 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.6-10.20241127
 - Vendor PostgreSQL: correct extras repository base url
