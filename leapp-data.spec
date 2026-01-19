@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.10
-Release:	8%{?dist}.%{pes_events_build_date}
+Release:	9%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -159,6 +159,11 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Mon Jan 19 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.10-9.20250729
+- Vendor PostgreSQL:
+ - remove Supplementary ucommon RPMs (sysupdates) repositories
+ - switch "PostgreSQL 12 for RHEL / CentOS" repositories into yum-archive.postgresql.org
+
 * Wed Nov 26 2025 Yuriy Kohut <ykohut@almalinux.org> - 0.10-8.20250729
 - Vendor PostgreSQL: correct extras repository base url
 
