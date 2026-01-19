@@ -386,9 +386,10 @@ jobs:
           sudo dnf install --disablerepo=* -y -q https://download.postgresql.org/pub/repos/yum/reporpms/EL-${source_release}-x86_64/pgdg-redhat-repo-latest.noarch.rpm
           case ${source_release} in
             7)
-              sudo dnf -y -q install epel-release;;
+              sudo dnf -y -q install epel-release
               # TODO: switch "PostgreSQL 12 for RHEL / CentOS" repository into yum-archive.postgresql.org
               sed -i 's#download.postgresql.org/pub/repos/yum/12/#yum-archive.postgresql.org/12/#g' /etc/yum.repos.d/pgdg-redhat-all.repo
+              ;;
             8)
               sudo dnf -y -q module disable postgresql;;
           esac
