@@ -345290,7 +345290,7 @@
                         "modulestreams": [
                             {
                                 "name": "swig",
-                                "stream": "4.1"
+                                "stream": "4.2"
                             }
                         ],
                         "name": "swig",
@@ -345327,7 +345327,7 @@
                         "modulestreams": [
                             {
                                 "name": "swig",
-                                "stream": "4.1"
+                                "stream": "4.2"
                             }
                         ],
                         "name": "swig-doc",
@@ -345364,7 +345364,7 @@
                         "modulestreams": [
                             {
                                 "name": "swig",
-                                "stream": "4.1"
+                                "stream": "4.2"
                             }
                         ],
                         "name": "swig-gdb",

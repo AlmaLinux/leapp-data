@@ -1,7 +1,7 @@
 {
-    "timestamp": "202511121106Z",
+    "timestamp": "202512221307Z",
     "provided_data_streams": [
-        "4.1"
+        "4.2"
     ],
     "packageinfo": [
         {
@@ -311935,7 +311935,7 @@
             },
             "initial_release": {
                 "major_version": 8,
-                "minor_version": 5,
+                "minor_version": 10,
                 "os_name": "AlmaLinux"
             },
             "modulestream_maps": [
@@ -311958,7 +311958,7 @@
                             null
                         ],
                         "name": "openexr-devel",
-                        "repository": "almalinux9-appstream"
+                        "repository": "almalinux9-crb"
                     }
                 ],
                 "set_id": 12502
@@ -579469,40 +579469,6 @@
                 "s390x",
                 "x86_64"
             ],
-            "id": 16179,
-            "in_packageset": {
-                "package": [
-                    {
-                        "modulestreams": [
-                            null
-                        ],
-                        "name": "openexr-devel",
-                        "repository": "almalinux9-crb"
-                    }
-                ],
-                "set_id": 22334
-            },
-            "initial_release": {
-                "major_version": 8,
-                "minor_version": 10,
-                "os_name": "AlmaLinux"
-            },
-            "modulestream_maps": [],
-            "out_packageset": null,
-            "release": {
-                "major_version": 9,
-                "minor_version": 0,
-                "os_name": "AlmaLinux"
-            }
-        },
-        {
-            "action": 0,
-            "architectures": [
-                "aarch64",
-                "ppc64le",
-                "s390x",
-                "x86_64"
-            ],
             "id": 16180,
             "in_packageset": {
                 "package": [
@@ -704397,6 +704363,1404 @@
             }
         },
         {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19909,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "rhc-playbook-verifier",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26586
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19910,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "rhc-playbook-verifier",
+                        "repository": "almalinux9-appstream"
+                    }
+                ],
+                "set_id": 26587
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 8,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19911,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "python3-zstandard",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26588
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19912,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "unbound-utils",
+                        "repository": "almalinux10-baseos"
+                    }
+                ],
+                "set_id": 26589
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 5,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 19913,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "kernel-rt",
+                        "repository": "almalinux10-nfv"
+                    },
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "kernel-rt-kvm",
+                        "repository": "almalinux10-nfv"
+                    }
+                ],
+                "set_id": 26593
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "kernel-rt",
+                        "repository": "almalinux10-nfv"
+                    }
+                ],
+                "set_id": 26600
+            },
+            "release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 5,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 19915,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "kernel-rt",
+                        "repository": "almalinux9-nfv"
+                    },
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "kernel-rt-kvm",
+                        "repository": "almalinux9-nfv"
+                    }
+                ],
+                "set_id": 26595
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 6,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [
+                {
+                    "in_modulestream": null,
+                    "out_modulestream": null
+                }
+            ],
+            "out_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "kernel-rt",
+                        "repository": "almalinux9-nfv"
+                    }
+                ],
+                "set_id": 26601
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19916,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "gnome-autoar-devel",
+                        "repository": "almalinux8-powertools"
+                    }
+                ],
+                "set_id": 26596
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19917,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "rest-devel",
+                        "repository": "almalinux8-powertools"
+                    }
+                ],
+                "set_id": 26597
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19918,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "plymouth-devel",
+                        "repository": "almalinux9-appstream"
+                    }
+                ],
+                "set_id": 26598
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 8,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19919,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "plymouth-devel",
+                        "repository": "almalinux8-appstream"
+                    }
+                ],
+                "set_id": 26599
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19920,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libdmx-devel",
+                        "repository": "almalinux8-powertools"
+                    }
+                ],
+                "set_id": 26602
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 9,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 8,
+                "minor_version": 10,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19921,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libdmx-devel",
+                        "repository": "almalinux9-crb"
+                    }
+                ],
+                "set_id": 26603
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 8,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19922,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "v4l-utils",
+                        "repository": "almalinux10-crb"
+                    }
+                ],
+                "set_id": 26604
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19923,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "v4l-utils",
+                        "repository": "almalinux9-crb"
+                    }
+                ],
+                "set_id": 26605
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 8,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19924,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-postgis",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26606
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19925,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-postgis-client",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26607
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19926,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-postgis-docs",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26608
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19927,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-postgis-upgrade",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26609
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19928,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-postgis-utils",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26610
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19929,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-pgaudit",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26611
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19930,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-pgvector",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26612
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19931,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-pg_repack",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26613
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19932,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-decoderbufs",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26614
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "x86_64"
+            ],
+            "id": 19933,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "virt-firmware-rs",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26615
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19934,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "libexttextcat-devel",
+                        "repository": "almalinux9-crb"
+                    }
+                ],
+                "set_id": 26616
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 8,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19935,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "rest-devel",
+                        "repository": "almalinux9-crb"
+                    }
+                ],
+                "set_id": 26617
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 8,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19936,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "gnome-autoar-devel",
+                        "repository": "almalinux9-crb"
+                    }
+                ],
+                "set_id": 26618
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 7,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 9,
+                "minor_version": 8,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19937,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26619
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19938,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-contrib",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26620
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19939,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-docs",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26621
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19940,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-plperl",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26622
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19941,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-plpython3",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26623
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19942,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-private-devel",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26624
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19943,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-private-libs",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26625
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19944,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-server",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26626
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19945,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-server-devel",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26627
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19946,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-static",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26628
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19947,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-test",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26629
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19948,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-upgrade",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26630
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
+            "action": 0,
+            "architectures": [
+                "aarch64",
+                "ppc64le",
+                "s390x",
+                "x86_64"
+            ],
+            "id": 19949,
+            "in_packageset": {
+                "package": [
+                    {
+                        "modulestreams": [
+                            null
+                        ],
+                        "name": "postgresql18-upgrade-devel",
+                        "repository": "almalinux10-appstream"
+                    }
+                ],
+                "set_id": 26631
+            },
+            "initial_release": {
+                "major_version": 10,
+                "minor_version": 1,
+                "os_name": "AlmaLinux"
+            },
+            "modulestream_maps": [],
+            "out_packageset": null,
+            "release": {
+                "major_version": 10,
+                "minor_version": 2,
+                "os_name": "AlmaLinux"
+            }
+        },
+        {
             "action": 3,
             "architectures": [
                 "x86_64",
@@ -704404,7 +705768,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19909,
+            "id": 19950,
             "in_packageset": {
                 "package": [
                     {
@@ -704415,7 +705779,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 26587
+                "set_id": 26633
             },
             "initial_release": {
                 "major_version": 7,
@@ -704440,7 +705804,7 @@
                         "repository": "almalinux8-baseos"
                     }
                 ],
-                "set_id": 26586
+                "set_id": 26632
             },
             "release": {
                 "major_version": 8,
@@ -704458,7 +705822,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19910,
+            "id": 19951,
             "in_packageset": {
                 "package": [
                     {
@@ -704469,7 +705833,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 26588
+                "set_id": 26634
             },
             "initial_release": {
                 "major_version": 7,
@@ -704492,7 +705856,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19911,
+            "id": 19952,
             "in_packageset": {
                 "package": [
                     {
@@ -704503,7 +705867,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 26590
+                "set_id": 26636
             },
             "initial_release": {
                 "major_version": 7,
@@ -704528,7 +705892,7 @@
                         "repository": "almalinux8-baseos"
                     }
                 ],
-                "set_id": 26589
+                "set_id": 26635
             },
             "release": {
                 "major_version": 8,
@@ -704546,7 +705910,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19912,
+            "id": 19953,
             "in_packageset": {
                 "package": [
                     {
@@ -704557,7 +705921,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 26592
+                "set_id": 26638
             },
             "initial_release": {
                 "major_version": 7,
@@ -704582,7 +705946,7 @@
                         "repository": "almalinux8-baseos"
                     }
                 ],
-                "set_id": 26591
+                "set_id": 26637
             },
             "release": {
                 "major_version": 8,
@@ -704600,7 +705964,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19913,
+            "id": 19954,
             "in_packageset": {
                 "package": [
                     {
@@ -704611,7 +705975,7 @@
                         "repository": "base"
                     }
                 ],
-                "set_id": 26594
+                "set_id": 26640
             },
             "initial_release": {
                 "major_version": 7,
@@ -704636,7 +706000,7 @@
                         "repository": "almalinux8-baseos"
                     }
                 ],
-                "set_id": 26593
+                "set_id": 26639
             },
             "release": {
                 "major_version": 8,
@@ -704654,7 +706018,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19914,
+            "id": 19955,
             "in_packageset": {
                 "package": [
                     {
@@ -704665,7 +706029,7 @@
                         "repository": "powertools"
                     }
                 ],
-                "set_id": 26595
+                "set_id": 26641
             },
             "initial_release": {
                 "major_version": 8,
@@ -704697,7 +706061,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19915,
+            "id": 19956,
             "in_packageset": {
                 "package": [
                     {
@@ -704708,7 +706072,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26596
+                "set_id": 26642
             },
             "initial_release": {
                 "major_version": 8,
@@ -704740,7 +706104,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19916,
+            "id": 19957,
             "in_packageset": {
                 "package": [
                     {
@@ -704751,7 +706115,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26597
+                "set_id": 26643
             },
             "initial_release": {
                 "major_version": 8,
@@ -704783,7 +706147,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19917,
+            "id": 19958,
             "in_packageset": {
                 "package": [
                     {
@@ -704794,7 +706158,7 @@
                         "repository": "baseos"
                     }
                 ],
-                "set_id": 26598
+                "set_id": 26644
             },
             "initial_release": {
                 "major_version": 8,
@@ -704826,7 +706190,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19918,
+            "id": 19959,
             "in_packageset": {
                 "package": [
                     {
@@ -704837,7 +706201,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26599
+                "set_id": 26645
             },
             "initial_release": {
                 "major_version": 8,
@@ -704869,7 +706233,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19919,
+            "id": 19960,
             "in_packageset": {
                 "package": [
                     {
@@ -704880,7 +706244,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26600
+                "set_id": 26646
             },
             "initial_release": {
                 "major_version": 8,
@@ -704912,7 +706276,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19920,
+            "id": 19961,
             "in_packageset": {
                 "package": [
                     {
@@ -704923,7 +706287,7 @@
                         "repository": "baseos"
                     }
                 ],
-                "set_id": 26601
+                "set_id": 26647
             },
             "initial_release": {
                 "major_version": 8,
@@ -704955,7 +706319,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19921,
+            "id": 19962,
             "in_packageset": {
                 "package": [
                     {
@@ -704966,7 +706330,7 @@
                         "repository": "baseos"
                     }
                 ],
-                "set_id": 26602
+                "set_id": 26648
             },
             "initial_release": {
                 "major_version": 8,
@@ -704998,7 +706362,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19922,
+            "id": 19963,
             "in_packageset": {
                 "package": [
                     {
@@ -705009,7 +706373,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26603
+                "set_id": 26649
             },
             "initial_release": {
                 "major_version": 8,
@@ -705041,7 +706405,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19923,
+            "id": 19964,
             "in_packageset": {
                 "package": [
                     {
@@ -705052,7 +706416,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26604
+                "set_id": 26650
             },
             "initial_release": {
                 "major_version": 8,
@@ -705084,7 +706448,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19924,
+            "id": 19965,
             "in_packageset": {
                 "package": [
                     {
@@ -705095,7 +706459,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26605
+                "set_id": 26651
             },
             "initial_release": {
                 "major_version": 8,
@@ -705127,7 +706491,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19925,
+            "id": 19966,
             "in_packageset": {
                 "package": [
                     {
@@ -705138,7 +706502,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26606
+                "set_id": 26652
             },
             "initial_release": {
                 "major_version": 8,
@@ -705170,7 +706534,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19926,
+            "id": 19967,
             "in_packageset": {
                 "package": [
                     {
@@ -705181,7 +706545,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26607
+                "set_id": 26653
             },
             "initial_release": {
                 "major_version": 8,
@@ -705213,7 +706577,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19927,
+            "id": 19968,
             "in_packageset": {
                 "package": [
                     {
@@ -705224,7 +706588,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26608
+                "set_id": 26654
             },
             "initial_release": {
                 "major_version": 8,
@@ -705256,7 +706620,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19928,
+            "id": 19969,
             "in_packageset": {
                 "package": [
                     {
@@ -705267,7 +706631,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26609
+                "set_id": 26655
             },
             "initial_release": {
                 "major_version": 8,
@@ -705299,7 +706663,7 @@
                 "ppc64le",
                 "s390x"
             ],
-            "id": 19929,
+            "id": 19970,
             "in_packageset": {
                 "package": [
                     {
@@ -705310,7 +706674,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26610
+                "set_id": 26656
             },
             "initial_release": {
                 "major_version": 8,
@@ -705339,7 +706703,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19930,
+            "id": 19971,
             "in_packageset": {
                 "package": [
                     {
@@ -705350,7 +706714,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26611
+                "set_id": 26657
             },
             "initial_release": {
                 "major_version": 7,
@@ -705370,7 +706734,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19931,
+            "id": 19972,
             "in_packageset": {
                 "package": [
                     {
@@ -705381,7 +706745,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26612
+                "set_id": 26658
             },
             "initial_release": {
                 "major_version": 7,
@@ -705401,7 +706765,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19932,
+            "id": 19973,
             "in_packageset": {
                 "package": [
                     {
@@ -705412,7 +706776,7 @@
                         "repository": "repos"
                     }
                 ],
-                "set_id": 26613
+                "set_id": 26659
             },
             "initial_release": {
                 "major_version": 7,
@@ -705432,7 +706796,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19933,
+            "id": 19974,
             "in_packageset": {
                 "package": [
                     {
@@ -705443,7 +706807,7 @@
                         "repository": "repos"
                     }
                 ],
-                "set_id": 26614
+                "set_id": 26660
             },
             "initial_release": {
                 "major_version": 7,
@@ -705463,7 +706827,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19934,
+            "id": 19975,
             "in_packageset": {
                 "package": [
                     {
@@ -705474,7 +706838,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26615
+                "set_id": 26661
             },
             "initial_release": {
                 "major_version": 7,
@@ -705494,7 +706858,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19935,
+            "id": 19976,
             "in_packageset": {
                 "package": [
                     {
@@ -705505,7 +706869,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26616
+                "set_id": 26662
             },
             "initial_release": {
                 "major_version": 7,
@@ -705526,7 +706890,7 @@
                 "x86_64",
                 "aarch64"
             ],
-            "id": 19936,
+            "id": 19977,
             "in_packageset": {
                 "package": [
                     {
@@ -705537,7 +706901,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26618
+                "set_id": 26664
             },
             "initial_release": {
                 "major_version": 7,
@@ -705562,7 +706926,7 @@
                         "repository": "almalinux8-baseos"
                     }
                 ],
-                "set_id": 26617
+                "set_id": 26663
             },
             "release": {
                 "major_version": 8,
@@ -705578,7 +706942,7 @@
                 "x86_64",
                 "aarch64"
             ],
-            "id": 19937,
+            "id": 19978,
             "in_packageset": {
                 "package": [
                     {
@@ -705589,7 +706953,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26620
+                "set_id": 26666
             },
             "initial_release": {
                 "major_version": 7,
@@ -705614,7 +706978,7 @@
                         "repository": "almalinux8-appstream"
                     }
                 ],
-                "set_id": 26619
+                "set_id": 26665
             },
             "release": {
                 "major_version": 8,
@@ -705630,7 +706994,7 @@
                 "x86_64",
                 "aarch64"
             ],
-            "id": 19938,
+            "id": 19979,
             "in_packageset": {
                 "package": [
                     {
@@ -705641,7 +707005,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26622
+                "set_id": 26668
             },
             "initial_release": {
                 "major_version": 7,
@@ -705666,7 +707030,7 @@
                         "repository": "almalinux8-baseos"
                     }
                 ],
-                "set_id": 26621
+                "set_id": 26667
             },
             "release": {
                 "major_version": 8,
@@ -705682,7 +707046,7 @@
                 "x86_64",
                 "aarch64"
             ],
-            "id": 19939,
+            "id": 19980,
             "in_packageset": {
                 "package": [
                     {
@@ -705693,7 +707057,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26624
+                "set_id": 26670
             },
             "initial_release": {
                 "major_version": 7,
@@ -705718,7 +707082,7 @@
                         "repository": "almalinux8-baseos"
                     }
                 ],
-                "set_id": 26623
+                "set_id": 26669
             },
             "release": {
                 "major_version": 8,
@@ -705733,7 +707097,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19940,
+            "id": 19981,
             "in_packageset": {
                 "package": [
                     {
@@ -705744,7 +707108,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26625
+                "set_id": 26671
             },
             "initial_release": {
                 "major_version": 7,
@@ -705765,7 +707129,7 @@
                 "x86_64",
                 "aarch64"
             ],
-            "id": 19941,
+            "id": 19982,
             "in_packageset": {
                 "package": [
                     {
@@ -705776,7 +707140,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26627
+                "set_id": 26673
             },
             "initial_release": {
                 "major_version": 7,
@@ -705801,7 +707165,7 @@
                         "repository": "almalinux8-baseos"
                     }
                 ],
-                "set_id": 26626
+                "set_id": 26672
             },
             "release": {
                 "major_version": 8,
@@ -705816,7 +707180,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19942,
+            "id": 19983,
             "in_packageset": {
                 "package": [
                     {
@@ -705827,7 +707191,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26628
+                "set_id": 26674
             },
             "initial_release": {
                 "major_version": 7,
@@ -705847,7 +707211,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19943,
+            "id": 19984,
             "in_packageset": {
                 "package": [
                     {
@@ -705858,7 +707222,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26629
+                "set_id": 26675
             },
             "initial_release": {
                 "major_version": 7,
@@ -705878,7 +707242,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19944,
+            "id": 19985,
             "in_packageset": {
                 "package": [
                     {
@@ -705889,7 +707253,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26630
+                "set_id": 26676
             },
             "initial_release": {
                 "major_version": 7,
@@ -705909,7 +707273,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19945,
+            "id": 19986,
             "in_packageset": {
                 "package": [
                     {
@@ -705920,7 +707284,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26631
+                "set_id": 26677
             },
             "initial_release": {
                 "major_version": 7,
@@ -705940,7 +707304,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19946,
+            "id": 19987,
             "in_packageset": {
                 "package": [
                     {
@@ -705951,7 +707315,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26632
+                "set_id": 26678
             },
             "initial_release": {
                 "major_version": 7,
@@ -705971,7 +707335,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19947,
+            "id": 19988,
             "in_packageset": {
                 "package": [
                     {
@@ -705982,7 +707346,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26633
+                "set_id": 26679
             },
             "initial_release": {
                 "major_version": 7,
@@ -706002,7 +707366,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19948,
+            "id": 19989,
             "in_packageset": {
                 "package": [
                     {
@@ -706013,7 +707377,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26634
+                "set_id": 26680
             },
             "initial_release": {
                 "major_version": 7,
@@ -706033,7 +707397,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19949,
+            "id": 19990,
             "in_packageset": {
                 "package": [
                     {
@@ -706044,7 +707408,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26635
+                "set_id": 26681
             },
             "initial_release": {
                 "major_version": 7,
@@ -706064,7 +707428,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19950,
+            "id": 19991,
             "in_packageset": {
                 "package": [
                     {
@@ -706075,7 +707439,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26636
+                "set_id": 26682
             },
             "initial_release": {
                 "major_version": 7,
@@ -706095,7 +707459,7 @@
             "architectures": [
                 "x86_64"
             ],
-            "id": 19951,
+            "id": 19992,
             "in_packageset": {
                 "package": [
                     {
@@ -706106,7 +707470,7 @@
                         "repository": "sl"
                     }
                 ],
-                "set_id": 26637
+                "set_id": 26683
             },
             "initial_release": {
                 "major_version": 7,
@@ -706129,7 +707493,7 @@
                 "s390x",
                 "x86_64"
             ],
-            "id": 19952,
+            "id": 19993,
             "in_packageset": {
                 "package": [
                     {
@@ -706147,7 +707511,7 @@
                         "repository": "appstream"
                     }
                 ],
-                "set_id": 26639
+                "set_id": 26685
             },
             "initial_release": {
                 "major_version": 8,
@@ -706170,7 +707534,7 @@
                         "repository": "almalinux9-appstream"
                     }
                 ],
-                "set_id": 26638
+                "set_id": 26684
             },
             "release": {
                 "major_version": 9,

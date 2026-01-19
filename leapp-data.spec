@@ -1,4 +1,4 @@
-%global pes_events_build_date 20251112
+%global pes_events_build_date 20251222
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.11
-Release:	3%{?dist}.%{pes_events_build_date}
+Release:	4%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -159,6 +159,17 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Mon Jan 19 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-4.20251222
+- Data stream version 4.2
+- Update data to the upstream most recent state:
+ - PES data:
+  - pes-events.json: upstream state 7fa270f33a73abe77af863598914b3e6c0c3219c
+  - epel_pes.json_template:
+   - remove duplicated id and set_id
+  - config.json:
+   - for centos add rhel8-SAP-NetWeaver, rhel8-SAP-Solutions, rhel9-SAP-NetWeaver, rhel9-SAP-Solutions, rhel10-SAP-Solutions to the "repository_replacing"
+   - for almalinux, almalinux-kitten and centos add rhel10-NFV to the "repository_replacing"
+
 * Mon Jan 19 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-3.20251112
 - Vendor PostgreSQL:
  - remove Supplementary ucommon RPMs (sysupdates) repositories

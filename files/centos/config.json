@@ -69,6 +69,14 @@
             "in_packageset": "nfv",
             "out_packageset": "centos8-nfv"
         },
+        "rhel8-SAP-Solutions": {
+            "in_packageset": "saphana",
+            "out_packageset": "centos8-saphana"
+        },
+        "rhel8-SAP-NetWeaver": {
+            "in_packageset": "saphana",
+            "out_packageset": "centos8-saphana"
+        },
 
         "rhel9-AppStream": {
             "in_packageset": "appstream",
@@ -98,6 +106,14 @@
             "in_packageset": "nfv",
             "out_packageset": "centos9-nfv"
         },
+        "rhel9-SAP-Solutions": {
+            "in_packageset": "saphana",
+            "out_packageset": "centos9-saphana"
+        },
+        "rhel9-SAP-NetWeaver": {
+            "in_packageset": "saphana",
+            "out_packageset": "centos9-saphana"
+        },
 
         "rhel10-AppStream": {
             "in_packageset": "appstream",
@@ -118,6 +134,10 @@
         "rhel10-SAP-Solutions": {
             "in_packageset": "saphana",
             "out_packageset": "centos10-saphana"
+        },
+        "rhel10-NFV": {
+            "in_packageset": "nfv",
+            "out_packageset": "centos10-nfv"
         }
     },
     "removable_repositories":[

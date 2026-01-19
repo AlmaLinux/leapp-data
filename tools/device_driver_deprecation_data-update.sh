@@ -12,7 +12,7 @@ parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 dists="centos"
 
 # Data stream version, which is currently supported by ELevate
-provided_data_streams="4.1"
+provided_data_streams="4.2"
 
 # Date stamp to add to device driver deprecation data
 date_stamp=$(date -u '+%Y%m%d%H%M%S')

@@ -447223,7 +447223,7 @@
                         "modulestreams": [
                             {
                                 "name": "swig",
-                                "stream": "4.1"
+                                "stream": "4.2"
                             }
                         ],
                         "name": "swig",
@@ -447260,7 +447260,7 @@
                         "modulestreams": [
                             {
                                 "name": "swig",
-                                "stream": "4.1"
+                                "stream": "4.2"
                             }
                         ],
                         "name": "swig-doc",
@@ -447297,7 +447297,7 @@
                         "modulestreams": [
                             {
                                 "name": "swig",
-                                "stream": "4.1"
+                                "stream": "4.2"
                             }
                         ],
                         "name": "swig-gdb",
@@ -447334,7 +447334,7 @@
                         "modulestreams": [
                             {
                                 "name": "swig",
-                                "stream": "4.1"
+                                "stream": "4.2"
                             }
                         ],
                         "name": "swig",
@@ -447371,7 +447371,7 @@
                         "modulestreams": [
                             {
                                 "name": "swig",
-                                "stream": "4.1"
+                                "stream": "4.2"
                             }
                         ],
                         "name": "swig-doc",
@@ -447408,7 +447408,7 @@
                         "modulestreams": [
                             {
                                 "name": "swig",
-                                "stream": "4.1"
+                                "stream": "4.2"
                             }
                         ],
                         "name": "swig-gdb",
@@ -514748,7 +514748,7 @@
                         "modulestreams": [
                             {
                                 "name": "swig",
-                                "stream": "4.1"
+                                "stream": "4.2"
                             }
                         ],
                         "name": "swig",
@@ -514766,7 +514766,7 @@
                 {
                     "in_modulestream": {
                         "name": "swig",
-                        "stream": "4.1"
+                        "stream": "4.2"
                     },
                     "out_modulestream": null
                 }
@@ -514804,7 +514804,7 @@
                         "modulestreams": [
                             {
                                 "name": "swig",
-                                "stream": "4.1"
+                                "stream": "4.2"
                             }
                         ],
                         "name": "swig-gdb",
@@ -514822,7 +514822,7 @@
                 {
                     "in_modulestream": {
                         "name": "swig",
-                        "stream": "4.1"
+                        "stream": "4.2"
                     },
                     "out_modulestream": null
                 }
@@ -514860,7 +514860,7 @@
                         "modulestreams": [
                             {
                                 "name": "swig",
-                                "stream": "4.1"
+                                "stream": "4.2"
                             }
                         ],
                         "name": "swig-doc",
@@ -514878,7 +514878,7 @@
                 {
                     "in_modulestream": {
                         "name": "swig",
-                        "stream": "4.1"
+                        "stream": "4.2"
                     },
                     "out_modulestream": null
                 }

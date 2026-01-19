@@ -134,6 +134,10 @@
         "rhel10-SAP-Solutions": {
             "in_packageset": "saphana",
             "out_packageset": "almalinux10-saphana"
+        },
+        "rhel10-NFV": {
+            "in_packageset": "nfv",
+            "out_packageset": "almalinux10-nfv"
         }
     },
     "removable_repositories":[
