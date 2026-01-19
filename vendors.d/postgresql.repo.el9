@@ -60,7 +60,7 @@ gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
 
 [el9-pgdg12]
 name=PostgreSQL 12 for RHEL / Rocky / AlmaLinux 9 - $basearch
-baseurl=https://download.postgresql.org/pub/repos/yum/12/redhat/rhel-9-$basearch
+baseurl=https://yum-archive.postgresql.org/12/redhat/rhel-9-$basearch
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
