@@ -359,24 +359,21 @@ jobs:
         fi
 
         if [ "${vendor}" = "mariadb" ]; then
-          # MariaDB server requires some packages from EPEL on EL7
-          if [ "${source_release}" = "7" ]; then
-            cat << 'MARIADB'> /etc/yum.repos.d/mariadb.repo
+          # The https://r.mariadb.com/downloads/mariadb_repo_setup doesn't work anymore
+          cat << 'MARIADB'> /etc/yum.repos.d/mariadb.repo
         [mariadb-main]
         name = MariaDB
-        baseurl = https://rpm.mariadb.org/11.rolling/rhel/$releasever/$basearch
+        baseurl = https://mirror.mariadb.org/yum/12.rolling/rhel/$releasever/$basearch
         gpgkey= https://rpm.mariadb.org/RPM-GPG-KEY-MariaDB
         gpgcheck=1
+        module_hotfixes=1
         MARIADB
-
+          if [ "${source_release}" = "7" ]; then
+            # MariaDB server requires some packages from EPEL on EL7
             sudo dnf -y -q install epel-release
-          else
-            # Skip 'mariadb-maxscale' repository as it is broken for EL7
-            # --os-* options to install on EuroLinux
-            sudo curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash -s -- \
-              --skip-maxscale \
-              --os-version=${source_release} \
-              --os-type=rhel
+          elif [ "${source_release}" = "8" ]; then
+            # All matches were filtered out by modular filtering for argument: MariaDB-server
+            sudo dnf -y -q module disable mariadb
           fi
           sudo dnf -y install MariaDB-server
           res=$?
