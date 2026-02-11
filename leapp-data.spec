@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.11
-Release:	4%{?dist}.%{pes_events_build_date}
+Release:	5%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -159,6 +159,10 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Wed Feb 11 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-5.20251222
+- Vendor MariaDB:
+ - change domain into mirror.mariadb.org and set path in baseurl for mariadb-main repository
+
 * Mon Jan 19 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-4.20251222
 - Data stream version 4.2
 - Update data to the upstream most recent state:
