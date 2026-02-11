@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.10
-Release:	9%{?dist}.%{pes_events_build_date}
+Release:	10%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -159,6 +159,10 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Wed Feb 11 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.10-10.20250729
+- Vendor MariaDB:
+ - change domain into mirror.mariadb.org and set path in baseurl for mariadb-main repository
+
 * Mon Jan 19 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.10-9.20250729
 - Vendor PostgreSQL:
  - remove Supplementary ucommon RPMs (sysupdates) repositories
