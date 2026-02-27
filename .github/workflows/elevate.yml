@@ -410,8 +410,11 @@ jobs:
           res=$?
         fi
 
-        if [ "${vendor}" = "firmware" ]; then
+        if [ "${vendor}" = "misc-packages" ]; then
           sudo dnf install -y linux-firmware
+          if [ "${source_release}" != "7" ]; then
+            sudo dnf install -y fapolicyd
+          fi
           res=$?
         fi
 
@@ -569,10 +572,10 @@ jobs:
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh imunify ${{ env.source_release }}" || exit 1
 
-    - name: Linux Firmware
+    - name: Miscellaneous packages installation
       if: inputs.vendors == 'all'
       run: |
-        sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh firmware ${{ env.source_release }}" || exit 1
+        sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh "misc-packages" ${{ env.source_release }}" || exit 1
 
     - name: leapp preupgrade
       id: leapp-preupgrade
