@@ -384,8 +384,9 @@ jobs:
           case ${source_release} in
             7)
               sudo dnf -y -q install epel-release
-              # TODO: switch "PostgreSQL 12 for RHEL / CentOS" repository into yum-archive.postgresql.org
+              # TODO: switch "PostgreSQL 12 for EL" and "PostgreSQL 13 for EL" repositories into yum-archive.postgresql.org
               sed -i 's#download.postgresql.org/pub/repos/yum/12/#yum-archive.postgresql.org/12/#g' /etc/yum.repos.d/pgdg-redhat-all.repo
+              sed -i 's#download.postgresql.org/pub/repos/yum/13/#yum-archive.postgresql.org/13/#g' /etc/yum.repos.d/pgdg-redhat-all.repo
               ;;
             8)
               sudo dnf -y -q module disable postgresql;;
