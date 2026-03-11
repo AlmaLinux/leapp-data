@@ -1,11 +1,11 @@
 #########################################################################
-# PGDG Red Hat Enterprise Linux / Rocky / AlmaLinux repositories.	#
+# PGDG EL repositories.	                                                #
 #########################################################################
 
-# PGDG Red Hat Enterprise Linux / Rocky / AlmaLinux stable common repository for all PostgreSQL versions
+# PGDG EL stable common repository for all PostgreSQL versions
 
 [el10-pgdg-common]
-name=PostgreSQL common RPMs for RHEL / Rocky / AlmaLinux 10 - $basearch
+name=PostgreSQL common RPMs for EL 10 - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/common/redhat/rhel-10-$basearch
 enabled=1
 gpgcheck=1
@@ -15,45 +15,52 @@ gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
 # consul, haproxy, etc.
 
 [el10-pgdg-rhel10-extras]
-name=Extra packages to support some RPMs in the PostgreSQL RPM repo RHEL / Rocky / AlmaLinux 10 - $basearch
+name=Extra packages to support some RPMs in the PostgreSQL RPM repo EL 10 - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/extras/redhat/rhel-10-$basearch
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
 
-# PGDG Red Hat Enterprise Linux / Rocky / AlmaLinux stable repositories:
+# PGDG EL stable repositories:
+
+[el10-pgdg18]
+name=PostgreSQL 18 for EL 10 - $basearch
+baseurl=https://download.postgresql.org/pub/repos/yum/18/redhat/rhel-10-$basearch
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
 
 [el10-pgdg17]
-name=PostgreSQL 17 for RHEL / Rocky / AlmaLinux 10 - $basearch
+name=PostgreSQL 17 for EL 10 - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/17/redhat/rhel-10-$basearch
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
 
 [el10-pgdg16]
-name=PostgreSQL 16 for RHEL / Rocky / AlmaLinux 10 - $basearch
+name=PostgreSQL 16 for EL 10 - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/16/redhat/rhel-10-$basearch
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
 
 [el10-pgdg15]
-name=PostgreSQL 15 for RHEL / Rocky / AlmaLinux 10 - $basearch
+name=PostgreSQL 15 for EL 10 - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/15/redhat/rhel-10-$basearch
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
 
 [el10-pgdg14]
-name=PostgreSQL 14 for RHEL / Rocky / AlmaLinux 10 - $basearch
+name=PostgreSQL 14 for EL 10 - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/14/redhat/rhel-10-$basearch
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
 
 [el10-pgdg13]
-name=PostgreSQL 13 for RHEL / Rocky / AlmaLinux 10 - $basearch
-baseurl=https://download.postgresql.org/pub/repos/yum/13/redhat/rhel-10-$basearch
+name=PostgreSQL 13 for EL 10 - $basearch
+baseurl=https://yum-archive.postgresql.org/13/redhat/rhel-10-$basearch
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
