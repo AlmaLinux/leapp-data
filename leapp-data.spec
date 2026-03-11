@@ -52,7 +52,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.6
-Release:	12%{?dist}.%{pes_events_build_date}
+Release:	13%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -177,6 +177,12 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Wed Mar 11 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.6-13.20241127
+- Vendor PostgreSQL:
+ - add "PostgreSQL 18 for EL" repositories, 8 to 9 upgrade path
+ - include ppc64le architecture where it is available
+ - switch "PostgreSQL 13 for EL" repositories into yum-archive.postgresql.org
+
 * Wed Feb 11 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.6-12.20241127
 - Vendor MariaDB:
  - set baseurl to https://mirror.mariadb.org/yum/11.rolling/rhel/$releasever/$basearch
