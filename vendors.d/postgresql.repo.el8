@@ -1,11 +1,11 @@
 #######################################################
-# PGDG Red Hat Enterprise Linux / Rocky repositories  #
+# PGDG EL repositories                                #
 #######################################################
 
-# PGDG Red Hat Enterprise Linux / Rocky stable common repository for all PostgreSQL versions
+# PGDG EL stable common repository for all PostgreSQL versions
 
 [el8-pgdg-common]
-name=PostgreSQL common RPMs for RHEL / Rocky 8 - $basearch
+name=PostgreSQL common RPMs EL 8 - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/common/redhat/rhel-8-$basearch
 enabled=1
 gpgcheck=1
@@ -16,7 +16,7 @@ module_hotfixes=true
 # consul, haproxy, etc.
 
 [el8-pgdg-rhel8-extras]
-name=Extra packages to support some RPMs in the PostgreSQL RPM repo RHEL / Rocky 8 - $basearch
+name=Extra packages to support some RPMs in the PostgreSQL RPM repo EL 8 - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/extras/redhat/rhel-8-$basearch
 enabled=0
 gpgcheck=1
@@ -24,10 +24,12 @@ gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
 module_hotfixes=true
 
 
-# PGDG Red Hat Enterprise Linux / Rocky stable repositories:
+# PGDG up to version 15 are available for EL 7,
+# so there is no reason to include newer PGDG yum configs for EL 8
+# PGDG EL stable repositories:
 
 [el8-pgdg15]
-name=PostgreSQL 15 for RHEL / Rocky 8 - $basearch
+name=PostgreSQL 15 EL 8 - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/15/redhat/rhel-8-$basearch
 enabled=1
 gpgcheck=1
@@ -36,7 +38,7 @@ module_hotfixes=true
 
 
 [el8-pgdg14]
-name=PostgreSQL 14 for RHEL / Rocky 8 - $basearch
+name=PostgreSQL 14 EL 8 - $basearch
 baseurl=https://download.postgresql.org/pub/repos/yum/14/redhat/rhel-8-$basearch
 enabled=1
 gpgcheck=1
@@ -45,8 +47,8 @@ module_hotfixes=true
 
 
 [el8-pgdg13]
-name=PostgreSQL 13 for RHEL / Rocky 8 - $basearch
-baseurl=https://download.postgresql.org/pub/repos/yum/13/redhat/rhel-8-$basearch
+name=PostgreSQL 13 EL 8 - $basearch
+baseurl=https://yum-archive.postgresql.org/13/redhat/rhel-8-$basearch
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/postgresql.gpg
@@ -54,7 +56,7 @@ module_hotfixes=true
 
 
 [el8-pgdg12]
-name=PostgreSQL 12 for RHEL / Rocky 8 - $basearch
+name=PostgreSQL 12 EL 8 - $basearch
 baseurl=https://yum-archive.postgresql.org/12/redhat/rhel-8-$basearch
 enabled=1
 gpgcheck=1
@@ -63,7 +65,7 @@ module_hotfixes=true
 
 
 [el8-pgdg11]
-name=PostgreSQL 11 for RHEL / Rocky 8 - $basearch
+name=PostgreSQL 11 EL 8 - $basearch
 baseurl=https://yum-archive.postgresql.org/11/redhat/rhel-8-$basearch
 enabled=1
 gpgcheck=1
