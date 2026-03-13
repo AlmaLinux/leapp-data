@@ -123,7 +123,7 @@ jobs:
       vm_boot_timeout: 600
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
 
     - name: Prepare some environment variables
       run: |
@@ -645,14 +645,14 @@ jobs:
         tar cf ${{ env.variant_long }}-leapp-logs.tar .${{ env.leapp_log_dir }}
 
     - name: Leapp logs as artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       if: ( success() || failure() ) && ( steps.leapp-preupgrade.outcome == 'success' || steps.leapp-upgrade.outcome == 'success' )
       with:
         name: ${{ env.variant_long }}-leapp-logs.tar
         path: ${{ env.variant_long }}-leapp-logs.tar
 
     - name: Serial console log as artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       if: ( success() || failure() ) && steps.vagrant-up.outcome == 'success'
       with:
         name: ${{ env.variant_long }}-serial-console.log
@@ -660,7 +660,7 @@ jobs:
 
     - name: Print tests summary
       if: ( success() || failure() ) && ( steps.install-leapp-rpms.outcome == 'success' || steps.list-remain-packages.outcome == 'success' )
-      uses: actions/github-script@v7
+      uses: actions/github-script@v8
       with:
         result-encoding: string
         script: |
