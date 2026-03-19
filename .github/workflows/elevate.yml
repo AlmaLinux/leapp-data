@@ -270,13 +270,15 @@ jobs:
             8)
               sed -i 's/\(PermitRootLogin yes\)/\1 # inhibited/g' /etc/ssh/sshd_config;
               sed -i s/^AllowZoneDrifting=.*/AllowZoneDrifting=no/ /etc/firewalld/firewalld.conf;
+              nmcli conn migrate
               leapp answer --section check_vdo.confirm=True;
               res=$?
               ;;
             9)
               # TODO: workaround for CentOS Stream 9 SHA1 deprecated signature
               [ ${{ matrix.distro }} = "centos" ] && rpm -e gpg-pubkey-8483c65d-5ccc5b19 || true
-              res=0
+              nmcli conn migrate
+              res=$?
               ;;
           esac
         fi
