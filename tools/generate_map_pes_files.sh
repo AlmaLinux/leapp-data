@@ -58,7 +58,19 @@ tuxcare_map_file="vendors.d/tuxcare_map.json_template.el${target_version}"
 
 if [ -n "${os_repos[$dist_name$major_ver]}" ]; then
     IFS=' ' read -ra REPO <<< "${os_repos[$dist_name$major_ver]}"
-    for file in ${epel_map_file} ${epel_pes_file} ${microsoft_pes_file} ${postgresql_map_file} ${nginx_stable_map_file} ${nginx_mainline_map_file} ${microsoft_map_file} ${mariadb_map_file} ${kernelcare_map_file} ${imunify360_alt_php_map_file} ${imunify_map_file} ${docker_ce_map_file}; do
+    for file in ${epel_map_file} \
+        ${epel_pes_file} \
+        ${microsoft_pes_file} \
+        ${postgresql_map_file} \
+        ${nginx_stable_map_file} \
+        ${nginx_mainline_map_file} \
+        ${microsoft_map_file} \
+        ${mariadb_map_file} \
+        ${kernelcare_map_file} \
+        ${imunify360_alt_php_map_file} \
+        ${imunify_map_file} \
+        ${docker_ce_map_file} \
+        ${tuxcare_map_file}; do
         test -e "${file}" || continue
 
         sed -i "s/{appstream}/${REPO[0]}/g" "${file}"
