@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.10
-Release:	11%{?dist}.%{pes_events_build_date}
+Release:	12%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -159,6 +159,11 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Wed Apr 08 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.10-12.20250729
+- Vendor KernelCare: add 44c25eb080935b88 SIG key
+- Vendor Nginx: add 2fd21310b49f6b46 SIG key
+- tools/generate_map_pes_files.sh: add vendors.d/tuxcare_map.json_template.el* to the list of files to process
+
 * Wed Mar 11 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.10-11.20250729
 - Vendor PostgreSQL:
  - add "PostgreSQL 18 for EL" repositories, 8 to 9 upgrade path
