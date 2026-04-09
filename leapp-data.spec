@@ -2,8 +2,8 @@
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
-%define dist_list almalinux almalinux-x86_64_v2 almalinux-kitten centos
-%define conflict_dists() %(for i in almalinux almalinux-x86_64_v2 almalinux-kitten centos; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
+%define dist_list almalinux almalinux-x86_64_v2 almalinux-kitten almalinux-kitten-x86_64_v2 centos
+%define conflict_dists() %(for i in almalinux almalinux-x86_64_v2 almalinux-kitten almalinux-kitten-x86_64_v2 centos; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 %if 0%{?rhel} == 7
 %define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce imunify360-alt-php tuxcare elevate
@@ -38,6 +38,10 @@
 %define gpg_key RPM-GPG-KEY-AlmaLinux-10
 %endif
 %if "%{dist_name}" == "almalinux-kitten"
+%define gpg_key RPM-GPG-KEY-AlmaLinux-10
+%define dist_gpg_path distro/almalinux/rpm-gpg/%{target_version}
+%endif
+%if "%{dist_name}" == "almalinux-kitten-x86_64_v2"
 %define gpg_key RPM-GPG-KEY-AlmaLinux-10
 %define dist_gpg_path distro/almalinux/rpm-gpg/%{target_version}
 %endif

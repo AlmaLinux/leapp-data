@@ -20,18 +20,20 @@ os_repos["almalinux9"]="almalinux10-appstream almalinux10-crb almalinux10-baseos
 os_repos["almalinux-x86_64_v29"]="almalinux10-appstream almalinux10-crb almalinux10-baseos"
 # To generate data for leapp-data-almalinux-kitten package on AlmaLinux 9
 os_repos["almalinux-kitten9"]="almalinux10-appstream almalinux10-crb almalinux10-baseos"
+# To generate data for leapp-data-almalinux-kitten-x86_64_v2 package on AlmaLinux 9
+os_repos["almalinux-kitten-x86_64_v29"]="almalinux10-appstream almalinux10-crb almalinux10-baseos"
 os_repos["centos9"]="centos10-appstream centos10-crb centos10-baseos"
 
 declare -A os_name
 os_name["almalinux"]="AlmaLinux"
 os_name["almalinux-x86_64_v2"]="AlmaLinux"
 os_name["almalinux-kitten"]="AlmaLinux"
+os_name["almalinux-kitten-x86_64_v2"]="AlmaLinux"
 os_name["centos"]="CentOS"
 
 # The 'distro' field in repomap files
 distro=$dist_name
-[[ $distro == almalinux-kitten* ]] && distro=almalinux
-[[ $distro == almalinux-x86_64_v2* ]] && distro=almalinux
+[[ $distro == almalinux-* ]] && distro=almalinux
 
 case $major_ver in
     7)

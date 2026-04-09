@@ -130,7 +130,7 @@ def main():
         else:
             pes_events_url = 'https://raw.githubusercontent.com/oamg/leapp-repository/master/etc/leapp/files/pes-events.json'
 
-        for dist_name in ['almalinux', 'almalinux-x86_64_v2', 'almalinux-kitten', 'centos']:
+        for dist_name in ['almalinux', 'almalinux-x86_64_v2', 'almalinux-kitten', 'almalinux-kitten-x86_64_v2', 'centos']:
             print(f'Updating {dist_name}')
             pes_events_data = download_pes_events(session, pes_events_url)
             update_pes_events(dist_name, pes_events_data)
