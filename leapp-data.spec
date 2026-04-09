@@ -54,7 +54,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.11
-Release:	7%{?dist}.%{pes_events_build_date}
+Release:	7.1%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -91,23 +91,36 @@ sh tools/generate_map_pes_files.sh "%{dist_name}" "%{?rhel}"
 # Third-party repositories part
 mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
 cp -rf vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
+# EPEL Vendor is for AlmaLinux only
 if [[ %{dist_name} != *"almalinux"* ]]; then
     rm -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel*
+fi
+# The only EPEL endor is available if AlmaLinux x86_64_v2
+if [[ %{dist_name} == *"x86_64_v2"* ]]; then
+    find %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/ -type f -a ! -name epel* -delete
 fi
 for vendor in %{supported_vendors}; do
       [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el%{target_version} ] && \
       mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el%{target_version} \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo
 
+      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el%{target_version}.%{dist_name} ] && \
+      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el%{target_version}.%{dist_name} \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo
+
       [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el%{target_version} ] && \
       mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el%{target_version} \
+      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg
+
+      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el%{target_version}.%{dist_name} ] && \
+      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el%{target_version}.%{dist_name} \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg
 
       [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el%{target_version} ] && \
       mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el%{target_version} \
       %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json
 done
-find %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/ -name \*.el\* -a ! -name \*.el%{target_version} -delete
+find %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/ -name \*.el\* -a ! -name \*.el%{target_version} -a ! -name \*.el%{target_version}.%{dist_name} -delete
 
 
 # Main part
@@ -166,6 +179,10 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Fri Apr 10 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-7.1.20251222
+- leapp-data-almalinux-x86_64_v2 and leapp-data-almalinux-kitten-x86_64_v2 new packages to upgrade AlmaLinux 9->10 x86_64 v2
+- Enable EPEL Vendor for AlmaLinux 9->10 x86_64_v2 upgrade
+
 * Wed Apr 08 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-7.20251222
 - Vendor KernelCare: add 44c25eb080935b88 SIG key
 - Vendor Nginx: add 2fd21310b49f6b46 SIG key

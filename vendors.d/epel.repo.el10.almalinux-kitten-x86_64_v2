@@ -1,0 +1,8 @@
+[el10-epel]
+name=Extra Packages for Enterprise Linux $releasever from AlmaLinux - x86_64_v2
+# mirrorlist=https://epel.mirrors.almalinux.org/mirrorlist/10/epel?arch=x86_64_v2
+baseurl=https://epel.repo.almalinux.org/10/x86_64_v2/
+gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/RPM-GPG-KEY-AlmaLinux-$releasever_major-EPEL-AltArch
+gpgcheck=1
+countme=1
+enabled=1
