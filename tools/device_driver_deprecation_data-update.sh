@@ -5,7 +5,7 @@ releases=('8.10' '9.6')
 
 # Path where to store device driver deprecation data file
 # '../files/almalinux'
-dist_names="almalinux almalinux-kitten"
+dist_names="almalinux almalinux-x86_64_v2 almalinux-kitten"
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 
 # Distros list to copy device driver deprecation data file for
