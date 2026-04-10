@@ -87,6 +87,8 @@ jobs:
             if [ "${{ inputs.to10 }}" = "true" ]; then
               VARIANTS+=("almalinux 9 to almalinux 10")
               VARIANTS+=("almalinux 9 to almalinux-kitten 10")
+              VARIANTS+=("almalinux 9 to almalinux-x86_64_v2 10")
+              VARIANTS+=("almalinux 9 to almalinux-kitten-x86_64_v2 10")
             fi
           fi
 
@@ -132,12 +134,17 @@ jobs:
 
         # Target system release file, string and Vagrant image
         target_release_file=/etc/${target_distro}-release
+        target_release_arch=x86_64
+        if [[ ${target_distro} == *"x86_64_v2" ]]; then
+          target_release_arch=x86_64_v2
+        fi
         case ${target_distro} in
-          almalinux)
+          almalinux|almalinux-x86_64_v2)
             vm_box=almalinux/${source_release}
             target_release_string="AlmaLinux release ${target_release}"
+            target_release_file=/etc/almalinux-release
             ;;
-          almalinux-kitten )
+          almalinux-kitten|almalinux-kitten-x86_64_v2 )
             vm_box=almalinux/${source_release}
             target_release_string="AlmaLinux Kitten release ${target_release}"
             target_release_file=/etc/almalinux-release
@@ -145,6 +152,7 @@ jobs:
           centos )
             vm_box=eurolinux-vagrant/centos-stream-${source_release} # generic/centos8s
             target_release_string="CentOS Stream release ${target_release}"
+            target_release_arch=noarch
             ;;
         esac
         if [ "${source_release}" = "7" ]; then
@@ -156,6 +164,7 @@ jobs:
 
         echo "target_release_string=${target_release_string}" >> $GITHUB_ENV
         echo "target_release_file=${target_release_file}" >> $GITHUB_ENV
+        echo "target_release_arch=${target_release_arch}" >> $GITHUB_ENV
         echo "target_release=${target_release}" >> $GITHUB_ENV
         echo "target_distro=${target_distro}" >> $GITHUB_ENV
         echo "source_release=${source_release}" >> $GITHUB_ENV
@@ -234,6 +243,17 @@ jobs:
 
           dnf -y -q install ${{ env.leapp_pkgs }}
           res=$?
+
+          # If upgrade to x86_64_v2, download the rootfs for target userspace bootstraping
+          if [[ ${{ env.target_distro }} == *"x86_64_v2" ]]; then
+            git_branch=10
+            [[ ${{ env.target_distro }} == *"kitten"* ]] && git_branch=10-kitten
+            mkdir -p /etc/leapp/files/rootfs && cd /etc/leapp/files/rootfs
+
+            curl -LJO https://github.com/AlmaLinux/container-images/raw/refs/heads/${git_branch}/default/amd64_v2/almalinux-${git_branch}-default-amd64_v2.tar.xz
+            res=$?
+            echo "[Debug] $(ls -l almalinux-${git_branch}-default-amd64_v2.tar.xz)"
+          fi
         fi
 
         # Do preupgrade
@@ -536,42 +556,42 @@ jobs:
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh epel ${{ env.source_release }}" || exit 1
 
     - name: Vendor - KernelCare
-      if: inputs.vendors == 'all'
+      if: inputs.vendors == 'all' && ! contains(env.target_distro, 'x86_64_v2')
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh kernelcare ${{ env.source_release }}" || exit 1
 
     - name: Vendor - Nginx
-      if: inputs.vendors == 'all'
+      if: inputs.vendors == 'all' && ! contains(env.target_distro, 'x86_64_v2')
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh nginx ${{ env.source_release }}" || exit 1
 
     - name: Vendor - MariaDB
-      if: inputs.vendors == 'all'
+      if: inputs.vendors == 'all' && ! contains(env.target_distro, 'x86_64_v2')
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh mariadb ${{ env.source_release }}" || exit 1
 
     - name: Vendor - PostgreSQL
-      if: inputs.vendors == 'all'
+      if: inputs.vendors == 'all' && ! contains(env.target_distro, 'x86_64_v2')
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh postgresql ${{ env.source_release }}" || exit 1
 
     - name: Vendor - Docker-CE
-      if: inputs.vendors == 'all'
+      if: inputs.vendors == 'all' && ! contains(env.target_distro, 'x86_64_v2')
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh docker ${{ env.source_release }}" || exit 1
 
     - name: Vendor - Microsoft
-      if: false && inputs.vendors == 'all'
+      if: false && inputs.vendors == 'all' && ! contains(env.target_distro, 'x86_64_v2')
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh microsoft ${{ env.source_release }}" || exit 1
 
     - name: Vendor - TuxCare
-      if: inputs.vendors == 'all'
+      if: inputs.vendors == 'all' && ! contains(env.target_distro, 'x86_64_v2')
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh tuxcare ${{ env.source_release }}" || exit 1
 
     - name: Vendor - Imunify360
-      if: inputs.vendors == 'all' && ( env.target_release == '8' || env.target_release == '10' )
+      if: inputs.vendors == 'all' && ( env.target_release == '8' || env.target_release == '10' ) && ! contains(env.target_distro, 'x86_64_v2')
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh imunify ${{ env.source_release }}" || exit 1
 
@@ -615,7 +635,7 @@ jobs:
         sudo vagrant ssh elevatevm -c "sudo sh -c 'rm -rf /vagrant/leapp && /bin/cp -a ${{ env.leapp_log_dir }} /vagrant/ && chmod o+rx /vagrant/leapp'"
         sudo vagrant scp elevatevm:/vagrant/leapp/* .${{ env.leapp_log_dir }}/
 
-    - name: Check upgraded system release
+    - name: Check upgraded system
       run: |
         release=$(sudo vagrant ssh elevatevm -c 'cat ${{ env.target_release_file }}')
         if [[ ${release} = *'${{ env.target_release_string }}'* ]]; then
@@ -624,6 +644,14 @@ jobs:
           echo "[Debug] '${release}' did not match '${{ env.target_release_string }}'" && false
         fi
         echo "matched_release=${release}" >> $GITHUB_ENV
+
+        arch=$(sudo vagrant ssh elevatevm -c 'rpm -qf --queryformat "%{ARCH}" ${{ env.target_release_file }}')
+        if [[ ${arch} = '${{ env.target_release_arch }}' ]]; then
+          echo "[Debug] '${arch}' matched"
+        else
+          echo "[Debug] '${arch}' did not match '${{ env.target_release_arch }}'" && false
+        fi
+        echo "matched_arch=${arch}" >> $GITHUB_ENV
 
     - name: List of packages remain installed from source system
       id: list-remain-packages
@@ -667,7 +695,7 @@ jobs:
         result-encoding: string
         script: |
           core.summary
-              .addHeading('Upgraded to: ${{ env.matched_release }}', '4')
+              .addHeading('Upgraded to: ${{ env.matched_release }} (${{ env.matched_arch }})', '4')
               .addHeading('ELevate packages from ${{ inputs.repository }}:', '4')
               .addList([${{ env.pkgs_versions }}], true)
               .addHeading('${{ env.source_distro }}${{ env.source_release }} packages remain installed:', '4')

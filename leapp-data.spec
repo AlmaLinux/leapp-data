@@ -53,8 +53,8 @@
 %bcond_without check
 
 Name:		leapp-data-%{dist_name}
-Version:	0.11
-Release:	7.1%{?dist}.%{pes_events_build_date}
+Version:	0.12
+Release:	1%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -179,7 +179,7 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
-* Fri Apr 10 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-7.1.20251222
+* Tue Apr 14 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.12-1.20251222
 - leapp-data-almalinux-x86_64_v2 and leapp-data-almalinux-kitten-x86_64_v2 new packages to upgrade AlmaLinux 9->10 x86_64 v2
 - Enable EPEL Vendor for AlmaLinux 9->10 x86_64_v2 upgrade
 
