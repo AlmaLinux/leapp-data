@@ -2,81 +2,59 @@
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
-%define dist_list almalinux almalinux-x86_64_v2 almalinux-kitten almalinux-kitten-x86_64_v2 centos
-%define conflict_dists() %(for i in almalinux almalinux-x86_64_v2 almalinux-kitten almalinux-kitten-x86_64_v2 centos; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
+%define os_all almalinux almalinux-x86_64_v2 almalinux-kitten almalinux-kitten-x86_64_v2 centos
 
-%if 0%{?rhel} == 7
-%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce imunify360-alt-php tuxcare elevate
-%define target_version 8
-%define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
-%if %{dist_name} == "almalinux"
-%define gpg_key RPM-GPG-KEY-AlmaLinux-8
-%endif
-%if %{dist_name} == "centos"
-%define gpg_key RPM-GPG-KEY-CentOS-Official
-%endif
-%endif
 %if 0%{?rhel} == 8
-%define supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce tuxcare elevate
-%define target_version 9
-%define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
-%if "%{dist_name}" == "almalinux"
-%define gpg_key RPM-GPG-KEY-AlmaLinux-9
-%endif
-%if "%{dist_name}" == "centos"
-%define gpg_key RPM-GPG-KEY-CentOS-Official RPM-GPG-KEY-CentOS-SIG-Extras
-%endif
+%global target_version 9
+%define os_list almalinux centos
+%global supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce tuxcare elevate
 %endif
 %if 0%{?rhel} == 9
-%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline docker-ce postgresql imunify360-alt-php tuxcare elevate
-%define target_version 10
-%define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
-%if "%{dist_name}" == "almalinux"
-%define gpg_key RPM-GPG-KEY-AlmaLinux-10
-%endif
-%if "%{dist_name}" == "almalinux-x86_64_v2"
-%define gpg_key RPM-GPG-KEY-AlmaLinux-10
-%endif
-%if "%{dist_name}" == "almalinux-kitten"
-%define gpg_key RPM-GPG-KEY-AlmaLinux-10
-%define dist_gpg_path distro/almalinux/rpm-gpg/%{target_version}
-%endif
-%if "%{dist_name}" == "almalinux-kitten-x86_64_v2"
-%define gpg_key RPM-GPG-KEY-AlmaLinux-10
-%define dist_gpg_path distro/almalinux/rpm-gpg/%{target_version}
-%endif
-%if "%{dist_name}" == "centos"
-%define gpg_key RPM-GPG-KEY-centosofficial-SHA256 RPM-GPG-KEY-CentOS-SIG-Extras-SHA512
-%endif
+%global target_version 10
+%define os_list %{os_all}
+%global supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline docker-ce postgresql imunify360-alt-php tuxcare elevate
 %endif
 
 %bcond_without check
 
-Name:		leapp-data-%{dist_name}
-Version:	0.12
-Release:	1%{?dist}.%{pes_events_build_date}
-Summary:	data for migrating tool
-Group:		Applications/Databases
-License:	ASL 2.0
-URL:		https://github.com/AlmaLinux/leapp-data
-Source0:	leapp-data-%{version}.tar.gz
+Name:       leapp-data
+Version:    0.12
+Release:    1%{?dist}.%{pes_events_build_date}
+Summary:    Data for ELevate migration tool
+Group:      Applications/Databases
+License:    ASL 2.0
+URL:        https://github.com/AlmaLinux/leapp-data
+Source0:    leapp-data-%{version}.tar.gz
 BuildArch:  noarch
 
-Conflicts: %{conflict_dists}
-
 %if %{with check}
-%if 0%{?rhel} == 7
-BuildRequires: python36
-BuildRequires: python36-jsonschema
-%endif
-%if 0%{?rhel} >= 8
 BuildRequires: python3
 BuildRequires: python3-jsonschema
 %endif
-%endif
 
 %description
-%{dist_name} %{summary}
+Data packages for the ELevate migration tool that enables migration
+between major versions of RHEL-derivative distributions.
+
+# Generate subpackage definitions from os_list
+%{expand:%(for os_name in %{os_list}; do
+conflicts=""
+for d in %{os_all}; do
+    if [ "$d" != "$os_name" ]; then
+        conflicts="${conflicts} leapp-data-${d}"
+    fi
+done
+cat <<SUBPKG
+%%package -n leapp-data-${os_name}
+Summary: ${os_name} data for ELevate migration tool
+RemovePathPostfixes: .${os_name}
+Conflicts:${conflicts}
+
+%%description -n leapp-data-${os_name}
+${os_name} data for ELevate migration tool
+
+SUBPKG
+done)}
 
 
 %prep
@@ -84,98 +62,153 @@ BuildRequires: python3-jsonschema
 
 
 %build
-sh tools/generate_map_pes_files.sh "%{dist_name}" "%{?rhel}"
+cp -a vendors.d vendors.d.pristine
+for os_name in %{os_list}; do
+    rm -rf vendors.d
+    cp -a vendors.d.pristine vendors.d
+    sh tools/generate_map_pes_files.sh "${os_name}" "%{?rhel}"
+    mv vendors.d vendors.d.built.${os_name}
+done
+rm -rf vendors.d
+mv vendors.d.pristine vendors.d
 
 
 %install
-# Third-party repositories part
-mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d
-cp -rf vendors.d/* %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/
-# EPEL Vendor is for AlmaLinux only
-if [[ %{dist_name} != *"almalinux"* ]]; then
-    rm -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/epel*
-fi
-# The only EPEL endor is available if AlmaLinux x86_64_v2
-if [[ %{dist_name} == *"x86_64_v2"* ]]; then
-    find %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/ -type f -a ! -name epel* -delete
-fi
-for vendor in %{supported_vendors}; do
-      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el%{target_version} ] && \
-      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el%{target_version} \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo
+for os_name in %{os_list}; do
 
-      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el%{target_version}.%{dist_name} ] && \
-      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el%{target_version}.%{dist_name} \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo
+    staging=%{_builddir}/%{buildsubdir}/staging.${os_name}
+    rm -rf ${staging}
 
-      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el%{target_version} ] && \
-      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el%{target_version} \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg
+    # Third-party repositories part
+    mkdir -p ${staging}%{_sysconfdir}/leapp/files/vendors.d
+    cp -rf vendors.d.built.${os_name}/* ${staging}%{_sysconfdir}/leapp/files/vendors.d/
+    # EPEL Vendor is for AlmaLinux only
+    if [[ $os_name != *"almalinux"* ]]; then
+        rm -f ${staging}%{_sysconfdir}/leapp/files/vendors.d/epel*
+    fi
+    # The only EPEL vendor is available for AlmaLinux x86_64_v2
+    if [[ $os_name == *"x86_64_v2"* ]]; then
+        find ${staging}%{_sysconfdir}/leapp/files/vendors.d/ -type f -a ! -name epel\* -delete
+    fi
+    for vendor in %{supported_vendors}; do
+          [ -f ${staging}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el%{target_version} ] && \
+          mv -f ${staging}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el%{target_version} \
+          ${staging}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo
 
-      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el%{target_version}.%{dist_name} ] && \
-      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el%{target_version}.%{dist_name} \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg
+          [ -f ${staging}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el%{target_version}.${os_name} ] && \
+          mv -f ${staging}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo.el%{target_version}.${os_name} \
+          ${staging}%{_sysconfdir}/leapp/files/vendors.d/${vendor}.repo
 
-      [ -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el%{target_version} ] && \
-      mv -f %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el%{target_version} \
-      %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json
-done
-find %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/ -name \*.el\* -a ! -name \*.el%{target_version} -a ! -name \*.el%{target_version}.%{dist_name} -delete
+          [ -f ${staging}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el%{target_version} ] && \
+          mv -f ${staging}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el%{target_version} \
+          ${staging}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg
 
+          [ -f ${staging}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el%{target_version}.${os_name} ] && \
+          mv -f ${staging}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg.el%{target_version}.${os_name} \
+          ${staging}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/${vendor}.gpg
 
-# Main part
-cp -rf files/%{dist_name}/* %{buildroot}%{_sysconfdir}/leapp/files/
+          [ -f ${staging}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el%{target_version} ] && \
+          mv -f ${staging}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json.el%{target_version} \
+          ${staging}%{_sysconfdir}/leapp/files/vendors.d/${vendor}_map.json
+    done
+    find ${staging}%{_sysconfdir}/leapp/files/vendors.d/ -name \*.el\* -a ! -name \*.el%{target_version} -a ! -name \*.el%{target_version}.${os_name} -delete
 
-rm -f %{buildroot}%{_sysconfdir}/leapp/files/config.json
+    # Main part
+    cp -rf files/${os_name}/* ${staging}%{_sysconfdir}/leapp/files/
 
-%if 0%{?rhel} == 7
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el8 \
-      %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el8 \
-      %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
-rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el9
-rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el10
-%endif
+    rm -f ${staging}%{_sysconfdir}/leapp/files/config.json
+
 %if 0%{?rhel} == 8
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9 \
-      %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el9 \
-      %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
-rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
-rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el10
+    mv -f ${staging}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el9 \
+          ${staging}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
+    mv -f ${staging}%{_sysconfdir}/leapp/files/repomap.json.el9 \
+          ${staging}%{_sysconfdir}/leapp/files/repomap.json
+    rm -f ${staging}%{_sysconfdir}/leapp/files/*.el8
+    rm -f ${staging}%{_sysconfdir}/leapp/files/*.el10
 %endif
 %if 0%{?rhel} == 9
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el10 \
-      %{buildroot}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
-mv -f %{buildroot}%{_sysconfdir}/leapp/files/repomap.json.el10 \
-      %{buildroot}%{_sysconfdir}/leapp/files/repomap.json
-rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el9
-rm -f %{buildroot}%{_sysconfdir}/leapp/files/*.el8
+    mv -f ${staging}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo.el10 \
+          ${staging}%{_sysconfdir}/leapp/files/leapp_upgrade_repositories.repo
+    mv -f ${staging}%{_sysconfdir}/leapp/files/repomap.json.el10 \
+          ${staging}%{_sysconfdir}/leapp/files/repomap.json
+    rm -f ${staging}%{_sysconfdir}/leapp/files/*.el9
+    rm -f ${staging}%{_sysconfdir}/leapp/files/*.el8
 %endif
 
-for key in %{gpg_key}; do
-      for rpm_gpg_path in rpm-gpg/%{target_version} %{dist_gpg_path}; do
-            mkdir -p %{buildroot}%{repositorydir}/system_upgrade/common/files/${rpm_gpg_path}
-            cp -av files/rpm-gpg/${key} %{buildroot}%{repositorydir}/system_upgrade/common/files/${rpm_gpg_path}/
-      done
-      rm -f files/rpm-gpg/${key}
+    # GPG keys
+    os_gpg_path="distro/${os_name}/rpm-gpg/%{target_version}"
+    gpg_keys=""
+%if 0%{?rhel} == 8
+    case $os_name in
+        almalinux)
+            gpg_keys="RPM-GPG-KEY-AlmaLinux-9" ;;
+        centos)
+            gpg_keys="RPM-GPG-KEY-CentOS-Official RPM-GPG-KEY-CentOS-SIG-Extras" ;;
+    esac
+%endif
+%if 0%{?rhel} == 9
+    case $os_name in
+        almalinux)
+            gpg_keys="RPM-GPG-KEY-AlmaLinux-10" ;;
+        almalinux-x86_64_v2)
+            gpg_keys="RPM-GPG-KEY-AlmaLinux-10" ;;
+        almalinux-kitten)
+            gpg_keys="RPM-GPG-KEY-AlmaLinux-10"
+            os_gpg_path="distro/almalinux/rpm-gpg/%{target_version}" ;;
+        almalinux-kitten-x86_64_v2)
+            gpg_keys="RPM-GPG-KEY-AlmaLinux-10"
+            os_gpg_path="distro/almalinux/rpm-gpg/%{target_version}" ;;
+        centos)
+            gpg_keys="RPM-GPG-KEY-centosofficial-SHA256 RPM-GPG-KEY-CentOS-SIG-Extras-SHA512" ;;
+    esac
+%endif
+
+    for key in $gpg_keys; do
+          for rpm_gpg_path in rpm-gpg/%{target_version} ${os_gpg_path}; do
+                mkdir -p ${staging}%{repositorydir}/system_upgrade/common/files/${rpm_gpg_path}
+                cp -av files/rpm-gpg/${key} ${staging}%{repositorydir}/system_upgrade/common/files/${rpm_gpg_path}/
+          done
+    done
+
+    # Move all staged files to buildroot with .${os_name} postfix
+    find ${staging} -type f | while read f; do
+        dest="${f#${staging}}"
+        mkdir -p "%{buildroot}$(dirname "${dest}")"
+        mv "${f}" "%{buildroot}${dest}.${os_name}"
+    done
+    rm -rf ${staging}
 done
+
+mkdir -p %{buildroot}%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg
+
 
 %check
 %if %{with check}
-JSON_FILES=$(find %{buildroot}%{_sysconfdir}/leapp/ -path "./tests" -prune -o -name "*pes*.json*" -print0 | xargs -0 echo)
+for os_name in %{os_list}; do
 
-python3 tests/validate_json.py tests/pes-events-schema.json $JSON_FILES
-python3 tests/validate_ids.py $JSON_FILES
-python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-events.json
+    JSON_FILES=$(find %{buildroot}%{_sysconfdir}/leapp/ -name "*pes*.json.${os_name}" -print0 | xargs -0 echo)
+
+    python3 tests/validate_json.py tests/pes-events-schema.json $JSON_FILES
+    python3 tests/validate_ids.py $JSON_FILES
+    python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-events.json.${os_name}
+done
 %endif
 
 
-%files
-%doc LICENSE NOTICE README.md
-%{repositorydir}/system_upgrade/common/files/rpm-gpg/%{target_version}/*
-%{repositorydir}/system_upgrade/common/files/%{dist_gpg_path}/*
-%{_sysconfdir}/leapp/files/*
+# Generate per-subpackage %files sections
+%{expand:%(for os_name in %{os_list}; do cat <<FILES
+%%files -n leapp-data-${os_name}
+%%doc LICENSE NOTICE README.md
+%%{_sysconfdir}/leapp/files/*.${os_name}
+%%dir %%{_sysconfdir}/leapp/files/vendors.d
+%%{_sysconfdir}/leapp/files/vendors.d/*.${os_name}
+%%dir %%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg
+%%{_sysconfdir}/leapp/files/vendors.d/rpm-gpg/*.${os_name}
+%%{repositorydir}/system_upgrade/common/files/rpm-gpg/%%{target_version}/*.${os_name}
+%%{repositorydir}/system_upgrade/common/files/distro/*/rpm-gpg/%%{target_version}/*.${os_name}
+
+FILES
+done)}
 
 
 %changelog
