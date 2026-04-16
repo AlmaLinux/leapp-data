@@ -472,8 +472,8 @@ jobs:
         cd ${rpmbuild_topdir}/SOURCES/ && tar zcf ${source} ${name}-${version}
 
         # Build and install the package
-        rpmbuild -bb --without check --define 'dist_name ${{ env.target_distro }}' ${rpmbuild_topdir}/SPECS/leapp-data.spec
-        yum install -y ${rpmbuild_topdir}/RPMS/noarch/${name}-${version}*.noarch.rpm
+        rpmbuild -bb --without check ${rpmbuild_topdir}/SPECS/leapp-data.spec
+        yum install -y ${rpmbuild_topdir}/RPMS/noarch/${name}-${{ env.target_distro }}-${version}*.noarch.rpm
 
         echo "[Debug] $(rpm -q ${name}-${version})"
 
