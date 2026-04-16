@@ -8,8 +8,8 @@ description: >-
 
 # Build and Sign Packages
 
-Build leapp-data on ALBS for AlmaLinux-8 and AlmaLinux-9, then sign
-completed builds with the ELevate key.
+Build leapp-data on ALBS for multiple platforms in a single build, then sign
+the completed build with the ELevate key.
 
 ## Prerequisites
 
@@ -28,21 +28,22 @@ git rev-parse --abbrev-ref HEAD
 
 The user may override the branch explicitly. If not, use the current branch.
 
-### Step 2: Create builds
+### Step 2: Create the build
 
-Call `create_build` via the `albs-mcp` MCP server **twice** — once per platform:
+Call `create_build` via the `albs-mcp` MCP server **once** with all platforms
+in a single request:
 
 | Parameter   | Value                |
 |-------------|----------------------|
-| packages    | value of `git_urls` (see below) |
-| platform    | `AlmaLinux-8`, then `AlmaLinux-9` |
+| git_urls    | value of `git_urls` (see below) |
+| platforms   | `["AlmaLinux-8", "AlmaLinux-9"]` (default, user may override) |
 | branch      | current git branch (from Step 1) |
 | arch_list   | `["x86_64"]`        |
 
 #### The `git_urls` parameter
 
 The user provides `git_urls` — a list of Git repository URLs pointing to the
-project source. This value is passed directly as the `packages` argument to
+project source. This value is passed directly as the `git_urls` argument to
 `create_build`.
 
 Examples:
@@ -52,19 +53,19 @@ Examples:
 If the user does not supply `git_urls`, ask them for the Git repository URL
 before proceeding.
 
-Launch both calls in parallel. Record the returned **build IDs**.
+Record the returned **build ID**.
 
-### Step 3: Wait for builds to complete
+### Step 3: Wait for the build to complete
 
-Poll each build with `get_build_info` until all tasks show `completed` or `failed`.
+Poll the build with `get_build_info` until all tasks show `completed` or `failed`.
 Use exponential backoff: start at 60 seconds, increase up to 5 minutes between checks.
 
 If any task **fails**, report the failure to the user and ask whether to proceed
-with signing the successful build (if any) or investigate the failure.
+with signing or investigate the failure.
 
-### Step 4: Sign completed builds
+### Step 4: Sign the build
 
-For each **successfully completed** build, call `sign_build` with:
+Once the build has completed successfully, call `sign_build` with:
 
 | Parameter   | Value |
 |-------------|-------|
@@ -73,13 +74,12 @@ For each **successfully completed** build, call `sign_build` with:
 
 ### Step 5: Report results
 
-Present a summary table:
+Present a summary:
 
 ```
-| Platform      | Build ID | Build Status | Sign Task ID | Sign Status |
-|---------------|----------|--------------|--------------|-------------|
-| AlmaLinux-8   | ...      | completed    | ...          | idle        |
-| AlmaLinux-9   | ...      | completed    | ...          | idle        |
+| Build ID | Platforms                    | Build Status | Sign Task ID | Sign Status |
+|----------|------------------------------|--------------|--------------|-------------|
+| ...      | AlmaLinux-8, AlmaLinux-9     | completed    | ...          | idle        |
 ```
 
-Include build URLs: `https://build.almalinux.org/build/<build_id>`
+Include the build URL: `https://build.almalinux.org/build/<build_id>`
