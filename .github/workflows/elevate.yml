@@ -175,6 +175,14 @@ jobs:
         echo "vm_box='${vm_box}'" > .env
         echo "vm_serial_log='${{ env.vm_serial_log }}'" >> .env
         echo "vm_boot_timeout=${{ env.vm_boot_timeout }}" >> .env
+        # Limit guest CPU to x86-64-v2 feature level when target is x86_64_v2.
+        # libvirt's cpu_map does not define 'x86-64-v2' as a model (that's a
+        # QEMU-only CPU type), so we use 'Nehalem' which has exactly the
+        # x86-64-v2 baseline (SSE3/SSSE3/SSE4.1/SSE4.2/POPCNT/CMPXCHG16B/LAHF)
+        # with no AVX/AVX2/BMI/etc. — i.e. a clean v2-only guest CPU.
+        if [[ ${target_distro} == *"x86_64_v2" ]]; then
+          echo "vm_cpu_model='Nehalem'" >> .env
+        fi
         cp -av ci/Vagrant/Vagrantfile ./
 
         # Leapp packages

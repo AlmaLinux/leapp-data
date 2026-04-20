@@ -11,9 +11,20 @@ Vagrant.configure("2") do |config|
         v.memory = 12288
         v.cpus = 4
 
+        # Limit guest CPU to a specific model (e.g. Nehalem for x86-64-v2) when requested
+        if ENV['vm_cpu_model'] && !ENV['vm_cpu_model'].empty?
+            v.cpu_mode = "custom"
+            v.cpu_model = ENV['vm_cpu_model']
+        end
+
         # Redirect output from the serial console of the VM to the file
         v.serial :type => "file", :source => {:path => ENV['vm_serial_log']}
     end
+
+    config.vm.provision "shell", name: "cpu-info", inline: <<-SHELL
+        echo "[CPU] Requested libvirt CPU model: #{ENV['vm_cpu_model'].to_s.empty? ? '(default)' : ENV['vm_cpu_model']}"
+        echo "[CPU] Guest CPU model name: $(awk -F': ' '/^model name/ {print $2; exit}' /proc/cpuinfo)"
+    SHELL
 
     config.vm.provision "shell", inline: <<-SHELL
         if [ "$(rpm --eval %rhel)" = "7" ]; then
