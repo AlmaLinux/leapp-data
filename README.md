@@ -29,15 +29,19 @@ ELevate is built on three core components:
 
 ## RPM Packages (`leapp-data.spec`)
 
-The `leapp-data.spec` file builds distribution-specific RPM packages from this repository. The package name is parameterized by `%{dist_name}`, producing one package per target distribution:
+The `leapp-data.spec` file builds all distribution-specific RPM packages from this repository as RPM **subpackages** from a single `rpmbuild` invocation. The list of subpackages produced depends on the builder's major version (`%{?rhel}`):
 
-| RPM Package                   | Description                                      |
-|-------------------------------|--------------------------------------------------|
-| `leapp-data-almalinux`        | Metadata for upgrades targeting AlmaLinux         |
-| `leapp-data-almalinux-kitten` | Metadata for upgrades targeting AlmaLinux Kitten  |
-| `leapp-data-centos`           | Metadata for upgrades targeting CentOS Stream     |
+| RPM Package                              | Built on `%{?rhel}` | Description                                                        |
+|------------------------------------------|---------------------|--------------------------------------------------------------------|
+| `leapp-data-almalinux`                   | 8, 9                | Metadata for upgrades targeting AlmaLinux                          |
+| `leapp-data-almalinux-x86_64_v2`         | 9                   | Metadata for AlmaLinux 9 → AlmaLinux 10 upgrades on **x86-64-v2** hardware |
+| `leapp-data-almalinux-kitten`            | 9                   | Metadata for AlmaLinux 9 → AlmaLinux Kitten 10 upgrades             |
+| `leapp-data-almalinux-kitten-x86_64_v2`  | 9                   | Metadata for AlmaLinux 9 → AlmaLinux Kitten 10 upgrades on **x86-64-v2** hardware |
+| `leapp-data-centos`                      | 8, 9                | Metadata for upgrades targeting CentOS Stream                       |
 
 All `leapp-data-*` packages conflict with each other — only one can be installed at a time, matching the target distribution of the upgrade.
+
+The two `*-x86_64_v2` packages target the AlmaLinux **x86-64-v2 microarchitecture build** of AlmaLinux 10 / Kitten 10, used on hardware that does not meet the default AlmaLinux 10 x86-64-v3 baseline.
 
 ### What Gets Installed
 
@@ -51,11 +55,22 @@ Each RPM package installs the following files into the system:
 
 ### Build Process
 
+Since `leapp-data` 0.12, the spec builds every subpackage in a single `rpmbuild` run. Each subpackage's file list is expanded from `%{os_list}`, and each staged file is installed with a `.<os_name>` postfix that RPM strips at install time via `RemovePathPostfixes`.
+
 During the RPM build:
 
-1. **`%build`** — Runs `tools/generate_map_pes_files.sh` with the distribution name and source major version, resolving all `{distro}`, `{baseos}`, `{appstream}`, `{powertools}`, and `{os_name}` placeholders in vendor template files.
-2. **`%install`** — Copies vendor data into `/etc/leapp/files/vendors.d/`, copies distribution data from `files/<dist_name>/` into `/etc/leapp/files/`, renames versioned files (e.g. `repomap.json.el9` → `repomap.json`), removes files for other target versions, and installs GPG keys.
-3. **`%check`** — Runs the test suite: validates all PES JSON files against the schema (`validate_json.py`), checks for duplicate IDs (`validate_ids.py`), and verifies debranding (`check_debranding.py`).
+1. **`%build`** — For every `<os_name>` in `%{os_list}`, runs `tools/generate_map_pes_files.sh <os_name> %{?rhel}` against a pristine copy of `vendors.d/`, resolving `{distro}`, `{baseos}`, `{appstream}`, `{powertools}`, and `{os_name}` placeholders into `vendors.d.built.<os_name>/`.
+2. **`%install`** — For every `<os_name>`:
+   - Copies the corresponding `vendors.d.built.<os_name>/` into a per-dist staging tree.
+   - Vendor pruning: removes `epel*` for non-AlmaLinux targets; for `*-x86_64_v2` targets, **keeps only EPEL** and removes every other vendor file.
+   - Resolves both generic (`<vendor>.repo.el<ver>`) and per-dist (`<vendor>.repo.el<ver>.<os_name>`) vendor file variants into the final `<vendor>.repo` / `<vendor>.gpg` names.
+   - Copies `files/<os_name>/*` and renames the version-specific files (`leapp_upgrade_repositories.repo.el<ver>`, `repomap.json.el<ver>`) to their unversioned names.
+   - Installs distribution GPG keys under `%{repositorydir}/system_upgrade/common/files/rpm-gpg/<target_version>/` and `distro/<os_name>/rpm-gpg/<target_version>/`.
+   - Moves every staged file into `%{buildroot}` with a `.<os_name>` postfix.
+3. **`%check`** — For every `<os_name>`, validates all PES JSON files against the schema (`validate_json.py`), checks for duplicate IDs (`validate_ids.py`), and verifies debranding (`check_debranding.py`).
+4. **`%files`** — Auto-generated per subpackage via `%{expand:...}` loop over `%{os_list}`. Each subpackage ships `*.<os_name>` files, which `RemovePathPostfixes: .<os_name>` strips at install time so the files land at their real paths under `/etc/leapp/files/`.
+
+The `x86_64_v2` subpackages are produced only when building on `%{?rhel} == 9`, because AlmaLinux 10 is the only target that exists in an x86-64-v2 microarchitecture build today.
 
 ### Supported Vendors per Source Version
 
@@ -67,18 +82,24 @@ The set of included vendors varies by the source system's major version:
 | 8         | 9         | epel, kernelcare, mariadb, nginx-stable, nginx-mainline, postgresql, docker-ce, tuxcare, elevate               |
 | 9         | 10        | epel, imunify, kernelcare, mariadb, nginx-stable, nginx-mainline, docker-ce, postgresql, imunify360-alt-php, tuxcare, elevate |
 
+> **x86_64_v2 exception:** the `leapp-data-almalinux-x86_64_v2` and `leapp-data-almalinux-kitten-x86_64_v2` subpackages ship **EPEL only** — all other vendors are filtered out by the spec at install time. EPEL is included because AlmaLinux provides a dedicated EPEL x86-64-v2 (AltArch) repository for these targets.
+
 ---
 
 ## Supported Distributions (`files/`)
 
 The `files/` directory contains per-distribution metadata used by the Leapp upgrade framework. Each supported target distribution has its own subfolder:
 
-| Subfolder            | Description                                                    |
-|----------------------|----------------------------------------------------------------|
-| `almalinux/`         | CentOS 7 → AlmaLinux 8, AlmaLinux 8 → 9, AlmaLinux 9 → 10    |
-| `almalinux-kitten/`  | AlmaLinux 9 → AlmaLinux Kitten 10                              |
-| `centos/`            | CentOS 7 → CentOS Stream 8, 8 → 9, 9 → 10                    |
-| `rpm-gpg/`           | GPG keys for all supported distributions                       |
+| Subfolder                         | Description                                                                  |
+|-----------------------------------|------------------------------------------------------------------------------|
+| `almalinux/`                      | CentOS 7 → AlmaLinux 8, AlmaLinux 8 → 9, AlmaLinux 9 → 10                  |
+| `almalinux-x86_64_v2/`            | AlmaLinux 9 → AlmaLinux 10 on **x86-64-v2** hardware (el10 data only)        |
+| `almalinux-kitten/`               | AlmaLinux 9 → AlmaLinux Kitten 10                                            |
+| `almalinux-kitten-x86_64_v2/`     | AlmaLinux 9 → AlmaLinux Kitten 10 on **x86-64-v2** hardware (el10 data only) |
+| `centos/`                         | CentOS 7 → CentOS Stream 8, 8 → 9, 9 → 10                                  |
+| `rpm-gpg/`                        | GPG keys for all supported distributions                                     |
+
+The two `*-x86_64_v2` subfolders only ship the el10 versions of `repomap.json` and `leapp_upgrade_repositories.repo` — there is no el8/el9 variant because the x86-64-v2 microarchitecture build only exists for AlmaLinux 10.
 
 ### Directory Structure
 
@@ -196,9 +217,13 @@ Each vendor is defined by a set of files following the naming convention `<vendo
 | `<vendor>_pes.json` or `<vendor>_pes.json_template` | PES events for vendor packages (describes package transitions during upgrade). Templates contain `{os_name}` placeholders. |
 | `<vendor>_map.json_template.el{8,9,10}` | Repository mapping templates for each target version. Contains `{distro}`, `{baseos}`, `{appstream}`, `{powertools}` placeholders that are resolved per distribution at build time. |
 | `<vendor>.repo.el{8,9,10}`             | Yum/DNF `.repo` files for the vendor's target-version repository.                           |
+| `<vendor>.repo.el<ver>.<dist_name>`     | *Per-distribution override* of the above `.repo` file. If present, it takes precedence over the generic `<vendor>.repo.el<ver>` when building the `<dist_name>` package. Used today by EPEL to ship a different repo URL and GPG key for the `almalinux-x86_64_v2` and `almalinux-kitten-x86_64_v2` packages (see `vendors.d/epel.repo.el10.almalinux-x86_64_v2`). |
 | `<vendor>.sigs`                         | GPG key signatures (key IDs) used to identify packages from this vendor.                    |
 
-GPG keys for vendors are stored in `vendors.d/rpm-gpg/`.
+GPG keys for vendors are stored in `vendors.d/rpm-gpg/`. They follow the same suffix convention:
+
+- `<vendor>.gpg.el<ver>` — generic key used for all target distributions at that EL version.
+- `<vendor>.gpg.el<ver>.<dist_name>` — per-distribution override (e.g. `epel.gpg.el10.almalinux-x86_64_v2` ships the `RPM-GPG-KEY-AlmaLinux-10-EPEL-AltArch` key used by the x86-64-v2 EPEL repository).
 
 ### Contributing a New Vendor
 
@@ -356,19 +381,20 @@ The `elevate.yml` workflow provides end-to-end testing of ELevate upgrades acros
 
 When enabled, the workflow tests these upgrade paths:
 
-- **AlmaLinux:** CentOS 7 → AlmaLinux 8, Scientific Linux 7 → AlmaLinux 8, AlmaLinux 8 → AlmaLinux 9, AlmaLinux 9 → AlmaLinux 10, AlmaLinux 9 → AlmaLinux Kitten 10
+- **AlmaLinux:** CentOS 7 → AlmaLinux 8, Scientific Linux 7 → AlmaLinux 8, AlmaLinux 8 → AlmaLinux 9, AlmaLinux 9 → AlmaLinux 10, AlmaLinux 9 → AlmaLinux Kitten 10, AlmaLinux 9 → AlmaLinux **x86_64_v2** 10, AlmaLinux 9 → AlmaLinux **Kitten x86_64_v2** 10
 - **CentOS:** CentOS 7 → CentOS Stream 8, CentOS Stream 8 → CentOS Stream 9, CentOS Stream 9 → CentOS Stream 10
 
 ### How It Works
 
 1. **Matrix generation** — Builds a dynamic matrix of upgrade variants based on the selected inputs.
 2. **VM provisioning** — For each variant, spins up a KVM/libvirt-backed Vagrant VM with the appropriate source OS image.
-3. **Leapp installation** — Installs Leapp and the upgrade packages from the selected repository. Optionally builds and installs the `leapp-data` RPM from the current Git branch.
-4. **Vendor installation** — If vendors are enabled, installs packages from EPEL, KernelCare, Nginx, MariaDB, PostgreSQL, Docker-CE, TuxCare, Imunify360, Microsoft, and linux-firmware.
+   - For the `*-x86_64_v2` variants the Vagrantfile sets `v.cpu_mode = "custom"` / `v.cpu_model = "Nehalem"` so the guest only exposes the x86-64-v2 feature baseline (SSE3/SSSE3/SSE4.1/SSE4.2/POPCNT/CMPXCHG16B/LAHF, no AVX/AVX2/BMI/…). `Nehalem` is used because libvirt's `cpu_map` has no entry named `x86-64-v2` (that is a QEMU-only CPU type) and Nehalem's feature set is a clean v2-only equivalent. The CPU model is passed from the workflow to the Vagrantfile via the `vm_cpu_model` env var.
+3. **Leapp installation** — Installs Leapp and the upgrade packages from the selected repository. Optionally builds and installs the `leapp-data` RPM from the current Git branch. For the `*-x86_64_v2` targets the workflow also downloads the AlmaLinux 10 `amd64_v2` rootfs tarball (from the `AlmaLinux/container-images` repo, branches `10` and `10-kitten`) into `/etc/leapp/files/rootfs/` so Leapp can bootstrap the target userspace.
+4. **Vendor installation** — If vendors are enabled, installs packages from EPEL, KernelCare, Nginx, MariaDB, PostgreSQL, Docker-CE, TuxCare, Imunify360, Microsoft, and linux-firmware. For the `*-x86_64_v2` targets **only EPEL is installed**; every other vendor step is gated by `! contains(env.target_distro, 'x86_64_v2')` and is skipped.
 5. **Preupgrade check** — Runs `leapp preupgrade` to identify potential issues.
 6. **Inhibitor mitigation** — Automatically mitigates known inhibitors and answers Leapp questions for each source version.
 7. **Upgrade** — Runs `leapp upgrade` and reboots the VM to complete the upgrade.
-8. **Verification** — Checks that the target OS release string matches expectations and lists any remaining source-version packages.
+8. **Verification** — Checks that the target OS release string matches expectations, and additionally verifies the architecture of the installed release package: `rpm -qf /etc/almalinux-release` must report `x86_64_v2` for the v2 variants (and `x86_64` for the default ones). Lists any remaining source-version packages.
 9. **Artifacts** — Uploads Leapp logs and serial console logs as workflow artifacts for debugging.
 
 ---
