@@ -15,6 +15,12 @@
                 {
                     "source": "epel",
                     "target": [
+                        "el10-epel-almalinux-altarch"
+                    ]
+                },
+                {
+                    "source": "epel",
+                    "target": [
                         "el10-baseos"
                     ]
                 },
@@ -102,6 +108,19 @@
                     "major_version": "10",
                     "repoid": "el10-epel",
                     "arch": "s390x",
+                    "channel": "ga",
+                    "repo_type": "rpm",
+                    "distro": "{distro}"
+                }
+            ]
+        },
+        {
+            "pesid": "el10-epel-almalinux-altarch",
+            "entries": [
+                {
+                    "major_version": "10",
+                    "repoid": "el10-epel-almalinux-altarch",
+                    "arch": "x86_64",
                     "channel": "ga",
                     "repo_type": "rpm",
                     "distro": "{distro}"

@@ -19,7 +19,7 @@
 
 Name:       leapp-data
 Version:    0.12
-Release:    1%{?dist}.%{pes_events_build_date}
+Release:    2%{?dist}.%{pes_events_build_date}
 Summary:    Data for ELevate migration tool
 Group:      Applications/Databases
 License:    ASL 2.0
@@ -212,6 +212,9 @@ done)}
 
 
 %changelog
+* Mon Apr 20 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.12-2.20251222
+- Vendor EPEL: add 9->10 (x86_64_v2) data for epel-release->epel-release-almalinux-altarch package upgrade
+
 * Tue Apr 14 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.12-1.20251222
 - leapp-data-almalinux-x86_64_v2 and leapp-data-almalinux-kitten-x86_64_v2 new packages to upgrade AlmaLinux 9->10 x86_64 v2
 - Enable EPEL Vendor for AlmaLinux 9->10 x86_64_v2 upgrade

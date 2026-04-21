@@ -1,4 +1,4 @@
-[el10-epel]
+[el10-epel-almalinux-altarch]
 name=Extra Packages for Enterprise Linux $releasever from AlmaLinux - x86_64_v2
 # mirrorlist=https://epel.mirrors.almalinux.org/mirrorlist/10z/epel?arch=x86_64_v2
 baseurl=https://epel.repo.almalinux.org/10z/x86_64_v2/

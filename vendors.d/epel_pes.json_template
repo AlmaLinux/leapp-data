@@ -353243,6 +353243,45 @@
                 "minor_version": 0,
                 "os_name": "{os_name}"
             }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64"
+            ],
+            "description": "",
+            "id": 36158,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "epel-release",
+                        "repository": "extras"
+                    }
+                ],
+                "set_id": 36494
+            },
+            "initial_release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "is_approved": true,
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "epel-release-almalinux-altarch",
+                        "repository": "el10-epel-almalinux-altarch"
+                    }
+                ],
+                "set_id": 36495
+            },
+            "release": {
+                "major_version": 10,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
         }
     ],
     "provided_data_streams": [
