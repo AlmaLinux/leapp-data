@@ -19,7 +19,7 @@
 
 Name:       leapp-data
 Version:    0.12
-Release:    2%{?dist}.%{pes_events_build_date}
+Release:    3%{?dist}.%{pes_events_build_date}
 Summary:    Data for ELevate migration tool
 Group:      Applications/Databases
 License:    ASL 2.0
@@ -212,6 +212,11 @@ done)}
 
 
 %changelog
+* Fri Apr 24 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.12-3.20251222
+- Update device driver deprecation data to the upstream most recent state:
+ - leapp-repository sha a86bee719a998d629efd7b7be1bf2ff08ee43234
+ - Data stream version 4.3
+
 * Mon Apr 20 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.12-2.20251222
 - Vendor EPEL: add 9->10 (x86_64_v2) data for epel-release->epel-release-almalinux-altarch package upgrade
 

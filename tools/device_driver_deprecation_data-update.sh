@@ -12,7 +12,7 @@ parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 dists="centos"
 
 # Data stream version, which is currently supported by ELevate
-provided_data_streams="4.2"
+provided_data_streams="4.3"
 
 # Date stamp to add to device driver deprecation data
 date_stamp=$(date -u '+%Y%m%d%H%M%S')
@@ -24,7 +24,7 @@ release_notes_sha=master
 # Upstream leapp-repository GitHub URL, device driver deprecation data (in JSON format) file name, and Git SHA
 leapp_repository_url=https://raw.githubusercontent.com/oamg/leapp-repository
 device_driver_deprecation_data_json="device_driver_deprecation_data.json"
-leapp_repository_sha=60c4987cf45c8c795c2e2607e376c35831aebafd
+leapp_repository_sha=a86bee719a998d629efd7b7be1bf2ff08ee43234
 
 printf "\nDownload %s at %s\n" ${device_driver_deprecation_data_json} ${leapp_repository_sha}
 curl -s -o ${device_driver_deprecation_data_json} ${leapp_repository_url}/${leapp_repository_sha}/etc/leapp/files/${device_driver_deprecation_data_json} || exit 1
