@@ -1,4 +1,4 @@
-%global pes_events_build_date 20251222
+%global pes_events_build_date 20260326
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
@@ -18,8 +18,8 @@
 %bcond_without check
 
 Name:       leapp-data
-Version:    0.12
-Release:    3%{?dist}.%{pes_events_build_date}
+Version:    0.13
+Release:    1%{?dist}.%{pes_events_build_date}
 Summary:    Data for ELevate migration tool
 Group:      Applications/Databases
 License:    ASL 2.0
@@ -212,6 +212,13 @@ done)}
 
 
 %changelog
+* Mon Apr 27 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.13-1.20260326
+- Update data to the upstream most recent state:
+ - leapp-repository sha a86bee719a998d629efd7b7be1bf2ff08ee43234
+ - Data timestamp 202603261505Z
+ - Data stream version 4.3
+ - Debranding changes: add the `ansible-collection-redhat-leapp` into check_debranding.py 'excludes'
+
 * Fri Apr 24 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.12-3.20251222
 - Update device driver deprecation data to the upstream most recent state:
  - leapp-repository sha a86bee719a998d629efd7b7be1bf2ff08ee43234
