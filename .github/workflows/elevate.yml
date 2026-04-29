@@ -160,7 +160,7 @@ jobs:
         echo "target_distro=${target_distro}" >> $GITHUB_ENV
         echo "source_release=${source_release}" >> $GITHUB_ENV
         echo "source_distro=${source_distro}" >> $GITHUB_ENV
-        echo "variant_long=${source_distro}${source_release}-to-${target_distro}${target_release}" >> $GITHUB_ENV
+        echo "variant_long=${source_distro}-${source_release}-to-${target_distro}-${target_release}" >> $GITHUB_ENV
 
         # Set Vagrant ENV variables, copy Vagrantfile
         echo "vm_box='${vm_box}'" > .env
@@ -452,10 +452,17 @@ jobs:
         cd ${rpmbuild_topdir}/SOURCES/ && tar zcf ${source} ${name}-${version}
 
         # Build and install the package
-        rpmbuild -bb --without check --define 'dist_name ${{ env.target_distro }}' ${rpmbuild_topdir}/SPECS/leapp-data.spec
+        rpmbuild -ba --without check --define 'dist_name ${{ env.target_distro }}' ${rpmbuild_topdir}/SPECS/leapp-data.spec
         yum install -y ${rpmbuild_topdir}/RPMS/noarch/${name}-${version}*.noarch.rpm
 
         echo "[Debug] $(rpm -q ${name}-${version})"
+
+        # Marshal produced RPMs under /vagrant/ so the host runner can pull
+        # them out via 'vagrant scp' afterwards.
+        mkdir -p /vagrant/leapp-data-rpms
+        /bin/cp -a ${rpmbuild_topdir}/SRPMS/${name}-${version}*.src.rpm /vagrant/leapp-data-rpms/
+        /bin/cp -a ${rpmbuild_topdir}/RPMS/noarch/${name}-${version}*.noarch.rpm /vagrant/leapp-data-rpms/
+        chmod -R o+rX /vagrant/leapp-data-rpms
 
         EOF
         chmod +x leapp-data-rpm.sh
@@ -522,13 +529,29 @@ jobs:
         echo "[Debug] ${pkgs_versions}"
 
     - name: Build leapp-data package from Git, and install it
+      id: build-leapp-data-rpm
       if: inputs.leapp-data-git
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/leapp-data-rpm.sh" || exit 1
 
+        # Pull the produced RPMs from the VM to the host runner workspace
+        mkdir -p leapp-data-rpms
+        sudo vagrant scp elevatevm:/vagrant/leapp-data-rpms/* ./leapp-data-rpms/
+        ls -l leapp-data-rpms/
+
         # ELevate packages list (for the workflow summary) formatted like: 'item1', 'item2', ...
         leapp_data_version=$(sudo vagrant ssh elevatevm -c "sudo rpm -q leapp-data-${{ env.target_distro }}" || exit 1)
         echo "pkgs_versions=${{ env.pkgs_versions }}, '${leapp_data_version} (branch ${{ github.ref_name }})'" >> $GITHUB_ENV
+
+    - name: leapp-data RPMs as artifact
+      uses: actions/upload-artifact@v7
+      if: ( success() || failure() ) && inputs.leapp-data-git && steps.build-leapp-data-rpm.outcome == 'success'
+      with:
+        name: ${{ env.variant_long }}-leapp-data-rpms
+        path: |
+          leapp-data-rpms/leapp-data-*.src.rpm
+          leapp-data-rpms/leapp-data-${{ env.target_distro }}-*.noarch.rpm
+        if-no-files-found: error
 
     - name: Vendor - EPEL
       if: inputs.vendors == 'all' && contains(env.target_distro, 'almalinux')
