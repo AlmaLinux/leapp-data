@@ -23,6 +23,7 @@ ELevate is built on three core components:
 - [Tools (`tools/`)](#tools-tools)
 - [Tests (`tests/`)](#tests-tests)
 - [CI — GitHub Actions (`.github/workflows/elevate.yml`)](#ci--github-actions-githubworkflowselevateyml)
+  - [Artifacts](#artifacts)
 - [License](#license)
 
 ---
@@ -396,7 +397,19 @@ When enabled, the workflow tests these upgrade paths:
 6. **Inhibitor mitigation** — Automatically mitigates known inhibitors and answers Leapp questions for each source version.
 7. **Upgrade** — Runs `leapp upgrade` and reboots the VM to complete the upgrade.
 8. **Verification** — Checks that the target OS release string matches expectations, and additionally verifies the architecture of the installed release package: `rpm -qf /etc/almalinux-release` must report `x86_64_v2` for the v2 variants (and `x86_64` for the default ones). Lists any remaining source-version packages.
-9. **Artifacts** — Uploads Leapp logs and serial console logs as workflow artifacts for debugging.
+9. **Artifacts** — Uploads Leapp logs, the VM serial console log, and (when `leapp-data-git` is enabled) the freshly-built `leapp-data` RPMs as workflow artifacts for debugging and downstream use. See [Artifacts](#artifacts) below.
+
+### Artifacts
+
+Each matrix job uploads one or more artifacts, all named with the variant prefix `<source_distro>-<source_release>-to-<target_distro>-<target_release>` (e.g. `centos-7-to-almalinux-8`, `almalinux-9-to-almalinux-kitten-10`, `almalinux-9-to-almalinux-x86_64_v2-10`).
+
+| Artifact name                              | Uploaded when                                                                 | Contents                                                                                                                                              |
+|--------------------------------------------|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `<variant>-leapp-logs.tar`                 | `leapp preupgrade` or `leapp upgrade` produced `/var/log/leapp` on the guest. | Tarball of `/var/log/leapp/` from the guest: `leapp-preupgrade.log`, `leapp-upgrade.log`, `leapp-report.json`, `leapp-report.txt`, `answerfile`, `answerfile.userchoices`, `dnf-plugin-data.txt`, and `archive/leapp-<timestamp>-logs.tar.gz`. |
+| `<variant>-serial-console.log`             | `vagrant up` succeeded.                                                       | Raw QEMU serial console log of the upgrade VM (`/var/log/elevatevm_consoles/serial.log`) — boot, kernel, and post-reboot upgrade output.              |
+| `<variant>-leapp-data-rpms`                | `leapp-data-git: true` **and** the in-VM RPM build succeeded.                 | The freshly-built `leapp-data-*.src.rpm` and the target-distro `leapp-data-<target_distro>-*.noarch.rpm` (e.g. `leapp-data-almalinux-…noarch.rpm`) produced by `leapp-data-rpm.sh` from the current Git checkout. |
+
+The first two are uploaded on both success and failure (best-effort, gated on the relevant step having produced its output) so failed runs are still triageable; the third is uploaded only on a successful build.
 
 ---
 
