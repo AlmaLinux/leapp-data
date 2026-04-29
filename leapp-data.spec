@@ -19,7 +19,7 @@
 
 Name:       leapp-data
 Version:    0.13
-Release:    2%{?dist}.%{pes_events_build_date}
+Release:    3%{?dist}.%{pes_events_build_date}
 Summary:    Data for ELevate migration tool
 Group:      Applications/Databases
 License:    ASL 2.0
@@ -212,6 +212,13 @@ done)}
 
 
 %changelog
+* Wed Apr 29 2026 Yuriy Kohut <yura.kohut@gmail.com> - 0.13-3.20260326
+- Vendor EPEL: refresh `epel_pes.json_template` from current EPEL repodata
+ - Paths refreshed: 9to10
+ - Architectures: x86_64, aarch64, ppc64le, s390x
+ - Data timestamp 202604290845Z
+ - Data stream version ['4.3']
+
 * Wed Apr 29 2026 Yuriy Kohut <yura.kohut@gmail.com> - 0.13-2.20260326
 - Vendor EPEL: refresh `epel_pes.json_template` from current EPEL repodata
  - Paths refreshed: 8to9
