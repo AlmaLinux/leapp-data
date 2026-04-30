@@ -3,4 +3,4 @@ name=packages-microsoft-com-prod-10
 baseurl=https://packages.microsoft.com/rhel/10/prod/
 enabled=1
 gpgcheck=1
-gpgkey=https://packages.microsoft.com/keys/microsoft.asc
+gpgkey=file:///etc/leapp/files/vendors.d/rpm-gpg/microsoft.gpg

@@ -17,7 +17,7 @@
 %endif
 %endif
 %if 0%{?rhel} == 8
-%define supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce tuxcare elevate
+%define supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce tuxcare elevate microsoft
 %define target_version 9
 %define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
 %if "%{dist_name}" == "almalinux"
@@ -28,7 +28,7 @@
 %endif
 %endif
 %if 0%{?rhel} == 9
-%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline docker-ce postgresql imunify360-alt-php tuxcare elevate
+%define supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline docker-ce postgresql imunify360-alt-php tuxcare elevate microsoft
 %define target_version 10
 %define dist_gpg_path distro/%{dist_name}/rpm-gpg/%{target_version}
 %if "%{dist_name}" == "almalinux"
@@ -162,6 +162,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 * Mon May 04 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-8.20251222
 - Vendor EPEL:
  - refresh epel_pes.json_template from current EPEL repodata for 8to9 and 9to10
+- Vendor Microsoft: re-enable the vendor
+ - Bundle both Microsoft signing keys in `microsoft.gpg`: `BE1229CF` (used for el8/el9 packages) and `F748182B` (used for el10 packages)
+ - Switch `microsoft.repo.el{8,9,10}` `gpgkey` to a local `file://` URL pointing at the bundled key
 
 * Wed Apr 08 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-7.20251222
 - Vendor KernelCare: add 44c25eb080935b88 SIG key

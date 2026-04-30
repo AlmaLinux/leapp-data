@@ -584,7 +584,7 @@ jobs:
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh docker ${{ env.source_release }}" || exit 1
 
     - name: Vendor - Microsoft
-      if: false && inputs.vendors == 'all'
+      if: inputs.vendors == 'all' && env.target_release != '8'
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh microsoft ${{ env.source_release }}" || exit 1
 
