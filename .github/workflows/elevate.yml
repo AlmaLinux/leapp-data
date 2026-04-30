@@ -612,7 +612,7 @@ jobs:
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh docker ${{ env.source_release }}" || exit 1
 
     - name: Vendor - Microsoft
-      if: false && inputs.vendors == 'all' && ! contains(env.target_distro, 'x86_64_v2')
+      if: inputs.vendors == 'all' && env.target_release != '8' && ! contains(env.target_distro, 'x86_64_v2')
       run: |
         sudo vagrant ssh elevatevm -c "sudo /vagrant/Vendors.sh microsoft ${{ env.source_release }}" || exit 1
 
