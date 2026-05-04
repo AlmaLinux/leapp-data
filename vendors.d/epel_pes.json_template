@@ -284713,7 +284713,8 @@
             "architectures": [
                 "x86_64",
                 "aarch64",
-                "ppc64le"
+                "ppc64le",
+                "s390x"
             ],
             "description": "",
             "id": 21064,
@@ -286376,7 +286377,8 @@
             "architectures": [
                 "x86_64",
                 "aarch64",
-                "ppc64le"
+                "ppc64le",
+                "s390x"
             ],
             "description": "",
             "id": 21111,
@@ -286417,7 +286419,8 @@
             "architectures": [
                 "x86_64",
                 "aarch64",
-                "ppc64le"
+                "ppc64le",
+                "s390x"
             ],
             "description": "",
             "id": 21112,
@@ -297868,7 +297871,8 @@
             "architectures": [
                 "x86_64",
                 "aarch64",
-                "ppc64le"
+                "ppc64le",
+                "s390x"
             ],
             "description": "",
             "id": 21433,
@@ -326893,7 +326897,8 @@
             "architectures": [
                 "x86_64",
                 "aarch64",
-                "ppc64le"
+                "ppc64le",
+                "s390x"
             ],
             "description": "",
             "id": 22246,
@@ -329589,7 +329594,8 @@
             "architectures": [
                 "x86_64",
                 "aarch64",
-                "ppc64le"
+                "ppc64le",
+                "s390x"
             ],
             "description": "",
             "id": 22322,
@@ -329952,7 +329958,8 @@
             "architectures": [
                 "x86_64",
                 "aarch64",
-                "ppc64le"
+                "ppc64le",
+                "s390x"
             ],
             "description": "",
             "id": 22331,
@@ -330075,7 +330082,8 @@
             "architectures": [
                 "x86_64",
                 "aarch64",
-                "ppc64le"
+                "ppc64le",
+                "s390x"
             ],
             "description": "",
             "id": 22334,
@@ -330198,7 +330206,8 @@
             "architectures": [
                 "x86_64",
                 "aarch64",
-                "ppc64le"
+                "ppc64le",
+                "s390x"
             ],
             "description": "",
             "id": 22337,
@@ -330239,7 +330248,8 @@
             "architectures": [
                 "x86_64",
                 "aarch64",
-                "ppc64le"
+                "ppc64le",
+                "s390x"
             ],
             "description": "",
             "id": 22338,
@@ -345470,7 +345480,8 @@
             "architectures": [
                 "x86_64",
                 "aarch64",
-                "ppc64le"
+                "ppc64le",
+                "s390x"
             ],
             "description": "",
             "id": 22767,
@@ -353243,10 +353254,2561 @@
                 "minor_version": 0,
                 "os_name": "{os_name}"
             }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36158,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "MUMPS-openmp",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36495
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "MUMPS",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36494
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36159,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "MUMPS-openmp-devel",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36497
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "MUMPS-devel",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36496
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36160,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "R-RInside-devel",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36499
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "R-RInside",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36498
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36161,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "R-Rcpp-devel",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36501
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "R-Rcpp",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36500
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le"
+            ],
+            "id": 36162,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "golang-github-prometheus-alertmanager",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36503
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "alertmanager",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36502
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36163,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "amiri-fonts-common",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36505
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "amiri-fonts",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36504
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36164,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "python3-bodhi-client",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36507
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "bodhi-client",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36506
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36165,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "digikam-doc",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36509
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "digikam",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36508
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36166,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "grib_api",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36511
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "eccodes",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36510
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36167,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "grib_api-devel",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36513
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "eccodes-devel",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36512
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36168,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "erlang-hipe",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36515
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "erlang-erts",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36514
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 5,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36169,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "facter-devel",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "ruby-facter",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36517
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "facter",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36516
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36170,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "fastfetch-bash-completion",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36519
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "fastfetch",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36518
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36171,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "python3-fmf",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36521
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "fmf",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36520
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36172,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "geany-themes",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36523
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "geany",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36522
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 5,
+            "architectures": [
+                "x86_64",
+                "ppc64le"
+            ],
+            "id": 36173,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "geany-plugins-geniuspaste",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "geany-plugins-updatechecker",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36525
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "geany-plugins-common",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36524
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36174,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "ghc-libraries",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36527
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "ghc-devel",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36526
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36175,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "ghc-doc-cron",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36529
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "ghc-doc-index",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36528
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36176,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "ghc-hspec-core-devel-doc",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36531
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "ghc-hspec-core-doc",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36530
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36177,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "gnome-shell-extension-topicons-plus",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36533
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "gnome-shell-extension-appindicator",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36532
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 36178,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "libmfx",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36535
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "intel-mediasdk",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36534
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le"
+            ],
+            "id": 36179,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "kf5-kalarmcal",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36537
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "kalarm",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36536
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64"
+            ],
+            "id": 36180,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "kf5-kmailtransport-akonadi",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36539
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "kdepim-runtime-libs",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36538
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36181,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "kiwi-tools",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36541
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "kiwi-systemdeps-core",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36540
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le"
+            ],
+            "id": 36182,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "ldc-phobos-geany-tags",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36543
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "ldc",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36542
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36183,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "libblocksruntime",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36545
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "libdispatch",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36544
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36184,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "libsvm-java",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36547
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "libsvm",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36546
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36185,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "python2-libxc",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36549
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "libxc",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36548
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36186,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "maliit-framework-gtk3",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36551
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "maliit-framework",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36550
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36187,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "mlt-ruby",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36553
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "mlt",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36552
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36188,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "nagios-plugins-dbi",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36555
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "nagios-plugins",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36554
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 5,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36189,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "nordugrid-arc6-acix-core",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "nordugrid-arc6-acix-index",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "nordugrid-arc6-acix-scanner",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36557
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "nordugrid-arc6",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36556
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36190,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "plasma-user-manager",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36559
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "plasma-desktop",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36558
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36191,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "python3-junit_xml",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36561
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "python3-junit-xml",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36560
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36192,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "root-notebook",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36563
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "python3-jupyroot",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36562
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36193,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "python-typeshed",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36565
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "python3-mypy",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36564
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36194,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "python-requests-futures",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36567
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "python3-requests-futures",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36566
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36195,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "python3-jsmva",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36569
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "python3-root",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36568
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36196,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "qca-qt5-botan",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36571
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "qca-qt5",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36570
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 5,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36197,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "root-gui-qt5webdisplay",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "root-hist-draw",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "root-html",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "root-proof",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "root-proof-bench",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "root-proof-player",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "root-proof-sessionviewer",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "root-sql-mysql",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "root-sql-odbc",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "root-sql-pgsql",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36573
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "root-core",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36572
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "s390x"
+            ],
+            "id": 36198,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "root-roofit-dataframe-helpers",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36575
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "root-roofit-core",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36574
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36199,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "rubygem-ronn",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36577
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "rubygem-ronn-ng",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36576
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36200,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "blacs-common",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36579
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "scalapack-common",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36578
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36201,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "blacs-mpich",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36581
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "scalapack-mpich",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36580
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36202,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "blacs-mpich-devel",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36583
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "scalapack-mpich-devel",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36582
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36203,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "blacs-mpich-static",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36585
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "scalapack-mpich-static",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36584
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36204,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "blacs-openmpi",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36587
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "scalapack-openmpi",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36586
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36205,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "blacs-openmpi-devel",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36589
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "scalapack-openmpi-devel",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36588
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36206,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "blacs-openmpi-static",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36591
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "scalapack-openmpi-static",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36590
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36207,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "crypto-devel",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36593
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "sdl-crypto-devel",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36592
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36208,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "decnumber-devel",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36595
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "sdl-decnumber-devel",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36594
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36209,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "decnumber-doc",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36597
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "sdl-decnumber-doc",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36596
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36210,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "softfloat-devel",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36599
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "sdl-softfloat-devel",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36598
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 5,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36211,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "python3-tmt",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "tmt-report-html",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "tmt-report-junit",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "tmt-report-polarion",
+                        "repository": "epel"
+                    },
+                    {
+                        "module_stream": null,
+                        "name": "tmt-report-reportportal",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36601
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "tmt",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36600
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36212,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "tmt-all",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36603
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "tmt+all",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36602
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36213,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "tmt-provision-container",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36605
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "tmt+provision-container",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36604
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36214,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "tmt-provision-virtual",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36607
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "tmt+provision-virtual",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36606
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36215,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "tmt-test-convert",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36609
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "tmt+test-convert",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36608
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36216,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "vapoursynth-plugins",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36611
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "vapoursynth-libs",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36610
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36217,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "vlgothic-fonts",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36613
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "vl-gothic-fonts",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36612
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64",
+                "aarch64",
+                "ppc64le",
+                "s390x"
+            ],
+            "id": 36218,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "vlgothic-p-fonts",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36615
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "vl-pgothic-fonts",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36614
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
+        },
+        {
+            "action": 3,
+            "architectures": [
+                "x86_64"
+            ],
+            "id": 36219,
+            "in_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "wine-openal",
+                        "repository": "epel"
+                    }
+                ],
+                "set_id": 36617
+            },
+            "initial_release": {
+                "major_version": 8,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            },
+            "out_packageset": {
+                "package": [
+                    {
+                        "module_stream": null,
+                        "name": "wine-core",
+                        "repository": "el9-epel"
+                    }
+                ],
+                "set_id": 36616
+            },
+            "release": {
+                "major_version": 9,
+                "minor_version": 0,
+                "os_name": "{os_name}"
+            }
         }
     ],
     "provided_data_streams": [
         "4.2"
     ],
-    "timestamp": "202506241030Z"
+    "timestamp": "202605041430Z"
 }

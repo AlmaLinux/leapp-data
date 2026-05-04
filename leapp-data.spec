@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.11
-Release:	7%{?dist}.%{pes_events_build_date}
+Release:	8%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -159,6 +159,11 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Mon May 04 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-8.20251222
+- Vendor EPEL: refresh epel_pes.json_template from current EPEL repodata (8to9)
+ - emit REPLACED/SPLIT/MERGED from Obsoletes-driven candidates
+ - skip MOVED and REMOVED actions by default
+
 * Wed Apr 08 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-7.20251222
 - Vendor KernelCare: add 44c25eb080935b88 SIG key
 - Vendor Nginx: add 2fd21310b49f6b46 SIG key
