@@ -23,6 +23,7 @@ ELevate is built on three core components:
 - [Tools (`tools/`)](#tools-tools)
 - [Tests (`tests/`)](#tests-tests)
 - [CI — GitHub Actions (`.github/workflows/elevate.yml`)](#ci--github-actions-githubworkflowselevateyml)
+  - [Artifacts](#artifacts)
 - [License](#license)
 
 ---
@@ -343,6 +344,7 @@ The `tools/` directory contains helper scripts for generating and updating distr
 | Tool                                    | Description                                                                                     |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------|
 | `update_pes-events.py`                  | Downloads the upstream PES events from `oamg/leapp-repository`, then applies distribution-specific debranding, package/repository replacements, removals, and additions based on each distro's `config.json`. Generates the final `pes-events.json` for each distribution. |
+| `update_epel_pes.py`                    | Refreshes `vendors.d/epel_pes.json_template` by diffing live EPEL (and EL7 `base`/`extras`) repodata across major releases (`7to8`, `8to9`, `9to10`). Synthesizes `REPLACED (3)`, `SPLIT (4)`, and `MERGED (5)` PES events from target-side `Obsoletes:` declarations: candidates are grouped by their target packageset, then the action is chosen by the group shape (1→1 = REPLACED, 1→N = SPLIT, N→any = MERGED). `MOVED (6)` and `REMOVED (1)` are skipped by default to avoid over-aggressive package uninstalls during upgrades (override with `--include-moved` / `--include-removed`). Merges the result into the existing template in place, runs the schema and ID-uniqueness validators, and rolls back from a temp backup on failure. See [`tools/update_epel_pes.py`](tools/update_epel_pes.py) for the full CLI and emission policy. |
 | `generate_map_pes_files.sh`             | Resolves placeholders (`{distro}`, `{baseos}`, `{appstream}`, `{powertools}`, `{os_name}`) in vendor template files for a given distribution and target major version. Used at build/packaging time. |
 | `id_uniquifier.py`                      | Finds and replaces duplicate `id` and `set_id` values across multiple PES JSON files. Ensures uniqueness of identifiers so the Leapp framework processes events correctly. |
 | `device_driver_deprecation_data-update.sh` | Downloads upstream device driver deprecation data from `oamg/leapp-repository` and enriches it with AlmaLinux release notes to populate the `available_in_rhel` field for each device. Copies the result to each distribution's `files/` directory. |
@@ -395,7 +397,19 @@ When enabled, the workflow tests these upgrade paths:
 6. **Inhibitor mitigation** — Automatically mitigates known inhibitors and answers Leapp questions for each source version.
 7. **Upgrade** — Runs `leapp upgrade` and reboots the VM to complete the upgrade.
 8. **Verification** — Checks that the target OS release string matches expectations, and additionally verifies the architecture of the installed release package: `rpm -qf /etc/almalinux-release` must report `x86_64_v2` for the v2 variants (and `x86_64` for the default ones). Lists any remaining source-version packages.
-9. **Artifacts** — Uploads Leapp logs and serial console logs as workflow artifacts for debugging.
+9. **Artifacts** — Uploads Leapp logs, the VM serial console log, and (when `leapp-data-git` is enabled) the freshly-built `leapp-data` RPMs as workflow artifacts for debugging and downstream use. See [Artifacts](#artifacts) below.
+
+### Artifacts
+
+Each matrix job uploads one or more artifacts, all named with the variant prefix `<source_distro>-<source_release>-to-<target_distro>-<target_release>` (e.g. `centos-7-to-almalinux-8`, `almalinux-9-to-almalinux-kitten-10`, `almalinux-9-to-almalinux-x86_64_v2-10`).
+
+| Artifact name                              | Uploaded when                                                                 | Contents                                                                                                                                              |
+|--------------------------------------------|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `<variant>-leapp-logs.tar`                 | `leapp preupgrade` or `leapp upgrade` produced `/var/log/leapp` on the guest. | Tarball of `/var/log/leapp/` from the guest: `leapp-preupgrade.log`, `leapp-upgrade.log`, `leapp-report.json`, `leapp-report.txt`, `answerfile`, `answerfile.userchoices`, `dnf-plugin-data.txt`, and `archive/leapp-<timestamp>-logs.tar.gz`. |
+| `<variant>-serial-console.log`             | `vagrant up` succeeded.                                                       | Raw QEMU serial console log of the upgrade VM (`/var/log/elevatevm_consoles/serial.log`) — boot, kernel, and post-reboot upgrade output.              |
+| `<variant>-leapp-data-rpms`                | `leapp-data-git: true` **and** the in-VM RPM build succeeded.                 | The freshly-built `leapp-data-*.src.rpm` and the target-distro `leapp-data-<target_distro>-*.noarch.rpm` (e.g. `leapp-data-almalinux-…noarch.rpm`) produced by `leapp-data-rpm.sh` from the current Git checkout. |
+
+The first two are uploaded on both success and failure (best-effort, gated on the relevant step having produced its output) so failed runs are still triageable; the third is uploaded only on a successful build.
 
 ---
 

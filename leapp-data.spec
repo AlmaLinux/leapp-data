@@ -7,19 +7,19 @@
 %if 0%{?rhel} == 8
 %global target_version 9
 %define os_list almalinux centos
-%global supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce tuxcare elevate
+%global supported_vendors epel kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce tuxcare elevate microsoft
 %endif
 %if 0%{?rhel} == 9
 %global target_version 10
 %define os_list %{os_all}
-%global supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline docker-ce postgresql imunify360-alt-php tuxcare elevate
+%global supported_vendors epel imunify kernelcare mariadb nginx-stable nginx-mainline postgresql docker-ce imunify360-alt-php tuxcare elevate microsoft
 %endif
 
 %bcond_without check
 
 Name:       leapp-data
 Version:    0.13
-Release:    1%{?dist}.%{pes_events_build_date}
+Release:    3%{?dist}.%{pes_events_build_date}
 Summary:    Data for ELevate migration tool
 Group:      Applications/Databases
 License:    ASL 2.0
@@ -212,6 +212,24 @@ done)}
 
 
 %changelog
+* Wed Apr 30 2026 Yuriy Kohut <yura.kohut@gmail.com> - 0.13-3.20260326
+- Vendor EPEL: refresh `epel_pes.json_template` from current EPEL repodata
+ - Paths refreshed: 9to10
+ - Architectures: x86_64, aarch64, ppc64le, s390x
+ - Data timestamp 202604290845Z
+ - Data stream version ['4.3']
+ - Use epel.gpg for AlmaLinux 10 and Kitten x86_64_v2 repos
+- Vendor Microsoft: re-enable the vendor
+ - Bundle both Microsoft signing keys in `microsoft.gpg`: `BE1229CF` (used for el8/el9 packages) and `F748182B` (used for el10 packages)
+ - Switch `microsoft.repo.el{8,9,10}` `gpgkey` to a local `file://` URL pointing at the bundled key
+
+* Wed Apr 29 2026 Yuriy Kohut <yura.kohut@gmail.com> - 0.13-2.20260326
+- Vendor EPEL: refresh `epel_pes.json_template` from current EPEL repodata
+ - Paths refreshed: 8to9
+ - Architectures: x86_64, aarch64, ppc64le, s390x
+ - Data timestamp 202604290842Z
+ - Data stream version ['4.3']
+
 * Mon Apr 27 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.13-1.20260326
 - Update data to the upstream most recent state:
  - leapp-repository sha a86bee719a998d629efd7b7be1bf2ff08ee43234
