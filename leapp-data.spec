@@ -160,9 +160,8 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 %changelog
 * Mon May 04 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-8.20251222
-- Vendor EPEL: refresh epel_pes.json_template from current EPEL repodata (8to9)
- - emit REPLACED/SPLIT/MERGED from Obsoletes-driven candidates
- - skip MOVED and REMOVED actions by default
+- Vendor EPEL:
+ - refresh epel_pes.json_template from current EPEL repodata for 8to9 and 9to10
 
 * Wed Apr 08 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-7.20251222
 - Vendor KernelCare: add 44c25eb080935b88 SIG key
