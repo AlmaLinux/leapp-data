@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.11
-Release:	8%{?dist}.%{pes_events_build_date}
+Release:	9%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -159,6 +159,9 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Thu May 28 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-9.20251222
+- Vendor MariaDB: drop legacy 2010 key, keep current signing key only
+
 * Mon May 04 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-8.20251222
 - Vendor EPEL:
  - refresh epel_pes.json_template from current EPEL repodata for 8to9 and 9to10
