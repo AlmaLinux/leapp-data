@@ -19,7 +19,7 @@
 
 Name:       leapp-data
 Version:    0.13
-Release:    3%{?dist}.%{pes_events_build_date}
+Release:    4%{?dist}.%{pes_events_build_date}
 Summary:    Data for ELevate migration tool
 Group:      Applications/Databases
 License:    ASL 2.0
@@ -212,6 +212,9 @@ done)}
 
 
 %changelog
+* Thu May 28 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.13-4.20260326
+- Vendor MariaDB: drop legacy 2010 key, keep current signing key only
+
 * Wed Apr 30 2026 Yuriy Kohut <yura.kohut@gmail.com> - 0.13-3.20260326
 - Vendor EPEL: refresh `epel_pes.json_template` from current EPEL repodata
  - Paths refreshed: 9to10
