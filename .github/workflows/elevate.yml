@@ -377,7 +377,7 @@ jobs:
             # All matches were filtered out by modular filtering for argument: MariaDB-server
             sudo dnf -y -q module disable mariadb
           fi
-          sudo dnf -y install MariaDB-server
+          sudo dnf -y install MariaDB-client
           res=$?
         fi
 
