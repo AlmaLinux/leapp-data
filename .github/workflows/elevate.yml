@@ -1,5 +1,9 @@
 name: AlmaLinux ELevate
 
+run-name: >-
+  AlmaLinux ELevate
+  [ leapp-data: ${{ inputs.leapp-data-git && 'Git' || 'RPM' }}, Repo: ${{ inputs.repository }}, Vendors: ${{ inputs.vendors }} ]
+
 on:
   workflow_dispatch:
     inputs:
