@@ -1,4 +1,4 @@
-%global pes_events_build_date 20260326
+%global pes_events_build_date 20260622
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
@@ -19,7 +19,7 @@
 
 Name:       leapp-data
 Version:    0.13
-Release:    5%{?dist}.%{pes_events_build_date}
+Release:    6%{?dist}.%{pes_events_build_date}
 Summary:    Data for ELevate migration tool
 Group:      Applications/Databases
 License:    ASL 2.0
@@ -212,6 +212,13 @@ done)}
 
 
 %changelog
+* Fri Jul 17 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.13-6.20260622
+- Update data to the upstream most recent state:
+ - leapp-repository sha 11655c4fb60dcd699b28e19fe1579702bb84c9e9
+ - Data timestamp 202606222105Z
+ - Data stream version 4.3
+ - Debranding changes: remove the `rhel-hpc` package events via config.json 'removable_packages' (all distros)
+
 * Mon Jul 06 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.13-5.20260326
 - Vendor EPEL: refresh `epel_pes.json_template` from current EPEL repodata
  - Paths refreshed: 7to8, 8to9, 9to10

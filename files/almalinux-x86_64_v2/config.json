@@ -356,6 +356,16 @@
             "name": "rhel-drivers",
             "initial_release": 10,
             "target_release": 10
+        },
+        {
+            "name": "rhel-hpc",
+            "initial_release": 9,
+            "target_release": 9
+        },
+        {
+            "name": "rhel-hpc",
+            "initial_release": 10,
+            "target_release": 10
         }
     ],
 
