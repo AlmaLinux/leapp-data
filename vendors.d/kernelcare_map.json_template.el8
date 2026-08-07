@@ -1,6 +1,6 @@
 {
     "datetime": "202506241030Z",
-    "version_format": "1.3.0",
+    "version_format": "2.0.0",
     "mapping": [
         {
             "source_major_version": "7",
@@ -8,9 +8,11 @@
             "entries": [
                 {
                     "source": "kernelcare",
-                    "target": [
-                        "kernelcare-8"
-                    ]
+                    "target": {
+                        "default": [
+                            "kernelcare-8"
+                        ]
+                    }
                 }
             ]
         }

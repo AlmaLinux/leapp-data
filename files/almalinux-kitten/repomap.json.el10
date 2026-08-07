@@ -1,8 +1,8 @@
 {
-    "datetime": "202506241030Z",
-    "version_format": "1.3.0",
+    "datetime": "202607291231Z",
+    "version_format": "2.0.0",
     "provided_data_streams": [
-        "4.2"
+        "5.0"
     ],
     "mapping": [
         {
@@ -11,57 +11,75 @@
             "entries": [
                 {
                     "source": "baseos",
-                    "target": [
-                        "almalinux10-baseos"
-                    ]
+                    "target": {
+                        "default": [
+                            "almalinux10-baseos"
+                        ]
+                    }
                 },
                 {
                     "source": "appstream",
-                    "target": [
-                        "almalinux10-appstream"
-                    ]
+                    "target": {
+                        "default": [
+                            "almalinux10-appstream"
+                        ]
+                    }
                 },
                 {
                     "source": "crb",
-                    "target": [
-                        "almalinux10-crb"
-                    ]
+                    "target": {
+                        "default": [
+                            "almalinux10-crb"
+                        ]
+                    }
                 },
                 {
                     "source": "ha",
-                    "target": [
-                        "almalinux10-highavailability"
-                    ]
+                    "target": {
+                        "default": [
+                            "almalinux10-highavailability"
+                        ]
+                    }
                 },
                 {
                     "source": "extras",
-                    "target": [
-                        "almalinux10-extras"
-                    ]
+                    "target": {
+                        "default": [
+                            "almalinux10-extras"
+                        ]
+                    }
                 },
                 {
                     "source": "rt",
-                    "target": [
-                        "almalinux10-rt"
-                    ]
+                    "target": {
+                        "default": [
+                            "almalinux10-rt"
+                        ]
+                    }
                 },
                 {
                     "source": "nfv",
-                    "target": [
-                        "almalinux10-nfv"
-                    ]
+                    "target": {
+                        "default": [
+                            "almalinux10-nfv"
+                        ]
+                    }
                 },
                 {
                     "source": "sap",
-                    "target": [
-                        "almalinux10-sap"
-                    ]
+                    "target": {
+                        "default": [
+                            "almalinux10-sap"
+                        ]
+                    }
                 },
                 {
                     "source": "saphana",
-                    "target": [
-                        "almalinux10-saphana"
-                    ]
+                    "target": {
+                        "default": [
+                            "almalinux10-saphana"
+                        ]
+                    }
                 }
             ]
         }
@@ -299,30 +317,6 @@
                     "repoid": "rt",
                     "arch": "x86_64",
                     "channel": "ga"
-                },
-                {
-                    "major_version": "9",
-                    "repo_type": "rpm",
-                    "distro": "almalinux",
-                    "repoid": "rt",
-                    "arch": "aarch64",
-                    "channel": "ga"
-                },
-                {
-                    "major_version": "9",
-                    "repo_type": "rpm",
-                    "distro": "almalinux",
-                    "repoid": "rt",
-                    "arch": "ppc64le",
-                    "channel": "ga"
-                },
-                {
-                    "major_version": "9",
-                    "repo_type": "rpm",
-                    "distro": "almalinux",
-                    "repoid": "rt",
-                    "arch": "s390x",
-                    "channel": "ga"
                 }
             ]
         },
@@ -335,30 +329,6 @@
                     "distro": "almalinux",
                     "repoid": "nfv",
                     "arch": "x86_64",
-                    "channel": "ga"
-                },
-                {
-                    "major_version": "9",
-                    "repo_type": "rpm",
-                    "distro": "almalinux",
-                    "repoid": "nfv",
-                    "arch": "aarch64",
-                    "channel": "ga"
-                },
-                {
-                    "major_version": "9",
-                    "repo_type": "rpm",
-                    "distro": "almalinux",
-                    "repoid": "nfv",
-                    "arch": "ppc64le",
-                    "channel": "ga"
-                },
-                {
-                    "major_version": "9",
-                    "repo_type": "rpm",
-                    "distro": "almalinux",
-                    "repoid": "nfv",
-                    "arch": "s390x",
                     "channel": "ga"
                 }
             ]

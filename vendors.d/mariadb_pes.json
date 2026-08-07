@@ -7,7 +7,7 @@
                 "x86_64",
                 "aarch64",
                 "ppc64le",
-		"s390x"
+                "s390x"
             ],
             "description": "",
             "id": 12691,
@@ -46,7 +46,7 @@
         }
     ],
     "provided_data_streams": [
-        "4.2"
+        "5.0"
     ],
     "timestamp": "202506241030Z"
 }

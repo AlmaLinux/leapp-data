@@ -1,4 +1,4 @@
-%global pes_events_build_date 20260622
+%global pes_events_build_date 20260729
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
@@ -18,8 +18,8 @@
 %bcond_without check
 
 Name:       leapp-data
-Version:    0.13
-Release:    6%{?dist}.%{pes_events_build_date}
+Version:    0.14
+Release:    1%{?dist}.%{pes_events_build_date}
 Summary:    Data for ELevate migration tool
 Group:      Applications/Databases
 License:    ASL 2.0
@@ -212,6 +212,17 @@ done)}
 
 
 %changelog
+* Fri Aug 07 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.14-1.20260729
+- Update data to the upstream most recent state (leapp-repository 0.25.0):
+ - leapp-repository sha d3e247addef3cab1dd54c034ad45251f2a731964
+ - Data stream version 5.0
+ - Repomap: convert per-distro repomap.json.el9/el10 to version_format 2.0.0 (multi-distro mapping targets)
+ - Repomap: restrict nfv/rt repository families to x86_64 to satisfy the new target-pesid validation
+ - PES events: update from upstream, timestamp 202607290705Z
+ - Device driver deprecation data: update from upstream
+ - Vendors: bump provided_data_streams to 5.0 in all vendors.d PES files and map templates
+ - Vendors: convert vendors.d map templates to version_format 2.0.0 (requires the updated vendor mapping loader in ELevate leapp-repository 0.25.0)
+
 * Fri Jul 17 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.13-6.20260622
 - Update data to the upstream most recent state:
  - leapp-repository sha 11655c4fb60dcd699b28e19fe1579702bb84c9e9

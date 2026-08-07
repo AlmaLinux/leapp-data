@@ -1,6 +1,6 @@
 {
     "datetime": "202506241030Z",
-    "version_format": "1.3.0",
+    "version_format": "2.0.0",
     "mapping": [
         {
             "source_major_version": "7",
@@ -8,21 +8,27 @@
             "entries": [
                 {
                     "source": "mariadb-main",
-                    "target": [
-                        "el8-mariadb-main"
-                    ]
+                    "target": {
+                        "default": [
+                            "el8-mariadb-main"
+                        ]
+                    }
                 },
                 {
                     "source": "mariadb-maxscale",
-                    "target": [
-                        "el8-mariadb-maxscale"
-                    ]
+                    "target": {
+                        "default": [
+                            "el8-mariadb-maxscale"
+                        ]
+                    }
                 },
                 {
                     "source": "mariadb-tools",
-                    "target": [
-                        "el8-mariadb-tools"
-                    ]
+                    "target": {
+                        "default": [
+                            "el8-mariadb-tools"
+                        ]
+                    }
                 }
             ]
         }
@@ -132,6 +138,6 @@
         }
     ],
     "provided_data_streams": [
-        "4.2"
+        "5.0"
     ]
 }

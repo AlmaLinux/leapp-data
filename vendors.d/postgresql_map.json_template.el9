@@ -1,6 +1,6 @@
 {
     "datetime": "202603111025Z",
-    "version_format": "1.3.0",
+    "version_format": "2.0.0",
     "mapping": [
         {
             "source_major_version": "8",
@@ -8,65 +8,83 @@
             "entries": [
                 {
                     "source": "pgdg-common",
-                    "target": [
-                        "el9-pgdg-common"
-                    ]
+                    "target": {
+                        "default": [
+                            "el9-pgdg-common"
+                        ]
+                    }
                 },
                 {
                     "source": "pgdg18",
-                    "target": [
-                        "el9-pgdg18",
-                        "el9-pgdg-rhel9-extras"
-                    ]
+                    "target": {
+                        "default": [
+                            "el9-pgdg18",
+                            "el9-pgdg-rhel9-extras"
+                        ]
+                    }
                 },
                 {
                     "source": "pgdg17",
-                    "target": [
-                        "el9-pgdg17",
-                        "el9-pgdg-rhel9-extras"
-                    ]
+                    "target": {
+                        "default": [
+                            "el9-pgdg17",
+                            "el9-pgdg-rhel9-extras"
+                        ]
+                    }
                 },
                 {
                     "source": "pgdg16",
-                    "target": [
-                        "el9-pgdg16",
-                        "el9-pgdg-rhel9-extras"
-                    ]
+                    "target": {
+                        "default": [
+                            "el9-pgdg16",
+                            "el9-pgdg-rhel9-extras"
+                        ]
+                    }
                 },
                 {
                     "source": "pgdg15",
-                    "target": [
-                        "el9-pgdg15",
-                        "el9-pgdg-rhel9-extras"
-                    ]
+                    "target": {
+                        "default": [
+                            "el9-pgdg15",
+                            "el9-pgdg-rhel9-extras"
+                        ]
+                    }
                 },
                 {
                     "source": "pgdg14",
-                    "target": [
-                        "el9-pgdg14",
-                        "el9-pgdg-rhel9-extras"
-                    ]
+                    "target": {
+                        "default": [
+                            "el9-pgdg14",
+                            "el9-pgdg-rhel9-extras"
+                        ]
+                    }
                 },
                 {
                     "source": "pgdg13",
-                    "target": [
-                        "el9-pgdg13",
-                        "el9-pgdg-rhel9-extras"
-                    ]
+                    "target": {
+                        "default": [
+                            "el9-pgdg13",
+                            "el9-pgdg-rhel9-extras"
+                        ]
+                    }
                 },
                 {
                     "source": "pgdg12",
-                    "target": [
-                        "el9-pgdg12",
-                        "el9-pgdg-rhel9-extras"
-                    ]
+                    "target": {
+                        "default": [
+                            "el9-pgdg12",
+                            "el9-pgdg-rhel9-extras"
+                        ]
+                    }
                 },
                 {
                     "source": "pgdg11",
-                    "target": [
-                        "el9-pgdg11",
-                        "el9-pgdg-rhel9-extras"
-                    ]
+                    "target": {
+                        "default": [
+                            "el9-pgdg11",
+                            "el9-pgdg-rhel9-extras"
+                        ]
+                    }
                 }
             ]
         }
@@ -593,6 +611,6 @@
         }
     ],
     "provided_data_streams": [
-        "4.2"
+        "5.0"
     ]
 }

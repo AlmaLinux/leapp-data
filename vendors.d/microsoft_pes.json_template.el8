@@ -1438,7 +1438,6 @@
         }
     ],
     "provided_data_streams": [
-        "4.2"
-    ],
-    "timestamp": "202506241030Z"
+        "5.0"
+    ]
 }

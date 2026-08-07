@@ -1,6 +1,6 @@
 {
     "datetime": "202506241030Z",
-    "version_format": "1.3.0",
+    "version_format": "2.0.0",
     "mapping": [
         {
             "source_major_version": "9",
@@ -8,33 +8,43 @@
             "entries": [
                 {
                     "source": "epel",
-                    "target": [
-                        "el10-epel"
-                    ]
+                    "target": {
+                        "default": [
+                            "el10-epel"
+                        ]
+                    }
                 },
                 {
                     "source": "epel",
-                    "target": [
-                        "el10-epel-almalinux-altarch"
-                    ]
+                    "target": {
+                        "default": [
+                            "el10-epel-almalinux-altarch"
+                        ]
+                    }
                 },
                 {
                     "source": "epel",
-                    "target": [
-                        "el10-baseos"
-                    ]
+                    "target": {
+                        "default": [
+                            "el10-baseos"
+                        ]
+                    }
                 },
                 {
                     "source": "epel",
-                    "target": [
-                        "el10-appstream"
-                    ]
+                    "target": {
+                        "default": [
+                            "el10-appstream"
+                        ]
+                    }
                 },
                 {
                     "source": "epel",
-                    "target": [
-                        "el10-powertools"
-                    ]
+                    "target": {
+                        "default": [
+                            "el10-powertools"
+                        ]
+                    }
                 }
             ]
         }
@@ -240,6 +250,6 @@
         }
     ],
     "provided_data_streams": [
-        "4.2"
+        "5.0"
     ]
 }

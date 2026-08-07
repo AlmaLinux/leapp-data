@@ -1,6 +1,6 @@
 {
   "provided_data_streams": [
-    "4.3"
+    "5.0"
   ],
   "data": [
     {
@@ -7198,5 +7198,5 @@
       "maintained_in_rhel": []
     }
   ],
-  "created_at": "20260424155213"
+  "created_at": "20260807154107"
 }

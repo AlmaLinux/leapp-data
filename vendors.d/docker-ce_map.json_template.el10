@@ -1,6 +1,6 @@
 {
     "datetime": "202506241030Z",
-    "version_format": "1.3.0",
+    "version_format": "2.0.0",
     "mapping": [
         {
             "source_major_version": "9",
@@ -8,21 +8,27 @@
             "entries": [
                 {
                     "source": "docker-ce-stable",
-                    "target": [
-                        "el10-docker-ce-stable"
-                    ]
+                    "target": {
+                        "default": [
+                            "el10-docker-ce-stable"
+                        ]
+                    }
                 },
                 {
                     "source": "docker-ce-test",
-                    "target": [
-                        "el10-docker-ce-test"
-                    ]
+                    "target": {
+                        "default": [
+                            "el10-docker-ce-test"
+                        ]
+                    }
                 },
                 {
                     "source": "docker-ce-nightly",
-                    "target": [
-                        "el10-docker-ce-test"
-                    ]
+                    "target": {
+                        "default": [
+                            "el10-docker-ce-test"
+                        ]
+                    }
                 }
             ]
         }
@@ -159,6 +165,6 @@
         }
     ],
     "provided_data_streams": [
-        "4.2"
+        "5.0"
     ]
 }

@@ -1,6 +1,6 @@
 {
     "datetime": "202510171345Z",
-    "version_format": "1.3.0",
+    "version_format": "2.0.0",
     "mapping": [
         {
             "source_major_version": "9",
@@ -8,7 +8,11 @@
             "entries": [
                 {
                     "source": "imunify360-alt-php",
-                    "target": ["cloudlinux10-imunify360-alt-php"]
+                    "target": {
+                        "default": [
+                            "cloudlinux10-imunify360-alt-php"
+                        ]
+                    }
                 }
             ]
         }

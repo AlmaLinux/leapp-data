@@ -1,6 +1,6 @@
 {
     "datetime": "202506241030Z",
-    "version_format": "1.3.0",
+    "version_format": "2.0.0",
     "mapping": [
         {
             "source_major_version": "7",
@@ -8,19 +8,35 @@
             "entries": [
                 {
                     "source": "imunify360",
-                    "target": ["cloudlinux8-imunify360"]
+                    "target": {
+                        "default": [
+                            "cloudlinux8-imunify360"
+                        ]
+                    }
                 },
                 {
                     "source": "cloudlinux-imunify360",
-                    "target": ["cloudlinux8-imunify360"]
+                    "target": {
+                        "default": [
+                            "cloudlinux8-imunify360"
+                        ]
+                    }
                 },
                 {
                     "source": "imunify360-testing",
-                    "target": ["cloudlinux8-imunify360-testing"]
+                    "target": {
+                        "default": [
+                            "cloudlinux8-imunify360-testing"
+                        ]
+                    }
                 },
                 {
                     "source": "cloudlinux-imunify360-testing",
-                    "target": ["cloudlinux8-imunify360-testing"]
+                    "target": {
+                        "default": [
+                            "cloudlinux8-imunify360-testing"
+                        ]
+                    }
                 }
             ]
         }
