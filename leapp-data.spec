@@ -19,7 +19,7 @@
 
 Name:       leapp-data
 Version:    0.13
-Release:    6%{?dist}.%{pes_events_build_date}
+Release:    7%{?dist}.%{pes_events_build_date}
 Summary:    Data for ELevate migration tool
 Group:      Applications/Databases
 License:    ASL 2.0
@@ -212,6 +212,14 @@ done)}
 
 
 %changelog
+* Thu Aug 20 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.13-7.20260622
+- Update device driver deprecation data:
+ - walk AlmaLinux 9.8 and 10.2 release notes (in addition to 8.10) so devices
+   re-enabled by AlmaLinux are marked available in EL10 (previously only 8.10
+   and 9.6 were walked and no device was ever marked available in 10)
+ - fixes false "unsupported device" inhibitor on 9 -> 10 upgrades, e.g.
+   Broadcom / LSI SAS2008 Fusion-MPT SAS-2 (0x1000:0x0072, mpt3sas)
+
 * Fri Jul 17 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.13-6.20260622
 - Update data to the upstream most recent state:
  - leapp-repository sha 11655c4fb60dcd699b28e19fe1579702bb84c9e9
