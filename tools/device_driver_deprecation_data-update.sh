@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # AlmaLinux releases
-releases=('8.10' '9.6')
+releases=('8.10' '9.8' '10.2')
 
 # Path where to store device driver deprecation data file
 # '../files/almalinux'
