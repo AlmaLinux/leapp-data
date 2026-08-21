@@ -47,7 +47,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.11
-Release:	9%{?dist}.%{pes_events_build_date}
+Release:	10%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -159,6 +159,14 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Fri Aug 21 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-10.20251222
+- Update device driver deprecation data:
+ - walk AlmaLinux 9.8 and 10.2 release notes (in addition to 8.10) so devices
+   re-enabled by AlmaLinux are marked available in EL10 (previously only 8.10
+   and 9.6 were walked and no device was ever marked available in 10)
+ - fixes false "unsupported device" inhibitor on 9 -> 10 upgrades, e.g.
+   Broadcom / LSI SAS2008 Fusion-MPT SAS-2 (0x1000:0x0072, mpt3sas)
+
 * Thu May 28 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.11-9.20251222
 - Vendor MariaDB: drop legacy 2010 key, keep current signing key only
 
