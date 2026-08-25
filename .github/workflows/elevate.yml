@@ -393,11 +393,17 @@ jobs:
         fi
 
         if [ "${vendor}" = "mariadb" ]; then
+          # MariaDB 12.rolling is available for EL8 and newer only; EL7 gets 11.rolling
+          if [ "${source_release}" = "7" ]; then
+            mariadb_version="11.rolling"
+          else
+            mariadb_version="12.rolling"
+          fi
           # The https://r.mariadb.com/downloads/mariadb_repo_setup doesn't work anymore
-          cat << 'MARIADB'> /etc/yum.repos.d/mariadb.repo
+          cat << MARIADB> /etc/yum.repos.d/mariadb.repo
         [mariadb-main]
         name = MariaDB
-        baseurl = https://mirror.mariadb.org/yum/12.rolling/rhel/$releasever/$basearch
+        baseurl = https://mirror.mariadb.org/yum/${mariadb_version}/rhel/\$releasever/\$basearch
         gpgkey= https://rpm.mariadb.org/RPM-GPG-KEY-MariaDB
         gpgcheck=1
         module_hotfixes=1
