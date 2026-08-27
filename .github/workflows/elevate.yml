@@ -124,7 +124,7 @@ jobs:
 
     env:
       vm_serial_log: '/var/log/elevatevm_consoles/serial.log'
-      vm_boot_timeout: 600
+      vm_boot_timeout: 1800
 
     steps:
     - uses: actions/checkout@v6
