@@ -366,6 +366,11 @@
             "name": "rhel-hpc",
             "initial_release": 10,
             "target_release": 10
+        },
+        {
+            "name": "samba-common-libs",
+            "initial_release": 9,
+            "target_release": 9
         }
     ],
 
