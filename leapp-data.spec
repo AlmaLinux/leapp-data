@@ -19,7 +19,7 @@
 
 Name:       leapp-data
 Version:    0.14
-Release:    2%{?dist}.%{pes_events_build_date}
+Release:    3%{?dist}.%{pes_events_build_date}
 Summary:    Data for ELevate migration tool
 Group:      Applications/Databases
 License:    ASL 2.0
@@ -212,6 +212,12 @@ done)}
 
 
 %changelog
+* Mon Oct 12 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.14-3.20260729
+- Drop the 9.9 samba-common-libs split PES event (20203) for AlmaLinux and
+  AlmaLinux x86_64_v2: fixes the dnf transaction check failure on 9.8 -> 10.x
+  upgrades with libsmbclient installed (libreplace-private-samba.so has no
+  provider). The 10.3 split (20204) is kept.
+
 * Fri Aug 21 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.14-2.20260729
 - Update device driver deprecation data:
  - walk AlmaLinux 9.8 and 10.2 release notes (in addition to 8.10) so devices
