@@ -435,6 +435,11 @@ jobs:
           # TODO to mitigate "[Errno -1] repomd.xml signature could not be verified for pgdg-common"
           sed -i 's/repo_gpgcheck.*$/repo_gpgcheck=0/g' /etc/yum.repos.d/pgdg-redhat-all.repo
 
+          # TODO: temporary, until leapp sets $releasever_minor in its dnf configuration.
+          # pgdg-redhat-repo >= 42.0-69 uses "rhel-$releasever_major.$releasever_minor-" URLs; leapp
+          # (and dnf on CentOS Stream) leaves $releasever_minor empty, so the URLs return 404.
+          sed -i 's/rhel-\$releasever_major\.\$releasever_minor-/rhel-$releasever-/g' /etc/yum.repos.d/pgdg*.repo
+
           sudo dnf install -y postgresql15-server
           res=$?
         fi
