@@ -393,17 +393,20 @@ jobs:
         fi
 
         if [ "${vendor}" = "mariadb" ]; then
-          # MariaDB 12.rolling is available for EL8 and newer only; EL7 gets 11.rolling
+          # MariaDB 12.rolling is available for EL8 and newer only;
+          # 10.11 is the latest series built for EL7.
+          # Do not use mirror.mariadb.org: it redirects to a random mirror,
+          # and the step fails when that mirror is down.
           if [ "${source_release}" = "7" ]; then
-            mariadb_version="11.rolling"
+            mariadb_baseurl="https://archive.mariadb.org/mariadb-10.11/yum/rhel"
           else
-            mariadb_version="12.rolling"
+            mariadb_baseurl="https://dlm.mariadb.com/repo/mariadb-server/12.rolling/yum/rhel"
           fi
           # The https://r.mariadb.com/downloads/mariadb_repo_setup doesn't work anymore
           cat << MARIADB> /etc/yum.repos.d/mariadb.repo
         [mariadb-main]
         name = MariaDB
-        baseurl = https://mirror.mariadb.org/yum/${mariadb_version}/rhel/\$releasever/\$basearch
+        baseurl = ${mariadb_baseurl}/\$releasever/\$basearch
         gpgkey= https://rpm.mariadb.org/RPM-GPG-KEY-MariaDB
         gpgcheck=1
         module_hotfixes=1
@@ -415,6 +418,8 @@ jobs:
             # All matches were filtered out by modular filtering for argument: MariaDB-server
             sudo dnf -y -q module disable mariadb
           fi
+          # Install the client only: on EL7 the newest server is 10.11, and the
+          # MariaDB-server 11.x package for EL8 refuses a 10 -> 11 upgrade in %prein
           sudo dnf -y install MariaDB-client
           res=$?
         fi
