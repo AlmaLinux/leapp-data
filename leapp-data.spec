@@ -222,6 +222,8 @@ done)}
  - Debranding changes: map the rhel10-SAP-NetWeaver repository and remove the
    rhel10-Supplementary repository events via config.json (all distros)
  - Vendors: renumber the EPEL PES events IDs to keep them unique
+ - Vendor MariaDB: switch the mariadb-main repositories to dlm.mariadb.com
+   (the 11.rolling and 12.rolling series are gone from mirror.mariadb.org)
 
 * Mon Oct 12 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.14-3.20260729
 - Drop the 9.9 samba-common-libs split PES event (20203) for AlmaLinux and
