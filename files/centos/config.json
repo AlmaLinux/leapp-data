@@ -135,6 +135,10 @@
             "in_packageset": "saphana",
             "out_packageset": "centos10-saphana"
         },
+        "rhel10-SAP-NetWeaver": {
+            "in_packageset": "saphana",
+            "out_packageset": "centos10-saphana"
+        },
         "rhel10-NFV": {
             "in_packageset": "nfv",
             "out_packageset": "centos10-nfv"
@@ -172,6 +176,8 @@
         "rhel9-jbeap-8.0",
         "rhel9-jbeap-7.4",
         "rhel9-jbeap-8.1",
+
+        "rhel10-Supplementary",
 
         "rhel-drivers"
     ],

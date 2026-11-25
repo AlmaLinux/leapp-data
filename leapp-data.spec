@@ -1,4 +1,4 @@
-%global pes_events_build_date 20260729
+%global pes_events_build_date 20261013
 
 %define repositorydir %{_datadir}/leapp-repository/repositories
 
@@ -19,7 +19,7 @@
 
 Name:       leapp-data
 Version:    0.14
-Release:    3%{?dist}.%{pes_events_build_date}
+Release:    4%{?dist}.%{pes_events_build_date}
 Summary:    Data for ELevate migration tool
 Group:      Applications/Databases
 License:    ASL 2.0
@@ -212,6 +212,17 @@ done)}
 
 
 %changelog
+* Wed Nov 25 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.14-4.20261013
+- Update data to the upstream most recent state:
+ - leapp-repository sha f58a265b498317742927826c5d5ee75e09a26e8e
+ - Data timestamp 202610131514Z
+ - Data stream version 5.0
+ - PES events: update from upstream (9.10 and 10.4 events)
+ - Device driver deprecation data: update from upstream
+ - Debranding changes: map the rhel10-SAP-NetWeaver repository and remove the
+   rhel10-Supplementary repository events via config.json (all distros)
+ - Vendors: renumber the EPEL PES events IDs to keep them unique
+
 * Mon Oct 12 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.14-3.20260729
 - Drop the 9.9 samba-common-libs split PES event (20203) for AlmaLinux and
   AlmaLinux x86_64_v2: fixes the dnf transaction check failure on 9.8 -> 10.x

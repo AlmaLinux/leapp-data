@@ -5736,6 +5736,15 @@
       "maintained_in_rhel": []
     },
     {
+      "available_in_rhel": [],
+      "deprecation_announced": "",
+      "device_id": "0x15B3:0x2101",
+      "device_name": "ConnectX-10 NVLink-C2C",
+      "device_type": "pci",
+      "driver_name": "mlx5",
+      "maintained_in_rhel": []
+    },
+    {
       "available_in_rhel": [
         7,
         8,
@@ -7246,6 +7255,24 @@
     },
     {
       "available_in_rhel": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "deprecation_announced": "",
+      "device_id": "",
+      "device_name": "SMC 91C9x/91C1xxx Ethernet driver",
+      "device_type": "pci",
+      "driver_name": "smc91x",
+      "maintained_in_rhel": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "available_in_rhel": [
         7
       ],
       "deprecation_announced": "",
@@ -7350,5 +7377,5 @@
       "maintained_in_rhel": []
     }
   ],
-  "created_at": "20260821091751"
+  "created_at": "20261125124024"
 }
