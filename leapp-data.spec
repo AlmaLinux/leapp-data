@@ -52,7 +52,7 @@
 
 Name:		leapp-data-%{dist_name}
 Version:	0.6
-Release:	15%{?dist}.%{pes_events_build_date}
+Release:	16%{?dist}.%{pes_events_build_date}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
@@ -177,6 +177,10 @@ python3 tests/check_debranding.py %{buildroot}%{_sysconfdir}/leapp/files/pes-eve
 
 
 %changelog
+* Wed Nov 25 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.6-16.20241127
+- Vendor MariaDB: switch the mariadb-main repositories to dlm.mariadb.com
+  (the 11.rolling series is gone from mirror.mariadb.org)
+
 * Thu May 28 2026 Yuriy Kohut <ykohut@almalinux.org> - 0.6-15.20241127
 - Vendor MariaDB: drop legacy 2010 key, keep current signing key only
 
